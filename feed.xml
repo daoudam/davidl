@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>DavidL design + developement</title>
+  <subtitle>Développeur front-end. Je crée des sites internet qui fonctionnent à merveille sur n'importe quel appareil. Je suis un concepteur de sites web spécialisé HTML et CSS basé à Lille</subtitle>
+  <id>http://davidl.fr/blog/</id>
+  <link href="http://davidl.fr/blog/"/>
+  <link href="http://davidl.fr/blog/feed.xml" rel="self"/>
+  <updated>2013-12-13T17:03:05Z</updated>
+  <author>
+    <name>David Leuliette</name>
+  </author>
+  <entry>
+    <title>Changer ses breakpoints avec Foundation</title>
+    <link rel="alternate" href="http://davidl.fr/blog/Foundation-breakpoint.html"/>
+    <id>http://davidl.fr/blog/Foundation-breakpoint.html</id>
+    <published>2013-12-13T17:03:05Z</published>
+    <updated>2013-12-19T14:11:54+01:00</updated>
+    <author>
+      <name>DavidL design + developement</name>
+    </author>
+    <content type="html">&lt;p&gt;Depuis la version 4.3, Foundation est configuré avec deux breakpoint principaux, - ces largeurs définissent le nombre de pixel utilisés pour faire basculer la grille.&lt;/p&gt;
+
+&lt;p&gt;Cette configuration par défaut permet de faire face à la plupart des scénarios. Mais cela n'est pas acceptable dans certains cas. Parfois, un projet nécessite plus de &lt;code&gt;breakpoints&lt;/code&gt;. Voilà comment vous pouvez adapter Foundation en fonction des besoins de votre application web.&lt;/p&gt;
+
+&lt;h2 id="changer-les-variables-sass"&gt;1. Changer les variables SASS&lt;/h2&gt;
+
+&lt;p&gt;La meilleure façon de personnaliser la largeur des grilles est de modifier leurs paramètres dans les fichiers SCSS.&lt;/p&gt;
+
+&lt;p&gt;Dans &lt;code&gt;_settings.css&lt;/code&gt;, recherchez :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$small-range: (0em, 40em);
+$medium-range: (40.063em, 64em);
+$large-range: (64.063em, 90em);
+$xlarge-range: (90.063em, 120em);
+$xxlarge-range: (120.063em);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="rechercher-et-remplacer-en-css"&gt;2. Rechercher et remplacer en CSS&lt;/h2&gt;
+
+&lt;p&gt;Vous trouverez beaucoup de lignes avec des &lt;code&gt;breakpoints&lt;/code&gt;. Par exemple :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@media only screen and (min-width: 40.063em)
+@media only screen and (min-width: 64.063em)
+@media only screen and (min-width: 90.063em)
+@media only screen and (min-width: 120.063em)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Chaque &lt;code&gt;media query&lt;/code&gt; représente le point d'arrêt qui sera utilisé par les navigateurs pour appliquer les différentes tailles : petit, moyen, grand et très grand.&lt;/p&gt;
+
+&lt;h2 id="quelle-taille-choisir-"&gt;3. Quelle taille choisir ?&lt;/h2&gt;
+
+&lt;p&gt;Si vous choisissez une stratégie de prioritée du contenu, utilisez des mesures en &lt;code&gt;em&lt;/code&gt; ou &lt;code&gt;rems&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$row-width: rem-calc(1000);
+$column-gutter: rem-calc(30);
+$total-columns: 12;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Aujourd'hui, Fondation 5 utilise les &lt;code&gt;rems&lt;/code&gt; -relative em- pour ses mesures. Si vous préférez utiliser des pixels, la fonction &lt;code&gt;rem-calc()&lt;/code&gt; transforme les pixels en rems pour vous.&lt;/p&gt;
+
+&lt;p&gt;Par exemple, avec une police de texte de taille 16px, &lt;code&gt;rem-calc(600)&lt;/code&gt; donne la conversion &lt;code&gt;37,5rems&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Si vous décidez d'adapter le contenu aux tailles d'écrans, voici des ressources pour vous aider à choisir :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://mydevice.io/devices/"&gt;mydevice.io&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://stats.areppim.com/stats/stats_mobiresxtime.htm"&gt;Mobile phone screen resolution market share&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://gs.statcounter.com/#mobile_resolution-ww-monthly-201307-201312"&gt;StatCounter mobile screen resolutions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="personnaliser-le-tlchargement"&gt;4. Personnaliser le téléchargement&lt;/h2&gt;
+
+&lt;p&gt;Encore une chose : Saviez vous que vous n'êtes pas obligé d'avoir une grille de 12 colonnes ?&lt;/p&gt;
+
+&lt;p&gt;Vous pouvez modifier cette propriété, ainsi que la taille des goutières avec le &lt;a href="http://Foundation.zurb.com/develop/download.html#customizeFoundation"&gt;formulaire de customisation&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Le secret de scrumtalpick</title>
+    <link rel="alternate" href="http://davidl.fr/blog/scrumtalpick.html"/>
+    <id>http://davidl.fr/blog/scrumtalpick.html</id>
+    <published>2013-12-06T17:03:05Z</published>
+    <updated>2013-12-16T18:33:12+01:00</updated>
+    <author>
+      <name>DavidL design + developement</name>
+    </author>
+    <content type="html">&lt;h2 id="what"&gt;What&lt;/h2&gt;
+
+&lt;p&gt;Right, gimme a Pepsi free. Holy shit. Uh listen, do you know where Riverside Drive is? Okay, alright, I'll prove it to you. Look at my driver's license, expires 1987. Look at my birthday, for crying out load I haven't even been born yet. And, look at this picture, my brother, my sister, and me. Look at the sweatshirt, &lt;a href="http://scrumtalpick.fr/"&gt;scrumtalpick&lt;/a&gt;, class of 1984. Wait a minute. Wait a minute, scrumtalpick. Are you telling me that it's 8:25?&lt;/p&gt;
+
+&lt;h2 id="why"&gt;Why&lt;/h2&gt;
+
+&lt;p&gt;Listen, woh. Hello, uh excuse me. Sorry about your barn. Thanks a lot, kid. Jennifer, oh are you a sight for sore eyes. Let me look at you. Right check, scrumtalpick. Bet your ass it works.&lt;/p&gt;
+
+&lt;h2 id="when"&gt;When&lt;/h2&gt;
+
+&lt;p&gt;Um, yeah, I'm on my way. Flux capacitor. scrumtalpick, I'm from the future. I came here in a time machine that you invented. Now, I need your help to get back to the year 1985. You do? Hello, Jennifer.&lt;/p&gt;
+
+&lt;h2 id="pour-ceux-qui-nauraient-rien-compris"&gt;Pour ceux qui n'auraient rien compris&lt;/h2&gt;
+
+&lt;p&gt;Le célèbre intégrateur &lt;a href="http://romainfauvet.fr"&gt;Romain Fauvet&lt;/a&gt; participe en ce moment à un concours SEO. Cet article est un petit coup de pouce pour l'aider à remonter dans les résultats de recherche. Prenez 5 minutes pour aller voir son site, il vaut le coup d'oeil.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://scrumtalpick.fr/decouverte.html"&gt;Découvrir scrumtalpick →&lt;/a&gt;&lt;/p&gt;
+
+</content>
+  </entry>
+  <entry>
+    <title>Internet expliqué à ma grand mère</title>
+    <link rel="alternate" href="http://davidl.fr/blog/esprit-web.html"/>
+    <id>http://davidl.fr/blog/esprit-web.html</id>
+    <published>2013-11-26T17:37:06Z</published>
+    <updated>2013-12-16T18:33:12+01:00</updated>
+    <author>
+      <name>DavidL design + developement</name>
+    </author>
+    <content type="html">&lt;p&gt;Qu'est ce que le web ?&lt;/p&gt;
+
+&lt;p&gt;A-t-il une âme ?&lt;/p&gt;
+
+&lt;p&gt;Le &lt;strong&gt;web&lt;/strong&gt; est intangible, indéfinissable, c'est simplement une suite de données, de signaux, d'électrons.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Internet&lt;/strong&gt; est solide, c'est une suite de routeurs, de serveurs, de câbles, … ce n'est pas un nuage !&lt;/p&gt;
+
+&lt;p&gt;Le web est différent. C'est un état d'esprit, une façon de penser. Chacun possède sa propre définition.&lt;/p&gt;
+
+&lt;h2 id="quest-ce-que-le-web-"&gt;Qu'est ce que le web ?&lt;/h2&gt;
+
+&lt;p&gt;Si l'on devait résumer en 3 points, le web est composé de :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Fichiers&lt;/li&gt;
+  &lt;li&gt;Adresses URL&lt;/li&gt;
+  &lt;li&gt;Protocole HTTP&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Ce n'est pas très romantique mais c'est la définition la plus logique.&lt;/p&gt;
+
+&lt;h3 id="http"&gt;HTTP&lt;/h3&gt;
+
+&lt;p&gt;Ce protocole définit les verbes sur le web.
+L'inventeur du web Tim bers Lee en a défini 4 principaux :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;GET&lt;/code&gt; pour chercher des données, des ressources&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;POST&lt;/code&gt; pour créer de nouveaux fichiers&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;PUT&lt;/code&gt; pour éditer / remplacer des fichiers&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;DELETE&lt;/code&gt; pour supprimer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;C'est ce qu'a imaginé Tim Bers Lee en tant que media de lecture / écriture.
+Ce média n'est pas simplement associé à la consommation, mais aussi est surtout à la création.
+D'usage, chez les développeurs les 2 verbes utilisés sont &lt;code&gt;GET&lt;/code&gt; et &lt;code&gt;POST&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Étonnamment de nombreux développeurs ne connaissent pas forcément les différences entre ces 2 verbes.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;GET&lt;/code&gt; doit être utilisé pour les requêtes sécurisées&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;POST&lt;/code&gt; pour les autres transactions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;J'ai une anecdote à ce sujet :&lt;/p&gt;
+
+&lt;p&gt;Les développeurs de basecamp ont appris cette leçon à leur dépends : de simples liens étaient utilisés pour effectuer une action de suppression.
+Selon eux ils étaient dans leurs droits puisqu'il y a une étape d'identification à la connexion au service.
+Certains clients de leur application avaient installé la google accelerator toolbar. Pour accélérer la navigation ce programme précharge les liens en fond de tâche.&lt;/p&gt;
+
+&lt;p&gt;A la connexion tous les fichiers de ses clients sont supprimés puisque tous les liens sont pré-chargés.
+Les créateurs de basecamp se sont énervés contre Google pour avoir sorti une telle toolbar. Mais à la base c'était de leur faute : une transaction de suppression doit être sécurisée il ne faut &lt;strong&gt;jamais&lt;/strong&gt; utiliser de liens pour ça &lt;code&gt;&amp;lt;a href="#"&amp;gt; delete &lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;La solution est d'utiliser ce qui a été conçu pour un tel usage :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;form method="POST"&amp;gt;
+    &amp;lt;input type="hidden" name="delete" value="id"&amp;gt;
+    &amp;lt;button&amp;gt;delete&amp;lt;/button&amp;gt;
+&amp;lt;/form&amp;gt;&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id="le-cyber-espace"&gt;Le cyber espace&lt;/h3&gt;
+
+&lt;p&gt;Pendant des années, les développeurs et les designers web sont tombés d'accord : 1 site web a une taille fixe et doit être consulté depuis un ordinateur. Mais par sa définition un site web est quelque chose  de complètement différent :
+C'est une suite de fichiers HTML, CSS et javascript.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="This is the web par Brad Frost" src="http://davidleuliette.com/wordPress/wp-content/uploads/2013/11/this-is-the-web-300x223.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Pendant des années nous avons négligé les aspects fondamentaux du web :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Capacités du navigateur&lt;/li&gt;
+  &lt;li&gt;Vitesse du site web&lt;/li&gt;
+  &lt;li&gt;Poids des pages&lt;/li&gt;
+  &lt;li&gt;Vitesse du réseau&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Je pense que donner une taille fixe à un site internet est comparable à une hallucination collective. Cette "norme" n'a été fixée simplement parce que les designer souhaitent le contrôle de leur expérience.&lt;/p&gt;
+
+&lt;p&gt;Prenons l'évolution des tailles :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;640x480&lt;/li&gt;
+  &lt;li&gt;800x600&lt;/li&gt;
+  &lt;li&gt;1024x768&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Pour garder le contrôle l'industrie s'est mis d'accord pour 960px.
+Mais le contrôle ne fait pas parti de l'essence du web.
+Cette notion n'est pas nouvelle elle existe depuis 2000 avec l'article de &lt;a href="http://alistapart.com/article/dao"&gt;A list Appart - a Dao of web design&lt;/a&gt; qui explique une nouvelle façon de concevoir des pages web.&lt;/p&gt;
+
+&lt;p&gt;Avec les nouvelles tendances comme le responsive web design il est grand temps d'abandonner le contrôle et d'embrasser la flexibilité.&lt;/p&gt;
+
+&lt;p&gt;Ces pratiques ont pour génèse les outils utilisés pour créer des sites web. Si vous utilisez photoshop, la première chose que vous allez faire est de fixer une taille. Cette méthode ne sera jamais en adéquation avec la flexibilité du web.
+Il faut donc utiliser de nouveaux outils et créer de nouvelles méthodes de travail.&lt;/p&gt;
+
+&lt;h2 id="concevoir-un-systme"&gt;Concevoir un système&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Il ne faut pas coder des pages en CSS.
+Vous devez coder pour le système.&lt;/p&gt;
+
+  &lt;p&gt;Jonathan Snook&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;J'ai récemment publié l'intégralité des bonnes pratiques que j'utilise quotidiennement sur &lt;a href="http://guidecss.fr/"&gt;guidecss.fr&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id="moodboard"&gt;Moodboard&lt;/h4&gt;
+
+&lt;p&gt;Utilisé dans le milieu de la mode depuis des années, cette méthode peut être utilisé dans l'industrie du web pour créer une atmosphère à notre site.&lt;/p&gt;
+
+&lt;h4 id="guide-des-styles"&gt;Guide des styles&lt;/h4&gt;
+
+&lt;p&gt;Une des premières choses à créer pour toute création de site web et un patron de conception regroupant tous les modules de votre site web.
+Cette approche peut être comparé aux test unitaires réalisés en programmation.
+Ce guide regroupe tous les éléments d'interface de votre site et permettra à votre équipe de travailler efficacement.
+Le guide des styles de la &lt;a href="http://www.mozilla.org/en-US/styleguide/websites/sandstone/"&gt;fondation Mozilla&lt;/a&gt; est un bon exemple qui permet aux milliers de contributeurs d'avoir partout une version à jour des éléments de design.&lt;/p&gt;
+
+&lt;h3 id="le-design-adaptatif-aka-responsive-webdesign"&gt;Le design adaptatif (aka responsive webdesign)&lt;/h3&gt;
+
+&lt;p&gt;La première chose à intégrer quand vous utilisez / créez un design adaptatif est d'oublier le contrôle que vous avez sur le rendu de votre site. Vous ne pourrez jamais savoir avec certitude avec quel appareil, navigateur ou même la capacité de connexion utilisé pour accéder à votre contenu.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Les media queries peuvent être utilisées pour faire plus que hacker des mises en page cassées : avec une bonne planification, nous pouvons commencer à chorégraphier notre contenu proportionnellement à la taille d'écran, au service de la meilleure expérience possible à n'importe quelle largeur.&lt;/p&gt;
+
+  &lt;p&gt;Trent walton&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Le design adaptatif comparé à l'esprit du web est une hérésie. Il n'existe pas de version mobile, ou de version de bureau de votre site. C'est simplement une version web de votre contenu.&lt;/p&gt;
+
+&lt;p&gt;Prenons comme exemple mon site web sans le style CSS.
+Le contenu est sémantique, mon site est donc, par défaut, adaptatif puisque le HTML est bien architecturé.
+L'objectif du design adaptatif est donc de conserver cette fluidité et non de fixer des tailles.&lt;/p&gt;
+
+&lt;h3 id="lamlioration-progressive"&gt;L'amélioration progressive&lt;/h3&gt;
+
+&lt;p&gt;L'amélioration progressive consiste à prendre le plus petit dénominateur commun et d'étendre les différentes fonctionnalités par la suite.&lt;/p&gt;
+
+&lt;p&gt;Si vous commencez par de bases saines, avec une bonne structure HTML, chaque ajout de javascript et de CSS conservera son callback.&lt;/p&gt;
+
+&lt;p&gt;Utiliser intelligemment du javascript avec une bibliothèque comme modernizr vous permettra de donner aux nouveaux appareils les dernières fonctionnalités. Sans pour autant négliger les anciens en les privant de votre contenu.
+Vous conserverez un maximum d'indépendance vis à vis de la technologie. Mais pour cela il faut la respecter et l'utiliser dans son contexte :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;HTML pour la structure&lt;/li&gt;
+  &lt;li&gt;CSS pour la présentation&lt;/li&gt;
+  &lt;li&gt;Javascript pour le comportement&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Vous pouvez utiliser l'amélioration progressive à chaque niveau.
+Exemple avec HTML5 : la balise &lt;code&gt;&amp;lt;input type ="tel"&amp;gt;&lt;/code&gt; permet d'afficher directement le clavier avec des chiffres sur les smartphones. Les navigateurs qui ne comprennent pas cette balise utilisent &lt;code&gt;&amp;lt;input type="text"&amp;gt;&lt;/code&gt; par défaut.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Exemple avec CSS3 :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Pendant des années internet explorer ne supportait pas &lt;code&gt;border-radius&lt;/code&gt; ce qui n'empêche pas les utilisateurs de naviguer sur le site. Les personnes utilisant un vrai navigateur moderne sont récompensé par une expérience améliorée. Si le navigateur ne comprend pas une règle elle est simplement ignorée.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Exemple avec Javascript :&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Il faut faire plus attention car les scripts peuvent planter si ils font appel à des fonctions non-disponibles sur les navigateurs. La encore un simple test permet souvent de gérer le problème.&lt;/p&gt;
+
+&lt;p&gt;La réponse à la grande question sur le web : mon site doit-il s'afficher de la même façon sur chaque navigateur ? &lt;strong&gt;NON&lt;/strong&gt; !&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Il y a une différence entre le support et les optimisations&lt;/p&gt;
+
+  &lt;p&gt;Brad Frost&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Quand vous testez votre site sur différents périphériques vous testez si cela fonctionne. Est ce que le site s'affiche de la même façon sur tous les différents appareils ? Bien sûr que non.&lt;/p&gt;
+
+&lt;h3 id="images"&gt;Images&lt;/h3&gt;
+
+&lt;p&gt;Nous avons un problème avec les images.&lt;/p&gt;
+
+&lt;p&gt;La balise HTML5 &lt;code&gt;picture&lt;/code&gt; est encore loin d'être implémentée par les navigateurs.
+Grâce à divers hack javascript vous pouvez mettre en place une stratégie de chargement.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Charger de petites images par défaut&lt;/li&gt;
+  &lt;li&gt;Ne pas télécharger en double vos images basse et haute résolution&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Voici une solution qui est la meilleure d'un point de vue performance tout en respectant l'expérience utilisateur.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="interchange_small" src="http://davidleuliette.com/wordPress/wp-content/uploads/2013/11/interchange_small.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;image pour les appareils mobiles&lt;/p&gt;
+
+&lt;p&gt;Grâce aux &lt;code&gt;media-query&lt;/code&gt; je demande à mon CSS d'augmenter la taille de l'image.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="interchange_large" src="http://davidleuliette.com/wordPress/wp-content/uploads/2013/11/interchange_large-300x99.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Dès que la page est chargée je demande au &lt;a href="http://foundation.zurb.com/docs/components/interchange.html"&gt;javascript d'intervertir mes images&lt;/a&gt; et de charger la version HD.&lt;/p&gt;
+
+&lt;h3 id="performance"&gt;Performance&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;C'est la chose la plus importante à faire pour un site web.&lt;/p&gt;
+
+  &lt;p&gt;Steve Souders - guru de la performance&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;La manière la plus efficace pour gagner en performance est de réduire le nombre de requêtes HTTP.
+Vous devez vous poser régulièrement la question : pouvez vous combiner vos fichiers pour réduire leur nombre ?&lt;/p&gt;
+
+&lt;h4 id="boutons-sociaux"&gt;Boutons sociaux&lt;/h4&gt;
+
+&lt;p&gt;Chacun à son idée dessus mais je ne pense que de nombreuses personnes seront d'accord avec moi : les boutons sociaux donnent l'impression que vous êtes désespérés, de plus ces services bloquent le rendu de votre page, et par extension bloquent donc l'accès à votre contenu.&lt;/p&gt;
+
+&lt;p&gt;Je ne dis pas que ce sont de mauvaises choses, ce sont de bon outils mais il n'est pas nécessaire de les inclure dans tous vos projet, et de les charger tous. Lancez d'abord votre projet, il sera toujours possible de les inclure par la suite si vous en avez besoin.&lt;/p&gt;
+
+&lt;h4 id="css"&gt;CSS&lt;/h4&gt;
+
+&lt;p&gt;Il existe beaucoup de techniques pour réduire le nombre de requêtes HTTP :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;sprites CSS&lt;/li&gt;
+  &lt;li&gt;encodage en base-64&lt;/li&gt;
+  &lt;li&gt;Les dégradés en CSS3&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;border-radius&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id="le-design-durl"&gt;Le design d'URL&lt;/h4&gt;
+
+&lt;p&gt;Les adresse url existent pour les humains.&lt;/p&gt;
+
+&lt;p&gt;Les machines utilisent les adresses ip pour taper à la bonne porte. C'est l'occasion d'en profiter pour concevoir une architecture logique.
+Prenez l'exemple de github :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;github.com
+github.com/nom_utilisateur
+github.com/nom_utilisateur/repertoire
+github.com/nom_utilisateur/repertoire/problème
+github.com/nom_utilisateur/repertoire/problème/1
+&lt;/code&gt;&lt;/pre&gt;
+
+</content>
+  </entry>
+  <entry>
+    <title>Maitriser rapidement Javascript</title>
+    <link rel="alternate" href="http://davidl.fr/blog/javascript.html"/>
+    <id>http://davidl.fr/blog/javascript.html</id>
+    <published>2013-11-15T12:57:20Z</published>
+    <updated>2013-12-16T18:33:12+01:00</updated>
+    <author>
+      <name>DavidL design + developement</name>
+    </author>
+    <content type="html">&lt;p&gt;Si vous suivez mon activité sur &lt;a href="http://twitter.com/_flexbox"&gt;twitter&lt;/a&gt; vous avez surement remarqué que je lis énormément de livres sur l'industrie du développement web. Mon dernier livre ? Javascript™ rédigé intégralement en français par monsieur Nicolas Froidure himself.
+Cet article présente ma revue de la version poche, ainsi que le contenu que j'ai retenu de ces 400 pages de code.&lt;/p&gt;
+
+&lt;h2 id="le-format-poche"&gt;Le format poche&lt;/h2&gt;
+
+&lt;p&gt;Pour commencer, j'ai trouvé le format poche (ou tablette 9') génial. Il se glisse partout et vous pourrez facilement le sortir pour passer le temps.
+Image livre
+Il m'a fallu un peu plus d'un mois pour parcourir l'intégralité des 12 chapitres consacré au langage Javascript : rappel des fondamentaux, travailler avec des objets, utiliser des tableaux, les API HTML5, nodeJS …&lt;/p&gt;
+
+&lt;p&gt;Le fil rouge de l'ouvrage est la création d'un jeu de memory. Ce concept permet de présenter une utilisation concrète dans un environnement de développement contrairement à une présentation aléatoire de &lt;a href=""&gt;snippet&lt;/a&gt; divers et variés. L'intégralité du code source est disponible sur &lt;a href="http://github.com/nfroidure"&gt;github&lt;/a&gt;. Vous pouvez aussi &lt;a href="http://memory.insertafter.com"&gt;tester directement&lt;/a&gt; le rendu final du jeu.&lt;/p&gt;
+
+&lt;h2 id="contenu"&gt;Contenu&lt;/h2&gt;
+
+&lt;p&gt;L'objectif du livre est de guider pas à pas les lecteurs en expliquant chaque notion simplement.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Structure d'un fichier Javascript : variables, instructions et expressions.&lt;/li&gt;
+  &lt;li&gt;L'appel aux fonction et leur effet de retour (callback).&lt;/li&gt;
+  &lt;li&gt;La gestion des erreurs.&lt;/li&gt;
+  &lt;li&gt;La notion d'objet avec une explication des concepts de constructeur, d'instance, de prototype, d'héritage …&lt;/li&gt;
+  &lt;li&gt;La manipulation de chaîne de caractères et les &lt;a href="regexp"&gt;expressions régulières&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Les calculs à l'aide de l'objet Math.&lt;/li&gt;
+  &lt;li&gt;Utilisation des tableaux.&lt;/li&gt;
+  &lt;li&gt;Les méthodes dates &amp;amp; les fonctions natives de Javascript.&lt;/li&gt;
+  &lt;li&gt;Coder dans le navigateur et comprendre le DOM.&lt;/li&gt;
+  &lt;li&gt;Le chargement de contenu distant avec XMLHttpRequest, et leur transport via JSON.&lt;/li&gt;
+  &lt;li&gt;Les API HTML5 (TouchEvent, Camera, appcache, …)&lt;/li&gt;
+  &lt;li&gt;Créer des applications interactives et participatives avec NodeJS.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="ce-que-le-front-end-dev-a-retenu"&gt;Ce que le front-end dev a retenu&lt;/h2&gt;
+
+&lt;p&gt;Le Web évolue rapidement. Les intégrateurs ont été majoritairement touchés par les changements récents dans les techniques et les approches de codage. En 2003, un intégrateur compétent maîtrisait HTML et CSS, avec un peu de copier-collé JavaScript. Nous avons construit des sites web qui étaient consultés sur des ordinateurs de bureau.
+Mais nous sommes en 2013 ! Maintenant, un développeur Web front-end compétent baigne dans HTML et CSS, JavaScript et jQuery, les preprocessors CSS …, la complexification des interfaces demande une certaine maîtrise de Javascript.
+Comme expliqué dans l'introduction de ce livre j'ai appris Javascript plutôt par obligation, mais aussi par curiosité, sur le tas. Mon niveau est toujours proche du néant mais je me &lt;a href="http://pokemonbreakpoint.fr"&gt;débrouille mieux&lt;/a&gt; Je me considère plus comme un utilisateur de Framework que développeur JS. Les 200 premières pages sont et resteront toujours obscures à mes yeux mais cela permet de connaître l'origine de certaines librairies qui sont -trop souvent- incluses sans forcément en avoir besoin (jQuery par exemple)&lt;/p&gt;
+
+&lt;p&gt;J'ai découvert grâce à ce livre pas mal de notions :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;console.trace()&lt;/code&gt; pour dépiler toute votre stack JS&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;document.getElementByTagNames()&lt;/code&gt; pour récupérer une liste d'élément ayant un nom de balisage précis. &lt;code&gt;.is()&lt;/code&gt; en jQuery c'est tout de suite plus simple.&lt;/li&gt;
+  &lt;li&gt;Créer des applications web hors-ligne à l'aide d'un fichier .manifest&lt;/li&gt;
+  &lt;li&gt;Les Touch event mdn API HTML5 et son équivalent &lt;code&gt;pointerEvent&lt;/code&gt; pour les technologies Microsoft.&lt;/li&gt;
+  &lt;li&gt;NodeJS : Créer un serveur et utiliser &lt;code&gt;npm&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="pour-le-prochain-tome"&gt;Pour le prochain Tome&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Javascript c'est un peu comme les échecs. Dès que l'on maîtrise les règles, on se rend compte qu'on ne sait pas jouer&lt;/p&gt;
+
+  &lt;p&gt;David Leuliette&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ce livre permet de vous enseigner/de revoir les bases de ce langage mais je trouve qu'il manque certains chapitre entièrement dédiés concernant :
+- Les conventions de codes
+- La performance qui devient vite critique sur les grosses applications
+Mais ces 2 sujets méritent des livres entiers rien que pour eux. Il existe aussi une version normale du livre avec des bonus comme
+- La performance
+- Les design patterns
+- Les frameworks
+- La boite à outils du développer Javascript&lt;/p&gt;
+
+&lt;p&gt;J'attends avec impatience la version 2 !
+Si Javascript vous interesse rapprochez vous de l'initiative FranceJS qui regroupe de nombreux développeurs talentueux à travers toute la France.
+Dans ch'nord nous avons &lt;a href="http://twitter.com/chtijs"&gt;@chtijs&lt;/a&gt; qui organise régulièrement des rencontres. N'hésitez pas à venir rencontrer les fondateurs &lt;a href="http://twitter.com/nfroidure"&gt;@nfroidure&lt;/a&gt; et moi même.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Héberger gratuitement votre site web sur github avec un nom de domaine chez OVH</title>
+    <link rel="alternate" href="http://davidl.fr/blog/hebergement-gratuit-ovh.html"/>
+    <id>http://davidl.fr/blog/hebergement-gratuit-ovh.html</id>
+    <published>2013-08-16T12:05:05Z</published>
+    <updated>2013-12-16T18:33:12+01:00</updated>
+    <author>
+      <name>DavidL design + developement</name>
+    </author>
+    <content type="html">&lt;p&gt;Récemment le bigboss de chez OVH à fait une déclaration : il a &lt;a href="http://www.ovh.com/fr/a1136.interview-github-octave-klaba-ovh"&gt;interdit github&lt;/a&gt; au seing de son entreprise.&lt;/p&gt;
+
+&lt;p&gt;Interdire github, pour des développeurs, au XXIème siècle …
+Je suis un fervent partisan de la fondation mozilla et de ses principes qui considèrent que c'est le partage de connaissance qui est bénéfique pour le web, je n'ai pas trop compris la démarche. "Interdire" github à des développeurs.&lt;/p&gt;
+
+&lt;p&gt;En attendant mes nombreux side project avec un nom de domaine prit chez ovh sont hébergés gratuitement chez github #ettoc
+Je vais vous expliquer dans cet article comment réaliser cette manipulation.&lt;/p&gt;
+
+&lt;h2 id="connectez-vous--votre-interface"&gt;Connectez vous à votre interface&lt;/h2&gt;
+
+&lt;p&gt;&lt;img alt="Le manager OVH" src="http://davidleuliette.com/wordPress/wp-content/uploads/2013/08/ovh.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Si vous avez choisi d'acheter votre nom de domaine sans hébergement vous pouver changer l'URL de destination pour la faire pointer vers les serveurs de github.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Modifier votre DNS" src="http://davidleuliette.com/wordPress/wp-content/uploads/2013/08/DNS-github.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Pour un domaine comme exemple.fr vous devez utiliser un enregistrement de type A et le faire pointer sur &lt;code&gt;204.232.175.78&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id="crer-un-fichier-cname"&gt;Créer un fichier CNAME&lt;/h2&gt;
+
+&lt;p&gt;Si vous effectuez ces modifications vous devriez avoir une belle erreur 404.&lt;/p&gt;
+
+&lt;p&gt;Pour afficher votre nouveau site il suffit de suivre ces 2 étapes :&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="La branche gh-pages est importante" src="http://davidleuliette.com/wordPress/wp-content/uploads/2013/08/gh-pages.png" /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Créer une branche 'gh-pages' et commitez vos modifications sur cette branche.&lt;/li&gt;
+  &lt;li&gt;Créer un fichier &lt;code&gt;CNAME&lt;/code&gt; avec l'adresse de votre site (ici c'est pokemonbreakpoint)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Il ne vous reste plus qu'a attendre une dizaine de minutes de propagation et vous voici avec votre nouveau site gratuit en hébergement.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Utiliser des breakpoint en CSS pour votre site responsive</title>
+    <link rel="alternate" href="http://davidl.fr/blog/breakpoint.html"/>
+    <id>http://davidl.fr/blog/breakpoint.html</id>
+    <published>2013-08-14T16:30:38Z</published>
+    <updated>2013-12-16T18:33:12+01:00</updated>
+    <author>
+      <name>DavidL design + developement</name>
+    </author>
+    <content type="html">&lt;p&gt;Nous avons un problème dans la conception adaptative : Les breakpoint sont fixés en CSS et nous devons exécuter certaines actions en javascript.
+pokemonbreakpoint est une façon amusante de faire le lien entre les 2 mondes.&lt;/p&gt;
+
+&lt;h2 id="une-rgle-pour-les-attraper-tous"&gt;Une règle pour les attraper tous&lt;/h2&gt;
+
+&lt;p&gt;Avoir une convention de nommage est crucial pour votre application.&lt;/p&gt;
+
+&lt;p&gt;Il faut définir vos variables dans un fichier. J'utilise sass qui me permets d'utiliser des variables et généralement je nomme ce fichier &lt;code&gt;_settings.scss&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$small-screen: 641px;
+$medium-screen: 1280px;
+$large-screen: 1440px;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Maintenant, nous devons trouver un emplacement pour l'élément qui accueillera votre variable. Vous pouvez choisir l'élement &lt;code&gt;body:after&lt;/code&gt; mais pour être plus identifiable j'ai décidé de l'associer à un id &lt;code&gt;#media-query--name&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Dans votre fichier &lt;code&gt;_breakpoint.scss&lt;/code&gt; remplacez &lt;code&gt;#media-query--name:after&lt;/code&gt; par votre nouveau naming explicite&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@media #{$small} {
+  #media-query--name:after{
+    content: "reptincel";
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="comment-a-fonctionne-"&gt;Comment ça fonctionne ?&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Ouvrez &lt;a href="http://pokemonbreakpoint.fr"&gt;pokemonbreakpoint&lt;/a&gt; dans un nouvel onglet&lt;/li&gt;
+  &lt;li&gt;Identifiez l'élément animé avec des flames &lt;code&gt;#media-query--name&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Maintenant on passe au javascript&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;En cliquant sur le lien vous lancez la fonction &lt;code&gt;pokeball()&lt;/code&gt; …&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;if (pokemon == '"reptincel"') {
+  alert("Je suis le pokemon " + pokemon + " correspondant à une tablette");
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;… qui extrait les informations définies dans &lt;code&gt;gottaCatchThemAll(element)&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function gottaCatchThemAll(element){
+  var media_query = document.getElementById(element);
+  var css_prop = window.getComputedStyle(media_query,':after').getPropertyValue('content');
+  return css_prop;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="le-code-source"&gt;Le code source&lt;/h2&gt;
+
+&lt;p&gt;C'est hébergé sur &lt;a href="https://github.com/flexbox/pokemon-breakpoint"&gt;github&lt;/a&gt;. N'hésitez pas à me faire un retour si vous rencontrez des bugs.&lt;/p&gt;
+</content>
+  </entry>
+</feed>

@@ -1,0 +1,1 @@
+!function(){$(window).load(function(){return Pizza.init()})}.call(this);
