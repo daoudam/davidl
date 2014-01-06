@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>DavidL design + developement</title>
+  <title>DavidL design + développement</title>
   <subtitle>Développeur front-end. Je crée des sites internet qui fonctionnent à merveille sur n'importe quel appareil. Je suis un concepteur de sites web spécialisé HTML et CSS basé à Lille</subtitle>
   <id>http://davidl.fr/blog/</id>
   <link href="http://davidl.fr/blog/"/>
@@ -16,7 +16,7 @@
     <published>2013-12-13T17:03:05Z</published>
     <updated>2013-12-19T14:11:54+01:00</updated>
     <author>
-      <name>DavidL design + developement</name>
+      <name>DavidL design + développement</name>
     </author>
     <content type="html">&lt;p&gt;Depuis la version 4.3, Foundation est configuré avec deux breakpoint principaux, - ces largeurs définissent le nombre de pixel utilisés pour faire basculer la grille.&lt;/p&gt;
 
@@ -82,7 +82,7 @@ $total-columns: 12;
     <published>2013-12-06T17:03:05Z</published>
     <updated>2013-12-16T18:33:12+01:00</updated>
     <author>
-      <name>DavidL design + developement</name>
+      <name>DavidL design + développement</name>
     </author>
     <content type="html">&lt;h2 id="what"&gt;What&lt;/h2&gt;
 
@@ -111,7 +111,7 @@ $total-columns: 12;
     <published>2013-11-26T17:37:06Z</published>
     <updated>2013-12-16T18:33:12+01:00</updated>
     <author>
-      <name>DavidL design + developement</name>
+      <name>DavidL design + développement</name>
     </author>
     <content type="html">&lt;p&gt;Qu'est ce que le web ?&lt;/p&gt;
 
@@ -359,7 +359,7 @@ github.com/nom_utilisateur/repertoire/problème/1
     <published>2013-11-15T12:57:20Z</published>
     <updated>2013-12-16T18:33:12+01:00</updated>
     <author>
-      <name>DavidL design + developement</name>
+      <name>DavidL design + développement</name>
     </author>
     <content type="html">&lt;p&gt;Si vous suivez mon activité sur &lt;a href="http://twitter.com/_flexbox"&gt;twitter&lt;/a&gt; vous avez surement remarqué que je lis énormément de livres sur l'industrie du développement web. Mon dernier livre ? Javascript™ rédigé intégralement en français par monsieur Nicolas Froidure himself.
 Cet article présente ma revue de la version poche, ainsi que le contenu que j'ai retenu de ces 400 pages de code.&lt;/p&gt;
@@ -436,7 +436,7 @@ Dans ch'nord nous avons &lt;a href="http://twitter.com/chtijs"&gt;@chtijs&lt;/a&
     <published>2013-08-16T12:05:05Z</published>
     <updated>2013-12-16T18:33:12+01:00</updated>
     <author>
-      <name>DavidL design + developement</name>
+      <name>DavidL design + développement</name>
     </author>
     <content type="html">&lt;p&gt;Récemment le bigboss de chez OVH à fait une déclaration : il a &lt;a href="http://www.ovh.com/fr/a1136.interview-github-octave-klaba-ovh"&gt;interdit github&lt;/a&gt; au seing de son entreprise.&lt;/p&gt;
 
@@ -479,7 +479,7 @@ Je vais vous expliquer dans cet article comment réaliser cette manipulation.&lt
     <published>2013-08-14T16:30:38Z</published>
     <updated>2013-12-16T18:33:12+01:00</updated>
     <author>
-      <name>DavidL design + developement</name>
+      <name>DavidL design + développement</name>
     </author>
     <content type="html">&lt;p&gt;Nous avons un problème dans la conception adaptative : Les breakpoint sont fixés en CSS et nous devons exécuter certaines actions en javascript.
 pokemonbreakpoint est une façon amusante de faire le lien entre les 2 mondes.&lt;/p&gt;
