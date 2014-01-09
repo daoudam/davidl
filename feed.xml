@@ -5,10 +5,105 @@
   <id>http://davidl.fr/blog/</id>
   <link href="http://davidl.fr/blog/"/>
   <link href="http://davidl.fr/blog/feed.xml" rel="self"/>
-  <updated>2013-12-13T17:03:05Z</updated>
+  <updated>2014-01-07T23:00:00Z</updated>
   <author>
     <name>David Leuliette</name>
   </author>
+  <entry>
+    <title>Comment rédiger un briefing créatif</title>
+    <link rel="alternate" href="http://davidl.fr/blog/briefing-creatif.html"/>
+    <id>http://davidl.fr/blog/briefing-creatif.html</id>
+    <published>2014-01-07T23:00:00Z</published>
+    <updated>2014-01-09T09:04:00+01:00</updated>
+    <author>
+      <name>DavidL design + développement</name>
+    </author>
+    <content type="html">&lt;p&gt;Je complète mon précédent article sur les &lt;a href="http://davidl.fr/blog/redaction-briefing.html"&gt;question à se poser&lt;/a&gt; avant de se lancer dans un nouveau projet.&lt;/p&gt;
+
+&lt;h2 id="le-constat"&gt;Le constat&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Créatif, c'est pas un métier facile.&lt;/p&gt;
+
+  &lt;p&gt;Octave parango&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;En plus de créer à la demande -ce qui à mon avis n'a pas de sens, il faut souvent travailler avec des personnes ne connaissant pas le métier.&lt;/p&gt;
+
+&lt;p&gt;Il arrive fréquemment, pour des contraintes de budget et / ou de délai, que le créatif travaille dans l'urgence, sans posséder tous les éléments, en imaginant les besoins du client.&lt;/p&gt;
+
+&lt;p&gt;Le résultat n'est pas au rendez-vous, le client n'est pas content du résultat et le créatif à pondu une bouse car il fallait réaliser le travail vite et bien. Résultat tout le monde est frustré alors que l'on peut simplement éviter cette situation en réalisant le travail dans l'ordre.&lt;/p&gt;
+
+&lt;h2 id="se-poser-les-bonnes-questions"&gt;Se poser les bonnes questions&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Ce que nous voulons&lt;/strong&gt;.
+Quels sont les objectifs de plus haut niveau ? Généralement il n'existe qu'un seul objectif principal. Si la demande en a plusieurs c'est peut être que le besoin n'est pas clairement identifié.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Comment cela va aider notre entreprise&lt;/strong&gt;.
+Quels sont les impacts attendus de ce projet ?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Ce que nous allons faire&lt;/strong&gt;.
+Mettez vous à la place d'un touriste dans une ville qui consulte un plan. Il est clairement indiqué où nous sommes pour savoir où nous voulons aller.
+Quels sont les résultats attendus à la fin du projet ?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;A qui s'adresse-t-on&lt;/strong&gt; ?
+Parler de votre marché cible.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Faites la bonne impression&lt;/strong&gt;.
+Comment voulez-vous les gens à répondent à votre marque ?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Votre personnalité&lt;/strong&gt;.
+Choisir cinq mots qui résument votre personnalité de la marque idéale. Vous pouvez aussi comparer votre marque à une célébrité cela fonctionne très bien.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Nos valeurs et notre mission&lt;/strong&gt;.
+Résumer vos valeurs et votre mission.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Influences de la conception&lt;/strong&gt;.
+Dans le monde de la mode avant de concevoir une nouvelle collection les designers produisent un moodboard ou guide des tendances. Cet échéancier présente les différents matériaux qui seront utilisés dans la production finale. Pourquoi ne pas utiliser la même technique ?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Fixer des limites&lt;/strong&gt;.
+Y a-t-il des limites ou spécifications principales, à prendre en compte pour la réalisation ?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Qu'est-ce que ce n'est pas&lt;/strong&gt;.
+Ce n'est pas le site de pêche de votre grand père.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="le-travail-itratif"&gt;Le travail itératif&lt;/h2&gt;
+
+&lt;p&gt;Selon le &lt;a href="http://hbr.org/"&gt;Harvard business revue&lt;/a&gt;, plus un projet est important, plus il sera difficile de « se lancer ». Nous inventons souvent des excuses afin d’éviter les 4 peurs :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Peur de l'inconnu&lt;/li&gt;
+  &lt;li&gt;Peur du jugement&lt;/li&gt;
+  &lt;li&gt;Faire le premier pas&lt;/li&gt;
+  &lt;li&gt;Perdre le contrôle&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Solution :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Victoires rapides ou théorie du &lt;a href="http://blog.agenoria.com/general/miser-sur-le-quick-win.html"&gt;quick win&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Plus vous découperez, votre travail en petites tâches, plus il sera facile de se lancer. Le reste suivra tout seul.&lt;/p&gt;
+
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;La créativité est un muscle, Il faut s'entrainer à faire des choses créatives. Pour le faire convenablement il faut se poser les bonnes questions et préparer son travail avant de commencer ses itérations.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Changer ses breakpoints avec Foundation</title>
     <link rel="alternate" href="http://davidl.fr/blog/Foundation-breakpoint.html"/>
@@ -470,69 +565,6 @@ Je vais vous expliquer dans cet article comment réaliser cette manipulation.&lt
 &lt;/ol&gt;
 
 &lt;p&gt;Il ne vous reste plus qu'a attendre une dizaine de minutes de propagation et vous voici avec votre nouveau site gratuit en hébergement.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Utiliser des breakpoint en CSS pour votre site responsive</title>
-    <link rel="alternate" href="http://davidl.fr/blog/breakpoint.html"/>
-    <id>http://davidl.fr/blog/breakpoint.html</id>
-    <published>2013-08-14T16:30:38Z</published>
-    <updated>2013-12-16T18:33:12+01:00</updated>
-    <author>
-      <name>DavidL design + développement</name>
-    </author>
-    <content type="html">&lt;p&gt;Nous avons un problème dans la conception adaptative : Les breakpoint sont fixés en CSS et nous devons exécuter certaines actions en javascript.
-pokemonbreakpoint est une façon amusante de faire le lien entre les 2 mondes.&lt;/p&gt;
-
-&lt;h2 id="une-rgle-pour-les-attraper-tous"&gt;Une règle pour les attraper tous&lt;/h2&gt;
-
-&lt;p&gt;Avoir une convention de nommage est crucial pour votre application.&lt;/p&gt;
-
-&lt;p&gt;Il faut définir vos variables dans un fichier. J'utilise sass qui me permets d'utiliser des variables et généralement je nomme ce fichier &lt;code&gt;_settings.scss&lt;/code&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$small-screen: 641px;
-$medium-screen: 1280px;
-$large-screen: 1440px;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Maintenant, nous devons trouver un emplacement pour l'élément qui accueillera votre variable. Vous pouvez choisir l'élement &lt;code&gt;body:after&lt;/code&gt; mais pour être plus identifiable j'ai décidé de l'associer à un id &lt;code&gt;#media-query--name&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Dans votre fichier &lt;code&gt;_breakpoint.scss&lt;/code&gt; remplacez &lt;code&gt;#media-query--name:after&lt;/code&gt; par votre nouveau naming explicite&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;@media #{$small} {
-  #media-query--name:after{
-    content: "reptincel";
-  }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id="comment-a-fonctionne-"&gt;Comment ça fonctionne ?&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Ouvrez &lt;a href="http://pokemonbreakpoint.fr"&gt;pokemonbreakpoint&lt;/a&gt; dans un nouvel onglet&lt;/li&gt;
-  &lt;li&gt;Identifiez l'élément animé avec des flames &lt;code&gt;#media-query--name&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Maintenant on passe au javascript&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;En cliquant sur le lien vous lancez la fonction &lt;code&gt;pokeball()&lt;/code&gt; …&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;if (pokemon == '"reptincel"') {
-  alert("Je suis le pokemon " + pokemon + " correspondant à une tablette");
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;… qui extrait les informations définies dans &lt;code&gt;gottaCatchThemAll(element)&lt;/code&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function gottaCatchThemAll(element){
-  var media_query = document.getElementById(element);
-  var css_prop = window.getComputedStyle(media_query,':after').getPropertyValue('content');
-  return css_prop;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id="le-code-source"&gt;Le code source&lt;/h2&gt;
-
-&lt;p&gt;C'est hébergé sur &lt;a href="https://github.com/flexbox/pokemon-breakpoint"&gt;github&lt;/a&gt;. N'hésitez pas à me faire un retour si vous rencontrez des bugs.&lt;/p&gt;
 </content>
   </entry>
 </feed>
