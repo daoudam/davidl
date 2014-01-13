@@ -5,16 +5,82 @@
   <id>http://davidl.fr/blog/</id>
   <link href="http://davidl.fr/blog/"/>
   <link href="http://davidl.fr/blog/feed.xml" rel="self"/>
-  <updated>2014-01-07T23:00:00Z</updated>
+  <updated>2014-01-12T23:00:00Z</updated>
   <author>
     <name>David Leuliette</name>
   </author>
+  <entry>
+    <title>Augmenter sa productivité en 2014 avec Firefox</title>
+    <link rel="alternate" href="http://davidl.fr/blog/firefox-2014.html"/>
+    <id>http://davidl.fr/blog/firefox-2014.html</id>
+    <published>2014-01-12T23:00:00Z</published>
+    <updated>2014-01-13T09:08:44+01:00</updated>
+    <author>
+      <name>DavidL design + développement</name>
+    </author>
+    <content type="html">&lt;p&gt;Mozilla Firefox est un véritable trésor pour les travailleurs du web dans le monde entier. Pourquoi ? C'est un navigateur web moderne, rapide et sécurisé.&lt;/p&gt;
+
+&lt;p&gt;Ces dernières années ce navigateur open source a prouvé qu'il permettait beaucoup plus que le simple surf sur internet. Firefox peut être modifié simplement à la volée. Avec un quelques modules complémentaires, votre navigateur se transforme selon vos besoins de développeur, designer, ou SEO.&lt;/p&gt;
+
+&lt;p&gt;Voici une sélection des meilleures extensions que j'ai testées qui me sont indispensables. Ces excellents addons sont disponibles gratuitement, permettent de gagner du temps et d'améliorer votre productivité.&lt;/p&gt;
+
+&lt;h2 id="extensions-pour-dveloppeur-front-end-clair"&gt;Extensions pour développeur front-end éclairé&lt;/h2&gt;
+
+&lt;p&gt;Optimiser sa méthode de travail n'est possible qu'en possédant les bons outils :&lt;/p&gt;
+
+&lt;h3 id="graphisme"&gt;Graphisme&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="http://www.colorzilla.com/"&gt;ColorZilla&lt;/a&gt; permet de copier / coller n'importe quelle couleur présente dans votre page web. Vous pouvez personnaliser le format afin de faciliter l'intégration dans votre code.&lt;/p&gt;
+
+&lt;h3 id="dveloppement"&gt;Développement&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://www.getfirebug.com/"&gt;Firebug&lt;/a&gt; est depuis des années une référence pour le debug de code.&lt;/p&gt;
+
+&lt;p&gt;Les outils de développement directement intégrés à Firefox sont aussi très utiles. Pour afficher le mode responsive :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Menu : Outils &amp;gt; Développeur web &amp;gt; Vue adaptative
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Mais les vrai utilisent le raccourci clavier :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cmd + alt + M
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id="seo"&gt;SEO&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://addons.mozilla.org/fr/firefox/addon/headingsmap/"&gt;HeadingMap&lt;/a&gt; affiche une carte de l'intégration des titres d'une page. Très pratique pour vérifier &lt;em&gt;rapidement&lt;/em&gt; l'architecture de votre contenu.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://desktop.opquast.com/fr/"&gt;Opcast Desktop&lt;/a&gt; permet d'effectuer à tout moment plus de 450 test de qualité, seo, accessibilité, performance … sur les pages que vous êtes en train de développer.&lt;/p&gt;
+
+&lt;h3 id="ergonomie"&gt;Ergonomie&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="http://menueditor.mozdev.org/"&gt;Menu-editor&lt;/a&gt; est une solution simple et efficace pour personnaliser votre menu. En tant que développeur je connais presque tous les raccourcis clavier qui me sont indispensable. Mon menu contextuel via clic droit contient au maximum 5 entrées -Inspection de code, rechargement de page, enregistrement d'image … Fini les précieuses secondes perdues à chercher une option.&lt;/p&gt;
+
+&lt;h2 id="firefox-est-lent"&gt;Firefox est lent&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Faux !&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Pour les grincheux / aigris / trolls qui pensent que ce navigateur est lent et buggé voici mon explication : vérifiez le nombre de vos extensions ! Je n'ai au maximum que 6 extensions activées. Il est toujours possible de désactiver celles qui ne sont utilisées que rarement et les activer en temps voulu.&lt;/p&gt;
+
+&lt;p&gt;Si ce n'est pas déjà fait vérifiez que vous possédez la &lt;a href="https://www.mozilla.org/fr/firefox/new/"&gt;dernière version de Firefox&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Menu : Aide &amp;gt; A propos
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Mon navigateur se lance beaucoup plus rapidement grâce à ces conseils :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Utiliser &lt;code&gt;about:home&lt;/code&gt; comme page de démarrage&lt;/li&gt;
+  &lt;li&gt;Limiter les extensions installées en vérifiant la santé de votre Firefox &lt;code&gt;about:healthreport&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+  </entry>
   <entry>
     <title>Comment rédiger un briefing créatif</title>
     <link rel="alternate" href="http://davidl.fr/blog/briefing-creatif.html"/>
     <id>http://davidl.fr/blog/briefing-creatif.html</id>
     <published>2014-01-07T23:00:00Z</published>
-    <updated>2014-01-11T11:31:23+01:00</updated>
+    <updated>2014-01-13T09:08:44+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -109,7 +175,7 @@ Ce n'est pas le site de pêche de votre grand père.&lt;/p&gt;
     <link rel="alternate" href="http://davidl.fr/blog/Foundation-breakpoint.html"/>
     <id>http://davidl.fr/blog/Foundation-breakpoint.html</id>
     <published>2013-12-13T17:03:05Z</published>
-    <updated>2014-01-11T11:31:29+01:00</updated>
+    <updated>2014-01-13T09:08:44+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -175,7 +241,7 @@ $total-columns: 12;
     <link rel="alternate" href="http://davidl.fr/blog/scrumtalpick.html"/>
     <id>http://davidl.fr/blog/scrumtalpick.html</id>
     <published>2013-12-06T17:03:05Z</published>
-    <updated>2014-01-11T11:31:32+01:00</updated>
+    <updated>2014-01-13T09:08:44+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -204,7 +270,7 @@ $total-columns: 12;
     <link rel="alternate" href="http://davidl.fr/blog/esprit-web.html"/>
     <id>http://davidl.fr/blog/esprit-web.html</id>
     <published>2013-11-26T17:37:06Z</published>
-    <updated>2014-01-11T11:31:37+01:00</updated>
+    <updated>2014-01-13T09:08:44+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -452,7 +518,7 @@ github.com/nom_utilisateur/repertoire/problème/1
     <link rel="alternate" href="http://davidl.fr/blog/javascript.html"/>
     <id>http://davidl.fr/blog/javascript.html</id>
     <published>2013-11-15T12:57:20Z</published>
-    <updated>2014-01-11T11:31:43+01:00</updated>
+    <updated>2014-01-13T09:08:44+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -522,49 +588,6 @@ Mais ces 2 sujets méritent des livres entiers rien que pour eux. Il existe auss
 &lt;p&gt;J'attends avec impatience la version 2 !
 Si Javascript vous interesse rapprochez vous de l'initiative FranceJS qui regroupe de nombreux développeurs talentueux à travers toute la France.
 Dans ch'nord nous avons &lt;a href="http://twitter.com/chtijs"&gt;@chtijs&lt;/a&gt; qui organise régulièrement des rencontres. N'hésitez pas à venir rencontrer les fondateurs &lt;a href="http://twitter.com/nfroidure"&gt;@nfroidure&lt;/a&gt; et moi même.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Héberger gratuitement votre site web sur github avec un nom de domaine chez OVH</title>
-    <link rel="alternate" href="http://davidl.fr/blog/hebergement-gratuit-ovh.html"/>
-    <id>http://davidl.fr/blog/hebergement-gratuit-ovh.html</id>
-    <published>2013-08-16T12:05:05Z</published>
-    <updated>2014-01-11T11:32:06+01:00</updated>
-    <author>
-      <name>DavidL design + développement</name>
-    </author>
-    <content type="html">&lt;p&gt;Récemment le bigboss de chez OVH à fait une déclaration : il a &lt;a href="http://www.ovh.com/fr/a1136.interview-github-octave-klaba-ovh"&gt;interdit github&lt;/a&gt; au seing de son entreprise.&lt;/p&gt;
-
-&lt;p&gt;Interdire github, pour des développeurs, au XXIème siècle …
-Je suis un fervent partisan de la fondation mozilla et de ses principes qui considèrent que c'est le partage de connaissance qui est bénéfique pour le web, je n'ai pas trop compris la démarche. "Interdire" github à des développeurs.&lt;/p&gt;
-
-&lt;p&gt;En attendant mes nombreux side project avec un nom de domaine prit chez ovh sont hébergés gratuitement chez github #ettoc
-Je vais vous expliquer dans cet article comment réaliser cette manipulation.&lt;/p&gt;
-
-&lt;h2 id="connectez-vous--votre-interface"&gt;Connectez vous à votre interface&lt;/h2&gt;
-
-&lt;p&gt;&lt;img alt="Le manager OVH" src="http://davidleuliette.com/wordPress/wp-content/uploads/2013/08/ovh.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Si vous avez choisi d'acheter votre nom de domaine sans hébergement vous pouver changer l'URL de destination pour la faire pointer vers les serveurs de github.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Modifier votre DNS" src="http://davidleuliette.com/wordPress/wp-content/uploads/2013/08/DNS-github.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Pour un domaine comme exemple.fr vous devez utiliser un enregistrement de type A et le faire pointer sur &lt;code&gt;204.232.175.78&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id="crer-un-fichier-cname"&gt;Créer un fichier CNAME&lt;/h2&gt;
-
-&lt;p&gt;Si vous effectuez ces modifications vous devriez avoir une belle erreur 404.&lt;/p&gt;
-
-&lt;p&gt;Pour afficher votre nouveau site il suffit de suivre ces 2 étapes :&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="La branche gh-pages est importante" src="http://davidleuliette.com/wordPress/wp-content/uploads/2013/08/gh-pages.png" /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Créer une branche 'gh-pages' et commitez vos modifications sur cette branche.&lt;/li&gt;
-  &lt;li&gt;Créer un fichier &lt;code&gt;CNAME&lt;/code&gt; avec l'adresse de votre site (ici c'est pokemonbreakpoint)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Il ne vous reste plus qu'a attendre une dizaine de minutes de propagation et vous voici avec votre nouveau site gratuit en hébergement.&lt;/p&gt;
 </content>
   </entry>
 </feed>
