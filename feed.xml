@@ -5,10 +5,81 @@
   <id>http://davidl.fr/blog/</id>
   <link href="http://davidl.fr/blog/"/>
   <link href="http://davidl.fr/blog/feed.xml" rel="self"/>
-  <updated>2014-01-12T23:00:00Z</updated>
+  <updated>2014-01-16T23:00:00Z</updated>
   <author>
     <name>David Leuliette</name>
   </author>
+  <entry>
+    <title>Générer automatiquement ses favicon</title>
+    <link rel="alternate" href="http://davidl.fr/blog/favicon-middleman.html"/>
+    <id>http://davidl.fr/blog/favicon-middleman.html</id>
+    <published>2014-01-16T23:00:00Z</published>
+    <updated>2014-01-17T09:16:56+01:00</updated>
+    <author>
+      <name>DavidL design + développement</name>
+    </author>
+    <content type="html">&lt;p&gt;J’ai récemment contribué au projet &lt;a href="https://github.com/follmann/favicon_maker"&gt;favicon_maker&lt;/a&gt; car cette gem ne répondait pas tout à fait à mon besoin : supporter TOUS les appareils du marché en terme d'icônes.&lt;/p&gt;
+
+&lt;p&gt;Voici un guide pour exploiter pleinement la création de favicon de façon automatisée.&lt;/p&gt;
+
+&lt;h2 id="tat-actuel-des-favicon"&gt;État actuel des favicon&lt;/h2&gt;
+
+&lt;p&gt;Pour supporter correctement les appareils mobiles android, iOs, windows 8 et sans oublier les navigateurs classiques vous devez créer plus de 17 formats d'images.&lt;/p&gt;
+
+&lt;p&gt;Il est possible de créer un script Photoshop pour automatiser le processus, mais il reste 2 problèmes :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Compliqué niveau maintenance&lt;/li&gt;
+  &lt;li&gt;L'export au format &lt;code&gt;.ico&lt;/code&gt; n'est pas natif dans ce logiciel.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Heureusement favicon-maker peut nous simplifier cette tâche de création d'images.&lt;/p&gt;
+
+&lt;h2 id="configuration"&gt;Configuration&lt;/h2&gt;
+
+&lt;p&gt;La première chose à faire est d'inclure la gem dans votre &lt;code&gt;Gemfile&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;gem 'middleman-favicon-maker'
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Dans votre dossier &lt;code&gt;/source/&lt;/code&gt; ajoutez vote image `favicon_base.png (Vous pouvez spécifier un autre chemin dans votre fichier de config)&lt;/p&gt;
+
+&lt;p&gt;Pour activer la création des différents formats tout se passe dans &lt;code&gt;config.rb&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;configure :build do
+
+  activate :favicon_maker,
+    :favicon_maker_versions =&amp;gt; [ :apple_152, :apple_144, :apple_120, :apple_114, :apple_76, :apple_72, :apple_60, :apple_57, :apple, :fav_196, :fav_160, :fav_96, :fav_32, :fav_16, :fav_png, :fav_ico, :mstile_144 ]
+
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="intgration"&gt;Intégration&lt;/h2&gt;
+
+&lt;p&gt;Il ne reste plus qu'à appeler correctement nos images dans le HEAD de notre document&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;link rel="apple-touch-icon" href="/apple-touch-icon.png"&amp;gt;
+&amp;lt;link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png"&amp;gt;
+&amp;lt;link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png"&amp;gt;
+&amp;lt;link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png"&amp;gt;
+&amp;lt;link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png"&amp;gt;
+&amp;lt;link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png"&amp;gt;
+&amp;lt;link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png"&amp;gt;
+&amp;lt;link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png"&amp;gt;
+&amp;lt;link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png"&amp;gt;
+
+&amp;lt;link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196"&amp;gt;
+&amp;lt;link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160"&amp;gt;
+&amp;lt;link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96"&amp;gt;
+&amp;lt;link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"&amp;gt;
+&amp;lt;link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"&amp;gt;
+
+&amp;lt;meta name="msapplication-TileColor" content="#f5f5f5"&amp;gt;
+&amp;lt;meta name="msapplication-TileImage" content="/mstile-144x144.png"&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+</content>
+  </entry>
   <entry>
     <title>Augmenter sa productivité en 2014 avec Firefox</title>
     <link rel="alternate" href="http://davidl.fr/blog/firefox-2014.html"/>
@@ -511,83 +582,6 @@ github.com/nom_utilisateur/repertoire/problème
 github.com/nom_utilisateur/repertoire/problème/1
 &lt;/code&gt;&lt;/pre&gt;
 
-</content>
-  </entry>
-  <entry>
-    <title>Maitriser rapidement Javascript</title>
-    <link rel="alternate" href="http://davidl.fr/blog/javascript.html"/>
-    <id>http://davidl.fr/blog/javascript.html</id>
-    <published>2013-11-15T12:57:20Z</published>
-    <updated>2014-01-13T09:08:44+01:00</updated>
-    <author>
-      <name>DavidL design + développement</name>
-    </author>
-    <content type="html">&lt;p&gt;Si vous suivez mon activité sur &lt;a href="http://twitter.com/_flexbox"&gt;twitter&lt;/a&gt; vous avez surement remarqué que je lis énormément de livres sur l'industrie du développement web. Mon dernier livre ? Javascript™ rédigé intégralement en français par monsieur Nicolas Froidure himself.
-Cet article présente ma revue de la version poche, ainsi que le contenu que j'ai retenu de ces 400 pages de code.&lt;/p&gt;
-
-&lt;h2 id="le-format-poche"&gt;Le format poche&lt;/h2&gt;
-
-&lt;p&gt;Pour commencer, j'ai trouvé le format poche (ou tablette 9') génial. Il se glisse partout et vous pourrez facilement le sortir pour passer le temps.
-Image livre
-Il m'a fallu un peu plus d'un mois pour parcourir l'intégralité des 12 chapitres consacré au langage Javascript : rappel des fondamentaux, travailler avec des objets, utiliser des tableaux, les API HTML5, nodeJS …&lt;/p&gt;
-
-&lt;p&gt;Le fil rouge de l'ouvrage est la création d'un jeu de memory. Ce concept permet de présenter une utilisation concrète dans un environnement de développement contrairement à une présentation aléatoire de &lt;a href=""&gt;snippet&lt;/a&gt; divers et variés. L'intégralité du code source est disponible sur &lt;a href="http://github.com/nfroidure"&gt;github&lt;/a&gt;. Vous pouvez aussi &lt;a href="http://memory.insertafter.com"&gt;tester directement&lt;/a&gt; le rendu final du jeu.&lt;/p&gt;
-
-&lt;h2 id="contenu"&gt;Contenu&lt;/h2&gt;
-
-&lt;p&gt;L'objectif du livre est de guider pas à pas les lecteurs en expliquant chaque notion simplement.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Structure d'un fichier Javascript : variables, instructions et expressions.&lt;/li&gt;
-  &lt;li&gt;L'appel aux fonction et leur effet de retour (callback).&lt;/li&gt;
-  &lt;li&gt;La gestion des erreurs.&lt;/li&gt;
-  &lt;li&gt;La notion d'objet avec une explication des concepts de constructeur, d'instance, de prototype, d'héritage …&lt;/li&gt;
-  &lt;li&gt;La manipulation de chaîne de caractères et les &lt;a href="regexp"&gt;expressions régulières&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Les calculs à l'aide de l'objet Math.&lt;/li&gt;
-  &lt;li&gt;Utilisation des tableaux.&lt;/li&gt;
-  &lt;li&gt;Les méthodes dates &amp;amp; les fonctions natives de Javascript.&lt;/li&gt;
-  &lt;li&gt;Coder dans le navigateur et comprendre le DOM.&lt;/li&gt;
-  &lt;li&gt;Le chargement de contenu distant avec XMLHttpRequest, et leur transport via JSON.&lt;/li&gt;
-  &lt;li&gt;Les API HTML5 (TouchEvent, Camera, appcache, …)&lt;/li&gt;
-  &lt;li&gt;Créer des applications interactives et participatives avec NodeJS.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="ce-que-le-front-end-dev-a-retenu"&gt;Ce que le front-end dev a retenu&lt;/h2&gt;
-
-&lt;p&gt;Le Web évolue rapidement. Les intégrateurs ont été majoritairement touchés par les changements récents dans les techniques et les approches de codage. En 2003, un intégrateur compétent maîtrisait HTML et CSS, avec un peu de copier-collé JavaScript. Nous avons construit des sites web qui étaient consultés sur des ordinateurs de bureau.
-Mais nous sommes en 2013 ! Maintenant, un développeur Web front-end compétent baigne dans HTML et CSS, JavaScript et jQuery, les preprocessors CSS …, la complexification des interfaces demande une certaine maîtrise de Javascript.
-Comme expliqué dans l'introduction de ce livre j'ai appris Javascript plutôt par obligation, mais aussi par curiosité, sur le tas. Mon niveau est toujours proche du néant mais je me &lt;a href="http://pokemonbreakpoint.fr"&gt;débrouille mieux&lt;/a&gt; Je me considère plus comme un utilisateur de Framework que développeur JS. Les 200 premières pages sont et resteront toujours obscures à mes yeux mais cela permet de connaître l'origine de certaines librairies qui sont -trop souvent- incluses sans forcément en avoir besoin (jQuery par exemple)&lt;/p&gt;
-
-&lt;p&gt;J'ai découvert grâce à ce livre pas mal de notions :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;console.trace()&lt;/code&gt; pour dépiler toute votre stack JS&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;document.getElementByTagNames()&lt;/code&gt; pour récupérer une liste d'élément ayant un nom de balisage précis. &lt;code&gt;.is()&lt;/code&gt; en jQuery c'est tout de suite plus simple.&lt;/li&gt;
-  &lt;li&gt;Créer des applications web hors-ligne à l'aide d'un fichier .manifest&lt;/li&gt;
-  &lt;li&gt;Les Touch event mdn API HTML5 et son équivalent &lt;code&gt;pointerEvent&lt;/code&gt; pour les technologies Microsoft.&lt;/li&gt;
-  &lt;li&gt;NodeJS : Créer un serveur et utiliser &lt;code&gt;npm&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="pour-le-prochain-tome"&gt;Pour le prochain Tome&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Javascript c'est un peu comme les échecs. Dès que l'on maîtrise les règles, on se rend compte qu'on ne sait pas jouer&lt;/p&gt;
-
-  &lt;p&gt;David Leuliette&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Ce livre permet de vous enseigner/de revoir les bases de ce langage mais je trouve qu'il manque certains chapitre entièrement dédiés concernant :
-- Les conventions de codes
-- La performance qui devient vite critique sur les grosses applications
-Mais ces 2 sujets méritent des livres entiers rien que pour eux. Il existe aussi une version normale du livre avec des bonus comme
-- La performance
-- Les design patterns
-- Les frameworks
-- La boite à outils du développer Javascript&lt;/p&gt;
-
-&lt;p&gt;J'attends avec impatience la version 2 !
-Si Javascript vous interesse rapprochez vous de l'initiative FranceJS qui regroupe de nombreux développeurs talentueux à travers toute la France.
-Dans ch'nord nous avons &lt;a href="http://twitter.com/chtijs"&gt;@chtijs&lt;/a&gt; qui organise régulièrement des rencontres. N'hésitez pas à venir rencontrer les fondateurs &lt;a href="http://twitter.com/nfroidure"&gt;@nfroidure&lt;/a&gt; et moi même.&lt;/p&gt;
 </content>
   </entry>
 </feed>
