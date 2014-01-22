@@ -373,6 +373,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>http://davidl.fr/plan-du-site.html</loc>
+    <lastmod>2014-01-22T00:00:00+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  <url>
     <loc>http://davidl.fr/pro.html</loc>
     <lastmod>2014-01-22T00:00:00+01:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -481,13 +487,13 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>http://davidl.fr/2013/06.html</loc>
+    <loc>http://davidl.fr/2012/07/31.html</loc>
     <lastmod>2014-01-22T00:00:00+01:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>http://davidl.fr/2012/07/31.html</loc>
+    <loc>http://davidl.fr/2013/06/14.html</loc>
     <lastmod>2014-01-22T00:00:00+01:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -637,7 +643,7 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>http://davidl.fr/2013/06/14.html</loc>
+    <loc>http://davidl.fr/2013/06.html</loc>
     <lastmod>2014-01-22T00:00:00+01:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
