@@ -5,10 +5,83 @@
   <id>http://davidl.fr/blog/</id>
   <link href="http://davidl.fr/blog/"/>
   <link href="http://davidl.fr/blog/feed.xml" rel="self"/>
-  <updated>2014-01-16T23:00:00Z</updated>
+  <updated>2014-01-23T23:00:00Z</updated>
   <author>
     <name>David Leuliette</name>
   </author>
+  <entry>
+    <title>Foundation 5, interchange et Google maps</title>
+    <link rel="alternate" href="http://davidl.fr/blog/foundation5-interchange.html"/>
+    <id>http://davidl.fr/blog/foundation5-interchange.html</id>
+    <published>2014-01-23T23:00:00Z</published>
+    <updated>2014-01-24T18:01:43+01:00</updated>
+    <author>
+      <name>DavidL design + développement</name>
+    </author>
+    <content type="html">&lt;p&gt;Dans le framework foundation &lt;a href="http://foundation.zurb.com/docs/components/visibility.html"&gt;les classes de visibilité&lt;/a&gt; permettent d'afficher ou de masquer des éléments qui sont pertinent en fonction des appareils.
+Par exemple, j’affiche une petite image sur un téléphone et une version plus grande pour les ordinateurs.
+Dans un autre cas je souhaite masquer le menu de navigation au profit de petites icônes.
+Les classes de visibilité permettent de masquer les éléments inappropriés pour chaque &lt;code&gt;viewport&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Le problème c’est que les utilisateurs doivent télécharger les 2 versions. C’est une perte de temps, de mémoire navigateur et de bande passante.
+Interchange permet de régler ce problème et c’est la façon la plus simple de sélectionner du contenu basé sur vos &lt;code&gt;mediaquery&lt;/code&gt;
+Avec interchange chaque navigateur télécharge ce qu’il ont besoin non pas ce qu’iil est possible de télécharger.
+Dans cet article je vais expliquer comment mettre en place cette solution pour utiliser interchange avec votre contenu HTML.&lt;/p&gt;
+
+&lt;p&gt;Pour voir un exemple, je vous invite à visiter le site de cet &lt;a href="http://chambredesanges.be/"&gt;chambre d’hôte&lt;/a&gt; à Bruxelles. Le contenu de ce site est &lt;a href="https://github.com/css-ninja/chamber"&gt;disponible sur github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id="conventions-et-mises-en-garde"&gt;Conventions et mises en garde&lt;/h2&gt;
+
+&lt;p&gt;J’utilise le langage de &lt;a href="http://slim-lang.com/"&gt;template slim&lt;/a&gt; pour réduire ma syntaxe HTML (&lt;code&gt;#&lt;/code&gt; pour &lt;code&gt;&amp;lt;div id="..."&amp;gt;&lt;/code&gt; et &lt;code&gt;.&lt;/code&gt; pour &lt;code&gt;&amp;lt;div class="..."&amp;gt;&lt;/code&gt;)&lt;/p&gt;
+
+&lt;p&gt;Interchange est assez souple, mais pour des raisons pratiques j’ai placé le contenu chargé par interchange dans le &lt;a href="https://github.com/css-ninja/chamber/tree/master/source"&gt;dossier source&lt;/a&gt; qui sera à la racine de mon site web. Pour une grosse application il est impératif d’architecturer correctement vos vues.&lt;/p&gt;
+
+&lt;h2 id="contenu-interactif"&gt;Contenu interactif&lt;/h2&gt;
+
+&lt;p&gt;Dans cet exemple, j’utilise interchange pour :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Afficher une image statique par défaut&lt;/li&gt;
+  &lt;li&gt;Afficher une google map interactive pour les écrans larges&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Je sépare ces vues dans 2 fichiers &lt;code&gt;maps-small.html.slim&lt;/code&gt; et &lt;code&gt;maps-medium.html.slim&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Avec interchange je charge ce contenu dans ma vue &lt;code&gt;_map.html.slim&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/css-ninja/chamber/blob/master/source/maps-small.html.slim"&gt;maps-small.html.slim&lt;/a&gt; : Charge le contenu par défaut&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/css-ninja/chamber/blob/master/source/maps-medium.html.slim"&gt;maps-medium.html.slim&lt;/a&gt; : Chargez ce contenu sur grand écran (dans cet exemple avec une largeur supérieure à 600px)
+Commençons en activant interchange sur notre page. Nous allons ajouter un texte par défaut "Chargement de la carte …" :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;div data-interchange=""
+  Chargement de la carte...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ensuite, nous allons modifier &lt;code&gt;data-interchange&lt;/code&gt; pour lui dire quel est le contenu à charger en fonction de la &lt;code&gt;mediaquery&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;div data-interchange="[maps-small.html, (default)], [maps-medium.html, (large)]
+  Chargement de la carte...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Et voilà, la magie opère ! Regardez &lt;a href="http://chambredesanges.be/"&gt;cet exemple pour voir la carte&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id="visibilit"&gt;Visibilité&lt;/h2&gt;
+
+&lt;p&gt;Il y a des cas où vous souhaitez uniquement afficher certains contenus en fonction des tailles d'écran. Imaginez une galerie de photos. Avec &lt;a href="http://foundation.zurb.com/docs/components/visibility.html"&gt;les classes de visibilité&lt;/a&gt;, vous pouvez masquer le contenu, mais il sera téléchargé en arrière-plan. Niveau performance c'est zéro !&lt;/p&gt;
+
+&lt;p&gt;Avec interchange, il est possible de montrer / charger du contenu seulement sur les appareils appropriés. Pour afficher notre site plus rapidement sur les petits écrans, il est possible de ne rien télécharger.&lt;/p&gt;
+
+&lt;p&gt;Dans ce cas notre vue &lt;code&gt;image_gallery.html.slim&lt;/code&gt; est un carousel avec beaucoups d'images.&lt;/p&gt;
+
+&lt;p&gt;So in this case we have a partials/image_gallery.html file that loads in a bunch of images. Pour n'afficher que ce contenu sur de grands écrans il suffit d'utiliser la balise suivante :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;div data-interchange="[image_gallery.html, (large)]"
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;NOTE : Si vous redimensionnez la fenêtre après que le contenu soit chargé, il ne sera pas automatiquement supprimé. Cela se produit s'il n'y a pas de requête de média correspondant.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Générer automatiquement ses favicon</title>
     <link rel="alternate" href="http://davidl.fr/blog/favicon-middleman.html"/>
@@ -333,254 +406,6 @@ $total-columns: 12;
 &lt;p&gt;Le célèbre intégrateur &lt;a href="http://romainfauvet.fr"&gt;Romain Fauvet&lt;/a&gt; participe en ce moment à un concours SEO. Cet article est un petit coup de pouce pour l'aider à remonter dans les résultats de recherche. Prenez 5 minutes pour aller voir son site, il vaut le coup d'oeil.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href="http://scrumtalpick.fr/decouverte.html"&gt;Découvrir scrumtalpick →&lt;/a&gt;&lt;/p&gt;
-
-</content>
-  </entry>
-  <entry>
-    <title>Internet expliqué à ma grand mère</title>
-    <link rel="alternate" href="http://davidl.fr/blog/esprit-web.html"/>
-    <id>http://davidl.fr/blog/esprit-web.html</id>
-    <published>2013-11-26T17:37:06Z</published>
-    <updated>2014-01-13T09:08:44+01:00</updated>
-    <author>
-      <name>DavidL design + développement</name>
-    </author>
-    <content type="html">&lt;p&gt;Qu'est ce que le web ?&lt;/p&gt;
-
-&lt;p&gt;A-t-il une âme ?&lt;/p&gt;
-
-&lt;p&gt;Le &lt;strong&gt;web&lt;/strong&gt; est intangible, indéfinissable, c'est simplement une suite de données, de signaux, d'électrons.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Internet&lt;/strong&gt; est solide, c'est une suite de routeurs, de serveurs, de câbles, … ce n'est pas un nuage !&lt;/p&gt;
-
-&lt;p&gt;Le web est différent. C'est un état d'esprit, une façon de penser. Chacun possède sa propre définition.&lt;/p&gt;
-
-&lt;h2 id="quest-ce-que-le-web-"&gt;Qu'est ce que le web ?&lt;/h2&gt;
-
-&lt;p&gt;Si l'on devait résumer en 3 points, le web est composé de :&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Fichiers&lt;/li&gt;
-  &lt;li&gt;Adresses URL&lt;/li&gt;
-  &lt;li&gt;Protocole HTTP&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Ce n'est pas très romantique mais c'est la définition la plus logique.&lt;/p&gt;
-
-&lt;h3 id="http"&gt;HTTP&lt;/h3&gt;
-
-&lt;p&gt;Ce protocole définit les verbes sur le web.
-L'inventeur du web Tim bers Lee en a défini 4 principaux :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;GET&lt;/code&gt; pour chercher des données, des ressources&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;POST&lt;/code&gt; pour créer de nouveaux fichiers&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;PUT&lt;/code&gt; pour éditer / remplacer des fichiers&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;DELETE&lt;/code&gt; pour supprimer&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;C'est ce qu'a imaginé Tim Bers Lee en tant que media de lecture / écriture.
-Ce média n'est pas simplement associé à la consommation, mais aussi est surtout à la création.
-D'usage, chez les développeurs les 2 verbes utilisés sont &lt;code&gt;GET&lt;/code&gt; et &lt;code&gt;POST&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Étonnamment de nombreux développeurs ne connaissent pas forcément les différences entre ces 2 verbes.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;GET&lt;/code&gt; doit être utilisé pour les requêtes sécurisées&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;POST&lt;/code&gt; pour les autres transactions&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;J'ai une anecdote à ce sujet :&lt;/p&gt;
-
-&lt;p&gt;Les développeurs de basecamp ont appris cette leçon à leur dépends : de simples liens étaient utilisés pour effectuer une action de suppression.
-Selon eux ils étaient dans leurs droits puisqu'il y a une étape d'identification à la connexion au service.
-Certains clients de leur application avaient installé la google accelerator toolbar. Pour accélérer la navigation ce programme précharge les liens en fond de tâche.&lt;/p&gt;
-
-&lt;p&gt;A la connexion tous les fichiers de ses clients sont supprimés puisque tous les liens sont pré-chargés.
-Les créateurs de basecamp se sont énervés contre Google pour avoir sorti une telle toolbar. Mais à la base c'était de leur faute : une transaction de suppression doit être sécurisée il ne faut &lt;strong&gt;jamais&lt;/strong&gt; utiliser de liens pour ça &lt;code&gt;&amp;lt;a href="#"&amp;gt; delete &lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;La solution est d'utiliser ce qui a été conçu pour un tel usage :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;form method="POST"&amp;gt;
-    &amp;lt;input type="hidden" name="delete" value="id"&amp;gt;
-    &amp;lt;button&amp;gt;delete&amp;lt;/button&amp;gt;
-&amp;lt;/form&amp;gt;&amp;lt;/code&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id="le-cyber-espace"&gt;Le cyber espace&lt;/h3&gt;
-
-&lt;p&gt;Pendant des années, les développeurs et les designers web sont tombés d'accord : 1 site web a une taille fixe et doit être consulté depuis un ordinateur. Mais par sa définition un site web est quelque chose  de complètement différent :
-C'est une suite de fichiers HTML, CSS et javascript.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="This is the web par Brad Frost" src="http://davidleuliette.com/wordPress/wp-content/uploads/2013/11/this-is-the-web-300x223.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Pendant des années nous avons négligé les aspects fondamentaux du web :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Capacités du navigateur&lt;/li&gt;
-  &lt;li&gt;Vitesse du site web&lt;/li&gt;
-  &lt;li&gt;Poids des pages&lt;/li&gt;
-  &lt;li&gt;Vitesse du réseau&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Je pense que donner une taille fixe à un site internet est comparable à une hallucination collective. Cette "norme" n'a été fixée simplement parce que les designer souhaitent le contrôle de leur expérience.&lt;/p&gt;
-
-&lt;p&gt;Prenons l'évolution des tailles :&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;640x480&lt;/li&gt;
-  &lt;li&gt;800x600&lt;/li&gt;
-  &lt;li&gt;1024x768&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Pour garder le contrôle l'industrie s'est mis d'accord pour 960px.
-Mais le contrôle ne fait pas parti de l'essence du web.
-Cette notion n'est pas nouvelle elle existe depuis 2000 avec l'article de &lt;a href="http://alistapart.com/article/dao"&gt;A list Appart - a Dao of web design&lt;/a&gt; qui explique une nouvelle façon de concevoir des pages web.&lt;/p&gt;
-
-&lt;p&gt;Avec les nouvelles tendances comme le responsive web design il est grand temps d'abandonner le contrôle et d'embrasser la flexibilité.&lt;/p&gt;
-
-&lt;p&gt;Ces pratiques ont pour génèse les outils utilisés pour créer des sites web. Si vous utilisez photoshop, la première chose que vous allez faire est de fixer une taille. Cette méthode ne sera jamais en adéquation avec la flexibilité du web.
-Il faut donc utiliser de nouveaux outils et créer de nouvelles méthodes de travail.&lt;/p&gt;
-
-&lt;h2 id="concevoir-un-systme"&gt;Concevoir un système&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Il ne faut pas coder des pages en CSS.
-Vous devez coder pour le système.&lt;/p&gt;
-
-  &lt;p&gt;Jonathan Snook&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;J'ai récemment publié l'intégralité des bonnes pratiques que j'utilise quotidiennement sur &lt;a href="http://guidecss.fr/"&gt;guidecss.fr&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id="moodboard"&gt;Moodboard&lt;/h4&gt;
-
-&lt;p&gt;Utilisé dans le milieu de la mode depuis des années, cette méthode peut être utilisé dans l'industrie du web pour créer une atmosphère à notre site.&lt;/p&gt;
-
-&lt;h4 id="guide-des-styles"&gt;Guide des styles&lt;/h4&gt;
-
-&lt;p&gt;Une des premières choses à créer pour toute création de site web et un patron de conception regroupant tous les modules de votre site web.
-Cette approche peut être comparé aux test unitaires réalisés en programmation.
-Ce guide regroupe tous les éléments d'interface de votre site et permettra à votre équipe de travailler efficacement.
-Le guide des styles de la &lt;a href="http://www.mozilla.org/en-US/styleguide/websites/sandstone/"&gt;fondation Mozilla&lt;/a&gt; est un bon exemple qui permet aux milliers de contributeurs d'avoir partout une version à jour des éléments de design.&lt;/p&gt;
-
-&lt;h3 id="le-design-adaptatif-aka-responsive-webdesign"&gt;Le design adaptatif (aka responsive webdesign)&lt;/h3&gt;
-
-&lt;p&gt;La première chose à intégrer quand vous utilisez / créez un design adaptatif est d'oublier le contrôle que vous avez sur le rendu de votre site. Vous ne pourrez jamais savoir avec certitude avec quel appareil, navigateur ou même la capacité de connexion utilisé pour accéder à votre contenu.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Les media queries peuvent être utilisées pour faire plus que hacker des mises en page cassées : avec une bonne planification, nous pouvons commencer à chorégraphier notre contenu proportionnellement à la taille d'écran, au service de la meilleure expérience possible à n'importe quelle largeur.&lt;/p&gt;
-
-  &lt;p&gt;Trent walton&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Le design adaptatif comparé à l'esprit du web est une hérésie. Il n'existe pas de version mobile, ou de version de bureau de votre site. C'est simplement une version web de votre contenu.&lt;/p&gt;
-
-&lt;p&gt;Prenons comme exemple mon site web sans le style CSS.
-Le contenu est sémantique, mon site est donc, par défaut, adaptatif puisque le HTML est bien architecturé.
-L'objectif du design adaptatif est donc de conserver cette fluidité et non de fixer des tailles.&lt;/p&gt;
-
-&lt;h3 id="lamlioration-progressive"&gt;L'amélioration progressive&lt;/h3&gt;
-
-&lt;p&gt;L'amélioration progressive consiste à prendre le plus petit dénominateur commun et d'étendre les différentes fonctionnalités par la suite.&lt;/p&gt;
-
-&lt;p&gt;Si vous commencez par de bases saines, avec une bonne structure HTML, chaque ajout de javascript et de CSS conservera son callback.&lt;/p&gt;
-
-&lt;p&gt;Utiliser intelligemment du javascript avec une bibliothèque comme modernizr vous permettra de donner aux nouveaux appareils les dernières fonctionnalités. Sans pour autant négliger les anciens en les privant de votre contenu.
-Vous conserverez un maximum d'indépendance vis à vis de la technologie. Mais pour cela il faut la respecter et l'utiliser dans son contexte :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;HTML pour la structure&lt;/li&gt;
-  &lt;li&gt;CSS pour la présentation&lt;/li&gt;
-  &lt;li&gt;Javascript pour le comportement&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Vous pouvez utiliser l'amélioration progressive à chaque niveau.
-Exemple avec HTML5 : la balise &lt;code&gt;&amp;lt;input type ="tel"&amp;gt;&lt;/code&gt; permet d'afficher directement le clavier avec des chiffres sur les smartphones. Les navigateurs qui ne comprennent pas cette balise utilisent &lt;code&gt;&amp;lt;input type="text"&amp;gt;&lt;/code&gt; par défaut.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Exemple avec CSS3 :&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Pendant des années internet explorer ne supportait pas &lt;code&gt;border-radius&lt;/code&gt; ce qui n'empêche pas les utilisateurs de naviguer sur le site. Les personnes utilisant un vrai navigateur moderne sont récompensé par une expérience améliorée. Si le navigateur ne comprend pas une règle elle est simplement ignorée.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Exemple avec Javascript :&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Il faut faire plus attention car les scripts peuvent planter si ils font appel à des fonctions non-disponibles sur les navigateurs. La encore un simple test permet souvent de gérer le problème.&lt;/p&gt;
-
-&lt;p&gt;La réponse à la grande question sur le web : mon site doit-il s'afficher de la même façon sur chaque navigateur ? &lt;strong&gt;NON&lt;/strong&gt; !&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Il y a une différence entre le support et les optimisations&lt;/p&gt;
-
-  &lt;p&gt;Brad Frost&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Quand vous testez votre site sur différents périphériques vous testez si cela fonctionne. Est ce que le site s'affiche de la même façon sur tous les différents appareils ? Bien sûr que non.&lt;/p&gt;
-
-&lt;h3 id="images"&gt;Images&lt;/h3&gt;
-
-&lt;p&gt;Nous avons un problème avec les images.&lt;/p&gt;
-
-&lt;p&gt;La balise HTML5 &lt;code&gt;picture&lt;/code&gt; est encore loin d'être implémentée par les navigateurs.
-Grâce à divers hack javascript vous pouvez mettre en place une stratégie de chargement.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Charger de petites images par défaut&lt;/li&gt;
-  &lt;li&gt;Ne pas télécharger en double vos images basse et haute résolution&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Voici une solution qui est la meilleure d'un point de vue performance tout en respectant l'expérience utilisateur.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="interchange_small" src="http://davidleuliette.com/wordPress/wp-content/uploads/2013/11/interchange_small.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;image pour les appareils mobiles&lt;/p&gt;
-
-&lt;p&gt;Grâce aux &lt;code&gt;media-query&lt;/code&gt; je demande à mon CSS d'augmenter la taille de l'image.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="interchange_large" src="http://davidleuliette.com/wordPress/wp-content/uploads/2013/11/interchange_large-300x99.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Dès que la page est chargée je demande au &lt;a href="http://foundation.zurb.com/docs/components/interchange.html"&gt;javascript d'intervertir mes images&lt;/a&gt; et de charger la version HD.&lt;/p&gt;
-
-&lt;h3 id="performance"&gt;Performance&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;C'est la chose la plus importante à faire pour un site web.&lt;/p&gt;
-
-  &lt;p&gt;Steve Souders - guru de la performance&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;La manière la plus efficace pour gagner en performance est de réduire le nombre de requêtes HTTP.
-Vous devez vous poser régulièrement la question : pouvez vous combiner vos fichiers pour réduire leur nombre ?&lt;/p&gt;
-
-&lt;h4 id="boutons-sociaux"&gt;Boutons sociaux&lt;/h4&gt;
-
-&lt;p&gt;Chacun à son idée dessus mais je ne pense que de nombreuses personnes seront d'accord avec moi : les boutons sociaux donnent l'impression que vous êtes désespérés, de plus ces services bloquent le rendu de votre page, et par extension bloquent donc l'accès à votre contenu.&lt;/p&gt;
-
-&lt;p&gt;Je ne dis pas que ce sont de mauvaises choses, ce sont de bon outils mais il n'est pas nécessaire de les inclure dans tous vos projet, et de les charger tous. Lancez d'abord votre projet, il sera toujours possible de les inclure par la suite si vous en avez besoin.&lt;/p&gt;
-
-&lt;h4 id="css"&gt;CSS&lt;/h4&gt;
-
-&lt;p&gt;Il existe beaucoup de techniques pour réduire le nombre de requêtes HTTP :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;sprites CSS&lt;/li&gt;
-  &lt;li&gt;encodage en base-64&lt;/li&gt;
-  &lt;li&gt;Les dégradés en CSS3&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;border-radius&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id="le-design-durl"&gt;Le design d'URL&lt;/h4&gt;
-
-&lt;p&gt;Les adresse url existent pour les humains.&lt;/p&gt;
-
-&lt;p&gt;Les machines utilisent les adresses ip pour taper à la bonne porte. C'est l'occasion d'en profiter pour concevoir une architecture logique.
-Prenez l'exemple de github :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;github.com
-github.com/nom_utilisateur
-github.com/nom_utilisateur/repertoire
-github.com/nom_utilisateur/repertoire/problème
-github.com/nom_utilisateur/repertoire/problème/1
-&lt;/code&gt;&lt;/pre&gt;
 
 </content>
   </entry>
