@@ -5,16 +5,59 @@
   <id>http://davidl.fr/blog/</id>
   <link href="http://davidl.fr/blog/"/>
   <link href="http://davidl.fr/blog/feed.xml" rel="self"/>
-  <updated>2014-01-23T23:00:00Z</updated>
+  <updated>2014-01-27T23:00:00Z</updated>
   <author>
     <name>David Leuliette</name>
   </author>
+  <entry>
+    <title>Foundation 5 snippet HTML pour Sublime Text</title>
+    <link rel="alternate" href="http://davidl.fr/blog/foundation5-snippet.html"/>
+    <id>http://davidl.fr/blog/foundation5-snippet.html</id>
+    <published>2014-01-27T23:00:00Z</published>
+    <updated>2014-01-30T21:31:19+01:00</updated>
+    <author>
+      <name>DavidL design + développement</name>
+    </author>
+    <content type="html">&lt;p&gt;Si vous avez visité ma sélection d'&lt;a href="http://davidl.fr/toolkit.html"&gt;outils pour développeur front-end&lt;/a&gt;, vous savez que j'utilise (selon moi) le meilleur éditeur de code : Sublime Text.&lt;/p&gt;
+
+&lt;p&gt;Le principal avantage de cet éditeur de code est son système de packet, qui permet une personnalisation poussée de l’éditeur.&lt;/p&gt;
+
+&lt;h2 id="snippets-pour-foudation-5"&gt;Snippets pour Foudation 5&lt;/h2&gt;
+
+&lt;p&gt;C'est ce &lt;a href="https://github.com/zurb/foundation-5-sublime-snippets"&gt;repo sur github&lt;/a&gt; qui vous permettra de développer plus vite votre HTML.&lt;/p&gt;
+
+&lt;p&gt;Un simple &lt;code&gt;zf-accordion&lt;/code&gt; + &lt;code&gt;tab&lt;/code&gt; génère le marquage suivant :&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Accordion zurb foundation" src="assets/images/blog/2014/foundation/foundation-accordion-53050aab.gif" /&gt;&lt;/p&gt;
+
+&lt;h2 id="installation"&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;Tout se passe dans les &lt;code&gt;Preference&lt;/code&gt; &amp;gt; &lt;code&gt;Package control&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Sublime Text preference" src="assets/images/blog/2014/foundation/sublime-preference-package-c5ddb850.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;La première étape est d’ajouter une nouvelle source (raccourci &lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;shift&lt;/code&gt; + &lt;code&gt;P&lt;/code&gt;) :&lt;/p&gt;
+
+&lt;p&gt;Package Control: Add Channel&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;https://github.com/zurb/foundation-5-sublime-snippets.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img alt="Sublime Text ajouter source" src="assets/images/blog/2014/foundation/sublime-add-source-9e7a2f32.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Recherchez la commande &lt;code&gt;Package Control: Install Package&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Sublime Text installation" src="assets/images/blog/2014/foundation/sublime-install-package-caa08f62.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Il ne reste plus qu’a rechercher &lt;code&gt;Foundation-5-snippet&lt;/code&gt;, et voila!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Foundation 5, interchange et Google maps</title>
     <link rel="alternate" href="http://davidl.fr/blog/foundation5-interchange.html"/>
     <id>http://davidl.fr/blog/foundation5-interchange.html</id>
     <published>2014-01-23T23:00:00Z</published>
-    <updated>2014-01-24T18:01:43+01:00</updated>
+    <updated>2014-01-30T21:31:19+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -87,7 +130,7 @@ Commençons en activant interchange sur notre page. Nous allons ajouter un texte
     <link rel="alternate" href="http://davidl.fr/blog/favicon-middleman.html"/>
     <id>http://davidl.fr/blog/favicon-middleman.html</id>
     <published>2014-01-16T23:00:00Z</published>
-    <updated>2014-01-17T09:16:56+01:00</updated>
+    <updated>2014-01-18T13:51:27+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -158,7 +201,7 @@ end
     <link rel="alternate" href="http://davidl.fr/blog/firefox-2014.html"/>
     <id>http://davidl.fr/blog/firefox-2014.html</id>
     <published>2014-01-12T23:00:00Z</published>
-    <updated>2014-01-13T09:08:44+01:00</updated>
+    <updated>2014-01-11T11:28:21+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -224,7 +267,7 @@ end
     <link rel="alternate" href="http://davidl.fr/blog/briefing-creatif.html"/>
     <id>http://davidl.fr/blog/briefing-creatif.html</id>
     <published>2014-01-07T23:00:00Z</published>
-    <updated>2014-01-13T09:08:44+01:00</updated>
+    <updated>2014-01-11T11:31:23+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -319,7 +362,7 @@ Ce n'est pas le site de pêche de votre grand père.&lt;/p&gt;
     <link rel="alternate" href="http://davidl.fr/blog/Foundation-breakpoint.html"/>
     <id>http://davidl.fr/blog/Foundation-breakpoint.html</id>
     <published>2013-12-13T17:03:05Z</published>
-    <updated>2014-01-13T09:08:44+01:00</updated>
+    <updated>2014-01-11T11:31:29+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -378,35 +421,6 @@ $total-columns: 12;
 &lt;p&gt;Encore une chose : Saviez vous que vous n'êtes pas obligé d'avoir une grille de 12 colonnes ?&lt;/p&gt;
 
 &lt;p&gt;Vous pouvez modifier cette propriété, ainsi que la taille des goutières avec le &lt;a href="http://Foundation.zurb.com/develop/download.html#customizeFoundation"&gt;formulaire de customisation&lt;/a&gt;.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Le secret de scrumtalpick</title>
-    <link rel="alternate" href="http://davidl.fr/blog/scrumtalpick.html"/>
-    <id>http://davidl.fr/blog/scrumtalpick.html</id>
-    <published>2013-12-06T17:03:05Z</published>
-    <updated>2014-01-13T09:08:44+01:00</updated>
-    <author>
-      <name>DavidL design + développement</name>
-    </author>
-    <content type="html">&lt;h2 id="what"&gt;What&lt;/h2&gt;
-
-&lt;p&gt;Right, gimme a Pepsi free. Holy shit. Uh listen, do you know where Riverside Drive is? Okay, alright, I'll prove it to you. Look at my driver's license, expires 1987. Look at my birthday, for crying out load I haven't even been born yet. And, look at this picture, my brother, my sister, and me. Look at the sweatshirt, &lt;a href="http://scrumtalpick.fr/"&gt;scrumtalpick&lt;/a&gt;, class of 1984. Wait a minute. Wait a minute, scrumtalpick. Are you telling me that it's 8:25?&lt;/p&gt;
-
-&lt;h2 id="why"&gt;Why&lt;/h2&gt;
-
-&lt;p&gt;Listen, woh. Hello, uh excuse me. Sorry about your barn. Thanks a lot, kid. Jennifer, oh are you a sight for sore eyes. Let me look at you. Right check, scrumtalpick. Bet your ass it works.&lt;/p&gt;
-
-&lt;h2 id="when"&gt;When&lt;/h2&gt;
-
-&lt;p&gt;Um, yeah, I'm on my way. Flux capacitor. scrumtalpick, I'm from the future. I came here in a time machine that you invented. Now, I need your help to get back to the year 1985. You do? Hello, Jennifer.&lt;/p&gt;
-
-&lt;h2 id="pour-ceux-qui-nauraient-rien-compris"&gt;Pour ceux qui n'auraient rien compris&lt;/h2&gt;
-
-&lt;p&gt;Le célèbre intégrateur &lt;a href="http://romainfauvet.fr"&gt;Romain Fauvet&lt;/a&gt; participe en ce moment à un concours SEO. Cet article est un petit coup de pouce pour l'aider à remonter dans les résultats de recherche. Prenez 5 minutes pour aller voir son site, il vaut le coup d'oeil.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="http://scrumtalpick.fr/decouverte.html"&gt;Découvrir scrumtalpick →&lt;/a&gt;&lt;/p&gt;
-
 </content>
   </entry>
 </feed>
