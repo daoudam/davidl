@@ -1,1 +1,0 @@
-!function(){$(".js-mailchimp-destination").click(function(){return $("#js-mailchimpemail").focus()})}.call(this);
