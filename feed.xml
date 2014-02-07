@@ -5,16 +5,48 @@
   <id>http://davidl.fr/blog/</id>
   <link href="http://davidl.fr/blog/"/>
   <link href="http://davidl.fr/blog/feed.xml" rel="self"/>
-  <updated>2014-01-27T23:00:00Z</updated>
+  <updated>2014-02-06T23:00:00Z</updated>
   <author>
     <name>David Leuliette</name>
   </author>
+  <entry>
+    <title>Take Off 2014 résumé en une image</title>
+    <link rel="alternate" href="http://davidl.fr/blog/takeoff-conf-2014.html"/>
+    <id>http://davidl.fr/blog/takeoff-conf-2014.html</id>
+    <published>2014-02-06T23:00:00Z</published>
+    <updated>2014-02-07T13:41:40+01:00</updated>
+    <author>
+      <name>DavidL design + développement</name>
+    </author>
+    <content type="html">&lt;p&gt;Le &lt;a href="http://takeoffconf.com/2014"&gt;takeoff&lt;/a&gt; est un festival organisé par des développeurs, pour des développeurs. Pendant deux jours, cet évènement de plus de 250 personnes présente différents sujets d'actualité axé sur le Web.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Comment notre plate-forme technologique évoluera dans les mois à venir ?&lt;/li&gt;
+  &lt;li&gt;Quelles sont les technologies qui fonctionnent ?&lt;/li&gt;
+  &lt;li&gt;Comment s'organiser pour travailler plus efficacement ?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Apprenez tout ce que les meilleures sources de l'industrie - les membres de la communauté qui font tous la magie.&lt;/p&gt;
+
+&lt;h2 id="synthse-des-2-jours"&gt;Synthèse des 2 jours&lt;/h2&gt;
+
+&lt;p&gt;J'ai profité ce cette conférence pour expérimenter une chose : ma capacité de concentration. Je remarque que cela fonctionne beaucoup mieux sans aucune source de distration (tablette ou ordinateur allumé). Pendant les conférences je me suis contenté d'un carnet et de crayons, &lt;strong&gt;c'est tout&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Grâce à cette méthode j'ai pu réaliser de bons croquis pour résumer ces 2 jours -&lt;a href="https://medium.com/p/20102acc5c28"&gt;avec un certain succès&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://www.flickr.com/photos/geekgrunge/12342105995/"&gt;&lt;img alt="takeoff conf sketch" src="http://farm4.staticflickr.com/3816/12342105995_062d650f8e_c.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Si vous souhaitez un contenu détaillé je vous invite à &lt;a href="http://www.siliconsalad.com/blog/"&gt;lire le blog de Silicon Salad&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;L'année prochaine je serais mieux préparé grâce à ce livre : &lt;a href="http://www.amazon.fr/gp/product/0321857895/ref=as_li_ss_tl?ie=UTF8&amp;amp;amp;camp=1642&amp;amp;amp;creative=19458&amp;amp;amp;creativeASIN=0321857895&amp;amp;amp;linkCode=as2&amp;amp;amp;tag=davidl-21"&gt;The sketchnote Handbook&lt;/a&gt;. J'espère pourvoir produire un contenu de meilleure qualité pour les développeurs qui ne peuvent se rendre à cette incroyable conférence qu'il ne faut absolument pas manquer si vous habitez le nord de la France.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Foundation 5 snippet HTML pour Sublime Text</title>
     <link rel="alternate" href="http://davidl.fr/blog/foundation5-snippet.html"/>
     <id>http://davidl.fr/blog/foundation5-snippet.html</id>
     <published>2014-01-27T23:00:00Z</published>
-    <updated>2014-02-04T22:57:45+01:00</updated>
+    <updated>2014-02-04T09:02:26+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -28,13 +60,13 @@
 
 &lt;p&gt;Un simple &lt;code&gt;zf-accordion&lt;/code&gt; + &lt;code&gt;tab&lt;/code&gt; génère le marquage suivant :&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Accordion zurb foundation" src="assets/images/blog/2014/foundation/foundation-accordion.gif?raw=true" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Accordion zurb foundation" src="../assets/images/blog/2014/foundation/foundation-accordion.gif?raw=true" /&gt;&lt;/p&gt;
 
 &lt;h2 id="installation"&gt;Installation&lt;/h2&gt;
 
 &lt;p&gt;Tout se passe dans les &lt;code&gt;Preference&lt;/code&gt; &amp;gt; &lt;code&gt;Package control&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Sublime Text preference" src="assets/images/blog/2014/foundation/sublime-preference-package.png?raw=true" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Sublime Text preference" src="../assets/images/blog/2014/foundation/sublime-preference-package.png?raw=true" /&gt;&lt;/p&gt;
 
 &lt;p&gt;La première étape est d’ajouter une nouvelle source (raccourci &lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;shift&lt;/code&gt; + &lt;code&gt;P&lt;/code&gt;) :&lt;/p&gt;
 
@@ -43,11 +75,11 @@
 &lt;pre&gt;&lt;code&gt;https://github.com/zurb/foundation-5-sublime-snippets.git
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img alt="Sublime Text ajouter source" src="assets/images/blog/2014/foundation/sublime-add-source.png?raw=true" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Sublime Text ajouter source" src="../assets/images/blog/2014/foundation/sublime-add-source.png?raw=true" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Recherchez la commande &lt;code&gt;Package Control: Install Package&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Sublime Text installation" src="assets/images/blog/2014/foundation/sublime-install-package.png?raw=true" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Sublime Text installation" src="../assets/images/blog/2014/foundation/sublime-install-package.png?raw=true" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Il ne reste plus qu’a rechercher &lt;code&gt;Foundation-5-snippet&lt;/code&gt;, et voila!&lt;/p&gt;
 </content>
@@ -57,7 +89,7 @@
     <link rel="alternate" href="http://davidl.fr/blog/foundation5-interchange.html"/>
     <id>http://davidl.fr/blog/foundation5-interchange.html</id>
     <published>2014-01-23T23:00:00Z</published>
-    <updated>2014-01-30T21:31:19+01:00</updated>
+    <updated>2014-01-24T18:01:43+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -130,7 +162,7 @@ Commençons en activant interchange sur notre page. Nous allons ajouter un texte
     <link rel="alternate" href="http://davidl.fr/blog/favicon-middleman.html"/>
     <id>http://davidl.fr/blog/favicon-middleman.html</id>
     <published>2014-01-16T23:00:00Z</published>
-    <updated>2014-01-18T13:51:27+01:00</updated>
+    <updated>2014-01-17T09:16:56+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -201,7 +233,7 @@ end
     <link rel="alternate" href="http://davidl.fr/blog/firefox-2014.html"/>
     <id>http://davidl.fr/blog/firefox-2014.html</id>
     <published>2014-01-12T23:00:00Z</published>
-    <updated>2014-01-11T11:28:21+01:00</updated>
+    <updated>2014-01-13T09:08:44+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -267,7 +299,7 @@ end
     <link rel="alternate" href="http://davidl.fr/blog/briefing-creatif.html"/>
     <id>http://davidl.fr/blog/briefing-creatif.html</id>
     <published>2014-01-07T23:00:00Z</published>
-    <updated>2014-01-11T11:31:23+01:00</updated>
+    <updated>2014-01-13T09:08:44+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -355,72 +387,6 @@ Ce n'est pas le site de pêche de votre grand père.&lt;/p&gt;
 &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;La créativité est un muscle, Il faut s'entrainer à faire des choses créatives. Pour le faire convenablement il faut se poser les bonnes questions et préparer son travail avant de commencer ses itérations.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Changer ses breakpoints avec Foundation</title>
-    <link rel="alternate" href="http://davidl.fr/blog/Foundation-breakpoint.html"/>
-    <id>http://davidl.fr/blog/Foundation-breakpoint.html</id>
-    <published>2013-12-13T17:03:05Z</published>
-    <updated>2014-01-11T11:31:29+01:00</updated>
-    <author>
-      <name>DavidL design + développement</name>
-    </author>
-    <content type="html">&lt;p&gt;Depuis la version 4.3, Foundation est configuré avec deux breakpoint principaux, - ces largeurs définissent le nombre de pixel utilisés pour faire basculer la grille.&lt;/p&gt;
-
-&lt;p&gt;Cette configuration par défaut permet de faire face à la plupart des scénarios. Mais cela n'est pas acceptable dans certains cas. Parfois, un projet nécessite plus de &lt;code&gt;breakpoints&lt;/code&gt;. Voilà comment vous pouvez adapter Foundation en fonction des besoins de votre application web.&lt;/p&gt;
-
-&lt;h2 id="changer-les-variables-sass"&gt;1. Changer les variables SASS&lt;/h2&gt;
-
-&lt;p&gt;La meilleure façon de personnaliser la largeur des grilles est de modifier leurs paramètres dans les fichiers SCSS.&lt;/p&gt;
-
-&lt;p&gt;Dans &lt;code&gt;_settings.css&lt;/code&gt;, recherchez :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$small-range: (0em, 40em);
-$medium-range: (40.063em, 64em);
-$large-range: (64.063em, 90em);
-$xlarge-range: (90.063em, 120em);
-$xxlarge-range: (120.063em);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id="rechercher-et-remplacer-en-css"&gt;2. Rechercher et remplacer en CSS&lt;/h2&gt;
-
-&lt;p&gt;Vous trouverez beaucoup de lignes avec des &lt;code&gt;breakpoints&lt;/code&gt;. Par exemple :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;@media only screen and (min-width: 40.063em)
-@media only screen and (min-width: 64.063em)
-@media only screen and (min-width: 90.063em)
-@media only screen and (min-width: 120.063em)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Chaque &lt;code&gt;media query&lt;/code&gt; représente le point d'arrêt qui sera utilisé par les navigateurs pour appliquer les différentes tailles : petit, moyen, grand et très grand.&lt;/p&gt;
-
-&lt;h2 id="quelle-taille-choisir-"&gt;3. Quelle taille choisir ?&lt;/h2&gt;
-
-&lt;p&gt;Si vous choisissez une stratégie de prioritée du contenu, utilisez des mesures en &lt;code&gt;em&lt;/code&gt; ou &lt;code&gt;rems&lt;/code&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$row-width: rem-calc(1000);
-$column-gutter: rem-calc(30);
-$total-columns: 12;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Aujourd'hui, Fondation 5 utilise les &lt;code&gt;rems&lt;/code&gt; -relative em- pour ses mesures. Si vous préférez utiliser des pixels, la fonction &lt;code&gt;rem-calc()&lt;/code&gt; transforme les pixels en rems pour vous.&lt;/p&gt;
-
-&lt;p&gt;Par exemple, avec une police de texte de taille 16px, &lt;code&gt;rem-calc(600)&lt;/code&gt; donne la conversion &lt;code&gt;37,5rems&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Si vous décidez d'adapter le contenu aux tailles d'écrans, voici des ressources pour vous aider à choisir :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="http://mydevice.io/devices/"&gt;mydevice.io&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://stats.areppim.com/stats/stats_mobiresxtime.htm"&gt;Mobile phone screen resolution market share&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://gs.statcounter.com/#mobile_resolution-ww-monthly-201307-201312"&gt;StatCounter mobile screen resolutions&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="personnaliser-le-tlchargement"&gt;4. Personnaliser le téléchargement&lt;/h2&gt;
-
-&lt;p&gt;Encore une chose : Saviez vous que vous n'êtes pas obligé d'avoir une grille de 12 colonnes ?&lt;/p&gt;
-
-&lt;p&gt;Vous pouvez modifier cette propriété, ainsi que la taille des goutières avec le &lt;a href="http://Foundation.zurb.com/develop/download.html#customizeFoundation"&gt;formulaire de customisation&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
 </feed>
