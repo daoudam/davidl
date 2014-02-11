@@ -5,16 +5,80 @@
   <id>http://davidl.fr/blog/</id>
   <link href="http://davidl.fr/blog/"/>
   <link href="http://davidl.fr/blog/feed.xml" rel="self"/>
-  <updated>2014-02-06T23:00:00Z</updated>
+  <updated>2014-02-10T23:00:00Z</updated>
   <author>
     <name>David Leuliette</name>
   </author>
+  <entry>
+    <title>Foundation 5 architecturer ses fichiers Interchange</title>
+    <link rel="alternate" href="http://davidl.fr/blog/foundation5-architecture.html"/>
+    <id>http://davidl.fr/blog/foundation5-architecture.html</id>
+    <published>2014-02-10T23:00:00Z</published>
+    <updated>2014-02-12T00:25:01+01:00</updated>
+    <author>
+      <name>DavidL design + développement</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;a href="http://foundation.zurb.com/docs/components/interchange.html"&gt;Foundation interchange&lt;/a&gt; permet aux concepteurs de ne charger que le code HTML le plus approprié en fonction de l’appareil. Les navigateurs mobiles ne doivent pas gaspiller de bande passante en chargeant des ressources à destination des écrans larges, et inversement.&lt;/p&gt;
+
+&lt;p&gt;Mais cela signifie que chaque "page" peut avoir plusieurs sources sur le serveur Web. Vous pouvez organiser ces fichiers comme bon vous semble. Tant que les chemins sont corrects, interchange fonctionne très bien. Cependant, j’ai remarqué que pour de gros projets il faut vite mettre au point une organisation en respectant certaines bonnes pratiques.
+Voici quelques techniques que j'ai apprises.&lt;/p&gt;
+
+&lt;h2 id="morceaux-de-code-dans-le-mme-dossier"&gt;Morceaux de code dans le même dossier&lt;/h2&gt;
+
+&lt;p&gt;Organiser vos fichiers dans un dossier en dehors du site principal est une évidence.&lt;/p&gt;
+
+&lt;p&gt;Mais je conseille de stocker vos snippets Interchange ensembles, et non pas de les organiser dans des dossiers séparés comme "mobile", "tablette" et "complexe".&lt;/p&gt;
+
+&lt;p&gt;Un unique dossier, regroupant vos vues, permet de scanner plus rapidement et rend l’identification de vos extraits de code plus facile. Si vous avez une instance interchange pour chaque breakpoint, cette astuce vous épargnera de nombreuses crises de nerfs.&lt;/p&gt;
+
+&lt;p&gt;Plutôt que des dossiers séparés, je recommande d'utiliser &lt;strong&gt;des noms de fichiers intelligents&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id="une-rgle-pour-les-nommer-tous"&gt;Une règle pour les nommer tous&lt;/h2&gt;
+
+&lt;p&gt;Nommer ses objets en fonction de ce qu’ils contiennent est plus intelligent que de les nommer en fonction de leur position.
+Par exemple &lt;code&gt;nav-control.snippet.html&lt;/code&gt; est bien mieux que &lt;code&gt;page-header-menu.snippet.html&lt;/code&gt; pour plusieurs raisons :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Vous pouvez décider d'utiliser une navigation différente -par exemple, lors d'un événement saisonnier ou une vente temporaire.&lt;/li&gt;
+  &lt;li&gt;Vous pouvez décider de déplacer la navigation ailleurs dans le site, dans une &lt;code&gt;sidebar&lt;/code&gt; ou un &lt;code&gt;footer&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;La mise en page ou la structure de votre site peuvent changer. Dans ce cas, vos noms de fichiers ne devraient pas avoir à faire de même.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="utiliser-une-structure-de-nommage"&gt;Utiliser une structure de nommage&lt;/h2&gt;
+
+&lt;p&gt;Ajouter &lt;code&gt;.snippet.html&lt;/code&gt; pour chaque fichier permet de différencier les documents HTML incomplets, des fichiers interchange qui seront chargés. Encore mieux généralement je spécifie les tailles comme ceci :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;snippet.simple.html
+snippet.medium.html
+snippet.complex.html
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Notez également que je ne nomme pas mes snippets en fonction de la taille ou l'emplacement prévu. Pas de "petit" ou "grand", ou encore "top" et "footer". Cela signifie que lorsque le site internet évolue, je n'ai pas besoin de changer les noms de fichiers en conséquence.&lt;/p&gt;
+
+&lt;p&gt;C’est comme nommer en CSS &lt;code&gt;.big-button-red&lt;/code&gt; et &lt;code&gt;.top-left&lt;/code&gt;. Les &lt;a href="http://davidl.fr/blog/css-evolutif.html"&gt;noms de classes en vrac&lt;/a&gt; sont de mauvaises pratiques. Pour donner plus de sens, j'utilise &lt;code&gt;.basic&lt;/code&gt; ou encore &lt;code&gt;.full-feature&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mais où est le fun la dedans ? Pour que la force soit avec moi, j'ai décidé d'embrasser le pouvoir du coté obscur de la force comme l'explique Andy Clarke dans son article : &lt;a href="http://stuffandnonsense.co.uk/blog/about/star-wars-styling"&gt;Star wars styling&lt;/a&gt;.
+L'idée est d'utiliser la puissance des personnages de films de science fiction pour hiérarchiser ses fichiers.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;filename.html — simple
+filename.maul.html — moyen
+filename.vador.html — complexe
+filename.emperor.html — fonctionnalités supplémentaires
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Cette approche à l'avantage d'utiliser une "convention" existante, que n'importe qui peut comprendre facilement. Inutile ? Sûrement. La question est de créer une convention qui fonctionne.&lt;/p&gt;
+
+&lt;p&gt;A la fin, il existe beaucoups de façon de nommer les fichiers. La meilleure façon de trouver son propre système est d'essayer, d'échouer, et de recommencer jusqu'à trouver ce qui vous correspond -ainsi qu'à votre équipe.&lt;/p&gt;
+
+&lt;p&gt;Avoir des règles de nommage peut sembler inutile. D'expérience, cela vous économisera de précieuses secondes lors de vos vos développements, qui se transforment en mois de travail arrivé à une certaine échelle.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Take Off 2014 résumé en une image</title>
     <link rel="alternate" href="http://davidl.fr/blog/takeoff-conf-2014.html"/>
     <id>http://davidl.fr/blog/takeoff-conf-2014.html</id>
     <published>2014-02-06T23:00:00Z</published>
-    <updated>2014-02-07T13:41:40+01:00</updated>
+    <updated>2014-02-11T23:18:20+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -46,7 +110,7 @@
     <link rel="alternate" href="http://davidl.fr/blog/foundation5-snippet.html"/>
     <id>http://davidl.fr/blog/foundation5-snippet.html</id>
     <published>2014-01-27T23:00:00Z</published>
-    <updated>2014-02-04T09:02:26+01:00</updated>
+    <updated>2014-02-04T22:57:45+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -60,13 +124,13 @@
 
 &lt;p&gt;Un simple &lt;code&gt;zf-accordion&lt;/code&gt; + &lt;code&gt;tab&lt;/code&gt; génère le marquage suivant :&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Accordion zurb foundation" src="../assets/images/blog/2014/foundation/foundation-accordion.gif?raw=true" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Accordion zurb foundation" src="assets/images/blog/2014/foundation/foundation-accordion.gif?raw=true" /&gt;&lt;/p&gt;
 
 &lt;h2 id="installation"&gt;Installation&lt;/h2&gt;
 
 &lt;p&gt;Tout se passe dans les &lt;code&gt;Preference&lt;/code&gt; &amp;gt; &lt;code&gt;Package control&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Sublime Text preference" src="../assets/images/blog/2014/foundation/sublime-preference-package.png?raw=true" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Sublime Text preference" src="assets/images/blog/2014/foundation/sublime-preference-package.png?raw=true" /&gt;&lt;/p&gt;
 
 &lt;p&gt;La première étape est d’ajouter une nouvelle source (raccourci &lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;shift&lt;/code&gt; + &lt;code&gt;P&lt;/code&gt;) :&lt;/p&gt;
 
@@ -75,11 +139,11 @@
 &lt;pre&gt;&lt;code&gt;https://github.com/zurb/foundation-5-sublime-snippets.git
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img alt="Sublime Text ajouter source" src="../assets/images/blog/2014/foundation/sublime-add-source.png?raw=true" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Sublime Text ajouter source" src="assets/images/blog/2014/foundation/sublime-add-source.png?raw=true" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Recherchez la commande &lt;code&gt;Package Control: Install Package&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Sublime Text installation" src="../assets/images/blog/2014/foundation/sublime-install-package.png?raw=true" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Sublime Text installation" src="assets/images/blog/2014/foundation/sublime-install-package.png?raw=true" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Il ne reste plus qu’a rechercher &lt;code&gt;Foundation-5-snippet&lt;/code&gt;, et voila!&lt;/p&gt;
 </content>
@@ -89,7 +153,7 @@
     <link rel="alternate" href="http://davidl.fr/blog/foundation5-interchange.html"/>
     <id>http://davidl.fr/blog/foundation5-interchange.html</id>
     <published>2014-01-23T23:00:00Z</published>
-    <updated>2014-01-24T18:01:43+01:00</updated>
+    <updated>2014-01-30T21:31:19+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -162,7 +226,7 @@ Commençons en activant interchange sur notre page. Nous allons ajouter un texte
     <link rel="alternate" href="http://davidl.fr/blog/favicon-middleman.html"/>
     <id>http://davidl.fr/blog/favicon-middleman.html</id>
     <published>2014-01-16T23:00:00Z</published>
-    <updated>2014-01-17T09:16:56+01:00</updated>
+    <updated>2014-01-18T13:51:27+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -233,7 +297,7 @@ end
     <link rel="alternate" href="http://davidl.fr/blog/firefox-2014.html"/>
     <id>http://davidl.fr/blog/firefox-2014.html</id>
     <published>2014-01-12T23:00:00Z</published>
-    <updated>2014-01-13T09:08:44+01:00</updated>
+    <updated>2014-01-11T11:28:21+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -292,101 +356,6 @@ end
   &lt;li&gt;Utiliser &lt;code&gt;about:home&lt;/code&gt; comme page de démarrage&lt;/li&gt;
   &lt;li&gt;Limiter les extensions installées en vérifiant la santé de votre Firefox &lt;code&gt;about:healthreport&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Comment rédiger un briefing créatif</title>
-    <link rel="alternate" href="http://davidl.fr/blog/briefing-creatif.html"/>
-    <id>http://davidl.fr/blog/briefing-creatif.html</id>
-    <published>2014-01-07T23:00:00Z</published>
-    <updated>2014-01-13T09:08:44+01:00</updated>
-    <author>
-      <name>DavidL design + développement</name>
-    </author>
-    <content type="html">&lt;p&gt;Je complète mon précédent article sur les &lt;a href="http://davidl.fr/blog/redaction-briefing.html"&gt;question à se poser&lt;/a&gt; avant de se lancer dans un nouveau projet.&lt;/p&gt;
-
-&lt;h2 id="le-constat"&gt;Le constat&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Créatif, c'est pas un métier facile.&lt;/p&gt;
-
-  &lt;p&gt;Octave Parango&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;En plus de créer à la demande -ce qui à mon avis n'a pas de sens, il faut souvent travailler avec des personnes ne connaissant pas le métier.&lt;/p&gt;
-
-&lt;p&gt;Il arrive fréquemment, pour des contraintes de budget et / ou de délai, que le créatif travaille dans l'urgence, sans posséder tous les éléments, en imaginant les besoins du client.&lt;/p&gt;
-
-&lt;p&gt;Le résultat n'est pas au rendez-vous, le client n'est pas content du résultat et le créatif à pondu une bouse car il fallait réaliser le travail vite et bien. Résultat tout le monde est frustré alors que l'on peut simplement éviter cette situation en réalisant le travail dans l'ordre.&lt;/p&gt;
-
-&lt;h2 id="se-poser-les-bonnes-questions"&gt;Se poser les bonnes questions&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Ce que nous voulons&lt;/strong&gt;.
-Quels sont les objectifs de plus haut niveau ? Généralement il n'existe qu'un seul objectif principal. Si la demande en a plusieurs c'est peut être que le besoin n'est pas clairement identifié.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Comment cela va aider notre entreprise&lt;/strong&gt;.
-Quels sont les impacts attendus de ce projet ?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Ce que nous allons faire&lt;/strong&gt;.
-Mettez vous à la place d'un touriste dans une ville qui consulte un plan. Il est clairement indiqué où nous sommes pour savoir où nous voulons aller.
-Quels sont les résultats attendus à la fin du projet ?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;A qui s'adresse-t-on&lt;/strong&gt; ?
-Parler de votre marché cible.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Faites la bonne impression&lt;/strong&gt;.
-Comment voulez-vous les gens à répondent à votre marque ?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Votre personnalité&lt;/strong&gt;.
-Choisir cinq mots qui résument votre personnalité de la marque idéale. Vous pouvez aussi comparer votre marque à une célébrité cela fonctionne très bien.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Nos valeurs et notre mission&lt;/strong&gt;.
-Résumer vos valeurs et votre mission.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Influences de la conception&lt;/strong&gt;.
-Dans le monde de la mode avant de concevoir une nouvelle collection les designers produisent un moodboard ou guide des tendances. Cet échéancier présente les différents matériaux qui seront utilisés dans la production finale. Pourquoi ne pas utiliser la même technique ?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Fixer des limites&lt;/strong&gt;.
-Y a-t-il des limites ou spécifications principales, à prendre en compte pour la réalisation ?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Qu'est-ce que ce n'est pas&lt;/strong&gt;.
-Ce n'est pas le site de pêche de votre grand père.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="le-travail-itratif"&gt;Le travail itératif&lt;/h2&gt;
-
-&lt;p&gt;Selon le &lt;a href="http://hbr.org/"&gt;Harvard business revue&lt;/a&gt;, plus un projet est important, plus il sera difficile de « se lancer ». Nous inventons souvent des excuses afin d’éviter les 4 peurs :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Peur de l'inconnu&lt;/li&gt;
-  &lt;li&gt;Peur du jugement&lt;/li&gt;
-  &lt;li&gt;Faire le premier pas&lt;/li&gt;
-  &lt;li&gt;Perdre le contrôle&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Solution :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Victoires rapides ou théorie du &lt;a href="http://blog.agenoria.com/general/miser-sur-le-quick-win.html"&gt;quick win&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Plus vous découperez, votre travail en petites tâches, plus il sera facile de se lancer. Le reste suivra tout seul.&lt;/p&gt;
-
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;La créativité est un muscle, Il faut s'entrainer à faire des choses créatives. Pour le faire convenablement il faut se poser les bonnes questions et préparer son travail avant de commencer ses itérations.&lt;/p&gt;
 </content>
   </entry>
 </feed>
