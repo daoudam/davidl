@@ -5,10 +5,294 @@
   <id>http://davidl.fr/blog/</id>
   <link href="http://davidl.fr/blog/"/>
   <link href="http://davidl.fr/blog/feed.xml" rel="self"/>
-  <updated>2014-02-19T23:00:00Z</updated>
+  <updated>2014-02-24T23:00:00Z</updated>
   <author>
     <name>David Leuliette</name>
   </author>
+  <entry>
+    <title>Encourager la participation des clients en responsive design</title>
+    <link rel="alternate" href="http://davidl.fr/blog/fin-psd.html"/>
+    <id>http://davidl.fr/blog/fin-psd.html</id>
+    <published>2014-02-24T23:00:00Z</published>
+    <updated>2014-02-25T18:59:38+01:00</updated>
+    <author>
+      <name>DavidL design + développement</name>
+    </author>
+    <content type="html">&lt;p&gt;Certaines personnes adorent Photoshop -j'en fait parti. Cet article ne parle pas de se désintéresser de ce logiciel. C'est un outil très utile pour de nombreuses choses. Au XXIème siècle Photoshop est simplement utilisé différement pour la création de site web.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Quand vous avez un marteau dans la main tout ressemble à un clou&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;J'adore les rendus de maquette en pixel perfect mais nous sommes d'accord qu'avoir un processus de design responsive avec une telle idée ne fonctionne pas.&lt;/p&gt;
+
+&lt;h2 id="donner-aux-utilisateurs-la-faon-la-plus-simple-daccder-au-meilleur-contenu"&gt;Donner aux utilisateurs la façon la plus simple d'accéder au meilleur contenu&lt;/h2&gt;
+
+&lt;p&gt;&lt;img alt="website bullshit" src="../assets/images/blog/2014/post-psd/death-to-bullshit.jpg?raw=true" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Image extaite d’une conférence de Brad Frost : &lt;a href="http://fr.slideshare.net/bradfrostweb/death-to-bullshit"&gt;Dead to bullshit&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Personnellement, sur un site web lambda si je n'ai aucune idée de comment accéder rapidement au contenu &amp;gt; Je quitte le site.&lt;/p&gt;
+
+&lt;p&gt;De nos jours, nous sommes incapables de déterminer comment notre contenu sera consommé par les utilisateurs. Depuis quelques temps certains concepts se sont standardisés :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Stratégie du contenu&lt;/li&gt;
+  &lt;li&gt;Responsive design&lt;/li&gt;
+  &lt;li&gt;Priorité au mobile&lt;/li&gt;
+  &lt;li&gt;Guide des styles&lt;/li&gt;
+  &lt;li&gt;Prototypes HTML&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tous les 6 mois je découvre un nouveau concept qui révolutionne notre façon de travailler / concevoir des sites.&lt;/p&gt;
+
+&lt;p&gt;Ces techniques ne sont pas simplement une mode, il n'y a qu'à compter les piétons dans la rue pour s'apercevoir que notre consommation du web évolue de jours en jours.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Pontification du pape en 2005" src="../assets/images/blog/2014/post-psd/pape-2005.jpg?raw=true" /&gt;
+&lt;img alt="Pontification du pape en 2005" src="../assets/images/blog/2014/post-psd/pape-2013.jpg?raw=true" /&gt;&lt;/p&gt;
+
+&lt;h2 id="mthode-de-conception"&gt;Méthode de conception&lt;/h2&gt;
+
+&lt;h3 id="stratgie-du-contenu"&gt;Stratégie du contenu&lt;/h3&gt;
+
+&lt;p&gt;&lt;img alt="Mobile versus Photoshop" src="../assets/images/blog/2014/post-psd/mobile-vs-photoshop.jpg?raw=true" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Question Photoshop :
+Quelle est la première action réalisée quand vous créez un nouveau document ?
+…
+Fixer une taille de document.&lt;/p&gt;
+
+&lt;p&gt;Comment cela se comporte avec les appareils mobiles ?
+Personnellement j'en ai aucune idée.&lt;/p&gt;
+
+&lt;p&gt;Le &lt;code&gt;lorem lipsum&lt;/code&gt; &lt;a href="http://www.elezea.com/2014/02/lorem-ipsum-gone-wrong/"&gt;est une mauvaise chose&lt;/a&gt;. Imaginez créer une belle maquette statique avec tous vos titres en lorem. Votre mise en page comporte 3 colonnes. Vous passez des lustres à tout mettre en place.
+Le client vous livre le vrai contenu dans l'urgence, à la fin et les titres sont sur 2 ou 3 lignes. La mise en page est cassée. Et je ne parle même pas du mobile. Se concentrer sur l'esthétique plutôt que sur le contenu n'a simplement pas de sens.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Le contenu d'un site web et la viande dans un sandwich et non la cerise sur le gâteau&lt;/p&gt;
+
+  &lt;p&gt;&lt;cite&gt;Karen McGrane&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Pour vous aider à trouver il suffit de se poser les bonnes questions : de quel contenu ais-je besoin pour cette page ?&lt;/p&gt;
+
+&lt;p&gt;Prenons l'exemple de kickstarter. La page projet répond parfaitement à ces diverses questions.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Un texte décrivant parfaitement le problème&lt;/li&gt;
+  &lt;li&gt;Les étapes pour proposer une solution&lt;/li&gt;
+  &lt;li&gt;Explication sur "la technologie" utilisée&lt;/li&gt;
+  &lt;li&gt;Une vidéo présentant les créateurs du produit&lt;/li&gt;
+  &lt;li&gt;Témoignages d'experts&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;L'avantage d'avoir ces différents contenus est que vous pouvez l'organiser simplement. Ce n'est pas simplement un énorme texte que personne n'a envie de lire. Dans le cas de votre propre site internet, les différentes plateformes choisies pour héberger ces contenu vous permettra de gagner en visibilité et d'élargir votre audience.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Layout kickstarter" src="../assets/images/blog/2014/post-psd/layout-kickstarter.jpg?raw=true" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Je conçois mes sites avec des outils vieux comme le monde : un papier et un crayon. Avec ces outils j'organise simplement, et bénéficie de la flexibilité nécessaire pour concevoir un site internet au XXIème siècle.&lt;/p&gt;
+
+&lt;p&gt;C'est évidemment à nous -designer de s'engager dans le processus de création de contenu. Le but est de guider les créateurs à fournir un contenu "web-ready". La chose la plus incroyable est que cela nous facilitera la conception de la mise en page, nous travaillons dans l'ordre et rentrons dans un processus de construction permanente et non d'allers-retours interminables pour produire une expérience médiocre pour l'utilisateur.&lt;/p&gt;
+
+&lt;h2 id="concevoir-des-prototypes"&gt;Concevoir des prototypes&lt;/h2&gt;
+
+&lt;p&gt;Vous avez tout votre contenu en place grâce à votre stratégie définie précédement. la partie suivante explique comment prototyper votre design.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Le design est &lt;strong&gt;un plan&lt;/strong&gt; pour organiser au mieux les éléments afin d'atteindre un objectif particulier.&lt;/p&gt;
+
+  &lt;p&gt;&lt;cite&gt;Charles Eames&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;N'oubliez pas que vous devez donner aux utilisateurs la façon la plus simple d'accéder au meilleur contenu.&lt;/p&gt;
+
+&lt;h3 id="concevoir-dans-le-navigateur"&gt;Concevoir dans le navigateur&lt;/h3&gt;
+
+&lt;p&gt;Selon moi, la seule façon d'explorer le comportement d'une mise en page d'une application web est de travailler directement dans un navigateur. Si vous souhaitez prototyper une mise en page dans un logiciel cela n'a aucun sens, car la première action à faire est de fixer une taille. Photoshop est un bon outil pour créer une atmosphère, pas pour tester une mise en page.&lt;/p&gt;
+
+&lt;p&gt;Liste des avantages de coder directement en HTML et CSS :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Plus de déclinaison de maquettes &lt;code&gt;iphone.psd&lt;/code&gt;, &lt;code&gt;ipad.psd&lt;/code&gt;, &lt;code&gt;desktop.psd&lt;/code&gt;, …&lt;/li&gt;
+  &lt;li&gt;Les éléments sont en place. Vous pouvez directement tester le comportement des différents blocs. Fini le jeu du magicien et de saute mouton.&lt;/li&gt;
+  &lt;li&gt;Vous évaluez plus précisément le temps que cela va prendre pour déployer votre application en production notamment dans le cas de grosses interactions avec JavaScript.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="jouez-avec-vos-wireframe"&gt;Jouez avec vos wireframe&lt;/h3&gt;
+
+&lt;p&gt;Votre structure est en place. Le contenu n'est pas définitif mais vous possédez déjà les grandes lignes. Voici une technique pour valider une mise en page : posez vous avec votre créateur de contenu et mettez à jour le &lt;code&gt;DOM&lt;/code&gt; directement avec l'inspecteur web. Même si cela vous prends une journée, cela sera beaucoup plus productif que de :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Créer et mettre à jour un fichier de type &lt;code&gt;.doc&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Importer ces modifications dans photoshop&lt;/li&gt;
+  &lt;li&gt;pour finir par les importer en intégration HTML&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Retenez que vous ne devez &lt;strong&gt;jamais&lt;/strong&gt; présenter un design complètement finalisé tel un feu d'artifice à votre client. Si vous présentez une maquette Photoshop pixel perfect à votre client, il s'attend à avoir le même résultat.&lt;/p&gt;
+
+&lt;p&gt;Problème :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Vous n'avez aucune idée de la faisabilité de la maquette à ce stade du projet&lt;/li&gt;
+  &lt;li&gt;L'évaluation de la charge de travail est difficile voire impossible&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;L'autre avantage est de valider par étape et dans l'ordre les divers éléments.&lt;/p&gt;
+
+&lt;p&gt;Si vous présentez un design fini dans 90% des cas votre client vous demandera de changer la couleur du vert alors que vous vouliez simplement lui demander de vérifier les fautes d'orthographe ou le contenu du site.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;95% du webdesign est de la typographie&lt;/p&gt;
+
+  &lt;p&gt;&lt;cite&gt;Olivier Reichenstein&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Demandez-vous, quel texte est fonctionnel, quel texte est passif, &lt;strong&gt;systématiquement&lt;/strong&gt; …&lt;/p&gt;
+
+&lt;p&gt;Créez une interface, le reste s'y ajoutera automatiquement. Tant que vous n'avez pas résolu les problèmes de lecture, ne pensez pas à changer les couleurs.&lt;/p&gt;
+
+&lt;p&gt;Voici le processus que j'expérimente le plus souvent possible.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Créer un rythme typographique&lt;/li&gt;
+  &lt;li&gt;Trouver une palette de couleurs&lt;/li&gt;
+  &lt;li&gt;Choisir des images&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Le choix typographique est beaucoup plus complexe que du Georgia pour les titres, helvetica pour le contenu, &lt;code&gt;1.5em&lt;/code&gt; pour le &lt;code&gt;line-height&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Grâce à votre stratégie du contenu et à la création de votre prototype vous pouvez choisir plus facilement une combinaison de police de caractère.&lt;/p&gt;
+
+&lt;p&gt;Combiner la typographie comporte des règles pour que le rendu soit cohérent. Je vous conseille le &lt;a href="http://www.amazon.fr/gp/product/B00EPJM92O/ref=as_li_ss_tl?ie=UTF8&amp;amp;camp=1642&amp;amp;creative=19458&amp;amp;creativeASIN=B00EPJM92O&amp;amp;linkCode=as2&amp;amp;tag=davidl-21"&gt;Guide de la typographie de Tim Brown&lt;/a&gt;&lt;img src="http://ir-fr.amazon-adsystem.com/e/ir?t=davidl-21&amp;amp;l=as2&amp;amp;o=8&amp;amp;a=B00EPJM92O" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /&gt;.&lt;/p&gt;
+
+&lt;p&gt;Le site &lt;a href="http://type-a-file.com"&gt;Type-a-file&lt;/a&gt; est un bon exemple dans le processus de choix de votre chorégraphie du contenu.&lt;/p&gt;
+
+&lt;h3 id="priorit-au-contenu"&gt;Priorité au contenu&lt;/h3&gt;
+
+&lt;p&gt;Depuis maintenant plusieurs années, la méthode de conception émergente est le "mobile-first" ou priorité au mobile. Pourquoi ne pas adapter ce paradigme au contenu ? Cela représente plusieurs avantages car c'est :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Bon pour votre business&lt;/li&gt;
+  &lt;li&gt;Bon pour vos utilisateurs&lt;/li&gt;
+  &lt;li&gt;Bon pour votre santé mentale&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pourquoi êtes-vous encore en train de lire ces lignes ? avec un bon titre et un "plan d'article" vous savez quel est le sujet et vous souhaitez savoir la suite.&lt;/p&gt;
+
+&lt;h4 id="bon-pour-le-business"&gt;Bon pour le business&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;L'adoption de l'internet mobile est 8x plus rapide que l'adoption d'internet.&lt;/li&gt;
+  &lt;li&gt;Amazon : 1 Milliard de $ est dépensé via le mobile&lt;/li&gt;
+  &lt;li&gt;Twitter : 40% des messages sont envoyés via mobile, 14% ouvrent un compte depuis un téléphone.&lt;/li&gt;
+  &lt;li&gt;Le traffic mobile est prévu d'augmenter à 1 milliard de personnes cette année&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;… Ces chiffres sont extrait des articles &lt;a href="http://www.lukew.com/ff/"&gt;Data Monday de Luke Wroblewski&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Cette liste peut être très longue et la raison est simple : le premier accès à internet que vous possédez est votre mobile.&lt;/p&gt;
+
+&lt;p&gt;Posez vous la question :
+Que fait Google à longueur de journée ? il indexe du texte.
+Comment les visiteurs arrivent sur mon site ? via Google
+C.Q.F.D.&lt;/p&gt;
+
+&lt;h4 id="bon-pour-vos-utilisateurs"&gt;Bon pour vos utilisateurs&lt;/h4&gt;
+
+&lt;p&gt;Je vais prendre l'exemple d'un site utilisé par 1 Milliard de personnes : Facebook. Selon moi l'application mobile est meilleure que le site.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Facebook desktop" src="../assets/images/blog/2014/post-psd/facebook-desktop.jpg?raw=true" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Bullshit : publicités et invitations farmville&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Facebook mobile" src="../assets/images/blog/2014/post-psd/facebook-mobile.jpg?raw=true" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Mobile : 1 accès facile au meilleur contenu&lt;/p&gt;
+
+&lt;p&gt;Pourquoi cela est très difficile ?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Nous devons réinventer nos processus de développement / création&lt;/li&gt;
+  &lt;li&gt;Nous devons apprendre de nouvelles bonnes pratiques&lt;/li&gt;
+  &lt;li&gt;Les clients ne veulent pas payer pour ça&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;La chose la plus importante est d'éduquer ses clients et leur faire comprendre que travailler dans un contexte multi-écran est extrêmement plus complèxe que de bidouiller un site à l'aide d'un cms.&lt;/p&gt;
+
+&lt;h2 id="identit-visuelle"&gt;Identité visuelle&lt;/h2&gt;
+
+&lt;h3 id="gnralits"&gt;Généralités&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Si votre site était une star qui cela serait-il ? &lt;strong&gt; et pourquoi ?&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;cite&gt;Paul Boag&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Commencer par poser ce genre de question à vos clients permet d'identifier ses besoins avec un angle d'attaque différent du classique : Quelle est votre couleur préférée ?
+Ce qui n'a pas de sens car c'est vous le professionnel du design, le client vous consulte car il n'a pas d'idée.&lt;/p&gt;
+
+&lt;p&gt;Il est possible de décliner dans d'autres thèmes : Si votre site était une voiture ? Si votre site était une ville ? …&lt;/p&gt;
+
+&lt;h3 id="questionnaire"&gt;Questionnaire&lt;/h3&gt;
+
+&lt;p&gt;Réaliser un petit échange avec des questions les plus simple possible permet au client de s'exprimer. C'est généralement positif car ils adorent parler de leur métier. Grâce à cela vous allez vraiment pouvoir identifier d'où ils viennent et quel est leur besoin&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Moderne ou classique ?&lt;/li&gt;
+  &lt;li&gt;Sérieux ou amusant ?&lt;/li&gt;
+  &lt;li&gt;Vin ou bière ?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="style-tiles"&gt;Style tiles&lt;/h3&gt;
+
+&lt;p&gt;Personnellement, j'essaye d'utiliser du CSS le plus rapidement possible car cela possède plusieurs avantages et réponds à différentes questions.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Comment se comporte les couleurs sur différents écrans ?&lt;/li&gt;
+  &lt;li&gt;Quel est le comportement de mes modules (navigation, typographie, fil d'ariane …) en fonction des appareils&lt;/li&gt;
+  &lt;li&gt;Je peut rapidement mettre en place l'interaction des liens en modifiant teinte, saturation, luminance hslpicker.com&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="le-cas-du-flat-design"&gt;Le cas du flat design&lt;/h3&gt;
+
+&lt;p&gt;Je ne suis pas un expert la dessus mais avec mon expérience je peux tout de même affirmer que :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Cette méthode de design est plus "honnête"&lt;/li&gt;
+  &lt;li&gt;Le rendu est meilleur avec un écran rétina&lt;/li&gt;
+  &lt;li&gt;Les sites internet sont plus légers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Allan grinshtein nous explique pourquoi le skeumorphism est &lt;a href="http://layervault.tumblr.com/post/32267022219/flat-interface-design"&gt;irrationnel dans le cas de design d’interfaces&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id="surprise-et-rjouissement"&gt;Surprise et réjouissement&lt;/h2&gt;
+
+&lt;p&gt;Un site internet est un document vivant. Une chose &lt;em&gt;trop souvent&lt;/em&gt; oubliée dans le webdesign concerne l'interation.&lt;/p&gt;
+
+&lt;p&gt;Prenez le cas de squarespace, leur design est centré uniquement sur le travail typographique et les animations.&lt;/p&gt;
+
+&lt;p&gt;Être webdesigner au XXIème siècle devient de plus en plus difficile.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt; concevoir une belle maquette statique dans Photoshop&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;i class="fa fa-thumbs-o-up"&gt;&lt;/i&gt; Connaitre HTML &amp;amp; CSS&lt;/li&gt;
+  &lt;li&gt;&lt;i class="fa fa-thumbs-o-up"&gt;&lt;/i&gt; Avoir des bases de responsive design&lt;/li&gt;
+  &lt;li&gt;&lt;i class="fa fa-thumbs-o-up"&gt;&lt;/i&gt; Stratégie du contenu&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pour m'améliorer dans ce domaine je compte bien acheter don't make me think de Steve Krug qui est une référence sur le sujet.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Le problème est qu'il n'existe pas une seule solution pour différents problèmes de webdesign.
+Ce qui fonctionne est une bonne interface, intégrée, qui réponds à un problème, qui doit être exécutée et testée avec soin.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Cette citation est vraie pour la conception mais également pour le développement de votre projet. Vous devez accepter les différentes contraintes de votre projet, faire en sorte de les respecter pour créer la meilleure expérience possible pour vos utilisateurs.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Encourager la participation des clients en responsive design</title>
     <link rel="alternate" href="http://davidl.fr/blog/client-idiot.html"/>
@@ -397,77 +681,6 @@ Commençons en activant interchange sur notre page. Nous allons ajouter un texte
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;NOTE : Si vous redimensionnez la fenêtre après que le contenu soit chargé, il ne sera pas automatiquement supprimé. Cela se produit s'il n'y a pas de requête de média correspondant.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Générer automatiquement ses favicon</title>
-    <link rel="alternate" href="http://davidl.fr/blog/favicon-middleman.html"/>
-    <id>http://davidl.fr/blog/favicon-middleman.html</id>
-    <published>2014-01-16T23:00:00Z</published>
-    <updated>2014-01-17T09:16:56+01:00</updated>
-    <author>
-      <name>DavidL design + développement</name>
-    </author>
-    <content type="html">&lt;p&gt;J’ai récemment contribué au projet &lt;a href="https://github.com/follmann/favicon_maker"&gt;favicon_maker&lt;/a&gt; car cette gem ne répondait pas tout à fait à mon besoin : supporter TOUS les appareils du marché en terme d'icônes.&lt;/p&gt;
-
-&lt;p&gt;Voici un guide pour exploiter pleinement la création de favicon de façon automatisée.&lt;/p&gt;
-
-&lt;h2 id="tat-actuel-des-favicon"&gt;État actuel des favicon&lt;/h2&gt;
-
-&lt;p&gt;Pour supporter correctement les appareils mobiles android, iOs, windows 8 et sans oublier les navigateurs classiques vous devez créer plus de 17 formats d'images.&lt;/p&gt;
-
-&lt;p&gt;Il est possible de créer un script Photoshop pour automatiser le processus, mais il reste 2 problèmes :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Compliqué niveau maintenance&lt;/li&gt;
-  &lt;li&gt;L'export au format &lt;code&gt;.ico&lt;/code&gt; n'est pas natif dans ce logiciel.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Heureusement favicon-maker peut nous simplifier cette tâche de création d'images.&lt;/p&gt;
-
-&lt;h2 id="configuration"&gt;Configuration&lt;/h2&gt;
-
-&lt;p&gt;La première chose à faire est d'inclure la gem dans votre &lt;code&gt;Gemfile&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;gem 'middleman-favicon-maker'
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Dans votre dossier &lt;code&gt;/source/&lt;/code&gt; ajoutez vote image `favicon_base.png (Vous pouvez spécifier un autre chemin dans votre fichier de config)&lt;/p&gt;
-
-&lt;p&gt;Pour activer la création des différents formats tout se passe dans &lt;code&gt;config.rb&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;configure :build do
-
-  activate :favicon_maker,
-    :favicon_maker_versions =&amp;gt; [ :apple_152, :apple_144, :apple_120, :apple_114, :apple_76, :apple_72, :apple_60, :apple_57, :apple, :fav_196, :fav_160, :fav_96, :fav_32, :fav_16, :fav_png, :fav_ico, :mstile_144 ]
-
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id="intgration"&gt;Intégration&lt;/h2&gt;
-
-&lt;p&gt;Il ne reste plus qu'à appeler correctement nos images dans le HEAD de notre document&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;link rel="apple-touch-icon" href="/apple-touch-icon.png"&amp;gt;
-&amp;lt;link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png"&amp;gt;
-&amp;lt;link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png"&amp;gt;
-&amp;lt;link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png"&amp;gt;
-&amp;lt;link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png"&amp;gt;
-&amp;lt;link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png"&amp;gt;
-&amp;lt;link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png"&amp;gt;
-&amp;lt;link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png"&amp;gt;
-&amp;lt;link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png"&amp;gt;
-
-&amp;lt;link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196"&amp;gt;
-&amp;lt;link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160"&amp;gt;
-&amp;lt;link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96"&amp;gt;
-&amp;lt;link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"&amp;gt;
-&amp;lt;link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"&amp;gt;
-
-&amp;lt;meta name="msapplication-TileColor" content="#f5f5f5"&amp;gt;
-&amp;lt;meta name="msapplication-TileImage" content="/mstile-144x144.png"&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
 </content>
   </entry>
 </feed>
