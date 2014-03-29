@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://davidl.fr/blog/fin-psd.html"/>
     <id>http://davidl.fr/blog/fin-psd.html</id>
     <published>2014-02-24T23:00:00Z</published>
-    <updated>2014-02-27T13:51:40+01:00</updated>
+    <updated>2014-03-16T23:52:43+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -299,7 +299,7 @@ Ce qui fonctionne est une bonne interface, intégrée, qui réponds à un probl�
     <link rel="alternate" href="http://davidl.fr/blog/client-idiot.html"/>
     <id>http://davidl.fr/blog/client-idiot.html</id>
     <published>2014-02-19T23:00:00Z</published>
-    <updated>2014-02-24T15:17:06+01:00</updated>
+    <updated>2014-03-16T23:51:45+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -477,7 +477,7 @@ Pour vous sortir d'une situation périlleuse vous pouvez utiliser un joker.&lt;/
     <link rel="alternate" href="http://davidl.fr/blog/foundation5-architecture.html"/>
     <id>http://davidl.fr/blog/foundation5-architecture.html</id>
     <published>2014-02-10T23:00:00Z</published>
-    <updated>2014-02-14T16:32:40+01:00</updated>
+    <updated>2014-02-12T00:25:01+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -541,7 +541,7 @@ filename.emperor.html — fonctionnalités supplémentaires
     <link rel="alternate" href="http://davidl.fr/blog/takeoff-conf-2014.html"/>
     <id>http://davidl.fr/blog/takeoff-conf-2014.html</id>
     <published>2014-02-06T23:00:00Z</published>
-    <updated>2014-02-07T13:41:40+01:00</updated>
+    <updated>2014-02-11T23:18:20+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -573,7 +573,7 @@ filename.emperor.html — fonctionnalités supplémentaires
     <link rel="alternate" href="http://davidl.fr/blog/foundation5-snippet.html"/>
     <id>http://davidl.fr/blog/foundation5-snippet.html</id>
     <published>2014-01-27T23:00:00Z</published>
-    <updated>2014-02-04T09:02:26+01:00</updated>
+    <updated>2014-02-04T22:57:45+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -587,13 +587,13 @@ filename.emperor.html — fonctionnalités supplémentaires
 
 &lt;p&gt;Un simple &lt;code&gt;zf-accordion&lt;/code&gt; + &lt;code&gt;tab&lt;/code&gt; génère le marquage suivant :&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Accordion zurb foundation" src="../assets/images/blog/2014/foundation/foundation-accordion.gif?raw=true" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Accordion zurb foundation" src="assets/images/blog/2014/foundation/foundation-accordion.gif?raw=true" /&gt;&lt;/p&gt;
 
 &lt;h2 id="installation"&gt;Installation&lt;/h2&gt;
 
 &lt;p&gt;Tout se passe dans les &lt;code&gt;Preference&lt;/code&gt; &amp;gt; &lt;code&gt;Package control&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Sublime Text preference" src="../assets/images/blog/2014/foundation/sublime-preference-package.png?raw=true" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Sublime Text preference" src="assets/images/blog/2014/foundation/sublime-preference-package.png?raw=true" /&gt;&lt;/p&gt;
 
 &lt;p&gt;La première étape est d’ajouter une nouvelle source (raccourci &lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;shift&lt;/code&gt; + &lt;code&gt;P&lt;/code&gt;) :&lt;/p&gt;
 
@@ -602,11 +602,11 @@ filename.emperor.html — fonctionnalités supplémentaires
 &lt;pre&gt;&lt;code&gt;https://github.com/zurb/foundation-5-sublime-snippets.git
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img alt="Sublime Text ajouter source" src="../assets/images/blog/2014/foundation/sublime-add-source.png?raw=true" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Sublime Text ajouter source" src="assets/images/blog/2014/foundation/sublime-add-source.png?raw=true" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Recherchez la commande &lt;code&gt;Package Control: Install Package&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Sublime Text installation" src="../assets/images/blog/2014/foundation/sublime-install-package.png?raw=true" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Sublime Text installation" src="assets/images/blog/2014/foundation/sublime-install-package.png?raw=true" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Il ne reste plus qu’a rechercher &lt;code&gt;Foundation-5-snippet&lt;/code&gt;, et voila!&lt;/p&gt;
 </content>
@@ -616,7 +616,7 @@ filename.emperor.html — fonctionnalités supplémentaires
     <link rel="alternate" href="http://davidl.fr/blog/foundation5-interchange.html"/>
     <id>http://davidl.fr/blog/foundation5-interchange.html</id>
     <published>2014-01-23T23:00:00Z</published>
-    <updated>2014-01-24T18:01:43+01:00</updated>
+    <updated>2014-01-30T21:31:19+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
