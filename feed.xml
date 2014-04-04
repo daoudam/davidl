@@ -5,7 +5,7 @@
   <id>http://davidl.fr/blog/</id>
   <link href="http://davidl.fr/blog/"/>
   <link href="http://davidl.fr/blog/feed.xml" rel="self"/>
-  <updated>2014-02-24T23:00:00Z</updated>
+  <updated>2014-03-31T22:00:00Z</updated>
   <author>
     <name>David Leuliette</name>
   </author>
@@ -13,8 +13,8 @@
     <title>La mediaquery du 01 Avril</title>
     <link rel="alternate" href="http://davidl.fr/blog/easter-egg-april.html"/>
     <id>http://davidl.fr/blog/easter-egg-april.html</id>
-    <published>2014-02-24T23:00:00Z</published>
-    <updated>2014-04-01T13:49:24+02:00</updated>
+    <published>2014-03-31T22:00:00Z</published>
+    <updated>2014-04-03T14:03:58+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -28,6 +28,117 @@
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Voir la &lt;a href="https://vine.co/v/MeDj23XKT3T"&gt;vidéo sur vine&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Astuce de développement front-end</title>
+    <link rel="alternate" href="http://davidl.fr/blog/conseil-dev.html"/>
+    <id>http://davidl.fr/blog/conseil-dev.html</id>
+    <published>2014-03-30T22:00:00Z</published>
+    <updated>2014-04-03T14:03:58+02:00</updated>
+    <author>
+      <name>DavidL design + développement</name>
+    </author>
+    <content type="html">&lt;p&gt;Apprendre. Coder rapidement. Livrer. Vendre. C'est la baseline de &lt;a href="http://www.dotnetdojo.com/donnez-meilleur-conseil-developpement-web-200-euros-a-gagner/"&gt;dotnetdojo&lt;/a&gt; un blog qui propose de partager son meilleur conseil concernant le développement web. J'ai décidé de participer à l'opération, en donnant ma meilleure astuce en tant que développeur front-end :&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Codez pour le système et non pour les pages&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id="principe-dun-systme-de-design"&gt;Principe d’un système de design&lt;/h2&gt;
+
+&lt;p&gt;Un système possède des composants de base comme la typographie, la mise en page, les formes, les couleurs. Quand vous considérez la conception d’un produit en entier ces composants peuvent êtres enrichis de patrons de conception, de stratégie du contenu, du ton employé… Ces décisions peuvent vous aider à avoir un produit cohérent tout au long du processus de conception.&lt;/p&gt;
+
+&lt;p&gt;Depuis l’avènement du responsive design, ce principe est de plus en plus vrai. Le comportement de chaque composant doit être testé sur différents appareils. Il faut vérifier sa réaction, permettre qu’il soit flexible et qu’il délivre une expérience optimale indépendamment du périphérique utilisé.&lt;/p&gt;
+
+&lt;h3 id="composants-qui-ne-se-modifient-pas-"&gt;Composants qui ne se modifient pas :&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Unités de base&lt;/li&gt;
+  &lt;li&gt;Couleurs&lt;/li&gt;
+  &lt;li&gt;Formes&lt;/li&gt;
+  &lt;li&gt;Typographie&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="composants-au-comportement-fluide-"&gt;Composants au comportement fluide :&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Grille&lt;/li&gt;
+  &lt;li&gt;Mise en page&lt;/li&gt;
+  &lt;li&gt;Taille des polices&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="composants-de-base"&gt;Composants de base&lt;/h2&gt;
+
+&lt;h3 id="priorit--la-typographie"&gt;Priorité à la typographie&lt;/h3&gt;
+
+&lt;p&gt;Quand vous travaillez dans un contexte avec énormément de texte, la typographie est la façon la plus simple de donner une ambiance visuelle à votre contenu. Généralement je choisis &lt;a href="http://davidl.fr/blog/typographie-google-font.html"&gt;2 polices de caractères&lt;/a&gt; différentes :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Sans shérif pour le contenu&lt;/li&gt;
+  &lt;li&gt;Shérif pour les titres&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pour donner un rythme vous pouvez aussi jouer avec du contenu en gras, en italique, avec les tailles différentes …
+L'avantage est que si le &lt;code&gt;viewport&lt;/code&gt; change, votre expérience de lecture restera cohérente.&lt;/p&gt;
+
+&lt;h3 id="typographie-et-mise-en-page"&gt;Typographie et mise en page&lt;/h3&gt;
+
+&lt;p&gt;L'une des première chose est de choisir une unité de base pour commencer à travailler. Nombre de colonnes et taille maximale pour votre grille, taille de la police et des titrage basés sur la suite de fibonachi, ou quelque chose de plus arbitraire. Des fois il est judicieux de choisir des multiples de 10 pour rendre les calculs mathématiques en CSS plus simples. Le typographe Tim Brown suggère d'essayer la méthode d'&lt;a href="http://alistapart.com/article/more-meaningful-typography"&gt;échelle modulaire&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id="grille-et-mise-en-page"&gt;Grille et mise en page&lt;/h3&gt;
+
+&lt;p&gt;Une grille fluide est une base solide pour la conception de votre système de mise en page. Mais vous devez vous faire à l'idée que votre système doit fonctionner à travers différentes résolutions. Vous devez garder votre composant de grille &lt;a href="http://fr.wikipedia.org/wiki/Environnement_pervasif"&gt;pervasif&lt;/a&gt;. Si votre contenu contient un groupe de 3 blocs sur une ligne, vous devez le faire passer à 1 bloc sur 3 lignes pour pouvoir être affiché sur mobile.&lt;/p&gt;
+
+&lt;p&gt;Cela peut paraître simpliste, mais c'est extrèmement important pour le designer. Il pourra mettre en avant certains blocs, choisir de centrer du texte et des icones dans un certain contexte, aligner à gauche dans un autre…
+L'important est d'avoir le plus d'éléments communs pour conserver une expérience utilisateur uniforme.&lt;/p&gt;
+
+&lt;h3 id="former-des-composants"&gt;Former des composants&lt;/h3&gt;
+
+&lt;p&gt;Concevoir des composants est un concept déjà utilisé dans l'ancien monde du "codage par page".&lt;/p&gt;
+
+&lt;p&gt;Depuis que la propriété CSS &lt;code&gt;border-radius&lt;/code&gt; est supporté par les principaux navigateurs, beaucoups de design sont basés sur des cercles. Les composants boutons avec une bordure arrondie ou non sont des éléments qui se distinguent très rapidement.&lt;/p&gt;
+
+&lt;p&gt;Utilisés correctement ensembles, vous obtenez une atmosphère unique, réutilisable et cohérente. L'astuce conciste à penser de façon globale en analysant tous les composants qui forment une page :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Boutons&lt;/li&gt;
+  &lt;li&gt;Listes&lt;/li&gt;
+  &lt;li&gt;Fil d'arianne&lt;/li&gt;
+  &lt;li&gt;Contenu mis en avant&lt;/li&gt;
+  &lt;li&gt;Menu principal&lt;/li&gt;
+  &lt;li&gt;Navigation secondaire&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;J'utilise &lt;a href="http://sass-lang.com/"&gt;SASS&lt;/a&gt; pour faciliter la constructions de composants.&lt;/p&gt;
+
+&lt;h3 id="couleur"&gt;Couleur&lt;/h3&gt;
+
+&lt;p&gt;La couleur est la façon la plus basique de renforcer son image dans le monde multi-écran. Utiliser un bon système de couleur permet d'être facilement reconnaissable, et fonctionne sur n'importe quel appareil.&lt;/p&gt;
+
+&lt;h3 id="processus-de-conception"&gt;Processus de conception&lt;/h3&gt;
+
+&lt;p&gt;Utiliser un système de design n'est pas forcément associé à une méthode particulière, mais les conseils suivants peuvent vous aider.&lt;/p&gt;
+
+&lt;h4 id="sortir-du-paradigmehttpfrwikipediaorgwikiparadigme"&gt;Sortir du &lt;a href="http://fr.wikipedia.org/wiki/Paradigme"&gt;paradigme&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Un &lt;a href="http://styletil.es/"&gt;système de design&lt;/a&gt; permet de se concentrer en séparant les différents composant. Travailler indépendamment de la mise en page permet de construire ses éléments simplement, sans rentrer dans l'enfer du &lt;code&gt;breakpoint&lt;/code&gt;. Cela nous force à employer des éléments réutilisables, ce qui au final nous amène à produire moins de code.&lt;/p&gt;
+
+&lt;h4 id="concevoir-dans-le-navigateur"&gt;Concevoir dans le navigateur&lt;/h4&gt;
+
+&lt;p&gt;Personnellement je ne peux pas commencer de nouveau projet en concevant dans le navigateur.  (Et je suis admiratif si vous y arrivez, généralement je commence avec un papier et un crayon) Les maquettes statiques ne sont pas la seule alternative. Les &lt;a href="http://trulia.github.io/hologram/"&gt;guides de styles&lt;/a&gt; sont parfait pour exprimer les concepts de votre système de design. Les bibliothèques de patron de conception fonctionnent aussi très bien.&lt;/p&gt;
+
+&lt;h4 id="la-limite-des-prototypes"&gt;La limite des prototypes&lt;/h4&gt;
+
+&lt;p&gt;Arrivé à un certain moment, pour tester vos idées, ou parce qu'un client à besoin d'aide pour visualiser comment votre système fonctionne, vous allez devoir arrêter de construire vos composants pour mettre en place vos différentes pages. C'est une bonne occasion pour faire un "stress test" et les confronter à de vraies données. Ce n'est pas la fin du monde mais vous devez vous assurer que vos composants fonctionnent sur &lt;strong&gt;tous les appareils&lt;/strong&gt;, pas seulement les iBidules, ou même les mobiles actuellement à la mode.&lt;/p&gt;
+
+&lt;p&gt;Vous allez choisir les &lt;code&gt;breakpoint&lt;/code&gt; en fonction de votre contenu (hiérarchie, densité d'affichage, type d'interaction) pour avoir un affichage idéal. Avec de vraies données et les retours de vos clients, vous allez pouvoir facilement faire des modification car en changeant une partie de vos composants, la modification sera répercutée partout dans votre application.&lt;/p&gt;
+
+&lt;h2 id="prpar-pour-lavenir"&gt;Préparé pour l’avenir&lt;/h2&gt;
+
+&lt;p&gt;Créer des systèmes de conception nous donne la souplesse nécessaire pour être compatible avec les périphériques inconnus de l'avenir. C'est peut-être un changement de processus, mais il n'est pas très compliqué d'adopter un mode de pensée objet. Les pionniers dans la conception adaptative ont un travail difficile. Certains de ces problèmes ont peut-être déjà été résolus dans d'autres technologies ou d'autres industries, mais c'est à nous de trouver ces liens, pour nous aider à créer des solutions et des normes qui offriront la meilleure expérience possible aux utilisateurs.&lt;/p&gt;
+
+&lt;p&gt;Nous devons continuer à expérimenter et à communiquer, en particulier dans le domaine du design, les expériences d'utilisateurs réussies sont un vrai signe pour savoir si notre système fonctionne.&lt;/p&gt;
 </content>
   </entry>
   <entry>
@@ -313,117 +424,6 @@ Ce qui fonctionne est une bonne interface, intégrée, qui réponds à un probl�
 &lt;/blockquote&gt;
 
 &lt;p&gt;Cette citation est vraie pour la conception mais également pour le développement de votre projet. Vous devez accepter les différentes contraintes de votre projet, faire en sorte de les respecter pour créer la meilleure expérience possible pour vos utilisateurs.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Astuce de développement front-end</title>
-    <link rel="alternate" href="http://davidl.fr/blog/conseil-dev.html"/>
-    <id>http://davidl.fr/blog/conseil-dev.html</id>
-    <published>2014-02-24T23:00:00Z</published>
-    <updated>2014-04-01T13:26:56+02:00</updated>
-    <author>
-      <name>DavidL design + développement</name>
-    </author>
-    <content type="html">&lt;p&gt;Apprendre. Coder rapidement. Livrer. Vendre. C'est la baseline de &lt;a href="http://www.dotnetdojo.com/donnez-meilleur-conseil-developpement-web-200-euros-a-gagner/"&gt;dotnetdojo&lt;/a&gt; un blog qui propose de partager son meilleur conseil concernant le développement web. J'ai décidé de participer à l'opération, en donnant ma meilleure astuce en tant que développeur front-end :&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Codez pour le système et non pour les pages&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id="principe-dun-systme-de-design"&gt;Principe d’un système de design&lt;/h2&gt;
-
-&lt;p&gt;Un système possède des composants de base comme la typographie, la mise en page, les formes, les couleurs. Quand vous considérez la conception d’un produit en entier ces composants peuvent êtres enrichis de patrons de conception, de stratégie du contenu, du ton employé… Ces décisions peuvent vous aider à avoir un produit cohérent tout au long du processus de conception.&lt;/p&gt;
-
-&lt;p&gt;Depuis l’avènement du responsive design, ce principe est de plus en plus vrai. Le comportement de chaque composant doit être testé sur différents appareils. Il faut vérifier sa réaction, permettre qu’il soit flexible et qu’il délivre une expérience optimale indépendamment du périphérique utilisé.&lt;/p&gt;
-
-&lt;h3 id="composants-qui-ne-se-modifient-pas-"&gt;Composants qui ne se modifient pas :&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Unités de base&lt;/li&gt;
-  &lt;li&gt;Couleurs&lt;/li&gt;
-  &lt;li&gt;Formes&lt;/li&gt;
-  &lt;li&gt;Typographie&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="composants-au-comportement-fluide-"&gt;Composants au comportement fluide :&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Grille&lt;/li&gt;
-  &lt;li&gt;Mise en page&lt;/li&gt;
-  &lt;li&gt;Taille des polices&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="composants-de-base"&gt;Composants de base&lt;/h2&gt;
-
-&lt;h3 id="priorit--la-typographie"&gt;Priorité à la typographie&lt;/h3&gt;
-
-&lt;p&gt;Quand vous travaillez dans un contexte avec énormément de texte, la typographie est la façon la plus simple de donner une ambiance visuelle à votre contenu. Généralement je choisis &lt;a href="http://davidl.fr/blog/typographie-google-font.html"&gt;2 polices de caractères&lt;/a&gt; différentes :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Sans shérif pour le contenu&lt;/li&gt;
-  &lt;li&gt;Shérif pour les titres&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Pour donner un rythme vous pouvez aussi jouer avec du contenu en gras, en italique, avec les tailles différentes …
-L'avantage est que si le &lt;code&gt;viewport&lt;/code&gt; change, votre expérience de lecture restera cohérente.&lt;/p&gt;
-
-&lt;h3 id="typographie-et-mise-en-page"&gt;Typographie et mise en page&lt;/h3&gt;
-
-&lt;p&gt;L'une des première chose est de choisir une unité de base pour commencer à travailler. Nombre de colonnes et taille maximale pour votre grille, taille de la police et des titrage basés sur la suite de fibonachi, ou quelque chose de plus arbitraire. Des fois il est judicieux de choisir des multiples de 10 pour rendre les calculs mathématiques en CSS plus simples. Le typographe Tim Brown suggère d'essayer la méthode d'&lt;a href="http://alistapart.com/article/more-meaningful-typography"&gt;échelle modulaire&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id="grille-et-mise-en-page"&gt;Grille et mise en page&lt;/h3&gt;
-
-&lt;p&gt;Une grille fluide est une base solide pour la conception de votre système de mise en page. Mais vous devez vous faire à l'idée que votre système doit fonctionner à travers différentes résolutions. Vous devez garder votre composant de grille &lt;a href="http://fr.wikipedia.org/wiki/Environnement_pervasif"&gt;pervasif&lt;/a&gt;. Si votre contenu contient un groupe de 3 blocs sur une ligne, vous devez le faire passer à 1 bloc sur 3 lignes pour pouvoir être affiché sur mobile.&lt;/p&gt;
-
-&lt;p&gt;Cela peut paraître simpliste, mais c'est extrèmement important pour le designer. Il pourra mettre en avant certains blocs, choisir de centrer du texte et des icones dans un certain contexte, aligner à gauche dans un autre…
-L'important est d'avoir le plus d'éléments communs pour conserver une expérience utilisateur uniforme.&lt;/p&gt;
-
-&lt;h3 id="former-des-composants"&gt;Former des composants&lt;/h3&gt;
-
-&lt;p&gt;Concevoir des composants est un concept déjà utilisé dans l'ancien monde du "codage par page".&lt;/p&gt;
-
-&lt;p&gt;Depuis que la propriété CSS &lt;code&gt;border-radius&lt;/code&gt; est supporté par les principaux navigateurs, beaucoups de design sont basés sur des cercles. Les composants boutons avec une bordure arrondie ou non sont des éléments qui se distinguent très rapidement.&lt;/p&gt;
-
-&lt;p&gt;Utilisés correctement ensembles, vous obtenez une atmosphère unique, réutilisable et cohérente. L'astuce conciste à penser de façon globale en analysant tous les composants qui forment une page :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Boutons&lt;/li&gt;
-  &lt;li&gt;Listes&lt;/li&gt;
-  &lt;li&gt;Fil d'arianne&lt;/li&gt;
-  &lt;li&gt;Contenu mis en avant&lt;/li&gt;
-  &lt;li&gt;Menu principal&lt;/li&gt;
-  &lt;li&gt;Navigation secondaire&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;J'utilise &lt;a href="http://sass-lang.com/"&gt;SASS&lt;/a&gt; pour faciliter la constructions de composants.&lt;/p&gt;
-
-&lt;h3 id="couleur"&gt;Couleur&lt;/h3&gt;
-
-&lt;p&gt;La couleur est la façon la plus basique de renforcer son image dans le monde multi-écran. Utiliser un bon système de couleur permet d'être facilement reconnaissable, et fonctionne sur n'importe quel appareil.&lt;/p&gt;
-
-&lt;h3 id="processus-de-conception"&gt;Processus de conception&lt;/h3&gt;
-
-&lt;p&gt;Utiliser un système de design n'est pas forcément associé à une méthode particulière, mais les conseils suivants peuvent vous aider.&lt;/p&gt;
-
-&lt;h4 id="sortir-du-paradigmehttpfrwikipediaorgwikiparadigme"&gt;Sortir du &lt;a href="http://fr.wikipedia.org/wiki/Paradigme"&gt;paradigme&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;Un &lt;a href="http://styletil.es/"&gt;système de design&lt;/a&gt; permet de se concentrer en séparant les différents composant. Travailler indépendamment de la mise en page permet de construire ses éléments simplement, sans rentrer dans l'enfer du &lt;code&gt;breakpoint&lt;/code&gt;. Cela nous force à employer des éléments réutilisables, ce qui au final nous amène à produire moins de code.&lt;/p&gt;
-
-&lt;h4 id="concevoir-dans-le-navigateur"&gt;Concevoir dans le navigateur&lt;/h4&gt;
-
-&lt;p&gt;Personnellement je ne peux pas commencer de nouveau projet en concevant dans le navigateur.  (Et je suis admiratif si vous y arrivez, généralement je commence avec un papier et un crayon) Les maquettes statiques ne sont pas la seule alternative. Les &lt;a href="http://trulia.github.io/hologram/"&gt;guides de styles&lt;/a&gt; sont parfait pour exprimer les concepts de votre système de design. Les bibliothèques de patron de conception fonctionnent aussi très bien.&lt;/p&gt;
-
-&lt;h4 id="la-limite-des-prototypes"&gt;La limite des prototypes&lt;/h4&gt;
-
-&lt;p&gt;Arrivé à un certain moment, pour tester vos idées, ou parce qu'un client à besoin d'aide pour visualiser comment votre système fonctionne, vous allez devoir arrêter de construire vos composants pour mettre en place vos différentes pages. C'est une bonne occasion pour faire un "stress test" et les confronter à de vraies données. Ce n'est pas la fin du monde mais vous devez vous assurer que vos composants fonctionnent sur &lt;strong&gt;tous les appareils&lt;/strong&gt;, pas seulement les iBidules, ou même les mobiles actuellement à la mode.&lt;/p&gt;
-
-&lt;p&gt;Vous allez choisir les &lt;code&gt;breakpoint&lt;/code&gt; en fonction de votre contenu (hiérarchie, densité d'affichage, type d'interaction) pour avoir un affichage idéal. Avec de vraies données et les retours de vos clients, vous allez pouvoir facilement faire des modification car en changeant une partie de vos composants, la modification sera répercutée partout dans votre application.&lt;/p&gt;
-
-&lt;h2 id="prpar-pour-lavenir"&gt;Préparé pour l’avenir&lt;/h2&gt;
-
-&lt;p&gt;Créer des systèmes de conception nous donne la souplesse nécessaire pour être compatible avec les périphériques inconnus de l'avenir. C'est peut-être un changement de processus, mais il n'est pas très compliqué d'adopter un mode de pensée objet. Les pionniers dans la conception adaptative ont un travail difficile. Certains de ces problèmes ont peut-être déjà été résolus dans d'autres technologies ou d'autres industries, mais c'est à nous de trouver ces liens, pour nous aider à créer des solutions et des normes qui offriront la meilleure expérience possible aux utilisateurs.&lt;/p&gt;
-
-&lt;p&gt;Nous devons continuer à expérimenter et à communiquer, en particulier dans le domaine du design, les expériences d'utilisateurs réussies sont un vrai signe pour savoir si notre système fonctionne.&lt;/p&gt;
 </content>
   </entry>
   <entry>
