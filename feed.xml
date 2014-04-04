@@ -10,6 +10,112 @@
     <name>David Leuliette</name>
   </author>
   <entry>
+    <title>Proposition de redesign du louvrelens.fr</title>
+    <link rel="alternate" href="http://davidl.fr/blog/louvrelens.html"/>
+    <id>http://davidl.fr/blog/louvrelens.html</id>
+    <published>2014-03-31T22:00:00Z</published>
+    <updated>2014-04-04T18:05:30+02:00</updated>
+    <author>
+      <name>DavidL design + développement</name>
+    </author>
+    <content type="html">&lt;p&gt;Chaque jour, dans la communauté des designer, les &lt;a href="http://dribbble.com/search?page=4&amp;amp;amp;q=redesign"&gt;proposition de redesign&lt;/a&gt; pleuvent : iOs, Facebook, Twitter … Si je salue la performance, je ne comprends pas trop l’intérêt car ces boites possèdent une armée de personnes en interne pour réaliser la chose. Pourquoi ne pas s’attaquer à de vrais sites qui ont vocation à être accessibles au plus grand nombre ?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://responsivemuseum.tumblr.com/"&gt;Responsive Museum&lt;/a&gt; propose de modifier la feuille de styles CSS du site d’un musée pour le rendre lisible sur mobile, tablette, etc… J’ai voulu participer à cette chouette initiative en proposant la refonte du &lt;a href="http://www.louvrelens.fr/"&gt;LouvreLens&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id="pourquoi-un-redesign-"&gt;Pourquoi un redesign ?&lt;/h2&gt;
+
+&lt;p&gt;Pour préparer ma prochaine visite au musée, je me suis posé dans mon canapé avec ma tablette (mais apparement je dois être le seul français à faire ça).&lt;/p&gt;
+
+&lt;p&gt;Le site internet n’est pas responsive et l’expérience n’est donc pas optimisée pour la mobilité.Je décide de télécharger l’application android. et la c’est le drame : &lt;em&gt;Cette application n’est pas compatible avec votre appareil&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="louvrelen et android" src="https://farm8.staticflickr.com/7117/13621111873_2b530fb811_o.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Le problème principal est d’avoir divisé le site en 3 parties : l’accès web, l’accès android et iPhone.
+J’ai déjà évoqué le fait que ce choix &lt;a href="http://davidl.fr/blog/webdesign-adaptatif-vs-site-mobile-vs-application-native.html"&gt;multiplie les coûts&lt;/a&gt; et je ne pense pas que ce soit une bonne solution pour &lt;a href="http://fr.wikipedia.org/wiki/Louvre-Lens#Fonctionnement"&gt;le budget de fonctionnement&lt;/a&gt; alloué aux mise à jour du contenu en ligne.&lt;/p&gt;
+
+&lt;h2 id="audit-de-navigation"&gt;Audit de navigation&lt;/h2&gt;
+
+&lt;p&gt;&lt;img alt="homepage" src="https://farm8.staticflickr.com/7081/13621447714_a6668d31c3_b.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Contenu de la page d’accueil actuelle :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Une liste de lien en haut de page.&lt;/li&gt;
+  &lt;li&gt;Un menu principal de navigation.&lt;/li&gt;
+  &lt;li&gt;Un carrousel d’actualités.&lt;/li&gt;
+  &lt;li&gt;Un menu récapitulant tous les liens du site.&lt;/li&gt;
+  &lt;li&gt;Une liste de lien en bas de page.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id="la-navigation-nest-pas-assez-stratgique"&gt;La navigation n’est pas assez stratégique&lt;/h3&gt;
+
+&lt;p&gt;Il existe plus de 5 manières de naviguer sur le site avec différents problèmes :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Doublons de page d’entrée.&lt;/li&gt;
+  &lt;li&gt;Pas de cohérence de catégories.&lt;/li&gt;
+  &lt;li&gt;Un &lt;a href="https://31.media.tumblr.com/20dfb470e44ec08f07f240c16902e703/tumblr_mze5idLVTu1toamj8o2_500.gif"&gt;menu pour naviguer dans le menu&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="menu-principal"&gt;Menu principal&lt;/h3&gt;
+
+&lt;p&gt;À mon avis le site d’un musée se doit d’être accessible à tous, et apparement d’ici 2015 ce ne sera &lt;a href="http://www.lexpress.fr/actualites/1/societe/handicap-l-echeance-de-2015-d-accessiblite-pour-tous-pas-negociable_1023008.html"&gt;pas négociable&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;J’aimerais bien que l’on m’explique en quoi la navigation actuelle du Louvre-lens est accessible ? - elle est simplement illisible :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Petite taille de la police.&lt;/li&gt;
+  &lt;li&gt;Chevauchement des caractères.&lt;/li&gt;
+  &lt;li&gt;Mauvais contraste des couleurs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img alt="contraste menu" src="https://farm8.staticflickr.com/7036/13621447294_b2a31ae1be_o.png" /&gt;&lt;/p&gt;
+
+&lt;h3 id="le-but-principal-nest-pas-atteint"&gt;Le but principal n'est pas atteint&lt;/h3&gt;
+
+&lt;p&gt;Les 3 informations capitales qui devraient êtres mises en avant sont : Les &lt;strong&gt;horaires&lt;/strong&gt;, Les &lt;strong&gt;tarifs&lt;/strong&gt; et les &lt;strong&gt;évènements à venir&lt;/strong&gt;. Les visiteurs doivent trouver ces informations très simplement afin de faciliter leur décision de venir visiter le musée.&lt;/p&gt;
+
+&lt;p&gt;Le Louvre-Lens est un lieu d'exception à explorer, mais la navigation actuelle n'encourage pas les utilisateurs à trouver facilement les informations qu'ils recherchent.&lt;/p&gt;
+
+&lt;h2 id="solutions"&gt;Solutions&lt;/h2&gt;
+
+&lt;h3 id="menu-principal-1"&gt;Menu principal&lt;/h3&gt;
+
+&lt;p&gt;En supprimant et en regroupant les informations il est possible de simplifier le menu principal.
+Il est responsive est s'adapte en fonction de la taille de l'écran.&lt;/p&gt;
+
+&lt;p&gt;L'unique bouton est un tunnel d'entrée vers le contenu personnalisé des utilisateurs.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="menu responive anime" src="https://farm4.staticflickr.com/3803/13621448534_763dd528ea_o.gif" /&gt;&lt;/p&gt;
+
+&lt;h3 id="navigation-par-catgories"&gt;Navigation par catégories&lt;/h3&gt;
+
+&lt;p&gt;Pour garder captif l'attention des visiteurs, les entrées vers les différentes pages essentielles sont positionnées en bas de page, avant le footer.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Horaires&lt;/li&gt;
+  &lt;li&gt;Billets&lt;/li&gt;
+  &lt;li&gt;Boutiques&lt;/li&gt;
+  &lt;li&gt;Agenda&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img alt="Navigation par catégories" src="https://farm4.staticflickr.com/3713/13621090445_7ce1677993_o.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Comme sur une carte où l'on affiche la position actuelle, le lien vers &lt;strong&gt;la page en cours&lt;/strong&gt; est contrasté pour inviter à la découverte des autres catégories.&lt;/p&gt;
+
+&lt;h3 id="demonstration"&gt;Demonstration&lt;/h3&gt;
+
+&lt;p&gt;Ma philosophie est le développement open source et grâce à la magie de Ruby on Rails et SASS tout est disponible sur github.&lt;/p&gt;
+
+&lt;div class="row"&gt;
+  &lt;div class="medium-6 columns"&gt;&lt;a href="http://flexbox.github.io/louvrelens/" class="button secondary expand"&gt;Demo&lt;/a&gt;&lt;/div&gt;
+  &lt;div class="medium-6 columns"&gt;&lt;a href="https://github.com/flexbox/louvrelens" class="button expand"&gt;Code source&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;N'hésitez pas à aller "pirater" mon code source :)&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
     <title>La mediaquery du 01 Avril</title>
     <link rel="alternate" href="http://davidl.fr/blog/easter-egg-april.html"/>
     <id>http://davidl.fr/blog/easter-egg-april.html</id>
@@ -666,38 +772,6 @@ filename.emperor.html — fonctionnalités supplémentaires
 &lt;p&gt;A la fin, il existe beaucoups de façon de nommer les fichiers. La meilleure façon de trouver son propre système est d'essayer, d'échouer, et de recommencer jusqu'à trouver ce qui vous correspond -ainsi qu'à votre équipe.&lt;/p&gt;
 
 &lt;p&gt;Avoir des règles de nommage peut sembler inutile. D'expérience, cela vous économisera de précieuses secondes lors de vos vos développements, qui se transforment en mois de travail arrivé à une certaine échelle.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Take Off 2014 résumé en une image</title>
-    <link rel="alternate" href="http://davidl.fr/blog/takeoff-conf-2014.html"/>
-    <id>http://davidl.fr/blog/takeoff-conf-2014.html</id>
-    <published>2014-02-06T23:00:00Z</published>
-    <updated>2014-02-07T13:41:40+01:00</updated>
-    <author>
-      <name>DavidL design + développement</name>
-    </author>
-    <content type="html">&lt;p&gt;Le &lt;a href="http://takeoffconf.com/2014"&gt;takeoff&lt;/a&gt; est un festival organisé par des développeurs, pour des développeurs. Pendant deux jours, cet évènement de plus de 250 personnes présente différents sujets d'actualité axé sur le Web.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Comment notre plate-forme technologique évoluera dans les mois à venir ?&lt;/li&gt;
-  &lt;li&gt;Quelles sont les technologies qui fonctionnent ?&lt;/li&gt;
-  &lt;li&gt;Comment s'organiser pour travailler plus efficacement ?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Apprenez tout ce que les meilleures sources de l'industrie - les membres de la communauté qui font tous la magie.&lt;/p&gt;
-
-&lt;h2 id="synthse-des-2-jours"&gt;Synthèse des 2 jours&lt;/h2&gt;
-
-&lt;p&gt;J'ai profité ce cette conférence pour expérimenter une chose : ma capacité de concentration. Je remarque que cela fonctionne beaucoup mieux sans aucune source de distration (tablette ou ordinateur allumé). Pendant les conférences je me suis contenté d'un carnet et de crayons, &lt;strong&gt;c'est tout&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Grâce à cette méthode j'ai pu réaliser de bons croquis pour résumer ces 2 jours -&lt;a href="https://medium.com/p/20102acc5c28"&gt;avec un certain succès&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="http://www.flickr.com/photos/geekgrunge/12342105995/"&gt;&lt;img alt="takeoff conf sketch" src="http://farm4.staticflickr.com/3816/12342105995_062d650f8e_c.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Si vous souhaitez un contenu détaillé je vous invite à &lt;a href="http://www.siliconsalad.com/blog/"&gt;lire le blog de Silicon Salad&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;L'année prochaine je serais mieux préparé grâce à ce livre : &lt;a href="http://www.amazon.fr/gp/product/0321857895/ref=as_li_ss_tl?ie=UTF8&amp;amp;amp;camp=1642&amp;amp;amp;creative=19458&amp;amp;amp;creativeASIN=0321857895&amp;amp;amp;linkCode=as2&amp;amp;amp;tag=davidl-21"&gt;The sketchnote Handbook&lt;/a&gt;. J'espère pourvoir produire un contenu de meilleure qualité pour les développeurs qui ne peuvent se rendre à cette incroyable conférence qu'il ne faut absolument pas manquer si vous habitez le nord de la France.&lt;/p&gt;
 </content>
   </entry>
 </feed>

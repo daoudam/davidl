@@ -367,6 +367,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>http://davidl.fr/blog/articles/2014-04-02-louvrelens.html</loc>
+    <lastmod>2014-04-04T00:00:00+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://davidl.fr/blog/index.html</loc>
     <lastmod>2014-04-04T00:00:00+02:00</lastmod>
     <changefreq>daily</changefreq>
@@ -595,7 +601,7 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>http://davidl.fr/2012/07/31.html</loc>
+    <loc>http://davidl.fr/2013/12/13.html</loc>
     <lastmod>2014-04-04T00:00:00+02:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -613,7 +619,7 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>http://davidl.fr/2013/11/26.html</loc>
+    <loc>http://davidl.fr/2012/07/31.html</loc>
     <lastmod>2014-04-04T00:00:00+02:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -799,7 +805,7 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>http://davidl.fr/2013/12/13.html</loc>
+    <loc>http://davidl.fr/2013/11/26.html</loc>
     <lastmod>2014-04-04T00:00:00+02:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
