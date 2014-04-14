@@ -5,10 +5,145 @@
   <id>http://davidl.fr/blog/</id>
   <link href="http://davidl.fr/blog/"/>
   <link href="http://davidl.fr/blog/feed.xml" rel="self"/>
-  <updated>2014-03-31T22:00:00Z</updated>
+  <updated>2014-04-13T22:00:00Z</updated>
   <author>
     <name>David Leuliette</name>
   </author>
+  <entry>
+    <title>Migration de wordpress vers ruby on rails et middleman</title>
+    <link rel="alternate" href="http://davidl.fr/blog/migration-wordpress.html"/>
+    <id>http://davidl.fr/blog/migration-wordpress.html</id>
+    <published>2014-04-13T22:00:00Z</published>
+    <updated>2014-04-14T19:03:02+02:00</updated>
+    <author>
+      <name>DavidL design + développement</name>
+    </author>
+    <content type="html">&lt;p&gt;Depuis quelque temps maintenant j’ai dit &lt;a href="http://lesjoiesducode.fr/post/78835971429/quand-lintegrateur-veut-toucher-au-php"&gt;au revoir à wordpress&lt;/a&gt; et bonjour à middleman.
+J'ai décidé de m'éloigner de Wordpress, car je me retrouvais souvent à livrer bataille avec l’interface d'administration et le flux de travail de publication, juste pour faire des choses simples.&lt;/p&gt;
+
+&lt;p&gt;Travailler avec le tinymce et le &lt;code&gt;HTML&lt;/code&gt; fonctionne plutôt bien, mais je trouve que l'écriture en &lt;code&gt;Markdown&lt;/code&gt; est beaucoup plus simple et &lt;a href="http://fr.wikipedia.org/wiki/Environnement_pervasif"&gt;pervasive&lt;/a&gt;.
+Je passais mon temps à enlever des fonctionnalités, mettre à jour et installer des modules qui par dizaines en utilisant finalement 30% des fonctionnalités.&lt;/p&gt;
+
+&lt;p&gt;J'ai donc quitté le monde Wordpress et &lt;code&gt;php&lt;/code&gt; pour travailler en Ruby on Rails avec un générateur de site statiques : &lt;a href="http://middlemanapp.com/"&gt;middleman&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id="les-avantages"&gt;Les avantages&lt;/h2&gt;
+
+&lt;h3 id="rapidit-dcriture"&gt;Rapidité d’écriture&lt;/h3&gt;
+
+&lt;p&gt;Personnellement voici mon workflow pour publier du contenu.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;J’écris en markdown avec evernote (Généralement depuis ma tablette).&lt;/li&gt;
+  &lt;li&gt;Je passe sur un ordinateur fixe pour gérer les medias images.&lt;/li&gt;
+  &lt;li&gt;Je déploie depuis mon ordinateur portable.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;L’interface de wordpress est un bonne chose et propose &lt;s&gt;énormément&lt;/s&gt;, beaucoups trop d’options pour moi. Trop de solicitations qui au final perturbent votre flux de production de contenu. Un peu comme windows vous passez votre temps à protéger le système contre lui-même au lieu de travailler de façon efficace.&lt;/p&gt;
+
+&lt;h3 id="rapidit-du-site"&gt;Rapidité du site&lt;/h3&gt;
+
+&lt;p&gt;C’est simple : un site web statique se charge plus vite qu’un site hébergé sous wordpress. &lt;a href="https://twitter.com/ABrisset"&gt;@abrisset&lt;/a&gt; a fait l’expérience et chiffre à l’appui voici le résultat :&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="migration wordpress - ruby on rails" src="https://farm4.staticflickr.com/3724/13851401935_98a7267d54_o.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Le site se charge 10 fois plus vite&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3 id="pas-de-base-de-donnes"&gt;Pas de base de données&lt;/h3&gt;
+
+&lt;p&gt;Pas de configuration, pas de système complexes, pas de hack possible en accédant à &lt;code&gt;/wp-admin/&lt;/code&gt;. Travailler sur différents environnements est d'une simplicité déconcertante avec un &lt;code&gt;git clone nom-du-projet&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;La base de données est remplacé par de simples fichiers textes &lt;code&gt;.yml&lt;/code&gt; pour la configuration ou &lt;code&gt;.markdown&lt;/code&gt; pour le contenu.&lt;/p&gt;
+
+&lt;h3 id="contrle-du-code"&gt;Contrôle du code&lt;/h3&gt;
+
+&lt;p&gt;Wordpress est une bonne solution, mais niveau architecture du code et maintenance c’est juste le chaos le plus complet. On bourre tout dans &lt;code&gt;function.php&lt;/code&gt; et on verra après.&lt;/p&gt;
+
+&lt;p&gt;Comme tout le monde :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;J'ai téléchargé un thème pour le modifier et me rendre compte qu'au final je n'avais besoin que de 10% des fonctionnalités offertes.&lt;/li&gt;
+  &lt;li&gt;Je suis passé par la case framework de thèmes pour wordpress, qui au final complexifiait l'architecture.&lt;/li&gt;
+  &lt;li&gt;Ma dernière expérience fut d'utiliser &lt;a href="http://underscores.me/"&gt;underscore&lt;/a&gt; (Un boilerplate simple de thème). Mais les performances n'étaient pas au rendez-vous.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Finalement j'ai &lt;a href="http://middlemanapp.com/"&gt;middleman&lt;/a&gt; qui embarque de base &lt;a href="http://sass-lang.com/"&gt;Sass&lt;/a&gt;, &lt;a href="http://coffeescript.org/"&gt;CoffeeScript&lt;/a&gt; et juste ce qu'il faut de &lt;a href="http://rubyonrails.org/"&gt;Ruby on Rails&lt;/a&gt;. Je passe mon temps à construire des choses. Contrairement à wordpress où je passais mon temps à faire des &lt;em&gt;dirty hacks&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3 id="historique-des-version"&gt;Historique des version&lt;/h3&gt;
+
+&lt;p&gt;Avec git, vous avez à votre disposition une machine à remonter le temps. Vous pouvez voir toutes vos modifications, créer des branches, tester des fonctionnalités et revenir en arrière facilement si cela ne fonctionne pas. Cela demande une certaine gymnatisque au début, mais impossible de revenir en arrière dès que l'on a commencé à comprendre comment cela fonctionne vraiment.&lt;/p&gt;
+
+&lt;h3 id="en-rsum"&gt;En résumé&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Markdown&lt;/strong&gt; pour l'écriture.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Slim&lt;/strong&gt; pour le templating HTML.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sass&lt;/strong&gt; en préprocesseur CSS.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;CoffeeScript&lt;/strong&gt; pour la compilation du JavaScript.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Git&lt;/strong&gt; pour la gestion des fichiers.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Terminal&lt;/strong&gt; pour &lt;em&gt;tout le reste&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Automatique&lt;/strong&gt; pour le déploiement.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Contrôle total&lt;/strong&gt; du site et surtout de sa mise en page.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Accessible&lt;/strong&gt; pour les débutants et évolutif pour les experts.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="les-inconvnients"&gt;Les inconvénients&lt;/h2&gt;
+
+&lt;h3 id="le-media-manager"&gt;Le media manager&lt;/h3&gt;
+
+&lt;p&gt;L'une des &lt;em&gt;killer feature&lt;/em&gt; de wordpress est sa gestion des images. Un simple drag &amp;amp; drop et vous pouvez ajouter une légende, les medias sont resizés en différentes tailles, et il est très facile de retrouver sa collection d'image.
+Avec un générateur de site statique c'est plus compliqué car héberger ses images sur gitthub n'a pas de sens. Pour avoir des performances optimales vous devez utiliser un &lt;em&gt;CDN&lt;/em&gt; comme cloudfront, spécialisé dans le stockage.&lt;/p&gt;
+
+&lt;p&gt;Personnellement j'utilise le CDN du pauvre : flickR. Avec 1 To de stockage disponible dans sa version gratuite, son retaillage des images et l'upload des photos en drag &amp;amp; drop, je met quiquonque au défi de trouver mieux.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sur flickR, si vous souhaitez faire un lien vers une image en .gif ou .png, sélectionnez la taille par défaut de votre image&lt;/p&gt;
+
+  &lt;p&gt;&lt;cite&gt;Conseil du pro&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id="la-correction-orthographique"&gt;La correction orthographique&lt;/h3&gt;
+
+&lt;p&gt;Mon contenu est écrit en mode texte brut dans un éditeur de texte. Difficile d'avoir des outils de correction automatique dans cet environnement. Il m'arrive régulièrement de faire des fautes de frappes malgré ma relecture et je n'ai à ce jour pas trouvé de solution.&lt;/p&gt;
+
+&lt;h3 id="pas-de-base-de-donnes-1"&gt;Pas de base de données&lt;/h3&gt;
+
+&lt;p&gt;J’ai écris plus haut que c’était un avantage. C'est aussi un inconvénient dans le mesure où vous devrez sortir l'artillerie et le workflow de deploiement simplement pour corriger un "s" manquant. Avec wordpress il suffit de se connecter à l'interface d'admin et c'est corrigé en 2-3 clics.&lt;/p&gt;
+
+&lt;h2 id="au-revoir-wordpress-et-bonjour-middleman"&gt;Au revoir wordpress et bonjour middleman&lt;/h2&gt;
+
+&lt;p&gt;Rome ne s’est pas construite en un jour et migrer l’intégralité de votre contenu vous demandera un peu d'investissement (Personnellement cela m’a pris un peu plus d’un mois)
+Voici 3 étapes qui vous feront gagner du temps :&lt;/p&gt;
+
+&lt;h3 id="transformer-ses-articles-en-markdown"&gt;1. Transformer ses articles en markdown&lt;/h3&gt;
+
+&lt;p&gt;Exitwp est un outil pour &lt;a href="https://github.com/thomasf/exitwp"&gt;migrer un ou plusieurs blogs wordpress&lt;/a&gt; vers le moteur de blog jekyll (un autre moteur de blog en ruby).&lt;/p&gt;
+
+&lt;h3 id="utiliser-un-cdn-pour-les-images"&gt;2. Utiliser un CDN pour les images&lt;/h3&gt;
+
+&lt;p&gt;Flickr avec son offre 1 To est une bonne alternative à un vrai CDN. L’avantage principal est la création des différentes tailles d’images lors de l’upload.&lt;/p&gt;
+
+&lt;h3 id="raliser-un-plan-de-redirection"&gt;3. Réaliser un plan de redirection&lt;/h3&gt;
+
+&lt;p&gt;Si vous ne souhaitez pas perdre la popularité associé à vos pages, vous devez faire des redirections 301. Le remercie &lt;a href="https://twitter.com/rduhomez"&gt;@rduhomez&lt;/a&gt;, référenceur de talent, pour m'avoir épargné quelques crises de nerf avec ses précieux conseils.
+J'ai simplement réalisé un export de toutes mes anciennes url et mis en place des redirections avec le pattern suivant :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Redirect permanent /wordPress/about/ http://davidl.fr/about.html
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Cette méthode peut être largement optimisée, et j'ai certainement perdu quelques morceaux dans la bataille, mais mon objectif principal et de produire du contenu &amp;amp; du code. De toute façon le SEO ça ne sert à rien ;) #privatejoke&lt;/p&gt;
+
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Ce système n'est pas adapté à tout le monde, et il faut une certaine philosophie de hacker / développeur / githuber pour travailler de cette façon. Dans mon cas, j'ai remarqué que c'est beaucoups plus efficace. Couplé avec bower je peux tester n'importe quelle fonctionnalité très rapidement comme les &lt;a href="http://davidl.fr"&gt;filtres avec mixitup&lt;/a&gt;, les &lt;a href="http://davidl.fr/webdesign.html"&gt;vidéos en background&lt;/a&gt;, changer complètement &lt;a href="http://davidl.fr/books.html"&gt;l'aspect du layout&lt;/a&gt; et utiliser des données de fichiers &lt;code&gt;.yml&lt;/code&gt; pour être évolutif …&lt;/p&gt;
+
+&lt;h2 id="ressources"&gt;Ressources&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://github.com/thomasf/exitwp"&gt;exitwp&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://davidl.fr/blog/hebergement-gratuit-ovh.html"&gt;Héberger son site sur GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   <entry>
     <title>Proposition de redesign du louvrelens.fr</title>
     <link rel="alternate" href="http://davidl.fr/blog/louvrelens.html"/>
@@ -708,70 +843,6 @@ Pour vous sortir d'une situation périlleuse vous pouvez utiliser un joker.&lt;/
 
   &lt;p&gt;Andy clarke&lt;/p&gt;
 &lt;/blockquote&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Foundation 5 architecturer ses fichiers Interchange</title>
-    <link rel="alternate" href="http://davidl.fr/blog/foundation5-architecture.html"/>
-    <id>http://davidl.fr/blog/foundation5-architecture.html</id>
-    <published>2014-02-10T23:00:00Z</published>
-    <updated>2014-02-14T16:32:40+01:00</updated>
-    <author>
-      <name>DavidL design + développement</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;a href="http://foundation.zurb.com/docs/components/interchange.html"&gt;Foundation interchange&lt;/a&gt; permet aux concepteurs de ne charger que le code HTML le plus approprié en fonction de l’appareil. Les navigateurs mobiles ne doivent pas gaspiller de bande passante en chargeant des ressources à destination des écrans larges, et inversement.&lt;/p&gt;
-
-&lt;p&gt;Mais cela signifie que chaque "page" peut avoir plusieurs sources sur le serveur Web. Vous pouvez organiser ces fichiers comme bon vous semble. Tant que les chemins sont corrects, interchange fonctionne très bien. Cependant, j’ai remarqué que pour de gros projets il faut vite mettre au point une organisation en respectant certaines bonnes pratiques.
-Voici quelques techniques que j'ai apprises.&lt;/p&gt;
-
-&lt;h2 id="morceaux-de-code-dans-le-mme-dossier"&gt;Morceaux de code dans le même dossier&lt;/h2&gt;
-
-&lt;p&gt;Organiser vos fichiers dans un dossier en dehors du site principal est une évidence.&lt;/p&gt;
-
-&lt;p&gt;Mais je conseille de stocker vos snippets Interchange ensembles, et non pas de les organiser dans des dossiers séparés comme "mobile", "tablette" et "complexe".&lt;/p&gt;
-
-&lt;p&gt;Un unique dossier, regroupant vos vues, permet de scanner plus rapidement et rend l’identification de vos extraits de code plus facile. Si vous avez une instance interchange pour chaque breakpoint, cette astuce vous épargnera de nombreuses crises de nerfs.&lt;/p&gt;
-
-&lt;p&gt;Plutôt que des dossiers séparés, je recommande d'utiliser &lt;strong&gt;des noms de fichiers intelligents&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id="une-rgle-pour-les-nommer-tous"&gt;Une règle pour les nommer tous&lt;/h2&gt;
-
-&lt;p&gt;Nommer ses objets en fonction de ce qu’ils contiennent est plus intelligent que de les nommer en fonction de leur position.
-Par exemple &lt;code&gt;nav-control.snippet.html&lt;/code&gt; est bien mieux que &lt;code&gt;page-header-menu.snippet.html&lt;/code&gt; pour plusieurs raisons :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Vous pouvez décider d'utiliser une navigation différente -par exemple, lors d'un événement saisonnier ou une vente temporaire.&lt;/li&gt;
-  &lt;li&gt;Vous pouvez décider de déplacer la navigation ailleurs dans le site, dans une &lt;code&gt;sidebar&lt;/code&gt; ou un &lt;code&gt;footer&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;La mise en page ou la structure de votre site peuvent changer. Dans ce cas, vos noms de fichiers ne devraient pas avoir à faire de même.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="utiliser-une-structure-de-nommage"&gt;Utiliser une structure de nommage&lt;/h2&gt;
-
-&lt;p&gt;Ajouter &lt;code&gt;.snippet.html&lt;/code&gt; pour chaque fichier permet de différencier les documents HTML incomplets, des fichiers interchange qui seront chargés. Encore mieux généralement je spécifie les tailles comme ceci :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;snippet.simple.html
-snippet.medium.html
-snippet.complex.html
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Notez également que je ne nomme pas mes snippets en fonction de la taille ou l'emplacement prévu. Pas de "petit" ou "grand", ou encore "top" et "footer". Cela signifie que lorsque le site internet évolue, je n'ai pas besoin de changer les noms de fichiers en conséquence.&lt;/p&gt;
-
-&lt;p&gt;C’est comme nommer en CSS &lt;code&gt;.big-button-red&lt;/code&gt; et &lt;code&gt;.top-left&lt;/code&gt;. Les &lt;a href="http://davidl.fr/blog/css-evolutif.html"&gt;noms de classes en vrac&lt;/a&gt; sont de mauvaises pratiques. Pour donner plus de sens, j'utilise &lt;code&gt;.basic&lt;/code&gt; ou encore &lt;code&gt;.full-feature&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Mais où est le fun la dedans ? Pour que la force soit avec moi, j'ai décidé d'embrasser le pouvoir du coté obscur de la force comme l'explique Andy Clarke dans son article : &lt;a href="http://stuffandnonsense.co.uk/blog/about/star-wars-styling"&gt;Star wars styling&lt;/a&gt;.
-L'idée est d'utiliser la puissance des personnages de films de science fiction pour hiérarchiser ses fichiers.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;filename.html — simple
-filename.maul.html — moyen
-filename.vador.html — complexe
-filename.emperor.html — fonctionnalités supplémentaires
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Cette approche à l'avantage d'utiliser une "convention" existante, que n'importe qui peut comprendre facilement. Inutile ? Sûrement. La question est de créer une convention qui fonctionne.&lt;/p&gt;
-
-&lt;p&gt;A la fin, il existe beaucoups de façon de nommer les fichiers. La meilleure façon de trouver son propre système est d'essayer, d'échouer, et de recommencer jusqu'à trouver ce qui vous correspond -ainsi qu'à votre équipe.&lt;/p&gt;
-
-&lt;p&gt;Avoir des règles de nommage peut sembler inutile. D'expérience, cela vous économisera de précieuses secondes lors de vos vos développements, qui se transforment en mois de travail arrivé à une certaine échelle.&lt;/p&gt;
 </content>
   </entry>
 </feed>
