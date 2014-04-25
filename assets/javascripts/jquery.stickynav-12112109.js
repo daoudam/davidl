@@ -1,1 +1,0 @@
-(function(){$(function(){return $(window).scroll(function(){var t,e;return t=$("#top").height(),e=t/2,$(window).scrollTop()>e?$(".m-control").removeClass("is-hidden").addClass("is-show"):$(".m-control").removeClass("is-show").addClass("is-hidden")})})}).call(this);

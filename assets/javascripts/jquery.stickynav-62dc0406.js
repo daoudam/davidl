@@ -1,0 +1,1 @@
+(function(){$(function(){var t;return $(window).scroll(function(){}),t=0,$(window).scroll(function(){var e;return e=$(this).scrollTop(),e>t?$(".m-header").removeClass("is-show").addClass("is-hidden"):$(".m-header").removeClass("is-hidden").addClass("is-show"),t=e})})}).call(this);
