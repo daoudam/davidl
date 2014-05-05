@@ -149,24 +149,22 @@ J'ai simplement réalisé un export de toutes mes anciennes url et mis en place 
     <link rel="alternate" href="http://davidl.fr/blog/louvrelens.html"/>
     <id>http://davidl.fr/blog/louvrelens.html</id>
     <published>2014-03-31T22:00:00Z</published>
-    <updated>2014-04-04T18:05:30+02:00</updated>
+    <updated>2014-05-05T13:11:04+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
-    <content type="html">&lt;p&gt;Chaque jour, dans la communauté des designer, les &lt;a href="http://dribbble.com/search?page=4&amp;amp;amp;q=redesign"&gt;proposition de redesign&lt;/a&gt; pleuvent : iOs, Facebook, Twitter … Si je salue la performance, je ne comprends pas trop l’intérêt car ces boites possèdent une armée de personnes en interne pour réaliser la chose. Pourquoi ne pas s’attaquer à de vrais sites qui ont vocation à être accessibles au plus grand nombre ?&lt;/p&gt;
+    <content type="html">&lt;p&gt;Chaque jour, dans la communauté des designer, les &lt;a href="http://dribbble.com/search?page=4&amp;amp;amp;q=redesign"&gt;proposition de redesign&lt;/a&gt; pleuvent : iOs, Facebook, Twitter … Je salue bien évidemment cette performance. Mais pourquoi ne pas s’intéresser à de vrais sites qui ont vocation à être accessibles au plus grand nombre ?&lt;/p&gt;
 
 &lt;p&gt;&lt;a href="http://responsivemuseum.tumblr.com/"&gt;Responsive Museum&lt;/a&gt; propose de modifier la feuille de styles CSS du site d’un musée pour le rendre lisible sur mobile, tablette, etc… J’ai voulu participer à cette chouette initiative en proposant la refonte du &lt;a href="http://www.louvrelens.fr/"&gt;LouvreLens&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id="pourquoi-un-redesign-"&gt;Pourquoi un redesign ?&lt;/h2&gt;
 
-&lt;p&gt;Pour préparer ma prochaine visite au musée, je me suis posé dans mon canapé avec ma tablette (mais apparement je dois être le seul français à faire ça).&lt;/p&gt;
-
-&lt;p&gt;Le site internet n’est pas responsive et l’expérience n’est donc pas optimisée pour la mobilité.Je décide de télécharger l’application android. et la c’est le drame : &lt;em&gt;Cette application n’est pas compatible avec votre appareil&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Pour préparer ma prochaine visite au musée, je me suis installé dans mon canapé avec ma tablette. Je découvre que le site internet n’est pas responsive. L’expérience n’est donc pas optimisée pour la mobilité. Je décide de télécharger l’application Android. et là c’est le drame : &lt;em&gt;Cette application n’est pas compatible avec votre appareil&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img alt="louvrelen et android" src="https://farm8.staticflickr.com/7117/13621111873_2b530fb811_o.png" /&gt;&lt;/p&gt;
 
-&lt;p&gt;Le problème principal est d’avoir divisé le site en 3 parties : l’accès web, l’accès android et iPhone.
-J’ai déjà évoqué le fait que ce choix &lt;a href="http://davidl.fr/blog/webdesign-adaptatif-vs-site-mobile-vs-application-native.html"&gt;multiplie les coûts&lt;/a&gt; et je ne pense pas que ce soit une bonne solution pour &lt;a href="http://fr.wikipedia.org/wiki/Louvre-Lens#Fonctionnement"&gt;le budget de fonctionnement&lt;/a&gt; alloué aux mise à jour du contenu en ligne.&lt;/p&gt;
+&lt;p&gt;Le problème principal est d’avoir divisé le site en 3 parties : l’accès web, l’accès Android et iPhone.
+J’ai déjà évoqué le fait que ce choix &lt;a href="http://davidl.fr/blog/webdesign-adaptatif-vs-site-mobile-vs-application-native.html"&gt;multiplie les coûts&lt;/a&gt; et je ne pense pas que ce soit une bonne solution pour &lt;a href="http://fr.wikipedia.org/wiki/Louvre-Lens#Fonctionnement"&gt;le budget de fonctionnement&lt;/a&gt; alloué aux mises à jour du contenu en ligne.&lt;/p&gt;
 
 &lt;h2 id="audit-de-navigation"&gt;Audit de navigation&lt;/h2&gt;
 
@@ -194,9 +192,9 @@ J’ai déjà évoqué le fait que ce choix &lt;a href="http://davidl.fr/blog/we
 
 &lt;h3 id="menu-principal"&gt;Menu principal&lt;/h3&gt;
 
-&lt;p&gt;À mon avis le site d’un musée se doit d’être accessible à tous, et apparement d’ici 2015 ce ne sera &lt;a href="http://www.lexpress.fr/actualites/1/societe/handicap-l-echeance-de-2015-d-accessiblite-pour-tous-pas-negociable_1023008.html"&gt;pas négociable&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;À mon avis, le site d’un musée doit d’être accessible à tous, et apparemment d’ici 2015 ce ne sera &lt;a href="http://www.lexpress.fr/actualites/1/societe/handicap-l-echeance-de-2015-d-accessiblite-pour-tous-pas-negociable_1023008.html"&gt;pas négociable&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;J’aimerais bien que l’on m’explique en quoi la navigation actuelle du Louvre-lens est accessible ? - elle est simplement illisible :&lt;/p&gt;
+&lt;p&gt;La navigation actuelle du Louvre-Lens ne me parait pas très lisible :&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Petite taille de la police.&lt;/li&gt;
@@ -210,7 +208,7 @@ J’ai déjà évoqué le fait que ce choix &lt;a href="http://davidl.fr/blog/we
 
 &lt;p&gt;Les 3 informations capitales qui devraient êtres mises en avant sont : Les &lt;strong&gt;horaires&lt;/strong&gt;, Les &lt;strong&gt;tarifs&lt;/strong&gt; et les &lt;strong&gt;évènements à venir&lt;/strong&gt;. Les visiteurs doivent trouver ces informations très simplement afin de faciliter leur décision de venir visiter le musée.&lt;/p&gt;
 
-&lt;p&gt;Le Louvre-Lens est un lieu d'exception à explorer, mais la navigation actuelle n'encourage pas les utilisateurs à trouver facilement les informations qu'ils recherchent.&lt;/p&gt;
+&lt;p&gt;Le Louvre-Lens est un lieu d'exception à explorer, mais la navigation actuelle ne permet pas aux utilisateurs de trouver facilement les informations qu'ils recherchent.&lt;/p&gt;
 
 &lt;h2 id="solutions"&gt;Solutions&lt;/h2&gt;
 
@@ -221,7 +219,7 @@ Il est responsive est s'adapte en fonction de la taille de l'écran.&lt;/p&gt;
 
 &lt;p&gt;L'unique bouton est un tunnel d'entrée vers le contenu personnalisé des utilisateurs.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="menu responive anime" src="https://farm4.staticflickr.com/3803/13621448534_763dd528ea_o.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="menu responsive anime" src="https://farm4.staticflickr.com/3803/13621448534_763dd528ea_o.gif" /&gt;&lt;/p&gt;
 
 &lt;h3 id="navigation-par-catgories"&gt;Navigation par catégories&lt;/h3&gt;
 
