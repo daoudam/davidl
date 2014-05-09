@@ -1,1 +1,0 @@
-(function(){$(function(){var t;return t=0,$(window).scroll(function(){var e;return e=$(this).scrollTop(),e>t?$(".m-header").removeClass("is-show").addClass("is-hidden"):$(".m-header").removeClass("is-hidden").addClass("is-show"),t=e}),$("#js-off-canvas-toggle").click(function(){return $("html,body").animate({scrollTop:0},500)})})}).call(this);
