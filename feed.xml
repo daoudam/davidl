@@ -149,7 +149,7 @@ J'ai simplement réalisé un export de toutes mes anciennes url et mis en place 
     <link rel="alternate" href="http://davidl.fr/blog/louvrelens.html"/>
     <id>http://davidl.fr/blog/louvrelens.html</id>
     <published>2014-03-31T22:00:00Z</published>
-    <updated>2014-05-05T13:11:04+02:00</updated>
+    <updated>2014-05-16T09:01:17+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -236,7 +236,7 @@ Il est responsive est s'adapte en fonction de la taille de l'écran.&lt;/p&gt;
 
 &lt;p&gt;Comme sur une carte où l'on affiche la position actuelle, le lien vers &lt;strong&gt;la page en cours&lt;/strong&gt; est contrasté pour inviter à la découverte des autres catégories.&lt;/p&gt;
 
-&lt;h3 id="demonstration"&gt;Demonstration&lt;/h3&gt;
+&lt;h3 id="dmonstration"&gt;Démonstration&lt;/h3&gt;
 
 &lt;p&gt;Ma philosophie est le développement open source et grâce à la magie de Ruby on Rails et SASS tout est disponible sur github.&lt;/p&gt;
 
