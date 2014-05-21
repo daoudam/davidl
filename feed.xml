@@ -5,10 +5,369 @@
   <id>http://davidl.fr/blog/</id>
   <link href="http://davidl.fr/blog/"/>
   <link href="http://davidl.fr/blog/feed.xml" rel="self"/>
-  <updated>2014-04-13T22:00:00Z</updated>
+  <updated>2014-05-20T22:00:00Z</updated>
   <author>
     <name>David Leuliette</name>
   </author>
+  <entry>
+    <title>Astuces et bonnes pratiques pour la performance d'un site internet</title>
+    <link rel="alternate" href="http://davidl.fr/blog/site-obese.html"/>
+    <id>http://davidl.fr/blog/site-obese.html</id>
+    <published>2014-05-20T22:00:00Z</published>
+    <updated>2014-05-21T13:59:00+02:00</updated>
+    <author>
+      <name>DavidL design + développement</name>
+    </author>
+    <content type="html">&lt;p&gt;Certains d'entre vous ont sûrement connu l'époque du 56k. En ce temps là, charger une seule image sur internet pouvait demander plusieures minutes. Puis est arrivé l'ADSL et le haut débit qui ont démultiplié la vitesse de chargement. Bizarrement j'ai l'impression que nous passons toujours autant de temps à attendre le chargement d'une page web.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Site internet obèse" src="https://farm6.staticflickr.com/5519/14256724243_9a829c4dd1_o.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;De nos jours les sites sont de plus en plus complexes, embarquent de plus en plus de contenu. Grâce à la fibre optique ces derniers se chargent de plus en plus vite… En théorie car paradoxalement le web évolue vite, mais les sites web sont toujours aussi long à charger.&lt;/p&gt;
+
+&lt;p&gt;Il existe beaucoup d'options pour améliorer la performance de votre site internet. Pour vous aider à décider comment mettre en place ces solutions j'ai découpé cet article en 3 parties :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Geek&lt;/li&gt;
+  &lt;li&gt;Guru&lt;/li&gt;
+  &lt;li&gt;Hacker&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Chaque technique peut être déployée partiellement, en partie ou pas du tout. Chaque palier peut vous aider lors du développement de votre site suivant son niveau de complexité.&lt;/p&gt;
+
+&lt;h2 id="geek-de-la-performance"&gt;Geek de la performance&lt;/h2&gt;
+
+&lt;p&gt;Les 2 choses les plus simples à mettre en place rapidement sont la compression des fichiers et le cache des en-têtes. Ces techniques indispensables vous aiderons à :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Réduire le poids des pages.&lt;/li&gt;
+  &lt;li&gt;Réduire le nombre de requêtes http, et donc la latence.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Puisque ces modifications ont lieu côté serveur, elles amélioreront immédiatement les performances de chaque page.&lt;/p&gt;
+
+&lt;h3 id="activer-moddeflate-pour-la-compression-gzip-de-vos-fichiers"&gt;Activer &lt;code&gt;mod_deflate&lt;/code&gt; pour la compression &lt;code&gt;Gzip&lt;/code&gt; de vos fichiers&lt;/h3&gt;
+
+&lt;p&gt;De la même manière que nous zippons nos pièces jointes envoyées par email, votre serveur peut compresser les fichiers avant de les envoyer au navigateur. Pour &lt;strong&gt;préserver la bande passante&lt;/strong&gt; de vos utilisateurs mobiles, il est capital de réduire le plus possible la taille de votre site.&lt;/p&gt;
+
+&lt;p&gt;La librairie de compression pour Apache &lt;code&gt;mod_deflate&lt;/code&gt; fonctionne uniquement sur des fichiers textes comme &lt;code&gt;HTML&lt;/code&gt;, &lt;code&gt;CSS&lt;/code&gt; et &lt;code&gt;JavaScript&lt;/code&gt;. Généralement les images &lt;code&gt;.jpg&lt;/code&gt; sont déjà compressées, cette librairie n'ont donc aucun effet sur elles.&lt;/p&gt;
+
+&lt;p&gt;La mise en place demande 3 étapes :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Aller sur le projet &lt;a href="https://github.com/h5bp/html5-boilerplate/blob/master/.htaccess#L499"&gt;GitHub HTML5Boilerplate&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Copier le contenu &lt;code&gt;mod_deflate&lt;/code&gt; du fichier &lt;code&gt;.htaccess&lt;/code&gt;,&lt;/li&gt;
+  &lt;li&gt;et le coller sur votre serveur.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id="mettre-les-ressources-en-cache"&gt;Mettre les ressources en cache&lt;/h3&gt;
+
+&lt;p&gt;Si votre site est correctement architecturé, les mises à jours des ressources &lt;code&gt;CSS&lt;/code&gt;, &lt;code&gt;JavaScript&lt;/code&gt; et images sont moins fréquentes que le contenu. Dans un contexte mobile nous pouvons télécharger ces ressources statiques en une seule fois, et les mettre en cache sur l'appareil.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Moins de requêtes http seront effectuées.&lt;/li&gt;
+  &lt;li&gt;Le contenu total à télécharger est diminué.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;De cette façon, pour les futures visites, l'expérience de navigation sera incroyablement plus rapide et donc meilleure. L'astuce consiste à utiliser les entêtes d'expiration avec une date adaptée.&lt;/p&gt;
+
+&lt;p&gt;Il n’est pas conseillé de spécifier une durée inférieure à 1 mois et supérieure à un an. Si vous changez régulièrement une ressource vous pouvez :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Spécifier et identifier cette ressource dans votre fichier &lt;code&gt;.htaccess&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Modifier le nom du fichier, qui est une bien meilleure solution car cela donnera naissance à une nouvelle requête http.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;La mise en place demande 3 étapes :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Aller sur le projet &lt;a href="https://github.com/h5bp/html5-boilerplate/blob/master/.htaccess#L563"&gt;GitHub HTML5Boilerplate&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Copier le fichier &lt;code&gt;.htaccess&lt;/code&gt;, pour la partie &lt;code&gt;mod_expires&lt;/code&gt;,&lt;/li&gt;
+  &lt;li&gt;et le coller sur votre serveur.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;La plus grande limite de cette technique est la taille du cache des appareils mobiles. Un site web simple pèse en moyenne 4Mo, le cache des appareils Android 2.x est limité à 6Mo, les appareils iOS sont plus avantagés avec un cache de 50Mo.&lt;/p&gt;
+
+&lt;p&gt;Pour contourner ce problème nous pouvons mettre en place une fonctionnalité en utilisant l'API HTML5 &lt;code&gt;localStorage&lt;/code&gt; mais pour cela il faut être guru de la performance.&lt;/p&gt;
+
+&lt;h2 id="hacker-de-la-performance"&gt;Hacker de la performance&lt;/h2&gt;
+
+&lt;p&gt;La compression et la mise en cache des fichiers sont de bonnes pratiques mais ce n'est que la base. Pour avoir un &lt;strong&gt;réel impact sur la performance&lt;/strong&gt; et offrir une expérience optimisée à vos utilisateurs vous allez devoir travailler plus. Les techniques de cette partie permettent de :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Réduire le poids de vos pages.&lt;/li&gt;
+  &lt;li&gt;Réduire le nombre de requêtes à votre serveur, et donc la latence.&lt;/li&gt;
+  &lt;li&gt;Afficher du contenu à la demande.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Les techniques de minification et de concaténation devraient êtres mises en places lors de déploiement dans des environnements de test / production. Elles ne sont pas vraiment utiles si vos mises à jours sont fréquentes et multiples.&lt;/p&gt;
+
+&lt;h3 id="mettre-vos-fichiers-au-rgime"&gt;Mettre vos fichiers au régime.&lt;/h3&gt;
+
+&lt;p&gt;Minifier votre code source signifie simplement supprimer les octets inutiles d'un fichier (espaces, indentation et saut de ligne). Cette syntaxe est indispensable pour qu'un humain comprenne, mais elle n'est pas nécessaire pour l'éxécution du code sur une machine.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Le code source est écrit pour les humain, pas pour les machines&lt;/p&gt;
+
+  &lt;p&gt;&lt;cite&gt;@drublic&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Avec la minification le navigateur télécharge moins de contenu, le rendu de votre page est donc plus rapide.&lt;/p&gt;
+
+&lt;p&gt;Si vous utilisez une librairie populaire comme jQuery vous utilisez certainement la version &lt;code&gt;.min&lt;/code&gt;. La minification n'est pas seulement disponible pour le JavaScript, mais peut être appliquée à n'importe quelle type de ressource texte. L'&lt;code&gt;asset&lt;/code&gt; principale qui doit être minifiée dans un code de production est le CSS. La plus vieille solution pour réaliser cette opération est &lt;a href="http://yui.github.io/yuicompressor/"&gt;YUI Compressor&lt;/a&gt; de yahoo! Si vous êtes un &lt;a href="http://davidl.fr/manifesto.html"&gt;développeur front-end éclairé&lt;/a&gt; essayez de chercher du côté des tâches grunt pour automatiser cette opération.&lt;/p&gt;
+
+&lt;h3 id="la-concatnation--un-fichier-pour-les-gouverner-tous"&gt;La concaténation : un fichier pour les gouverner tous&lt;/h3&gt;
+
+&lt;p&gt;Si le père de la performance est la minification, la concaténation des fichiers est sans doute la mère. Par exemple : au lieu de télécharger 10 fichiers JavaScripts qui demandent 10 requêtes http au serveur, les utilisateurs devraient télécharger seulement 4 fichiers qui représentent la combinaison de ces 10 fichiers.&lt;/p&gt;
+
+&lt;p&gt;Après les &lt;code&gt;mod_expires&lt;/code&gt;, la concaténation est la meilleure option à mettre en place pour fluidifier la navigation sur mobile. Malheureusement la pratique est plus complexe que la théorie.&lt;/p&gt;
+
+&lt;p&gt;En moyenne un navigateur peut télécharger 6 fichiers en parallèle. Comme la minification YUI est un bon outil pour concaténer vos fichiers. Dans un environement ruby c'est l'&lt;code&gt;asset pipeline&lt;/code&gt; qui se charge du boulot, en php c'est &lt;a href="https://github.com/filamentgroup/quickconcat"&gt;quickconcat&lt;/a&gt;. Vous pouvez aussi &lt;a href="http://blog.carbonfive.com/2014/05/05/roll-your-own-asset-pipeline-with-gulp/"&gt;construire votre propre asset pipeline avec gulp&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id="optimisation-des-images"&gt;Optimisation des images&lt;/h3&gt;
+
+&lt;p&gt;Les images sont les éléments qui prennent le plus de place. En moyenne, c'est plus de 60% dans le poids d'une page. C'est à chacun, développeur comme designer, d'optimiser le poids des images. Le processus se fait en plusieurs étapes :&lt;/p&gt;
+
+&lt;h4 id="choisir-le-format-adapt"&gt;1. Choisir le format adapté&lt;/h4&gt;
+
+&lt;p&gt;&lt;code&gt;.png&lt;/code&gt; pour les aplats de couleurs, &lt;code&gt;.jpg&lt;/code&gt; pour les photographies. N'enregistrez &lt;strong&gt;jamais&lt;/strong&gt; vos images dans la qualité la plus haute mais essayez de trouver le bon compromis entre qualité / poids.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Enregistrement .jpg progressif avec Photoshop" src="https://farm3.staticflickr.com/2901/14256724273_85583d2db6_o.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Avec Photoshop &lt;code&gt;fichier&lt;/code&gt; &amp;gt; &lt;code&gt;enregistrer pour le web&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;N'oubliez pas de cocher la case &lt;strong&gt;jpg progressif&lt;/strong&gt;, cette technique utilisée pour les débits lents à l'époque du 56k prends tout son sens aujourd'hui dans un &lt;a href="http://calendar.perfplanet.com/2012/progressive-jpegs-a-new-best-practice/"&gt;contexte de navigation mobile&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id="supprimer-les-informations-inutiles"&gt;2. Supprimer les informations inutiles&lt;/h4&gt;
+
+&lt;p&gt;Pour gagner quelques octets supplémentaires il est possible de supprimer d'autres informations encapsulées dans les images (métadonnées, informations de claques, …) Cette opération peut se faire très facilement avec des logiciels comme :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://imageoptim.com/"&gt;imgOptim&lt;/a&gt; pour macOS&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://pnggauntlet.com/"&gt;pngGauntlet&lt;/a&gt; pour windows&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Si vous souhaitez en savoir plus sur l'optimisation des images, je vous invite chaudement à lire les articles de Serguey Chikuyonok's sur l'optimisation intelligente des images &lt;code&gt;.png&lt;/code&gt; et &lt;code&gt;.jpg&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://www.smashingmagazine.com/2009/07/15/clever-png-optimization-techniques/"&gt;Optimiser ses images png&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.smashingmagazine.com/2009/07/01/clever-jpeg-optimization-techniques/"&gt;Optimiser ses fichiers jpg&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id="automatiser-la-tche"&gt;3. Automatiser la tâche&lt;/h4&gt;
+
+&lt;p&gt;Avec la puissance de node et &lt;a href="https://github.com/JamieMason/ImageOptim-CLI"&gt;ImageOptim-CLI&lt;/a&gt; il est possible d’automatiser tout ce processus pour vous permettre de gagner un temps considérable.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;npm install -g imageoptim-cli
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id="reporter-le-chargement-du-contenu"&gt;Reporter le chargement du contenu&lt;/h3&gt;
+
+&lt;p&gt;Toutes les techniques précédentes, ormis la concaténation, vous aiderons à réduire la taille de vos pages. Une autre approche est de prioriser le chargement de votre contenu.&lt;/p&gt;
+
+&lt;p&gt;La performance n'augmentera pas, c'est le sentiment de vitesse que ressentira l'utilisateur qui doit être perceptible. Le moyen le plus simple de retarder le chargement d'un fichier JavaScript en utilisant l'attribut HTML5 &lt;code&gt;defer&lt;/code&gt; ou &lt;code&gt;async&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;script defer src="application.js"&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script async src="application.js"&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;D'un point de vue latence et performance ces attributs se comportent de façon similaire. Ils demandent au navigateur d'éxécuter les scripts seulement après avoir téléchargé l'intégralité du contenu de la page.&lt;/p&gt;
+
+&lt;p&gt;Vous devez vous poser la question : quel priorité dois-je utiliser ?&lt;/p&gt;
+
+&lt;h4 id="defer-charge-les-scripts-dans-lordre-dappel"&gt;&lt;code&gt;defer&lt;/code&gt; charge les scripts dans l'ordre d'appel&lt;/h4&gt;
+
+&lt;p&gt;Supposons que vous chargez la librairie jQuery ainsi qu'un autre fichier de plug-in. Ces 2 fichiers sont dépendant car le socond script doit être chargé &lt;em&gt;après&lt;/em&gt; le premier.&lt;/p&gt;
+
+&lt;h4 id="async-le-chargement-de-lordre-des-fichiers-na-aucune-importance"&gt;&lt;code&gt;async&lt;/code&gt; le chargement de l'ordre des fichiers n'a aucune importance&lt;/h4&gt;
+
+&lt;h2 id="guru-de-la-performance"&gt;Guru de la performance&lt;/h2&gt;
+
+&lt;p&gt;Les geeks et les hackers de la performance utilisent des techniques d'optimisation traditionnelles pour la construction de sites internet, bien avant l'apparition du responsive design.&lt;/p&gt;
+
+&lt;p&gt;Les techniques de guru peuvent êtres mises en place pour des applications web HTML5 avec un focus pour les navigateurs mobiles. Elles permettent de :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Réduire le poids de vos pages.&lt;/li&gt;
+  &lt;li&gt;Réduire le nombre de requêtes http, et donc la latence.&lt;/li&gt;
+  &lt;li&gt;Optimiser le chargement du contenu pour être utilisé plus rapidement.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="alert-box alert"&gt;
+Le principal désavantage est le support des navigateurs
+&lt;/div&gt;
+
+&lt;p&gt;Dans certains cas il ne sera pas possible de garantir le résultat sur de vieux navigateurs. N'hésitez pas à vérifier les différentes fonctionnalités sur le site &lt;a href="http://caniuse.com"&gt;caniuse&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id="ordre-des-sources"&gt;Ordre des sources&lt;/h3&gt;
+
+&lt;p&gt;Curieusement organiser correctement votre CSS et vos fichiers JavaScript peut avoir un large impact sur le ressenti de la rapidité de chargement.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;JavaScript bloque le chargement de votre contenu&lt;/p&gt;
+
+  &lt;p&gt;&lt;cite&gt;&lt;a href="/manifesto.html"&gt;Manifeste d'un développeur front-end&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Voici un très mauvais exemple que je rencontre quotidiennement :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;head&amp;gt;
+  &amp;lt;script src="jquery.js"&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;link rel="stylesheet" href="small.css"&amp;gt;
+  &amp;lt;link rel="stylesheet" href="big.css"&amp;gt;
+&amp;lt;/head&amp;gt;
+...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Vous ne devez &lt;strong&gt;JAMAIS&lt;/strong&gt; faire cela. Le JavaScript bloque téléchargement des autres ressources en parallèle comme les images. Sauf exception votre JavaScript doit toujours être appelé uniquement avant la fin du &lt;code&gt;&amp;lt;/body&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id="localstorage-comme-cache-navigateur"&gt;&lt;code&gt;localStorage&lt;/code&gt; comme cache navigateur&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;localStorage&lt;/code&gt; est une spécification du W3C. Cette technologie est comparable aux cookies utilisés par les développeurs pour stocker des informations de type clef / valeur. Elles sont sauvegardées même si le navigateur est fermé. Contrairement aux cookies les informations associées au &lt;code&gt;localStorage&lt;/code&gt; ne sont jamais renvoyées au serveur depuis le client.&lt;/p&gt;
+
+&lt;p&gt;Voici un exemple assez basique : utiliser &lt;code&gt;localStorage&lt;/code&gt; pour mettre en cache jQuery&lt;/p&gt;
+
+&lt;script src="https://gist.github.com/flexbox/1832f48d92f1bee693ce.js"&gt;&lt;/script&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Vérifier si le fichier existe&lt;/li&gt;
+  &lt;li&gt;Charger le contenu en AJAX&lt;/li&gt;
+  &lt;li&gt;Insérer le contenu dans la page avec &lt;code&gt;js-jquery&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Il faut noter que &lt;code&gt;localStorage&lt;/code&gt; ne fonctionne qu'avec des &lt;code&gt;string&lt;/code&gt;. Si vous souhaiter utiliser cette méthode pour stocker des images, vous devez les parser en base64 d'abord.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;localStorage&lt;/code&gt; est une solution assez facile à mettre en place pour des choses basiques. Si vous souhaitez aller plus loin je vous conseille d'essayer &lt;a href="https://github.com/addyosmani/basket.js"&gt;basket.js&lt;/a&gt; maintenu par Addy Osmani qui permet de prioriser le chargement du JavaScript en cache.&lt;/p&gt;
+
+&lt;h3 id="lazy-loading-javascript"&gt;Lazy loading JavaScript&lt;/h3&gt;
+
+&lt;p&gt;Si votre application web / site internet embarque beaucoups de JavaScript il peut être intéressant de d'utiliser des techniques de &lt;em&gt;lazy loading&lt;/em&gt; pour réduire le temps de démarrage.&lt;/p&gt;
+
+&lt;p&gt;Quand un navigateur télécharge du JavaScript, il le &lt;strong&gt;parcours et l'exécute&lt;/strong&gt;. Comme expliqué précédemment, cela bloque le rendu de la page jusqu'à ce que le processus soit terminé. Dans la plupart des cas, vous n'avez sûrement pas besoin que tout votre JavaScript soit parcouru et exécuté au chargement de la page. Cela porte préjudice à la performance sans raison valable.&lt;/p&gt;
+
+&lt;p&gt;Il existe 2 techniques pour corriger le problème :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Modifier le script précédemment utilisé pour &lt;code&gt;localStorage&lt;/code&gt; en utilisant JavaScript pour insérer du JavaScript.&lt;/li&gt;
+  &lt;li&gt;Utiliser &lt;code&gt;XmlHttpRequest&lt;/code&gt; pour &lt;strong&gt;télécharger et évaluer&lt;/strong&gt; le code. Le principal problème est que si l'utilisateur essaye d'utiliser une fonctionnalité qui n'est pas encore téléchargé cela risque de "casser" la mise en page.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;L'équipe qui s'occupe de Gmail a trouvé une solution pour que le code ne soit pas exécuté : &lt;a href="http://googlecode.blogspot.de/2009/09/gmail-for-mobile-html5-series-reducing.html"&gt;commenter le code&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Le navigateur télécharge et évalue l'intégralité de votre JavaScript, mais comme ce dernier est commenté, il n'est pas exécuté. Cette méthode libère du CPU pour effectuer d'autres opérations. Quand l'utilisateur a besoin d'une fonctionnalité, une partie du code est décommentée et évaluée. Voici un exemple :&lt;/p&gt;
+
+&lt;script src="https://gist.github.com/flexbox/c244d7bebd646582fcfe.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;Cette technique est complexe à mettre en place car votre architecture JavaScript doit être irréprochable.&lt;/p&gt;
+
+&lt;h3 id="le-cas-des-boutons-sociaux"&gt;Le cas des boutons sociaux&lt;/h3&gt;
+
+&lt;p&gt;Fin 2011, le magazine Allemand Heise a publié un nouvel ensemble d'&lt;a href="http://www.heise.de/extras/socialshareprivacy/"&gt;icônes pour les réseau sociaux&lt;/a&gt; très connu. La différence ? Il faut 2 clics pour "aimer", "tweeter" ou ajouter "+1".&lt;/p&gt;
+
+&lt;p&gt;De base les images des icones sont chargées. Si l'utilisateur souhaite partager, alors les widgets de partage sont téléchargés. Cette solution présente de nombreux avantages non négligeables.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Les utilisateurs ne sont pas constamment trackés. Les widgets ne sont activés que si l'utilisateur le demande et non par défaut.&lt;/li&gt;
+  &lt;li&gt;Extrèmement efficace avec du responsive design.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img alt="Image zurb webcitation" src="https://farm3.staticflickr.com/2898/14050189350_521f32f74f_o.png" /&gt;
+&lt;em&gt;&lt;a href="http://zurb.com/article/883/small-painful-buttons-why-social-media-bu"&gt;Pourquoi les boutons sociaux tuent votre site web ?&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;De plus vous ne téléchargez que ce qui est nécessaire. Si un utilisateur n'est actif que sur twitter, l'obliger à télécharger le widget facebook n'a pas de sens, et cela lui évite un temps de latence en supprimant les requêtes http inutiles.&lt;/p&gt;
+
+&lt;h3 id="utiliser-des-sprites-pour-concatner-vos-images"&gt;Utiliser des sprites pour concaténer vos images&lt;/h3&gt;
+
+&lt;p&gt;Les fichiers CSS et JavaScript ne sont pas les seuls à pouvoir êtres combinés pour réduire le nombre de requêtes. Utilisés généralement pour des icones ou de petites illustrations, la technique des sprites CSS est une bonne solution.&lt;/p&gt;
+
+&lt;p&gt;Essayez de regrouper des images partageant la même palette  de couleur. Si ce n'est pas le cas la taille de votre fichier sera anormalement élevée car il sera sauvegardé au format PNG &lt;code&gt;true color&lt;/code&gt; au lieu du classique PNG 256 couleurs. Vous pouvez aussi encoder le résultat obtenu en base64 pour optimiser encore plus la taille de votre fichier.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://www.base64-image.de/"&gt;base64&lt;/a&gt; pour encoder vos images&lt;/li&gt;
+  &lt;li&gt;Un outil CSS : &lt;a href="http://spriteme.org/"&gt;SpriteMe&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="viter-le-calcul-navigateur-aka-browser-reflow"&gt;Éviter le calcul navigateur aka browser reflow&lt;/h3&gt;
+
+&lt;p&gt;Une fonctionnalité peu connue des développeurs en terme de performance est la construction d'une page web dans une fenêtre de navigateur. Des problèmes de performance apparaissent dès que l'on essaye de trop modifier dynamiquement la mise en page. Cela force le navigateur à recalculer la place des objets tout en chargeant la page, ce qui ralenti le rendu de la page.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="CSS image reflow" src="https://farm6.staticflickr.com/5524/14234276822_25ce57d1cd_o.gif" /&gt;&lt;/p&gt;
+
+&lt;p&gt;La chose la plus importante pour limiter le nombre de "reflow" est de limiter la taille du DOM et le nombre de sélecteurs CSS le plus possible. Moins le DOM contient d'éléments, moins d'objets doivent êtres calculés et positionnés pendant la construction de la page et plus elle se chargera vite. Je ne le répéterai jamais assez :&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;JavaScript est pour le comportement, CSS pour le style.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;C'est pourquoi vous ne devez &lt;strong&gt;JAMAIS&lt;/strong&gt; modifier vos éléments avec du JavaScript.&lt;/p&gt;
+
+&lt;div class="alert-box alert"&gt;
+&lt;i class="fa fa-thumbs-o-down"&gt;&lt;/i&gt; Mauvaise solution
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;var el = document.getElementById('js-box');
+el.style.color = "#fff";
+el.style.backgroundColor = "#000";
+el.style.borderColor = "#fc0";
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Chaque déclaration provoque un calcul. Dans notre cas il y a 3 reflow.&lt;/p&gt;
+
+&lt;div class="alert-box success"&gt;
+&lt;i class="fa fa-thumbs-o-up"&gt;&lt;/i&gt; Bonne solution
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;var el = document.getElementById('js-box');
+el.className = "m-box";
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;1 seul reflow. le style est déclaré à sa place : dans une feuille de style et vous n'aurez pas besoin d'utiliser &lt;code&gt;!important&lt;/code&gt; si votre élément change.&lt;/p&gt;
+
+&lt;p&gt;Les calculs sont aussi impactés par l'ajout d'élements au DOM.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Border image reflow" src="https://farm3.staticflickr.com/2922/14234595522_c68157e017_o.jpg" /&gt;
+&lt;em&gt;Il y a le bon :hover et le mauvais :hover&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Pour aller plus loin et comprendre le fonctionnement d'un navigateur web je vous invite à regarder l'excellente présentation de &lt;a href="https://www.youtube.com/watch?v=enKJMUArlV4"&gt;Paul Rouget développeur chez Mozilla&lt;/a&gt;. Ou encore le projet &lt;a href="https://github.com/janjongboom/css-reflow-tracer"&gt;css-reflow-tracer&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id="sur-mobile-toucher-est-meilleur-que-cliquer"&gt;Sur mobile toucher est meilleur que cliquer&lt;/h3&gt;
+
+&lt;p&gt;L'impression de rapidité et la performance sont 2 choses différentes.&lt;/p&gt;
+
+&lt;p&gt;Connaissez-vous le célèbre délai des 300ms implémenté par tous les appareils mobiles ? Ce délai permet aux utilisateurs d'avoir le temps d'effectuer un double-tap. Dans certains cas il n'est pas nécessaire et pour retirer ce délai il existe des solutions :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://developers.google.com/mobile/articles/fast_buttons"&gt;Comment créer des boutons rapides&lt;/a&gt; ?&lt;/li&gt;
+  &lt;li&gt;Le polyfill &lt;a href="https://github.com/ftlabs/fastclick"&gt;Fastclic.js&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="aller--lessentiel-et-supprimer-les-normes-frameworks"&gt;Aller à l'essentiel et supprimer les énormes frameworks&lt;/h3&gt;
+
+&lt;p&gt;JavaScript n'est pas le seul responsable dans l'explosion du poids des pages web, notamment depuis que l'internet se &lt;a href="http://getbootstrap.com"&gt;bootstrapize&lt;/a&gt;. Le framework bootsrap de twitter est une excellente solution mais utilisez ses composants avec partimonie. Préférez lui une solution plus légère comme Foundation ou encore KNACSS. Vous pouvez aussi envisager de construire votre propre grille avec &lt;a href="http://susy.oddbird.net/"&gt;Suzy&lt;/a&gt; et créer vos propres composants.&lt;/p&gt;
+
+&lt;p&gt;Il est facile d'inclure dans votre projet des librairies comme jQuery ou mootools, et d'y ajouter une myriade de plugins. En tant que développeurs nous devons nous poser la question de ce qui est vraiment utile. Si vous utiliser jQuery seulement comme outil de sélection &lt;code&gt;$('element')&lt;/code&gt; regardez du coté de &lt;a href="https://github.com/chjj/zest"&gt;Zest&lt;/a&gt; ou &lt;a href="https://github.com/ded/qwery"&gt;qwery&lt;/a&gt;. Ces micro framework JavaScript sont spécialement crées pour ça et leur taille est d'environ 11ko comparé à plus de 90ko.&lt;/p&gt;
+
+&lt;p&gt;Comme expliqué précédemment, quand un navigateur télécharge jQuery, il doit parcourir le fichier. Cela demande du temps et bloque le rendu de la page. Soyez critique quand vous analysez vos besoins en JavaScript. 11ko c'est peut-être 11ko de trop si la seule chose dont vous avez besoin est &lt;code&gt;document.getElementByTagName('foo')&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id="la-performance-comme-budget"&gt;La performance comme budget&lt;/h2&gt;
+
+&lt;p&gt;Généralement la performance ne fait fait l'objet d'un buget pour un projet web. Mais tout comme les créateurs de jeux vidéos qui ont une limite dans le nombre de polygones affichés à l'écran, les développeurs devraient imposer une limite de taille pour alléger le poids des sites internets.&lt;/p&gt;
+
+&lt;p&gt;Si votre client est résistant à se soucier de la performance, voici une petite astuce qui fonctionne :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Sélectionner deux sites (au hasard le site web du client ainsi qu’un concurrent)&lt;/li&gt;
+  &lt;li&gt;préchargez / precachez le site du concurrent en dur dans le cache (avec &lt;code&gt;localStorage&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;et l'exécuter en comparant le site internet du client non mise en cache.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Personne ne veut attendre et les gens sont impatient, à partir du moment où le client comprendra la différence, il voudra un site web rapide, et investira pour avoir une bonne performance.&lt;/p&gt;
+
+&lt;p&gt;C'est culotté, mais cette méthode permet de démontrer l'importance de la performance. Je ne pense pas que cette façon de faire soit différente des publicicités télévisées que l'on voit à longeur de journée.&lt;/p&gt;
+
+&lt;p&gt;Pour aller plus loin, vous pouver créez un graphique comparatif du temps de chargement contre le trafic en temps réel, le client verra la corrélation entre les deux. De nombreuses décisions devront être réexaminées dans le but de performance, je crois que c'est une très, très bonne chose !&lt;/p&gt;
+
+</content>
+  </entry>
   <entry>
     <title>Migration de wordpress vers ruby on rails et middleman</title>
     <link rel="alternate" href="http://davidl.fr/blog/migration-wordpress.html"/>
@@ -663,184 +1022,6 @@ Ce qui fonctionne est une bonne interface, intégrée, qui réponds à un probl�
 &lt;/blockquote&gt;
 
 &lt;p&gt;Cette citation est vraie pour la conception mais également pour le développement de votre projet. Vous devez accepter les différentes contraintes de votre projet, faire en sorte de les respecter pour créer la meilleure expérience possible pour vos utilisateurs.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Encourager la participation des clients en responsive design</title>
-    <link rel="alternate" href="http://davidl.fr/blog/client-idiot.html"/>
-    <id>http://davidl.fr/blog/client-idiot.html</id>
-    <published>2014-02-19T23:00:00Z</published>
-    <updated>2014-02-24T15:17:06+01:00</updated>
-    <author>
-      <name>DavidL design + développement</name>
-    </author>
-    <content type="html">&lt;p&gt;Cet article est une adaptation de l'excellente &lt;a href="http://vimeo.com/55339166"&gt;présentation d'Andy Clarke&lt;/a&gt; et part du constat suivant :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Le design adaptatif n'est pas simplement notre travail, et impliquer ses clients dans le processus de conception est essentiel&lt;/li&gt;
-  &lt;li&gt;Nous devons changer notre mode de travail et éduquer nos clients&lt;/li&gt;
-  &lt;li&gt;Comment dire à ses clients qu'ils ont des idées stupides et s'en faire remercier&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="le-responsive-design-nest-pas-que-notre-problme"&gt;Le responsive design n'est pas que notre problème&lt;/h2&gt;
-
-&lt;p&gt;C'est une nouvelle façon de concevoir, qui amène de nouveaux problèmes.&lt;/p&gt;
-
-&lt;p&gt;En tant que développeurs nous ne voyont que les choses techniques comme les médias queries, les images et la sémantique selon le W3C. La portée est beaucoup plus grande que cela.&lt;/p&gt;
-
-&lt;p&gt;C'est une question de stratégie mobile. Les différentes considérations n'impactent pas que la technique.&lt;/p&gt;
-
-&lt;p&gt;Alors que de nombreuses équipes sont toujours structurées autour d'une conception en cascade ou linéaire, &lt;a href="http://www.creativebloq.com/business/what-responsive-web-design-means-team-organisation-11410353"&gt;Ben Callahan&lt;/a&gt; dit que le responsive webdesign est un catalyseur pour le changement organisationnel.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Planning&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;UX, wireframe UI ne doivent &lt;strong&gt;jamais&lt;/strong&gt; être en taille fixe&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Design&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Développement du front-end&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Stratégie de déployement&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Ce processus de développement peut être comparé aux techniques de travail datant d'avant l'imprimerie.&lt;/p&gt;
-
-&lt;p&gt;Je me demande depuis longtemps comment est-il possible de prévoir dans la partie planning les problèmes qui seront rencontrés par la partie développement :&lt;/p&gt;
-
-&lt;p&gt;C'est simplement &lt;strong&gt;impossible&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Prenons un exemple simple : une application iphone de paiement de trajets d'autoroute géolocalisés en fonction des km parcourus.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Vous allez créer un cahier des charges&lt;/li&gt;
-  &lt;li&gt;Faire des spécifications&lt;/li&gt;
-  &lt;li&gt;Votre client va valider toutes les maquettes&lt;/li&gt;
-  &lt;li&gt;Vous êtes maintenant à 1 mois de la sortie de votre application qui vous a demandé beaucoup de travail&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Et là apple sort l'iPhone 5 et augmente la taille de son écran…. Votre application est-elle toujours compatible ?&lt;/p&gt;
-
-&lt;p&gt;Nous devons donc repenser notre mode de conception pour qu'il soit plus fluide.&lt;/p&gt;
-
-&lt;h3 id="lge-aprs-lordinateur-et-le-mode-de-travail-adaptatif"&gt;L'âge après l'ordinateur et le mode de travail adaptatif&lt;/h3&gt;
-
-&lt;p&gt;Nous sommes dans une nouvelle ère. Jour après jour l'informatique classique creuse un peu plus sa tombe au profit de la mobilité. Cela à donc un impact sur les méthode de création d'applications web. Le design et le développement doivent êtres mélangés ensemble. La clef du succès est l'itération et les tests.&lt;/p&gt;
-
-&lt;h2 id="comment-faire-participer-un-client-dans-le-processus-de-conception-"&gt;Comment faire participer un client dans le processus de conception ?&lt;/h2&gt;
-
-&lt;p&gt;Il est important d'éduquer vos clients.&lt;/p&gt;
-
-&lt;p&gt;Au XXIème siècle les maquettes statiques n'ont pas de sens.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Concevoir pour le web, c'est comme visualiser un &lt;strong&gt;tesseract&lt;/strong&gt;. Nous construisons des expériences en manipulant leurs ombres.&lt;/p&gt;
-
-  &lt;p&gt;&lt;cite&gt;Tim Brown&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Comment voulez-vous montrer à votre client toutes les possibilités du web comme les animations et les états des liens ?&lt;/p&gt;
-
-&lt;p&gt;Bien sur il est possible de simuler ces évènements dans un logiciel mais c'est long et fastidieux.&lt;/p&gt;
-
-&lt;p&gt;Imaginez créer l'intégralité de vos maquettes avec Photoshop. Au dernier moment votre client vous demande de changer toutes les polices de caractères.&lt;/p&gt;
-
-&lt;p&gt;Vous aller donc passer des heures à changer un par un vos éléments. Grâce aux préprocesseurs CSS cela peut être réglé en une seule ligne de code.&lt;/p&gt;
-
-&lt;p&gt;Je ne dis pas que Photoshop est inutile, bien au contraire. Vous pouvez toujours utiliser ce logiciel pour créer une atmosphère qui exposera les concepts suivants :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Typographie&lt;/li&gt;
-  &lt;li&gt;Textures&lt;/li&gt;
-  &lt;li&gt;Humeur, théorie des couleurs&lt;/li&gt;
-  &lt;li&gt;Dégradés ou flat ?&lt;/li&gt;
-  &lt;li&gt;Bordures arrondies ou non ?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Toutes ces choses n'ont rien à voir avec la mise en page. C'est fondamentalement différent.&lt;/p&gt;
-
-&lt;p&gt;Cela n'a pas de sens de mélanger la décoration d'une maison avec les fondations.&lt;/p&gt;
-
-&lt;p&gt;Il est temps de se demander maintenant pourquoi tant de sites internet ont pendant des années étés crées sur une base fixe de 960px.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Le graphiste créé la maquette depuis Photoshop.&lt;/li&gt;
-  &lt;li&gt;Le client à aimé.&lt;/li&gt;
-  &lt;li&gt;Il a signé.&lt;/li&gt;
-  &lt;li&gt;Le travail est donné au développeur.&lt;/li&gt;
-  &lt;li&gt;A cette étape, ce dernier n'a plus le droit de pendre de décisions puisque le client à déjà signé.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;C'est pourquoi dans le passé nous avons passé un nombre incalculable d'heures à essayer de bidouiller du CSS et du javascript.  Le site web doit ressembler à ce qu'est fait sur Photoshop par le designer, indépendamment des possibilités offertes par les navigateurs webs.&lt;/p&gt;
-
-&lt;p&gt;Nous avons javascript, jquery, et les hacks CSS par milliers pour effectuer des corrections spécifiques en surchargeant inutilement nos sites web.&lt;/p&gt;
-
-&lt;p&gt;A qui est-ce donc la faute ? C'est &lt;strong&gt;notre faute à tous&lt;/strong&gt; car nous avons donné le mauvaix choix au client en lui vendant une maquette statique Photoshop, pour un site qui est dynamique. Ce dernier a signé et veux donc voir le résultat.&lt;/p&gt;
-
-&lt;p&gt;Nous devons changer ce que l'on vend aux clients en partageant les étapes de conception au lieu de lui donner directement un site web fini.
-C'est la même chose que lors de la construction d'une maison, un architecte nous vend des plans. Notre imagination fait le reste.&lt;/p&gt;
-
-&lt;p&gt;Montrons au client de prototypes HTML &amp;amp; CSS, une atmosphère et discutons avec lui. Vous devez conserver le client engagé dans le processus de création.&lt;/p&gt;
-
-&lt;p&gt;Il est important de garder le client concentré. Il ne faut &lt;strong&gt;jamais&lt;/strong&gt; envoyer un email avec une capture d'écran d'un site en lui posant la question : "Qu'en pensez vous ?"&lt;/p&gt;
-
-&lt;p&gt;Orientez ce que vous voulez valider avec lui pour rentrer dans un processus de création créative. Si vous n'orientez pas le débat il y a 90 % de chances que votre réponse soit une suggestion stupide concernant un détail futile : Votre client n'aimera pas la teinte de vert utilisée pour les boutons alors que vous cherchez à valider la mise en page du contenu.&lt;/p&gt;
-
-&lt;h3 id="rendre-son-client-heureux"&gt;Rendre son client heureux&lt;/h3&gt;
-
-&lt;p&gt;Comment dire ouvertement à son client qu'il est idiot pour qu'ensuite il vous soit reconnaissant ? Vous devez vous rappeler de ne pas être sur la défensive. Vous êtes le designer / développeur, vous savez de quoi vous parlez et vous êtes le spécialiste. Il n'est pas ici question de critique, il est question de respecter votre travail.&lt;/p&gt;
-
-&lt;h4 id="tape-1--publication"&gt;étape 1 : Publication&lt;/h4&gt;
-
-&lt;p&gt;Ne jamais publier de visuels ou de maquette Photoshop sur votre espace de gestion de projet et demander des retours du type : qu'en pensez vous ?
-Votre client se focalisera sur un détail futile comme la taille de son logo alors que vous ou votre équipe a créé un magnifique design.&lt;/p&gt;
-
-&lt;h4 id="tape-2--prsentation"&gt;étape 2 : Présentation&lt;/h4&gt;
-
-&lt;p&gt;Vous devez avoir le contrôle de votre environnement de travail. Présentez physiquement vos travaux avec des contraintes :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Limite de temps&lt;/li&gt;
-  &lt;li&gt;Limite de portée&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Cette étape vous permettra de valider votre travail en évitant les malentendus.&lt;/p&gt;
-
-&lt;h4 id="tape-3--seul-le-travail-compte"&gt;étape 3 : Seul le travail compte&lt;/h4&gt;
-
-&lt;p&gt;Laissez vos sentiments à la maison et concentrez vous sur le travail. Nous pouvons ne pas être d'accord avec notre client seulement si c'est à propos du travail, l'inverse est également possible. L'objectif est de se concentrer sur le travail accompli et d'oublier notre ego.
-Pour vous sortir d'une situation périlleuse vous pouvez utiliser un joker.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Votre remarque concerne cette présentation ou est-ce une opinion personnelle ?&lt;/p&gt;
-
-  &lt;p&gt;&lt;cite&gt;Ra's al Ghul&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id="tape-4--lducation"&gt;étape 4 : L'éducation&lt;/h4&gt;
-
-&lt;p&gt;Expliquer le pourquoi du comment et soyez passionnés.
-À chacun son métier, n'hésitez pas à montrer des données et expliquez pourquoi vous avez fait certains choix.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Votre site web responsive n'est pas compatible avec internet explorer 8 sinon cela demandera 3 semaines de développement en plus et vous coûtera xxx € en plus&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Si vous avez établi une bonne relation, c'est à ce moment là que vous pouvez suggérer qu'une idée de client est stupide.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;They enjoy so much the design process that they said to you thank you for that.&lt;/p&gt;
-
-  &lt;p&gt;Andy clarke&lt;/p&gt;
-&lt;/blockquote&gt;
 </content>
   </entry>
 </feed>
