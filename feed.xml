@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://davidl.fr/blog/site-obese.html"/>
     <id>http://davidl.fr/blog/site-obese.html</id>
     <published>2014-05-20T22:00:00Z</published>
-    <updated>2014-05-21T13:59:00+02:00</updated>
+    <updated>2014-05-23T09:49:19+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -350,7 +350,7 @@ el.className = "m-box";
 
 &lt;h2 id="la-performance-comme-budget"&gt;La performance comme budget&lt;/h2&gt;
 
-&lt;p&gt;Généralement la performance ne fait fait l'objet d'un buget pour un projet web. Mais tout comme les créateurs de jeux vidéos qui ont une limite dans le nombre de polygones affichés à l'écran, les développeurs devraient imposer une limite de taille pour alléger le poids des sites internets.&lt;/p&gt;
+&lt;p&gt;Généralement la performance ne fait fait l'objet d'un budget pour un projet web. Mais tout comme les créateurs de jeux vidéos qui ont une limite dans le nombre de polygones affichés à l'écran, les développeurs devraient imposer une limite de taille pour alléger le poids des sites internets.&lt;/p&gt;
 
 &lt;p&gt;Si votre client est résistant à se soucier de la performance, voici une petite astuce qui fonctionne :&lt;/p&gt;
 

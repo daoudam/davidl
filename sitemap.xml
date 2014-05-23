@@ -331,7 +331,7 @@
   <url>
     <loc>http://davidl.fr/codex.html</loc>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0</priority>
   </url>
   <url>
     <loc>http://davidl.fr/contact.html</loc>
