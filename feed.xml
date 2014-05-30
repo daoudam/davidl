@@ -128,7 +128,7 @@ $blue-dark
     <link rel="alternate" href="http://davidl.fr/blog/site-obese.html"/>
     <id>http://davidl.fr/blog/site-obese.html</id>
     <published>2014-05-20T22:00:00Z</published>
-    <updated>2014-05-23T09:49:19+02:00</updated>
+    <updated>2014-05-30T14:09:42+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -150,7 +150,7 @@ $blue-dark
 
 &lt;h2 id="geek-de-la-performance"&gt;Geek de la performance&lt;/h2&gt;
 
-&lt;p&gt;Les 2 choses les plus simples à mettre en place rapidement sont la compression des fichiers et le cache des en-têtes. Ces techniques indispensables vous aiderons à :&lt;/p&gt;
+&lt;p&gt;Les 2 choses les plus simples à mettre en place rapidement sont la compression des fichiers et les en-têtes de cache. Ces techniques indispensables vous aiderons à :&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Réduire le poids des pages.&lt;/li&gt;
@@ -163,7 +163,7 @@ $blue-dark
 
 &lt;p&gt;De la même manière que nous zippons nos pièces jointes envoyées par email, votre serveur peut compresser les fichiers avant de les envoyer au navigateur. Pour &lt;strong&gt;préserver la bande passante&lt;/strong&gt; de vos utilisateurs mobiles, il est capital de réduire le plus possible la taille de votre site.&lt;/p&gt;
 
-&lt;p&gt;La librairie de compression pour Apache &lt;code&gt;mod_deflate&lt;/code&gt; fonctionne uniquement sur des fichiers textes comme &lt;code&gt;HTML&lt;/code&gt;, &lt;code&gt;CSS&lt;/code&gt; et &lt;code&gt;JavaScript&lt;/code&gt;. Généralement les images &lt;code&gt;.jpg&lt;/code&gt; sont déjà compressées, cette librairie n'ont donc aucun effet sur elles.&lt;/p&gt;
+&lt;p&gt;La librairie de compression pour Apache &lt;code&gt;mod_deflate&lt;/code&gt; fonctionne uniquement sur des fichiers textes comme &lt;code&gt;HTML&lt;/code&gt;, &lt;code&gt;CSS&lt;/code&gt; et &lt;code&gt;JavaScript&lt;/code&gt;. Les images &lt;code&gt;.jpg&lt;/code&gt;, &lt;code&gt;.gif&lt;/code&gt; ou &lt;code&gt;.png&lt;/code&gt; sont compressées à différents niveaux, comme expliqué plus loin dans cet article, cette librairie n'ont donc aucun effet sur elles.&lt;/p&gt;
 
 &lt;p&gt;La mise en place demande 3 étapes :&lt;/p&gt;
 
@@ -199,7 +199,7 @@ $blue-dark
   &lt;li&gt;et le coller sur votre serveur.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;La plus grande limite de cette technique est la taille du cache des appareils mobiles. Un site web simple pèse en moyenne 4Mo, le cache des appareils Android 2.x est limité à 6Mo, les appareils iOS sont plus avantagés avec un cache de 50Mo.&lt;/p&gt;
+&lt;p&gt;La plus grande limite de cette technique est la taille du cache des appareils mobiles. Un site web simple doit peser en moyenne 2Mo, le cache des appareils Android 2.x est limité à 6Mo, les appareils iOS sont plus avantagés avec un cache de 50Mo.&lt;/p&gt;
 
 &lt;p&gt;Pour contourner ce problème nous pouvons mettre en place une fonctionnalité en utilisant l'API HTML5 &lt;code&gt;localStorage&lt;/code&gt; mais pour cela il faut être guru de la performance.&lt;/p&gt;
 
@@ -273,6 +273,11 @@ $blue-dark
 
 &lt;pre&gt;&lt;code&gt;npm install -g imageoptim-cli
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id="lazy-loading-dimages"&gt;4. Lazy Loading d'images&lt;/h4&gt;
+
+&lt;p&gt;Comme me l'a fait remarqué &lt;a href="https://twitter.com/gaelmetais"&gt;@gaelmetais&lt;/a&gt;, expert en performance web, la solution qui donne les meilleurs résultats est le lazy loading d'images.
+Cette solution &lt;a href="https://github.com/vvo/lazyload"&gt;JavaScript disponible sur github&lt;/a&gt; permet de ne charger que les images visible du &lt;code&gt;viewport&lt;/code&gt;. Cela évite de télécharger inutilement des images qui ne sont probablement jamais vues par les visiteurs.&lt;/p&gt;
 
 &lt;h3 id="reporter-le-chargement-du-contenu"&gt;Reporter le chargement du contenu&lt;/h3&gt;
 
@@ -393,7 +398,7 @@ Le principal désavantage est le support des navigateurs
 
 &lt;p&gt;Les fichiers CSS et JavaScript ne sont pas les seuls à pouvoir êtres combinés pour réduire le nombre de requêtes. Utilisés généralement pour des icones ou de petites illustrations, la technique des sprites CSS est une bonne solution.&lt;/p&gt;
 
-&lt;p&gt;Essayez de regrouper des images partageant la même palette  de couleur. Si ce n'est pas le cas la taille de votre fichier sera anormalement élevée car il sera sauvegardé au format PNG &lt;code&gt;true color&lt;/code&gt; au lieu du classique PNG 256 couleurs. Vous pouvez aussi encoder le résultat obtenu en base64 pour optimiser encore plus la taille de votre fichier.&lt;/p&gt;
+&lt;p&gt;Essayez de regrouper des images partageant la même palette  de couleur. Si ce n'est pas le cas la taille de votre fichier sera anormalement élevée car il sera sauvegardé au format PNG &lt;code&gt;true color&lt;/code&gt; au lieu du classique PNG 256 couleurs. Pour éviter une requête avec des images de petites tailles, vous pouvez aussi encoder le résultat obtenu en base64 pour optimiser encore plus la taille de votre fichier (à prendre avec précaution car cela peut augementer la taille jusqu'à 37%).&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href="http://www.base64-image.de/"&gt;base64&lt;/a&gt; pour encoder vos images&lt;/li&gt;
@@ -434,7 +439,7 @@ el.style.borderColor = "#fc0";
 el.className = "m-box";
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;1 seul reflow. le style est déclaré à sa place : dans une feuille de style et vous n'aurez pas besoin d'utiliser &lt;code&gt;!important&lt;/code&gt; si votre élément change.&lt;/p&gt;
+&lt;p&gt;1 seul reflow. Le style est déclaré à sa place : dans une feuille de style et vous n'aurez pas besoin d'utiliser &lt;code&gt;!important&lt;/code&gt; si votre élément change.&lt;/p&gt;
 
 &lt;p&gt;Les calculs sont aussi impactés par l'ajout d'élements au DOM.&lt;/p&gt;
 
