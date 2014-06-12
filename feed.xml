@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://davidl.fr/blog/import-sass.html"/>
     <id>http://davidl.fr/blog/import-sass.html</id>
     <published>2014-05-26T22:00:00Z</published>
-    <updated>2014-05-27T17:02:30+02:00</updated>
+    <updated>2014-06-12T10:44:47+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -66,7 +66,7 @@ $blue-dark
   &lt;p&gt;&lt;cite&gt;Un noob du Sass&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Techniquement vous pouvez écrire n'importe quoi dans &lt;code&gt;application.scss, mais je recommande de séparer vos composants en &lt;/code&gt;partial&lt;code&gt;s, et de les importer ensuite dans &lt;/code&gt;application.scss` pour conserver une bonne organisation depuis le départ.&lt;/p&gt;
+&lt;p&gt;Techniquement vous pouvez écrire n'importe quoi dans &lt;code&gt;application.scss&lt;/code&gt;, mais je recommande de séparer vos composants en &lt;code&gt;partial&lt;/code&gt;s, et de les importer ensuite dans &lt;code&gt;application.scss&lt;/code&gt; pour conserver une bonne organisation depuis le départ.&lt;/p&gt;
 
 &lt;p&gt;En réalité je commence à coder mes différents &lt;code&gt;partial&lt;/code&gt;s en début de projet. Je n'ai jamais besoin d'écrire de code Sass dans &lt;code&gt;application.scss&lt;/code&gt;, excepté les &lt;code&gt;@import&lt;/code&gt;.&lt;/p&gt;
 
@@ -488,11 +488,11 @@ el.className = "m-box";
 </content>
   </entry>
   <entry>
-    <title>Migration de wordpress vers ruby on rails et middleman</title>
+    <title>Migration de wordpress vers ruby et Middleman</title>
     <link rel="alternate" href="http://davidl.fr/blog/migration-wordpress.html"/>
     <id>http://davidl.fr/blog/migration-wordpress.html</id>
     <published>2014-04-13T22:00:00Z</published>
-    <updated>2014-04-14T19:03:02+02:00</updated>
+    <updated>2014-06-12T10:44:47+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -502,7 +502,7 @@ J'ai décidé de m'éloigner de Wordpress, car je me retrouvais souvent à livre
 &lt;p&gt;Travailler avec le tinymce et le &lt;code&gt;HTML&lt;/code&gt; fonctionne plutôt bien, mais je trouve que l'écriture en &lt;code&gt;Markdown&lt;/code&gt; est beaucoup plus simple et &lt;a href="http://fr.wikipedia.org/wiki/Environnement_pervasif"&gt;pervasive&lt;/a&gt;.
 Je passais mon temps à enlever des fonctionnalités, mettre à jour et installer des modules qui par dizaines en utilisant finalement 30% des fonctionnalités.&lt;/p&gt;
 
-&lt;p&gt;J'ai donc quitté le monde Wordpress et &lt;code&gt;php&lt;/code&gt; pour travailler en Ruby on Rails avec un générateur de site statiques : &lt;a href="http://middlemanapp.com/"&gt;middleman&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;J'ai donc quitté le monde Wordpress et &lt;code&gt;php&lt;/code&gt; pour travailler en `ruby avec un générateur de site statiques : &lt;a href="http://middlemanapp.com/"&gt;middleman&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id="les-avantages"&gt;Les avantages&lt;/h2&gt;
 
@@ -544,7 +544,7 @@ Je passais mon temps à enlever des fonctionnalités, mettre à jour et installe
   &lt;li&gt;Ma dernière expérience fut d'utiliser &lt;a href="http://underscores.me/"&gt;underscore&lt;/a&gt; (Un boilerplate simple de thème). Mais les performances n'étaient pas au rendez-vous.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Finalement j'ai &lt;a href="http://middlemanapp.com/"&gt;middleman&lt;/a&gt; qui embarque de base &lt;a href="http://sass-lang.com/"&gt;Sass&lt;/a&gt;, &lt;a href="http://coffeescript.org/"&gt;CoffeeScript&lt;/a&gt; et juste ce qu'il faut de &lt;a href="http://rubyonrails.org/"&gt;Ruby on Rails&lt;/a&gt;. Je passe mon temps à construire des choses. Contrairement à wordpress où je passais mon temps à faire des &lt;em&gt;dirty hacks&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Finalement j'ai &lt;a href="http://middlemanapp.com/"&gt;middleman&lt;/a&gt; qui embarque de base &lt;a href="http://sass-lang.com/"&gt;Sass&lt;/a&gt;, &lt;a href="http://coffeescript.org/"&gt;CoffeeScript&lt;/a&gt; et juste ce qu'il faut de &lt;a href="http://rubyonrails.org/"&gt;ruby&lt;/a&gt;. Je passe mon temps à construire des choses. Contrairement à wordpress où je passais mon temps à faire des &lt;em&gt;dirty hacks&lt;/em&gt;.&lt;/p&gt;
 
 &lt;h3 id="historique-des-version"&gt;Historique des version&lt;/h3&gt;
 
