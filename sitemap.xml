@@ -244,11 +244,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://davidl.fr/blog/scrumtalpick.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>http://davidl.fr/blog/Foundation-breakpoint.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -325,6 +320,11 @@
   </url>
   <url>
     <loc>http://davidl.fr/blog/import-sass.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://davidl.fr/blog/ecoequitable.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -439,6 +439,16 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>http://davidl.fr/2014/06.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>http://davidl.fr/2014/06/17.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>http://davidl.fr/2014/05.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -540,11 +550,6 @@
   </url>
   <url>
     <loc>http://davidl.fr/2013/12.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>http://davidl.fr/2013/12/13.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -709,7 +714,7 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>http://davidl.fr/2013/12/06.html</loc>
+    <loc>http://davidl.fr/2013/12/13.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
