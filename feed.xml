@@ -157,7 +157,7 @@ $blue-dark
     <link rel="alternate" href="http://davidl.fr/blog/site-obese.html"/>
     <id>http://davidl.fr/blog/site-obese.html</id>
     <published>2014-05-20T22:00:00Z</published>
-    <updated>2014-05-30T14:09:42+02:00</updated>
+    <updated>2014-06-23T09:21:37+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -427,7 +427,7 @@ Le principal désavantage est le support des navigateurs
 
 &lt;p&gt;Les fichiers CSS et JavaScript ne sont pas les seuls à pouvoir êtres combinés pour réduire le nombre de requêtes. Utilisés généralement pour des icones ou de petites illustrations, la technique des sprites CSS est une bonne solution.&lt;/p&gt;
 
-&lt;p&gt;Essayez de regrouper des images partageant la même palette  de couleur. Si ce n'est pas le cas la taille de votre fichier sera anormalement élevée car il sera sauvegardé au format PNG &lt;code&gt;true color&lt;/code&gt; au lieu du classique PNG 256 couleurs. Pour éviter une requête avec des images de petites tailles, vous pouvez aussi encoder le résultat obtenu en base64 pour optimiser encore plus la taille de votre fichier (à prendre avec précaution car cela peut augementer la taille jusqu'à 37%).&lt;/p&gt;
+&lt;p&gt;Essayez de regrouper des images partageant la même palette  de couleur. Si ce n'est pas le cas la taille de votre fichier sera anormalement élevée car il sera sauvegardé au format PNG &lt;code&gt;true color&lt;/code&gt; au lieu du classique PNG 256 couleurs. Pour éviter une requête avec des images de petite taille, vous pouvez aussi encoder le résultat obtenu en base64 pour optimiser encore plus la taille de votre fichier (à prendre avec précaution car cela peut augementer la taille jusqu'à 37%).&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href="http://www.base64-image.de/"&gt;base64&lt;/a&gt; pour encoder vos images&lt;/li&gt;
@@ -512,7 +512,7 @@ el.className = "m-box";
 
 &lt;p&gt;C'est culotté, mais cette méthode permet de démontrer l'importance de la performance. Je ne pense pas que cette façon de faire soit différente des publicicités télévisées que l'on voit à longeur de journée.&lt;/p&gt;
 
-&lt;p&gt;Pour aller plus loin, vous pouver créez un graphique comparatif du temps de chargement contre le trafic en temps réel, le client verra la corrélation entre les deux. De nombreuses décisions devront être réexaminées dans le but de performance, je crois que c'est une très, très bonne chose !&lt;/p&gt;
+&lt;p&gt;Pour aller plus loin, vous pouver créez un graphique comparatif du temps de chargement contre le trafic en temps réel, le client verra la corrélation entre les deux. De nombreuses décisions devront être réexaminées dans le but d'une meilleure performance, je crois que c'est une très, très bonne chose !&lt;/p&gt;
 
 </content>
   </entry>
