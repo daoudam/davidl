@@ -5,10 +5,205 @@
   <id>http://davidl.fr/blog/</id>
   <link href="http://davidl.fr/blog/"/>
   <link href="http://davidl.fr/blog/feed.xml" rel="self"/>
-  <updated>2014-06-16T22:00:00Z</updated>
+  <updated>2014-07-29T22:00:00Z</updated>
   <author>
     <name>David Leuliette</name>
   </author>
+  <entry>
+    <title>Construire une grille CSS sémantique avec le framework Foundation</title>
+    <link rel="alternate" href="http://davidl.fr/blog/grille-semantique.html"/>
+    <id>http://davidl.fr/blog/grille-semantique.html</id>
+    <published>2014-07-29T22:00:00Z</published>
+    <updated>2014-07-31T18:37:03+02:00</updated>
+    <author>
+      <name>DavidL design + développement</name>
+    </author>
+    <content type="html">&lt;p&gt;Dans cet article je présente les meilleures techniques pour éviter une maladie bien connue lors de la construction de site web avec Foundation : la divitis.&lt;/p&gt;
+
+&lt;h2 id="un-peu-dhistoire"&gt;Un peu d’histoire&lt;/h2&gt;
+
+&lt;p&gt;C’est &lt;a href="http://www.zeldman.com/"&gt;Jeffrey Zeldman&lt;/a&gt; qui a trouvé le nom de &lt;a href="http://davidl.fr/blog/css-evolutif.html"&gt;2 maladies&lt;/a&gt; il y a plus de 10 ans : &lt;em&gt;divitis&lt;/em&gt; et &lt;em&gt;classitis&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3 id="divitis"&gt;Divitis&lt;/h3&gt;
+
+&lt;p&gt;À l’époque, avec l’arrivée des feuilles de styles, il n’était plus nécessaire d’utiliser un nombre incalculable de balises (comme &lt;code&gt;&amp;lt;font&amp;gt;&lt;/code&gt; ou &lt;code&gt;&amp;lt;center&amp;gt;&lt;/code&gt;) pour mettre en forme un élément. La &lt;strong&gt;divitis&lt;/strong&gt; est une façon de coder qui utilise beaucoups d'éléments &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;, qui ne sont pas toujours obligatoires. Pour se remmetre dans le contexte de l'époque :&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;C'est bon Gégé il n'y a plus de tableaux dans notre page HTML j'ai tout remplacé par des div.&lt;/p&gt;
+
+  &lt;p&gt;&lt;cite&gt;Le dieu de l'internet&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Utiliser rechercher et remplacer n'est pas solution au problème : il y a trop de balises HTML dans la page.&lt;/p&gt;
+
+&lt;h3 id="classitis"&gt;Classitis&lt;/h3&gt;
+
+&lt;p&gt;Cette révolution a amené un nouveau problème la &lt;strong&gt;classitis&lt;/strong&gt; ou l’art de surcharger son HTML avec plus de &lt;code&gt;class&lt;/code&gt; que nécessaire.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;ul&amp;gt;
+  &amp;lt;li class="list-item"&amp;gt; ... &amp;lt;/li&amp;gt;
+  &amp;lt;li class="list-item"&amp;gt; ... &amp;lt;/li&amp;gt;
+  &amp;lt;li class="list-item"&amp;gt; ... &amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class="alert-box alert"&gt;
+&lt;i class="fa fa-thumbs-o-down"&gt;&lt;/i&gt; Mauvaise solution
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;ul class="inline-list"&amp;gt;
+  &amp;lt;li&amp;gt; ... &amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt; ... &amp;lt;/li&amp;gt;
+  &amp;lt;li&amp;gt; ... &amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class="alert-box success"&gt;
+&lt;i class="fa fa-thumbs-o-up"&gt;&lt;/i&gt; Bonne solution
+&lt;/div&gt;
+
+&lt;h2 id="tat-des-lieux"&gt;État des lieux&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Classitis&lt;/em&gt; et son cousin, &lt;em&gt;Divitis&lt;/em&gt;, sont des gros mots que nous utilisons pour maudire le code surchargé. Au siècle dernier, nous avons utilisé les tableaux HTML pour la mise en page. Chaque tableau avait au moins trois niveaux: &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;tr&amp;gt;&lt;/code&gt; et &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt;. La promesse de &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; lié à un peu de CSS était de supprimmer les balises inutiles.&lt;/p&gt;
+
+&lt;p&gt;De nos jours, avec le responsive, les mises en pages sont de plus en plus complexes, nous nous sommes retrouvés avec énorméments d'éléments &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;, une sorte de retour en arrière qui glisse doucement vers la mise en page avec des tableaux.&lt;/p&gt;
+
+&lt;p&gt;Je vais prendre un exemple avec la grille de Foundation. Notez que chaque &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; n'a pas forcément de but, mais elles sont obligatoires pour contruire une mise en page complexe. Un balisage typique Foundation est plein à craquer d'informations qui décrit sa grille :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class="row" id="m-header"&amp;gt;
+  &amp;lt;div class="small-12 columns"&amp;gt;
+    ...
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;div class="row" id="m-nav"&amp;gt;
+  &amp;lt;div class="small-12 columns"&amp;gt;
+    ...
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;div class="row" id="m-content"&amp;gt;
+  &amp;lt;div class="small-6 medium-4 columns"&amp;gt;
+    &amp;lt;h1&amp;gt; ... &amp;lt;/h1&amp;gt;
+    &amp;lt;p&amp;gt; ... &amp;lt;/p&amp;gt;
+    &amp;lt;p&amp;gt; ... &amp;lt;/p&amp;gt;
+    &amp;lt;p&amp;gt; ... &amp;lt;/p&amp;gt;
+  &amp;lt;/div&amp;gt;
+  &amp;lt;div class="small-6 medium-8 columns"&amp;gt;
+    ...
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;div class="row" id="m-footer"&amp;gt;
+  &amp;lt;div class="small-12 columns"&amp;gt;
+    ...
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Fonctionnel ? Oui… &lt;a href="http://fr.wikipedia.org/wiki/HTML_s%C3%A9mantique"&gt;Sémantique&lt;/a&gt; ? Pas vraiment… Sauf pour quelques attributs &lt;code&gt;id&lt;/code&gt;. Dans ce cas, chaque section est générique, et les attributs rendent le code difficile à lire. Les &lt;code&gt;div&lt;/code&gt;s sont des boites génériques utilisées pour organiser d'autres éléments. Quand je dis générique, j'entends pas là dénué de sens, pas intelligent et sans saveur.&lt;/p&gt;
+
+&lt;h2 id="et-maintenant-un-peu-de-smantique"&gt;Et maintenant un peu de sémantique&lt;/h2&gt;
+
+&lt;p&gt;Voici le même HTML avec un marquage sémantique, avec de nouveaux éléments HTML5 :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;header&amp;gt;
+  &amp;lt;div role="banner" class="m-header--logo"&amp;gt; ... &amp;lt;/div&amp;gt;
+  &amp;lt;nav&amp;gt; ... &amp;lt;/nav&amp;gt;
+&amp;lt;/header&amp;gt;
+&amp;lt;main&amp;gt;
+  &amp;lt;article&amp;gt;
+    &amp;lt;h1&amp;gt; ... &amp;lt;/h1&amp;gt;
+    &amp;lt;p&amp;gt; ... &amp;lt;/p&amp;gt;
+    &amp;lt;p&amp;gt; ... &amp;lt;/p&amp;gt;
+    &amp;lt;p&amp;gt; ... &amp;lt;/p&amp;gt;
+  &amp;lt;/article&amp;gt;
+  &amp;lt;aside&amp;gt; ... &amp;lt;/aside&amp;gt;
+&amp;lt;/main&amp;gt;
+&amp;lt;footer&amp;gt; ... &amp;lt;/footer&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;C'est plus facile à lire, pour les humains et aussi pour les machines. Parfois, il n'existe pas d'élément HTML approprié pour le type d'informations que nous voulons - dans ce cas, un logo. Mais si possible, j'utilise des éléments qui décrivent leur contenu uniques :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;header&lt;/code&gt; : Une introduction ou une aide à la navigation.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;nav&lt;/code&gt; : une collection de liens.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;main&lt;/code&gt; : Contenu principal de la page.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;article&lt;/code&gt; : morceau de contenu d'un document, d'une page, d'une application, qui est prévu pour être réutilisé de façon indépendante (Message sur un forum, article de blog …).&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;aside&lt;/code&gt; : Contenu d'une page indirectement lié à ce qui l'entoure et qui pourrait être séparé de celui-ci. (Glossaire, publicités, biographie de l'auteur, liens vers des articles similaires).&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;footer&lt;/code&gt; : Conclusion de la section.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Notez que je n'utilise plus de &lt;code&gt;class&lt;/code&gt; pour avoir un bon exemple, même si &lt;a href="guidecss.fr/convention.html"&gt;dans la pratique c'est plus évolutif&lt;/a&gt; d'en avoir.&lt;/p&gt;
+
+&lt;h2 id="faire-fonctionner-le-tout-avec-sass"&gt;Faire fonctionner le tout avec Sass&lt;/h2&gt;
+
+&lt;p&gt;Transformer la grille de Foundation en code sémantique est possible en utilisant 2 fonctions :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;grid-row()&lt;/code&gt; : donne à un élément le comportement des &lt;code&gt;row&lt;/code&gt; de Foundation.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;grid-column()&lt;/code&gt; : ajoute une colonne, exemple avec &lt;code&gt;small-12 columns&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Comme expliqué &lt;a href="http://foundation.zurb.com/docs/using-sass.html"&gt;dans la documentation&lt;/a&gt; vous devez importer les fichiers de foundation et le fichier &lt;code&gt;_settings.scss&lt;/code&gt;.&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; @import "settings";
+ @import "foundation";
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ensuite je choisi un sélecteur comme &lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; header { }
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;J'ajoute &lt;code&gt;grid-row&lt;/code&gt; à ce sélecteur pour lui donner le comportement d'une &lt;code&gt;row&lt;/code&gt; de Foundation.&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; header { @include grid-row; }
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Finallement je donne à un sélecteur à l'intérieur du header les propriétés d'une colonne.&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; header {
+   @include grid-row;
+   .m-header--logo {
+     @include grid-column($columns:12, $center:true);
+   }
+ }
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Voici un exemple complet d'un code sémantique en SCSS :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;header {
+  @include grid-row;
+  .logo {
+    @include grid-column($columns:12, $center:true);
+  }
+}
+main {
+  @include grid-row;
+  aside {
+    @include grid-column(8);
+  }
+  article {
+    @include grid-column(4);
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Respecter la sémantique rend votre code HTML plus léger et plus compréhensible. Sass est un excellent outil pour la construction d'une grille responsive, et les mixins Sass de Foundation facilitent l'intégration. Le résultat est un code plus facile à lire et à maintenir, qui décrit avec plus de précision ce que vous souhaitez communiquer.&lt;/p&gt;
+
+&lt;h2 id="construire-rapidement-un-prototype"&gt;Construire rapidement un prototype&lt;/h2&gt;
+
+&lt;p&gt;Suivre ces différentes étapes est un très bon exemple pour avoir un balisage HTML sémantique. Si vous souhaitez rapidement mettre ce système en place je vous invite à cloner un de mes &lt;a href="https://github.com/flexbox/foundation-boilerplate"&gt;projet open source Foundation boilerplate&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Le secret de ecoequitable</title>
     <link rel="alternate" href="http://davidl.fr/blog/ecoequitable.html"/>
@@ -157,7 +352,7 @@ $blue-dark
     <link rel="alternate" href="http://davidl.fr/blog/site-obese.html"/>
     <id>http://davidl.fr/blog/site-obese.html</id>
     <published>2014-05-20T22:00:00Z</published>
-    <updated>2014-07-21T17:00:31+02:00</updated>
+    <updated>2014-07-30T14:03:44+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -448,25 +643,25 @@ Le principal désavantage est le support des navigateurs
 
 &lt;p&gt;C'est pourquoi vous ne devez &lt;strong&gt;JAMAIS&lt;/strong&gt; modifier vos éléments avec du JavaScript.&lt;/p&gt;
 
-&lt;div class="alert-box alert"&gt;
-&lt;i class="fa fa-thumbs-o-down"&gt;&lt;/i&gt; Mauvaise solution
-&lt;/div&gt;
-
 &lt;pre&gt;&lt;code&gt;var el = document.getElementById('js-box');
 el.style.color = "#fff";
 el.style.backgroundColor = "#000";
 el.style.borderColor = "#fc0";
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Chaque déclaration provoque un calcul. Dans notre cas il y a 3 reflow.&lt;/p&gt;
-
-&lt;div class="alert-box success"&gt;
-&lt;i class="fa fa-thumbs-o-up"&gt;&lt;/i&gt; Bonne solution
+&lt;div class="alert-box alert"&gt;
+&lt;i class="fa fa-thumbs-o-down"&gt;&lt;/i&gt; Mauvaise solution
 &lt;/div&gt;
+
+&lt;p&gt;Chaque déclaration provoque un calcul. Dans notre cas il y a 3 reflow.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;var el = document.getElementById('js-box');
 el.className = "m-box";
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class="alert-box success"&gt;
+&lt;i class="fa fa-thumbs-o-up"&gt;&lt;/i&gt; Bonne solution
+&lt;/div&gt;
 
 &lt;p&gt;1 seul reflow. Le style est déclaré à sa place : dans une feuille de style et vous n'aurez pas besoin d'utiliser &lt;code&gt;!important&lt;/code&gt; si votre élément change.&lt;/p&gt;
 
@@ -649,27 +844,6 @@ J'ai simplement réalisé un export de toutes mes anciennes url et mis en place 
   &lt;li&gt;&lt;a href="https://github.com/thomasf/exitwp"&gt;exitwp&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="http://davidl.fr/blog/hebergement-gratuit-ovh.html"&gt;Héberger son site sur GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <title>La mediaquery du 01 Avril</title>
-    <link rel="alternate" href="http://davidl.fr/blog/easter-egg-april.html"/>
-    <id>http://davidl.fr/blog/easter-egg-april.html</id>
-    <published>2014-03-31T22:00:00Z</published>
-    <updated>2014-07-21T17:00:31+02:00</updated>
-    <author>
-      <name>DavidL design + développement</name>
-    </author>
-    <content type="html">&lt;p&gt;Visible uniquement pour les tablettes, si vos visiteurs retournent leur appareil, le site fait une rotation. Si ils retournent leur tablettte, …&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;@media only screen and (min-width: 350px) and (max-width: 1025px) {
-  body {
-    transform : rotate(180deg);
-  }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Voir la &lt;a href="https://vine.co/v/MeDj23XKT3T"&gt;vidéo sur vine&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
   <entry>

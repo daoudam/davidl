@@ -1,0 +1,1 @@
+(function(){var t,e,n=function(t,e){return function(){return t.apply(e,arguments)}};t=function(){function t(){this.loadFromCdn=n(this.loadFromCdn,this)}return t.prototype.loadFromCdn=function(){return WebFont.load({google:{families:["Droid Serif:n4,b7","Lato:ub9"]}})},t}(),e=new t,e.loadFromCdn()}).call(this);
