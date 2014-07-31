@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://davidl.fr/blog/grille-semantique.html"/>
     <id>http://davidl.fr/blog/grille-semantique.html</id>
     <published>2014-07-29T22:00:00Z</published>
-    <updated>2014-07-31T18:37:03+02:00</updated>
+    <updated>2014-07-31T18:45:07+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -40,6 +40,10 @@
 
 &lt;p&gt;Cette révolution a amené un nouveau problème la &lt;strong&gt;classitis&lt;/strong&gt; ou l’art de surcharger son HTML avec plus de &lt;code&gt;class&lt;/code&gt; que nécessaire.&lt;/p&gt;
 
+&lt;div class="alert-box alert"&gt;
+&lt;i class="fa fa-thumbs-o-down"&gt;&lt;/i&gt; Mauvaise solution
+&lt;/div&gt;
+
 &lt;pre&gt;&lt;code&gt;&amp;lt;ul&amp;gt;
   &amp;lt;li class="list-item"&amp;gt; ... &amp;lt;/li&amp;gt;
   &amp;lt;li class="list-item"&amp;gt; ... &amp;lt;/li&amp;gt;
@@ -47,8 +51,8 @@
 &amp;lt;/ul&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;div class="alert-box alert"&gt;
-&lt;i class="fa fa-thumbs-o-down"&gt;&lt;/i&gt; Mauvaise solution
+&lt;div class="alert-box success"&gt;
+&lt;i class="fa fa-thumbs-o-up"&gt;&lt;/i&gt; Bonne solution
 &lt;/div&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;ul class="inline-list"&amp;gt;
@@ -58,13 +62,9 @@
 &amp;lt;/ul&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;div class="alert-box success"&gt;
-&lt;i class="fa fa-thumbs-o-up"&gt;&lt;/i&gt; Bonne solution
-&lt;/div&gt;
-
 &lt;h2 id="tat-des-lieux"&gt;État des lieux&lt;/h2&gt;
 
-&lt;p&gt;&lt;em&gt;Classitis&lt;/em&gt; et son cousin, &lt;em&gt;Divitis&lt;/em&gt;, sont des gros mots que nous utilisons pour maudire le code surchargé. Au siècle dernier, nous avons utilisé les tableaux HTML pour la mise en page. Chaque tableau avait au moins trois niveaux: &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;tr&amp;gt;&lt;/code&gt; et &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt;. La promesse de &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; lié à un peu de CSS était de supprimmer les balises inutiles.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Classitis&lt;/em&gt; et son cousin, &lt;em&gt;Divitis&lt;/em&gt;, sont des gros mots que nous utilisons pour maudire le code surchargé. Au siècle dernier, nous avons utilisé les tableaux HTML pour la mise en page. Chaque tableau avait au moins trois niveaux: &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;tr&amp;gt;&lt;/code&gt; et &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt;. La promesse de &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; lié à un peu de CSS était de supprimer les balises inutiles.&lt;/p&gt;
 
 &lt;p&gt;De nos jours, avec le responsive, les mises en pages sont de plus en plus complexes, nous nous sommes retrouvés avec énorméments d'éléments &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;, une sorte de retour en arrière qui glisse doucement vers la mise en page avec des tableaux.&lt;/p&gt;
 
@@ -101,7 +101,7 @@
 &amp;lt;/div&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Fonctionnel ? Oui… &lt;a href="http://fr.wikipedia.org/wiki/HTML_s%C3%A9mantique"&gt;Sémantique&lt;/a&gt; ? Pas vraiment… Sauf pour quelques attributs &lt;code&gt;id&lt;/code&gt;. Dans ce cas, chaque section est générique, et les attributs rendent le code difficile à lire. Les &lt;code&gt;div&lt;/code&gt;s sont des boites génériques utilisées pour organiser d'autres éléments. Quand je dis générique, j'entends pas là dénué de sens, pas intelligent et sans saveur.&lt;/p&gt;
+&lt;p&gt;Fonctionnel ? Oui… &lt;a href="http://fr.wikipedia.org/wiki/HTML_s%C3%A9mantique"&gt;Sémantique&lt;/a&gt; ? Pas vraiment… Sauf pour quelques attributs &lt;code&gt;id&lt;/code&gt;. Dans ce cas, chaque section est générique, et les attributs rendent le code difficile à lire. Les &lt;code&gt;div&lt;/code&gt;s sont des boites génériques utilisées pour organiser d'autres éléments. Quand je dis générique, j'entends par là dénué de sens, pas intelligent et sans saveur.&lt;/p&gt;
 
 &lt;h2 id="et-maintenant-un-peu-de-smantique"&gt;Et maintenant un peu de sémantique&lt;/h2&gt;
 
@@ -166,7 +166,7 @@
 &lt;/code&gt;&lt;/pre&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Finallement je donne à un sélecteur à l'intérieur du header les propriétés d'une colonne.&lt;/p&gt;
+    &lt;p&gt;finalement je donne à un sélecteur à l'intérieur du header les propriétés d'une colonne.&lt;/p&gt;
 
     &lt;pre&gt;&lt;code&gt; header {
    @include grid-row;
@@ -352,7 +352,7 @@ $blue-dark
     <link rel="alternate" href="http://davidl.fr/blog/site-obese.html"/>
     <id>http://davidl.fr/blog/site-obese.html</id>
     <published>2014-05-20T22:00:00Z</published>
-    <updated>2014-07-30T14:03:44+02:00</updated>
+    <updated>2014-07-31T18:43:48+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -643,25 +643,25 @@ Le principal désavantage est le support des navigateurs
 
 &lt;p&gt;C'est pourquoi vous ne devez &lt;strong&gt;JAMAIS&lt;/strong&gt; modifier vos éléments avec du JavaScript.&lt;/p&gt;
 
+&lt;div class="alert-box alert"&gt;
+&lt;i class="fa fa-thumbs-o-down"&gt;&lt;/i&gt; Mauvaise solution
+&lt;/div&gt;
+
 &lt;pre&gt;&lt;code&gt;var el = document.getElementById('js-box');
 el.style.color = "#fff";
 el.style.backgroundColor = "#000";
 el.style.borderColor = "#fc0";
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;div class="alert-box alert"&gt;
-&lt;i class="fa fa-thumbs-o-down"&gt;&lt;/i&gt; Mauvaise solution
-&lt;/div&gt;
-
 &lt;p&gt;Chaque déclaration provoque un calcul. Dans notre cas il y a 3 reflow.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var el = document.getElementById('js-box');
-el.className = "m-box";
-&lt;/code&gt;&lt;/pre&gt;
 
 &lt;div class="alert-box success"&gt;
 &lt;i class="fa fa-thumbs-o-up"&gt;&lt;/i&gt; Bonne solution
 &lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;var el = document.getElementById('js-box');
+el.className = "m-box";
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;1 seul reflow. Le style est déclaré à sa place : dans une feuille de style et vous n'aurez pas besoin d'utiliser &lt;code&gt;!important&lt;/code&gt; si votre élément change.&lt;/p&gt;
 
