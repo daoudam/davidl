@@ -5,16 +5,167 @@
   <id>http://davidl.fr/blog/</id>
   <link href="http://davidl.fr/blog/"/>
   <link href="http://davidl.fr/blog/feed.xml" rel="self"/>
-  <updated>2014-07-29T22:00:00Z</updated>
+  <updated>2014-08-02T22:00:00Z</updated>
   <author>
     <name>David Leuliette</name>
   </author>
+  <entry>
+    <title>Enquête métier développeur / intégrateur web</title>
+    <link rel="alternate" href="http://davidl.fr/blog/metier-integrateur-web.html"/>
+    <id>http://davidl.fr/blog/metier-integrateur-web.html</id>
+    <published>2014-08-02T22:00:00Z</published>
+    <updated>2014-08-04T08:55:12+02:00</updated>
+    <author>
+      <name>DavidL design + développement</name>
+    </author>
+    <content type="html">&lt;p&gt;J'ai récemment été contacté par un futur étudiant dans le domaine du web. Il doit compléter un dossier de financement pour sa formation de futur développeur / intégrateur web. Il m'a envoyé des questions pour en savoir plus sur ce métier. Je partage cette interview dans cet article en espérant que cela sera utile à d'autres.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Espace de travail développeur web" src="https://farm6.staticflickr.com/5154/14185447737_0aba637f46.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Hipster desktop office par &lt;a href="https://www.flickr.com/photos/125167502@N02/14185447737/in/set-72157644655809428/"&gt;Markus Spiske&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id="interview"&gt;Interview&lt;/h2&gt;
+
+&lt;h3 id="quelle-est-votre-fonction-au-sein-de-lentreprise-de-lorganisme-de-la-structure-"&gt;Quelle est votre fonction au sein de l'entreprise, de l'organisme, de la structure ?&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Développeur front-end&lt;/strong&gt;. Il peut être aussi associé à celui d'intégrateur web. Tout cela dépends de la structure : plus une équipe est grande, plus elle aura de spécialistes travaillant dans leurs domaines de prédilection. Au contraire d'une équipe réduite où il faut être généraliste. Il est possible que dans un organisme ma fonction soit "développeur web" alors que je ne programme pas du tout les interactions avec le back-end.&lt;/p&gt;
+
+&lt;p&gt;De plus, je suis certain que dans certaines structures il existe encore des webmasters. mais &lt;a href="http://davidl.fr/manifesto.html"&gt;ceci est une autre histoire&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id="en-quoi-consiste-votre-mtier--pouvez-vous-dcrire-vos-tches-"&gt;En quoi consiste votre métier ? Pouvez-vous décrire vos tâches ?&lt;/h3&gt;
+
+&lt;p&gt;Pour faire analogie avec la construction d'une maison, je suis un peu le décorateur d'intérieur. La personne chargée de faire la peinture (Codage CSS). Poser portes et fenêtres, et vérifier que la porte s'ouvre et se ferme (Codage Javascript) . Choisir l'emplacement des meubles pour que cela soit ergonomique (Programmation HTML).&lt;/p&gt;
+
+&lt;p&gt;Par contre je ne peux pas travailler tout seul. Il faut d'abord que les maçons (Développeurs web back-end) aient coulé la dalle de béton et posé la structure générale.&lt;/p&gt;
+
+&lt;p&gt;Dans les vie réelle c'est un peu plus compliqué car quotidiennement je dois :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Faire de la veille technologique&lt;/li&gt;
+  &lt;li&gt;Programmer&lt;/li&gt;
+  &lt;li&gt;Concevoir des interfaces s'adaptant à tous types d'écrans.&lt;/li&gt;
+  &lt;li&gt;Programmation HTML / CSS (Généralement avec un préprocesseur comme Sass) correctement architecturé et évolutif.&lt;/li&gt;
+  &lt;li&gt;Tests d'utilisabilité avec de vrai appareils (tablette, smartphone, …).&lt;/li&gt;
+  &lt;li&gt;Tout cela en étroite collaboration avec les ingénieurs et les graphistes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="trouvez-vous-ce-mtier-passionnant--pourquoi-"&gt;Trouvez-vous ce métier passionnant ? Pourquoi ?&lt;/h3&gt;
+
+&lt;p&gt;Pour faire ce métier correctement, il est obligatoire d'être passionné. Tout d'abord parce que le web évolue très vite. Il est indispensable de se remettre en question, &lt;strong&gt;tous les jours&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ensuite, dans mon cas, j'ai toujours aimé le contact avec les ordinateurs car c'est "simplement de la logique". Quand j'ai commencé il n'y avait pas internet et il fallait chercher comment faire fonctionner un programme. Le plus souvent on trouvait la réponse en lisant le manuel. Simple non ? De nos jours c'est un peu plus complexe mais aussi beaucoup plus rapide de &lt;a href="http://google.com"&gt;trouver la réponse à ses questions&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Pourquoi mon métier est passionnant ? Il suffit de regarder autour de vous : le monde à déjà changé, le web est partout. Ce qui me motive c'est que des personnes comme vous et moi &lt;a href="https://www.mozilla.org/fr/contribute/"&gt;peuvent changer le monde&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id="quelle-est-votre-formation-et-quels-sont-vos-diplmes-"&gt;Quelle est votre formation et quels sont vos diplômes ?&lt;/h3&gt;
+
+&lt;p&gt;J'ai suivi le cursus suivant :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://iic0e.univ-littoral.fr/"&gt;DUT informatique&lt;/a&gt; option imagerie numérique (diplôme bac + 2)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A l'origine le constat simple : Si je veux travailler avec des ordinateurs, autant savoir comment cela fonctionne dans la boite grise. (A l'époque TOUS les ordinateurs étaient gris / blanc avec des gros écrans cathodiques).
+En sortant de cette formation, qui n'était pas orienté web, je savais que je ne voulais absolument pas faire de l'informatique classique (Probablement à cause des &lt;code&gt;segmentation fault&lt;/code&gt; en &lt;code&gt;C&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;Le point positif c'est que j'ai énormément appris de mes camarades de promotion en découvrant une galaxie qui fait maintenant parti de mon ADN : le mouvement open source.&lt;/p&gt;
+
+&lt;p&gt;C'est à cette époque que j'ai commencé à lire sérieusement des &lt;a href="http://davidl.fr/books.html"&gt;livres en anglais sur la construction de site internet&lt;/a&gt;.
+J'ai aussi appris que pour travailler efficacement vous devez utiliser un système à base d'unix (Autrement dit mac OS ou Linux).&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Je vais vous désactiver l'interface graphique et vous serrez obligés d'utiliser un terminal.&lt;/p&gt;
+
+  &lt;p&gt;&lt;cite&gt;Un professeur qui m'a marqué&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Licence Pro concepteur intégrateur web (diplôme bac + 3)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;J'ai décidé de suivre une formation en alternance car je souhaitais mettre en pratique toutes les connaissances que j'avais acquises en auto-formation. Et là je mets en garde toutes les personnes souhaitant suivre des formations en alternance dans le but d'obtenir un pseudo diplôme.&lt;/p&gt;
+
+&lt;p&gt;BE CAREFULLL : Je ne dénigre pas la qualité de l'école, - discutable,  qui m'a permis de faire cette formation en entreprise. Je dénigre simplement le fait que c'est une &lt;strong&gt;entreprise privée&lt;/strong&gt; et non un organisme de formation avant tout.&lt;/p&gt;
+
+&lt;p&gt;Pendant ce cursus j'ai quand même énormément appris, mais pas forcément les choses que je voulais, autrement dit la technique et les processus de création de site internet.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Autoformation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Au travers des années j'ai contruit ma propre formation à base de mailing list, flux RSS, twitter, … Mais ma meilleure source d'information reste de &lt;a href="http://davidl.fr/books.html"&gt;lire des livres sur le développement web&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id="quel-est-votre-parcours-personnel-"&gt;Quel est votre parcours personnel ?&lt;/h3&gt;
+
+&lt;p&gt;Un peu de tout, énorme structure, entreprise classique, freelance, startup …
+Pour ceux qui veulent approfondir vous pouvez télécharger mon &lt;a href="http://davidl.fr/cv.html"&gt;CV de développeur intégrateur web&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id="quelle-qualification-et-quels-diplmes-faut-il-avoir-pour-le-poste-que-vous-occupez-"&gt;Quelle qualification et quel(s) diplôme(s) faut-il avoir pour le poste que vous occupez ?&lt;/h3&gt;
+
+&lt;p&gt;Très bonne question, pour y répondre il faut demander à des &lt;a href="http://www.pole-emploi.fr/accueil/"&gt;spécialistes de l'emploi&lt;/a&gt; #bonCourage.&lt;/p&gt;
+
+&lt;p&gt;Selon moi, je pense que l'on peut plus juger quelqu'un à ses réalisation plutôt qu'à sa plaquette de présentation (Autrement appelé le CV).
+C'est très personnel mais je conseillerais d'avoir un &lt;a href="http://github.com/flexbox"&gt;profil GitHub&lt;/a&gt; et contribuer à des projets open source.&lt;/p&gt;
+
+&lt;h3 id="quelles-sont-les-comptences-requises-"&gt;Quelles sont les compétences requises ?&lt;/h3&gt;
+
+&lt;p&gt;Des compétences techniques de programmation. HTML, CSS et JavaScript sont une bonne base, mais vous devez quand même sortir de votre zone de confort pour savoir comment tout cela fonctionne.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="La complexité du web" src="https://farm3.staticflickr.com/2929/14404853893_1836f2b781_z.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Schéma d'une application web moderne : front-end, back-end, Base de données, outils &amp;amp; services&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3 id="quels-sont-vos-responsabilits--quelle-est-votre-autonomie--vos-horaires-"&gt;Quels sont vos responsabilités ? Quelle est votre autonomie ? Vos horaires ?&lt;/h3&gt;
+
+&lt;p&gt;Ma responsabilité ? Faire gagner de précises secondes au plusieurs centaines de milliers de personnes qui visitent les application web sur lesquelles je travaille.&lt;/p&gt;
+
+&lt;p&gt;Je travaille en équipe, mais aussi de façon autonome tout dépends des projets.&lt;/p&gt;
+
+&lt;p&gt;Les horaires dans mon contrat de travail sont de 39 heures par semaine. A cela peut s'ajouter 2 à 20 heures de veille, lectures et autres projets personnels.&lt;/p&gt;
+
+&lt;h3 id="travaillez-vous-seul-ou-en-quipe-"&gt;Travaillez-vous seul ou en équipe ?&lt;/h3&gt;
+
+&lt;p&gt;En équipe. Il est possible de travailler seul mais essayez d'imaginer ma métaphore sur la personne qui construit sa maison.&lt;/p&gt;
+
+&lt;h3 id="quels-sont-les-risques-et-contraintes-de-votre-profession-"&gt;Quels sont les risques et contraintes de votre profession ?&lt;/h3&gt;
+
+&lt;p&gt;Pas de risque mais les contraintes sont principalement de faire comprendre que travailler dans le web n'est pas simple.&lt;/p&gt;
+
+&lt;h3 id="est-ce-un-mtier-fatiguant-physiquement-intellectuellement-ou-moralement-"&gt;Est-ce un métier fatiguant physiquement, intellectuellement ou moralement ?&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Physiquement&lt;/strong&gt; être assis 8 heures par jour n'a encore tué personne, &lt;a href="http://www.slate.fr/life/75650/assis-fumer-tue-exercice"&gt;quoique&lt;/a&gt;. Dans mon cas j'essaye quand même de faire 10 000 pas par jour pour garder la forme.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Intellectuellement&lt;/strong&gt; c'est assez épuisant. Vous devez sans cesse jongler avec les délais, la qualité de ce que vous produisez, vérifier que cela fonctionne sur tous les navigateurs, tous les appareils. Que vos solutions soient évolutives…
+Et expliquer &lt;em&gt;gentiment&lt;/em&gt; au client que non, sa proposition pour construire "une piscine au milieu de son salon" ne sert à rien même si il n'y a "juste qu'a pousser les meubles".&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Moralement&lt;/strong&gt; il faut être préparé au fait qu'il y a toujours quelqu'un qui aura une meilleure solution que la vôtre. Vous pouvez passer des mois ou des années à développer quelque chose, le succès n'est pas toujours au rendez-vous. Mais je pense que c'est valable dans beaucoup de professions.&lt;/p&gt;
+
+&lt;h3 id="y--a-t-il-des-contre-indications-physiques-"&gt;Y- a-t-il des contre-indications (physiques) ?&lt;/h3&gt;
+
+&lt;p&gt;Aucune à ma connaissance.&lt;/p&gt;
+
+&lt;h3 id="avez-vous-des-possibilits-dvolution-dans-lentreprise-dans-dautres-entreprises-dans-la-branche-professionnelle-"&gt;Avez vous des possibilités d'évolution dans l'entreprise, dans d'autres entreprises, dans la branche professionnelle ?&lt;/h3&gt;
+
+&lt;p&gt;Le web en général évolue tout les jours, il faut sans cesse apprendre de nouvelles choses. Qui sais demain je serais peut être animateur HTML.&lt;/p&gt;
+
+&lt;h3 id="quel-est-le-salaire-moyen-de-votre-profession-"&gt;Quel est le salaire moyen de votre profession ?&lt;/h3&gt;
+
+&lt;p&gt;Cela dépends de l'expérience, de la situation géographique et de l'ancienneté. Pour vous donner des chiffres l'association de designer interactif publie chaque année &lt;a href="http://www.designersinteractifs.org/publications/guides/les-salaires-du-design-interactif-edition-2013"&gt;des statistiques sur les salaires&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id="que-pensez-vous-de-lavenir-du-mtier-"&gt;Que pensez-vous de l'avenir du métier ?&lt;/h3&gt;
+
+&lt;p&gt;Je crois encore à la vision de &lt;em&gt;Tim Berness-Lee.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Quand on voit ce que wikipédia a réussi à construire, j'aime penser qu'internet n'est pas simplement un vaste supermarché.
+Dans le cas de ma profession j'ai encore quelques années de travail devant moi car il faut refondre plus de la moitié des sites internet de la planète pour proposer une bonne expérience mobile au utilisateurs.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Construire une grille CSS sémantique avec le framework Foundation</title>
     <link rel="alternate" href="http://davidl.fr/blog/grille-semantique.html"/>
     <id>http://davidl.fr/blog/grille-semantique.html</id>
     <published>2014-07-29T22:00:00Z</published>
-    <updated>2014-07-31T18:45:07+02:00</updated>
+    <updated>2014-08-04T08:55:15+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -64,9 +215,9 @@
 
 &lt;h2 id="tat-des-lieux"&gt;État des lieux&lt;/h2&gt;
 
-&lt;p&gt;&lt;em&gt;Classitis&lt;/em&gt; et son cousin, &lt;em&gt;Divitis&lt;/em&gt;, sont des gros mots que nous utilisons pour maudire le code surchargé. Au siècle dernier, nous avons utilisé les tableaux HTML pour la mise en page. Chaque tableau avait au moins trois niveaux: &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;tr&amp;gt;&lt;/code&gt; et &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt;. La promesse de &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; lié à un peu de CSS était de supprimer les balises inutiles.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Classitis&lt;/em&gt; et son cousin, &lt;em&gt;Divitis&lt;/em&gt;, sont des gros mots que nous utilisons pour maudire le code surchargé. Au siècle dernier, nous avons utilisé les tableaux HTML pour la mise en page. Chaque tableau avait au moins trois niveaux : &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;tr&amp;gt;&lt;/code&gt; et &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt;. La promesse de &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;, lié à un peu de CSS, était de supprimer les balises inutiles.&lt;/p&gt;
 
-&lt;p&gt;De nos jours, avec le responsive, les mises en pages sont de plus en plus complexes, nous nous sommes retrouvés avec énorméments d'éléments &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;, une sorte de retour en arrière qui glisse doucement vers la mise en page avec des tableaux.&lt;/p&gt;
+&lt;p&gt;De nos jours, avec le responsive, les mises en pages sont de plus en plus complexes, nous nous sommes retrouvés avec énorméments d'éléments &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;. Une sorte de retour en arrière, qui glisse doucement vers la mise en page avec des tableaux.&lt;/p&gt;
 
 &lt;p&gt;Je vais prendre un exemple avec la grille de Foundation. Notez que chaque &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; n'a pas forcément de but, mais elles sont obligatoires pour contruire une mise en page complexe. Un balisage typique Foundation est plein à craquer d'informations qui décrit sa grille :&lt;/p&gt;
 
@@ -188,10 +339,10 @@
 }
 main {
   @include grid-row;
-  aside {
+  article {
     @include grid-column(8);
   }
-  article {
+  aside {
     @include grid-column(4);
   }
 }
@@ -844,110 +995,6 @@ J'ai simplement réalisé un export de toutes mes anciennes url et mis en place 
   &lt;li&gt;&lt;a href="https://github.com/thomasf/exitwp"&gt;exitwp&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="http://davidl.fr/blog/hebergement-gratuit-ovh.html"&gt;Héberger son site sur GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Proposition de redesign du louvrelens.fr</title>
-    <link rel="alternate" href="http://davidl.fr/blog/louvrelens.html"/>
-    <id>http://davidl.fr/blog/louvrelens.html</id>
-    <published>2014-03-31T22:00:00Z</published>
-    <updated>2014-07-21T17:00:31+02:00</updated>
-    <author>
-      <name>DavidL design + développement</name>
-    </author>
-    <content type="html">&lt;p&gt;Chaque jour, dans la communauté des designer, les &lt;a href="http://dribbble.com/search?page=4&amp;amp;amp;q=redesign"&gt;proposition de redesign&lt;/a&gt; pleuvent : iOs, Facebook, Twitter … Je salue bien évidemment cette performance. Mais pourquoi ne pas s’intéresser à de vrais sites qui ont vocation à être accessibles au plus grand nombre ?&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="http://responsivemuseum.tumblr.com/"&gt;Responsive Museum&lt;/a&gt; propose de modifier la feuille de styles CSS du site d’un musée pour le rendre lisible sur mobile, tablette, etc… J’ai voulu participer à cette chouette initiative en proposant la refonte du &lt;a href="http://www.louvrelens.fr/"&gt;LouvreLens&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id="pourquoi-un-redesign-"&gt;Pourquoi un redesign ?&lt;/h2&gt;
-
-&lt;p&gt;Pour préparer ma prochaine visite au musée, je me suis installé dans mon canapé avec ma tablette. Je découvre que le site internet n’est pas responsive. L’expérience n’est donc pas optimisée pour la mobilité. Je décide de télécharger l’application Android. et là c’est le drame : &lt;em&gt;Cette application n’est pas compatible avec votre appareil&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="louvrelen et android" src="https://farm8.staticflickr.com/7117/13621111873_2b530fb811_o.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Le problème principal est d’avoir divisé le site en 3 parties : l’accès web, l’accès Android et iPhone.
-J’ai déjà évoqué le fait que ce choix &lt;a href="http://davidl.fr/blog/webdesign-adaptatif-vs-site-mobile-vs-application-native.html"&gt;multiplie les coûts&lt;/a&gt; et je ne pense pas que ce soit une bonne solution pour &lt;a href="http://fr.wikipedia.org/wiki/Louvre-Lens#Fonctionnement"&gt;le budget de fonctionnement&lt;/a&gt; alloué aux mises à jour du contenu en ligne.&lt;/p&gt;
-
-&lt;h2 id="audit-de-navigation"&gt;Audit de navigation&lt;/h2&gt;
-
-&lt;p&gt;&lt;img alt="homepage" src="https://farm8.staticflickr.com/7081/13621447714_a6668d31c3_b.jpg" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Contenu de la page d’accueil actuelle :&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Une liste de lien en haut de page.&lt;/li&gt;
-  &lt;li&gt;Un menu principal de navigation.&lt;/li&gt;
-  &lt;li&gt;Un carrousel d’actualités.&lt;/li&gt;
-  &lt;li&gt;Un menu récapitulant tous les liens du site.&lt;/li&gt;
-  &lt;li&gt;Une liste de lien en bas de page.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id="la-navigation-nest-pas-assez-stratgique"&gt;La navigation n’est pas assez stratégique&lt;/h3&gt;
-
-&lt;p&gt;Il existe plus de 5 manières de naviguer sur le site avec différents problèmes :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Doublons de page d’entrée.&lt;/li&gt;
-  &lt;li&gt;Pas de cohérence de catégories.&lt;/li&gt;
-  &lt;li&gt;Un &lt;a href="https://31.media.tumblr.com/20dfb470e44ec08f07f240c16902e703/tumblr_mze5idLVTu1toamj8o2_500.gif"&gt;menu pour naviguer dans le menu&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="menu-principal"&gt;Menu principal&lt;/h3&gt;
-
-&lt;p&gt;À mon avis, le site d’un musée doit d’être accessible à tous, et apparemment d’ici 2015 ce ne sera &lt;a href="http://www.lexpress.fr/actualites/1/societe/handicap-l-echeance-de-2015-d-accessiblite-pour-tous-pas-negociable_1023008.html"&gt;pas négociable&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;La navigation actuelle du Louvre-Lens ne me parait pas très lisible :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Petite taille de la police.&lt;/li&gt;
-  &lt;li&gt;Chevauchement des caractères.&lt;/li&gt;
-  &lt;li&gt;Mauvais contraste des couleurs.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img alt="contraste menu" src="https://farm8.staticflickr.com/7036/13621447294_b2a31ae1be_o.png" /&gt;&lt;/p&gt;
-
-&lt;h3 id="le-but-principal-nest-pas-atteint"&gt;Le but principal n'est pas atteint&lt;/h3&gt;
-
-&lt;p&gt;Les 3 informations capitales qui devraient êtres mises en avant sont : Les &lt;strong&gt;horaires&lt;/strong&gt;, Les &lt;strong&gt;tarifs&lt;/strong&gt; et les &lt;strong&gt;évènements à venir&lt;/strong&gt;. Les visiteurs doivent trouver ces informations très simplement afin de faciliter leur décision de venir visiter le musée.&lt;/p&gt;
-
-&lt;p&gt;Le Louvre-Lens est un lieu d'exception à explorer, mais la navigation actuelle ne permet pas aux utilisateurs de trouver facilement les informations qu'ils recherchent.&lt;/p&gt;
-
-&lt;h2 id="solutions"&gt;Solutions&lt;/h2&gt;
-
-&lt;h3 id="menu-principal-1"&gt;Menu principal&lt;/h3&gt;
-
-&lt;p&gt;En supprimant et en regroupant les informations il est possible de simplifier le menu principal.
-Il est responsive est s'adapte en fonction de la taille de l'écran.&lt;/p&gt;
-
-&lt;p&gt;L'unique bouton est un tunnel d'entrée vers le contenu personnalisé des utilisateurs.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="menu responsive anime" src="https://farm4.staticflickr.com/3803/13621448534_763dd528ea_o.gif" /&gt;&lt;/p&gt;
-
-&lt;h3 id="navigation-par-catgories"&gt;Navigation par catégories&lt;/h3&gt;
-
-&lt;p&gt;Pour garder captif l'attention des visiteurs, les entrées vers les différentes pages essentielles sont positionnées en bas de page, avant le footer.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Horaires&lt;/li&gt;
-  &lt;li&gt;Billets&lt;/li&gt;
-  &lt;li&gt;Boutiques&lt;/li&gt;
-  &lt;li&gt;Agenda&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img alt="Navigation par catégories" src="https://farm4.staticflickr.com/3713/13621090445_7ce1677993_o.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Comme sur une carte où l'on affiche la position actuelle, le lien vers &lt;strong&gt;la page en cours&lt;/strong&gt; est contrasté pour inviter à la découverte des autres catégories.&lt;/p&gt;
-
-&lt;h3 id="dmonstration"&gt;Démonstration&lt;/h3&gt;
-
-&lt;p&gt;Ma philosophie est le développement open source et grâce à la magie de Ruby on Rails et SASS tout est disponible sur github.&lt;/p&gt;
-
-&lt;div class="row"&gt;
-  &lt;div class="medium-6 columns"&gt;&lt;a href="http://flexbox.github.io/louvrelens/" class="button secondary expand"&gt;Demo&lt;/a&gt;&lt;/div&gt;
-  &lt;div class="medium-6 columns"&gt;&lt;a href="https://github.com/flexbox/louvrelens" class="button expand"&gt;Code source&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;N'hésitez pas à aller "pirater" mon code source :)&lt;/p&gt;
 </content>
   </entry>
 </feed>
