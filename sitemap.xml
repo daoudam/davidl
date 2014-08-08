@@ -454,9 +454,19 @@
     <priority>0</priority>
   </url>
   <url>
+    <loc>http://davidl.fr/sos.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>http://davidl.fr/toolkit.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://davidl.fr/video.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>http://davidl.fr/webdesign.html</loc>
@@ -604,12 +614,12 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>http://davidl.fr/2013.html</loc>
+    <loc>http://davidl.fr/2012/08/10.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>http://davidl.fr/2012/08/10.html</loc>
+    <loc>http://davidl.fr/2013/12.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -764,7 +774,7 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>http://davidl.fr/2013/12.html</loc>
+    <loc>http://davidl.fr/2013.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
