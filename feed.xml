@@ -230,7 +230,7 @@ Dans le cas de ma profession j'ai encore quelques années de travail devant moi 
     <link rel="alternate" href="http://davidl.fr/blog/grille-semantique.html"/>
     <id>http://davidl.fr/blog/grille-semantique.html</id>
     <published>2014-07-29T22:00:00Z</published>
-    <updated>2014-08-04T08:55:15+02:00</updated>
+    <updated>2014-08-11T14:00:26+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -350,7 +350,7 @@ Dans le cas de ma profession j'ai encore quelques années de travail devant moi 
   &lt;li&gt;&lt;code&gt;footer&lt;/code&gt; : Conclusion de la section.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Notez que je n'utilise plus de &lt;code&gt;class&lt;/code&gt; pour avoir un bon exemple, même si &lt;a href="guidecss.fr/convention.html"&gt;dans la pratique c'est plus évolutif&lt;/a&gt; d'en avoir.&lt;/p&gt;
+&lt;p&gt;Notez que je n'utilise plus de &lt;code&gt;class&lt;/code&gt; pour avoir un bon exemple, même si &lt;a href="http://guidecss.fr/convention.html"&gt;dans la pratique c'est plus évolutif&lt;/a&gt; d'en avoir.&lt;/p&gt;
 
 &lt;h2 id="faire-fonctionner-le-tout-avec-sass"&gt;Faire fonctionner le tout avec Sass&lt;/h2&gt;
 
