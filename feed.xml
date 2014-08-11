@@ -14,11 +14,11 @@
     <link rel="alternate" href="http://davidl.fr/blog/github-ninja.html"/>
     <id>http://davidl.fr/blog/github-ninja.html</id>
     <published>2014-08-05T22:00:00Z</published>
-    <updated>2014-08-06T14:00:13+02:00</updated>
+    <updated>2014-08-11T08:52:49+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
-    <content type="html">&lt;p&gt;Si je ne devais choisir qu'un seul outil &lt;a href="http://davidl.fr/toolkit.html"&gt;dans tout ceux que j'utilise&lt;/a&gt;, je choisirai sans hésiter le terminal. Concernant le site web se serait &lt;a href="http://github.com"&gt;GitHub&lt;/a&gt;. Vu que je passe beaucoups de temps à utiliser ces solutions, autant essayer d'être efficace.
+    <content type="html">&lt;p&gt;Si je ne devais choisir qu'un seul outil &lt;a href="http://davidl.fr/toolkit.html"&gt;dans tous ceux que j'utilise&lt;/a&gt;, je choisirais sans hésiter le terminal. Concernant le site web se serait &lt;a href="http://github.com"&gt;GitHub&lt;/a&gt;. Vu que je passe beaucoups de temps à utiliser ces solutions, autant essayer d'être efficace.
 Créer / savoir les différents raccourcis vous fera gagner de précieuses secondes. Vous êtes plus productif, votre travail est plus efficace et vous libère du temps pour régler de vrais problèmes.&lt;/p&gt;
 
 &lt;div&gt;
@@ -57,7 +57,7 @@ Créer / savoir les différents raccourcis vous fera gagner de précieuses secon
 
 &lt;h2 id="raccourcis-claviers"&gt;Raccourcis claviers&lt;/h2&gt;
 
-&lt;p&gt;Les logiciels traditionnels et les application web ne sont pas si différentes. Gardez cela à l'esprit et essayer d'utiliser les raccourcis aussi souvent que possible sur &lt;a href="http://github.com"&gt;GitHub&lt;/a&gt; pour aider à réduire le temps passé sur le site.&lt;/p&gt;
+&lt;p&gt;Les logiciels traditionnels et les application web ne sont pas si différentes. Gardez cela à l'esprit et essayez d'utiliser les raccourcis aussi souvent que possible sur &lt;a href="http://github.com"&gt;GitHub&lt;/a&gt; pour aider à réduire le temps passé sur le site.&lt;/p&gt;
 
 &lt;iframe width="560" height="315" src="//www.youtube.com/embed/3PsVvjWy21Q?rel=0" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;
 
@@ -80,7 +80,7 @@ Créer / savoir les différents raccourcis vous fera gagner de précieuses secon
     <link rel="alternate" href="http://davidl.fr/blog/metier-integrateur-web.html"/>
     <id>http://davidl.fr/blog/metier-integrateur-web.html</id>
     <published>2014-08-02T22:00:00Z</published>
-    <updated>2014-08-04T11:36:14+02:00</updated>
+    <updated>2014-08-11T08:52:49+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -94,13 +94,13 @@ Créer / savoir les différents raccourcis vous fera gagner de précieuses secon
 
 &lt;h3 id="quelle-est-votre-fonction-au-sein-de-lentreprise-de-lorganisme-de-la-structure-"&gt;Quelle est votre fonction au sein de l'entreprise, de l'organisme, de la structure ?&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;Développeur front-end&lt;/strong&gt;. Il peut être aussi associé à celui d'intégrateur web. Tout cela dépends de la structure : plus une équipe est grande, plus elle aura de spécialistes travaillant dans leurs domaines de prédilection. Au contraire d'une équipe réduite où il faut être généraliste. Il est possible que dans un organisme ma fonction soit "développeur web" alors que je ne programme pas du tout les interactions avec le back-end.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Développeur front-end&lt;/strong&gt;. Il peut être aussi associé à celui d'intégrateur web. Tout cela dépends de la structure : plus une équipe est importante, plus elle aura de spécialistes travaillant dans leur domaine de prédilection. Au contraire d'une équipe réduite où il faut être généraliste. Il est possible que dans une organisation ma fonction soit "développeur web" alors que je ne programme pas du tout les interactions avec le back-end.&lt;/p&gt;
 
 &lt;p&gt;De plus, je suis certain que dans certains organismes il existe encore des webmasters. Mais &lt;a href="http://davidl.fr/manifesto.html"&gt;ceci est une autre histoire&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id="en-quoi-consiste-votre-mtier--pouvez-vous-dcrire-vos-tches-"&gt;En quoi consiste votre métier ? Pouvez-vous décrire vos tâches ?&lt;/h3&gt;
 
-&lt;p&gt;Pour faire l'analogie avec la construction d'une maison, je suis le décorateur d'intérieur. La personne chargée de faire la peinture (Codage CSS). Poser portes et fenêtres, et vérifier que la porte s'ouvre et se ferme (Codage Javascript) . Choisir l'emplacement des meubles pour que cela soit ergonomique (Programmation HTML).&lt;/p&gt;
+&lt;p&gt;Pour faire l'analogie avec la construction d'une maison, je suis le décorateur d'intérieur : la personne chargée de faire la peinture (Codage CSS), celle qui pose portes et fenêtres, vérifie qu'elles s'ouvrent et se ferment (Codage Javascript) et choisit l'emplacement des meubles pour que cela soit ergonomique (Programmation HTML).&lt;/p&gt;
 
 &lt;p&gt;Par contre je ne peux pas travailler tout seul. Il faut d'abord que les maçons (Développeurs web back-end) aient coulé la dalle de béton et posé la structure générale.&lt;/p&gt;
 
@@ -121,7 +121,7 @@ Créer / savoir les différents raccourcis vous fera gagner de précieuses secon
 
 &lt;p&gt;Ensuite, dans mon cas, j'ai toujours aimé le contact avec les ordinateurs car c'est "simplement de la logique". Quand j'ai commencé il n'y avait pas internet et il fallait chercher comment faire fonctionner un programme. Le plus souvent on trouvait la réponse en lisant le manuel. Simple non ? De nos jours c'est un peu plus complexe mais aussi beaucoup plus rapide de &lt;a href="http://google.com"&gt;trouver la réponse à ses questions&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Pourquoi mon métier est passionnant ? Il suffit de regarder autour de vous : le monde à déjà changé, le web est partout. Ce qui me motive c'est que des personnes comme vous et moi &lt;a href="https://www.mozilla.org/fr/contribute/"&gt;peuvent changer le monde&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Pourquoi mon métier est passionnant ? Il suffit de regarder autour de vous : le monde a déjà changé, le web est partout. Ce qui me motive c'est que des personnes comme vous et moi &lt;a href="https://www.mozilla.org/fr/contribute/"&gt;peuvent changer le monde&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id="quelle-est-votre-formation-et-quels-sont-vos-diplmes-"&gt;Quelle est votre formation et quels sont vos diplômes ?&lt;/h3&gt;
 
@@ -131,18 +131,18 @@ Créer / savoir les différents raccourcis vous fera gagner de précieuses secon
   &lt;li&gt;&lt;a href="http://iic0e.univ-littoral.fr/"&gt;DUT informatique&lt;/a&gt; option imagerie numérique (diplôme bac + 2)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;A l'origine le constat simple : Si je veux travailler avec des ordinateurs, autant savoir comment cela fonctionne dans la boite grise. (A l'époque TOUS les ordinateurs étaient gris / blanc avec des gros écrans cathodiques).
-En sortant de cette formation, qui n'était pas orienté web, je savais que je ne voulais absolument pas faire de l'informatique classique (Probablement à cause des &lt;code&gt;segmentation fault&lt;/code&gt; en &lt;code&gt;C&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;A l'origine le constat simple : si je veux travailler avec des ordinateurs, autant savoir comment cela fonctionne dans la boite grise. (A l'époque TOUS les ordinateurs étaient gris / blanc avec des gros écrans cathodiques).
+En sortant de cette formation, qui n'était pas orientée web, je savais que je ne voulais absolument pas faire de l'informatique classique (Probablement à cause des &lt;code&gt;segmentation fault&lt;/code&gt; en &lt;code&gt;C&lt;/code&gt;).&lt;/p&gt;
 
 &lt;p&gt;Le point positif c'est que j'ai énormément appris de mes camarades de promotion en découvrant une galaxie qui fait maintenant parti de mon ADN : le mouvement open source.&lt;/p&gt;
 
 &lt;p&gt;C'est à cette époque que j'ai commencé à lire sérieusement des &lt;a href="http://davidl.fr/books.html"&gt;livres en anglais sur la construction de site internet&lt;/a&gt;.
-J'ai aussi appris que pour travailler efficacement vous devez utiliser un système à base d'unix (Autrement dit mac OS ou Linux).&lt;/p&gt;
+J'ai aussi appris que pour &lt;strong&gt;travailler efficacement&lt;/strong&gt; vous devez utiliser un système à base d'unix (Autrement dit mac OS ou Linux).&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Je vais vous désactiver l'interface graphique et vous serrez obligés d'utiliser un terminal.&lt;/p&gt;
+  &lt;p&gt;Je vais vous désactiver l'interface graphique et vous serez obligés d'utiliser un terminal.&lt;/p&gt;
 
-  &lt;p&gt;&lt;cite&gt;Un professeur qui m'a marqué&lt;/cite&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;cite&gt;Dominique Dussart professeur de système&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
@@ -151,7 +151,7 @@ J'ai aussi appris que pour travailler efficacement vous devez utiliser un systè
 
 &lt;p&gt;J'ai décidé de suivre une formation en alternance car je souhaitais mettre en pratique toutes les connaissances que j'avais acquises en auto-formation. Et là je mets en garde toutes les personnes souhaitant suivre des formations en alternance dans le but d'obtenir un pseudo diplôme.&lt;/p&gt;
 
-&lt;p&gt;BE CAREFULLL : Je ne dénigre pas la qualité de l'école, - discutable,  qui m'a permis de faire cette formation en entreprise. Je dénigre simplement le fait que c'est une &lt;strong&gt;entreprise privée&lt;/strong&gt; et non un organisme de formation avant tout.&lt;/p&gt;
+&lt;p&gt;BE CAREFUL : Je ne dénigre pas la qualité de l'école, qui m'a permis de faire cette formation en entreprise. Mais c'est d'abord une &lt;strong&gt;entreprise privée&lt;/strong&gt; et non un organisme de formation avant tout. Après je suis certain qu'il existe de bonnes écoles privées mais renseignez vous bien avant de faire votre choix.&lt;/p&gt;
 
 &lt;p&gt;Pendant ce cursus j'ai quand même énormément appris, mais pas forcément les choses que je voulais, autrement dit la technique et les processus de création de site internet.&lt;/p&gt;
 
@@ -170,7 +170,7 @@ Pour ceux qui veulent approfondir vous pouvez télécharger mon &lt;a href="http
 
 &lt;p&gt;Très bonne question, pour y répondre il faut demander à des &lt;a href="http://www.pole-emploi.fr/accueil/"&gt;spécialistes de l'emploi&lt;/a&gt; #bonCourage.&lt;/p&gt;
 
-&lt;p&gt;Selon moi, je pense que l'on peut plus juger quelqu'un à ses réalisation plutôt qu'à sa plaquette de présentation (Autrement appelé le CV).
+&lt;p&gt;Selon moi, je pense que l'on peut plus juger quelqu'un à ses réalisation plutôt qu'à sa plaquette de présentation (autrement appelé le CV).
 C'est très personnel mais je conseillerais d'avoir un &lt;a href="http://github.com/flexbox"&gt;profil GitHub&lt;/a&gt; et contribuer à des projets open source.&lt;/p&gt;
 
 &lt;h3 id="quelles-sont-les-comptences-requises-"&gt;Quelles sont les compétences requises ?&lt;/h3&gt;
@@ -181,17 +181,17 @@ C'est très personnel mais je conseillerais d'avoir un &lt;a href="http://github
 
 &lt;p&gt;&lt;em&gt;Schéma d'une application web moderne : front-end, back-end, Base de données, outils &amp;amp; services&lt;/em&gt;.&lt;/p&gt;
 
-&lt;h3 id="quels-sont-vos-responsabilits--quelle-est-votre-autonomie--vos-horaires-"&gt;Quels sont vos responsabilités ? Quelle est votre autonomie ? Vos horaires ?&lt;/h3&gt;
+&lt;h3 id="quelless-sont-vos-responsabilits--vos-horaires-"&gt;Quelless sont vos responsabilités ? Vos horaires ?&lt;/h3&gt;
 
 &lt;p&gt;Ma responsabilité ? Faire gagner de précieuses secondes au plusieurs centaines de milliers de personnes qui visitent les application web sur lesquelles je travaille.&lt;/p&gt;
 
-&lt;p&gt;Je travaille en équipe, mais aussi de façon autonome tout dépends des projets.&lt;/p&gt;
-
 &lt;p&gt;Les horaires dans mon contrat de travail sont de 39 heures par semaine. A cela peut s'ajouter 2 à 20 heures de veille, lectures et autres projets personnels.&lt;/p&gt;
 
-&lt;h3 id="travaillez-vous-seul-ou-en-quipe-"&gt;Travaillez-vous seul ou en équipe ?&lt;/h3&gt;
+&lt;h3 id="travaillez-vous-seul-ou-en-quipe--quelle-est-votre-autonomie-"&gt;Travaillez-vous seul ou en équipe ? Quelle est votre autonomie ?&lt;/h3&gt;
 
-&lt;p&gt;En équipe. Il est possible de travailler seul mais essayez d'imaginer ma métaphore sur la personne qui construit sa maison.&lt;/p&gt;
+&lt;p&gt;Je travaille en équipe, mais aussi de façon autonome tout dépend des projets.&lt;/p&gt;
+
+&lt;p&gt;Il est possible de travailler seul mais essayez d'imaginer ma métaphore sur la personne qui construit sa maison.&lt;/p&gt;
 
 &lt;h3 id="quels-sont-les-risques-et-contraintes-de-votre-profession-"&gt;Quels sont les risques et contraintes de votre profession ?&lt;/h3&gt;
 
@@ -201,8 +201,7 @@ C'est très personnel mais je conseillerais d'avoir un &lt;a href="http://github
 
 &lt;p&gt;&lt;strong&gt;Physiquement&lt;/strong&gt; être assis 8 heures par jour n'a encore tué personne, &lt;a href="http://www.slate.fr/life/75650/assis-fumer-tue-exercice"&gt;quoique&lt;/a&gt;. Dans mon cas j'essaye quand même de faire 10 000 pas par jour pour garder la forme.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Intellectuellement&lt;/strong&gt; c'est assez épuisant. Vous devez sans cesse jongler avec les délais, la qualité de ce que vous produisez, vérifier que cela fonctionne sur tous les navigateurs, tous les appareils. Que vos solutions soient évolutives…
-Et expliquer &lt;em&gt;gentiment&lt;/em&gt; au client que non, sa proposition pour construire "une piscine au milieu de son salon" ne sert à rien même si il n'y a "juste qu'a pousser les meubles".&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Intellectuellement&lt;/strong&gt; c'est assez épuisant. Vous devez sans cesse jongler avec les délais, la qualité de ce que vous produisez, vérifier que cela fonctionne sur tous les navigateurs, tous les appareils. Que vos solutions soient évolutives… Et expliquer &lt;em&gt;gentiment&lt;/em&gt; au client que non, sa proposition pour construire "une piscine au milieu de son salon" ne sert à rien même si il n'y a "juste qu'a pousser les meubles".&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Moralement&lt;/strong&gt; il faut être préparé au fait qu'il y a toujours quelqu'un qui aura une meilleure solution que la vôtre. Vous pouvez passer des mois ou des années à développer quelque chose, le succès n'est pas toujours au rendez-vous. Mais je pense que c'est valable dans beaucoup de professions.&lt;/p&gt;
 
@@ -212,18 +211,18 @@ Et expliquer &lt;em&gt;gentiment&lt;/em&gt; au client que non, sa proposition po
 
 &lt;h3 id="avez-vous-des-possibilits-dvolution-dans-lentreprise-dans-dautres-entreprises-dans-la-branche-professionnelle-"&gt;Avez vous des possibilités d'évolution dans l'entreprise, dans d'autres entreprises, dans la branche professionnelle ?&lt;/h3&gt;
 
-&lt;p&gt;Le web en général évolue tout les jours, il faut sans cesse apprendre de nouvelles choses. Qui sais demain je serais peut être animateur HTML.&lt;/p&gt;
+&lt;p&gt;Le web en général évolue tous les jours, il faut sans cesse apprendre de nouvelles choses. Qui sait demain je serais peut-être animateur HTML.&lt;/p&gt;
 
 &lt;h3 id="quel-est-le-salaire-moyen-de-votre-profession-"&gt;Quel est le salaire moyen de votre profession ?&lt;/h3&gt;
 
-&lt;p&gt;Cela dépends de l'expérience, de la situation géographique et de l'ancienneté. Pour vous donner des chiffres l'association de designer interactif publie chaque année &lt;a href="http://www.designersinteractifs.org/publications/guides/les-salaires-du-design-interactif-edition-2013"&gt;des statistiques sur les salaires&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Cela dépend de l'expérience, de la situation géographique et de l'ancienneté. Pour vous donner des chiffres l'association de designer interactif publie chaque année &lt;a href="http://www.designersinteractifs.org/publications/guides/les-salaires-du-design-interactif-edition-2013"&gt;des statistiques sur les salaires&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id="que-pensez-vous-de-lavenir-du-mtier-"&gt;Que pensez-vous de l'avenir du métier ?&lt;/h3&gt;
 
 &lt;p&gt;Je crois encore à la vision de &lt;em&gt;Tim Berness-Lee.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Quand on voit ce que wikipédia a réussi à construire, j'aime penser qu'internet n'est pas simplement un vaste supermarché.
-Dans le cas de ma profession j'ai encore quelques années de travail devant moi car il faut refondre plus de la moitié des sites internet de la planète pour proposer une bonne expérience mobile au utilisateurs.&lt;/p&gt;
+Dans le cas de ma profession j'ai encore quelques années de travail devant moi car il faut refondre plus de la moitié des sites internet de la planète pour proposer une bonne expérience mobile aux utilisateurs.&lt;/p&gt;
 </content>
   </entry>
   <entry>
