@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://davidl.fr/blog/github-ninja.html"/>
     <id>http://davidl.fr/blog/github-ninja.html</id>
     <published>2014-08-05T22:00:00Z</published>
-    <updated>2014-08-11T08:52:49+02:00</updated>
+    <updated>2014-08-12T13:49:08+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -80,7 +80,7 @@ Créer / savoir les différents raccourcis vous fera gagner de précieuses secon
     <link rel="alternate" href="http://davidl.fr/blog/metier-integrateur-web.html"/>
     <id>http://davidl.fr/blog/metier-integrateur-web.html</id>
     <published>2014-08-02T22:00:00Z</published>
-    <updated>2014-08-11T08:52:49+02:00</updated>
+    <updated>2014-08-12T13:56:52+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -205,7 +205,7 @@ C'est très personnel mais je conseillerais d'avoir un &lt;a href="http://github
 
 &lt;p&gt;&lt;strong&gt;Moralement&lt;/strong&gt; il faut être préparé au fait qu'il y a toujours quelqu'un qui aura une meilleure solution que la vôtre. Vous pouvez passer des mois ou des années à développer quelque chose, le succès n'est pas toujours au rendez-vous. Mais je pense que c'est valable dans beaucoup de professions.&lt;/p&gt;
 
-&lt;h3 id="y--a-t-il-des-contre-indications-physiques-"&gt;Y- a-t-il des contre-indications (physiques) ?&lt;/h3&gt;
+&lt;h3 id="y-a-t-il-des-contre-indications-physiques-"&gt;Y-a-t-il des contre-indications (physiques) ?&lt;/h3&gt;
 
 &lt;p&gt;Aucune à ma connaissance.&lt;/p&gt;
 
@@ -564,11 +564,11 @@ $blue-dark
 </content>
   </entry>
   <entry>
-    <title>Astuces et bonnes pratiques pour la performance d'un site internet</title>
+    <title>Performance site internet : Astuces et bonnes pratiques</title>
     <link rel="alternate" href="http://davidl.fr/blog/site-obese.html"/>
     <id>http://davidl.fr/blog/site-obese.html</id>
     <published>2014-05-20T22:00:00Z</published>
-    <updated>2014-07-31T18:43:48+02:00</updated>
+    <updated>2014-08-12T12:33:17+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -608,7 +608,7 @@ $blue-dark
 &lt;p&gt;La mise en place demande 3 étapes :&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Aller sur le projet &lt;a href="https://github.com/h5bp/html5-boilerplate/blob/master/.htaccess#L499"&gt;GitHub HTML5Boilerplate&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Aller sur le projet &lt;a href="https://github.com/h5bp/html5-boilerplate/blob/master/dist/.htaccess#L499"&gt;GitHub HTML5Boilerplate&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;Copier le contenu &lt;code&gt;mod_deflate&lt;/code&gt; du fichier &lt;code&gt;.htaccess&lt;/code&gt;,&lt;/li&gt;
   &lt;li&gt;et le coller sur votre serveur.&lt;/li&gt;
 &lt;/ol&gt;
@@ -634,7 +634,7 @@ $blue-dark
 &lt;p&gt;La mise en place demande 3 étapes :&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Aller sur le projet &lt;a href="https://github.com/h5bp/html5-boilerplate/blob/master/.htaccess#L563"&gt;GitHub HTML5Boilerplate&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Aller sur le projet &lt;a href="https://github.com/h5bp/html5-boilerplate/blob/master/dist/.htaccess#L563"&gt;GitHub HTML5Boilerplate&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;Copier le fichier &lt;code&gt;.htaccess&lt;/code&gt;, pour la partie &lt;code&gt;mod_expires&lt;/code&gt;,&lt;/li&gt;
   &lt;li&gt;et le coller sur votre serveur.&lt;/li&gt;
 &lt;/ol&gt;
