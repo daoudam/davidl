@@ -76,20 +76,15 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>http://davidl.fr/assets/font/icons-reference.html</loc>
+  </url>
+  <url>
     <loc>http://davidl.fr/2012/07/31.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>http://davidl.fr/assets/font/icons-reference.html</loc>
-  </url>
-  <url>
     <loc>http://davidl.fr/2012/07.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>http://davidl.fr/2012/08/06.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -105,6 +100,11 @@
   </url>
   <url>
     <loc>http://davidl.fr/pricing.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://davidl.fr/projects.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -612,7 +612,7 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>http://davidl.fr/2012/08/10.html</loc>
+    <loc>http://davidl.fr/2012/08/06.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -773,6 +773,11 @@
   </url>
   <url>
     <loc>http://davidl.fr/2012/08/27.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>http://davidl.fr/2012/08/10.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
