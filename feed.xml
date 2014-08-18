@@ -5,16 +5,88 @@
   <id>http://davidl.fr/blog/</id>
   <link href="http://davidl.fr/blog/"/>
   <link href="http://davidl.fr/blog/feed.xml" rel="self"/>
-  <updated>2014-08-06T00:00:00+02:00</updated>
+  <updated>2014-08-18T00:00:00+02:00</updated>
   <author>
     <name>David Leuliette</name>
   </author>
+  <entry>
+    <title>5 bonnes raisons pour commencer un projet avec Foundation</title>
+    <link rel="alternate" href="http://davidl.fr/blog/foundation-love.html"/>
+    <id>http://davidl.fr/blog/foundation-love.html</id>
+    <published>2014-08-18T00:00:00+02:00</published>
+    <updated>2014-08-18T18:54:03+02:00</updated>
+    <author>
+      <name>DavidL design + développement</name>
+    </author>
+    <content type="html">&lt;p&gt;Foundation est dans &lt;a href="https://github.com/trending?l=css&amp;amp;since=monthly"&gt;le top 10 des repos&lt;/a&gt; les plus étoilés sur GitHub. Depuis la sortie publique de la &lt;a href="http://foundation.zurb.com/learn/about.html"&gt;version 3 en 2011&lt;/a&gt;, il y a connu de petits changements. Mais depuis la version 4 c'est un des Framework responsive les plus stable que vous pouvez choisir pour votre prochaine application. Grâce à son système de grille simple, il est apprécié par les développeurs webs de tout horizons - back-end comme front-end, car vous pouvez facilement et rapidement contruire un site internet fonctionnel et responsive. N'importe quel développeur avec des connaissances de base en HTML et CSS peut commencer à utiliser Foundation.&lt;/p&gt;
+
+&lt;h2 id="pourquoi-jaime-foundation-et-pourquoi-vous-devez-laimer-aussi"&gt;Pourquoi j'aime Foundation et pourquoi vous devez l'aimer aussi&lt;/h2&gt;
+
+&lt;p&gt;Foundation offre des bases solides pour n'importe quel site, quelque soit la taille du projet. Il embarque &lt;a href="https://github.com/necolas/normalize.css"&gt;normalize.css&lt;/a&gt;, qui est indispensable pour avoir un contenu cohérent entre les différents navigateurs. Foundation est basé sur la priorité au mobile (aka mobile-first) ce qui permet une bonne mise en page, notamment au niveau de la typographie. Le &lt;code&gt;font-size&lt;/code&gt; des textes est calculé en fonction de la taille d'écran. Chaque élément contient un style de base, comme les formulaires qu'il est facile de styler rapidement si vous connaissez les bonnes variables du fichier &lt;code&gt;_settings.scss&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Foundation est incroyable" src="http://foundation.zurb.com/assets/img/support/goodies/wallpaper-3%281024x768%29.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;J'utilise Foundation car je gagne énormément de temps en corrigeant des problèmes historiques au web. Ce temps gagné me permet d'investir plus de valeur dans la construction de solutions évolutives et personnalisées.&lt;/p&gt;
+
+&lt;p&gt;Aujourd'hui les sites internet doivent être modernes, soignés, responsive, et optimisé pour le mobile. Foundation nous aide à atteindre ce but avec un minimum d'effort. Voici 5 raisons pour lesquelles je pense qu'actuellement c'est le meilleur framework disponible.&lt;/p&gt;
+
+&lt;h2 id="une-grille-css-simple"&gt;Une grille CSS simple&lt;/h2&gt;
+
+&lt;p&gt;Foundation possède le meilleur système de grille responsive disponible. Construit avec une priorité au mobile il est très facile de faire évoluer sa mise en page sur les tablettes, pour terminer sur des écrans. D'expérience je conseille de diviser son écran en 12 colonnes (Car 3 x 4 = 12). Ce système permet de mettre en place presque n'importe quel type de design.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class="row"&amp;gt;
+  &amp;lt;div class="small-6 medium-4 large-2"&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="dveloppement-rapide"&gt;Développement rapide&lt;/h2&gt;
+
+&lt;p&gt;Foundation embarque un nombre impressionnant de composants CSS et JavaScripts, réutilisables et commun à n'importe quel projet web. Pour commencer vous pouvez simplement utiliser le même HTML que celui présent dans la documentation. Si vous souhaitez plus de contrôle au niveau du style il est aussi très facile de personnaliser le framework et d'étendre ses capacités en faisant &lt;a href="/blog/grille-semantique.html"&gt;appel aux mixin Sass&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id="compatibilit-des-navigateurs"&gt;Compatibilité des navigateurs&lt;/h2&gt;
+
+&lt;p&gt;Foudadation est compatible avec tous les navigateurs web modernes. Bien sûr si vous devez mettre en place un site qui ne respecte pas les standards HTML5, il est toujours possible de surcharger -inutilement de plugins votre page avec &lt;a href="https://github.com/aFarkas/html5shiv"&gt;HTML5Shiv&lt;/a&gt; et &lt;a href="https://github.com/scottjehl/Respond"&gt;Respond.js&lt;/a&gt;. Cela vous aidera à supporter un moment les anciens navigateurs.&lt;/p&gt;
+
+&lt;p&gt;Si votre employeur / client souhaite un site internet compatible avec internet explorer 7, il est toujours possible de lui expliquer que :&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Il est plus productif, à long terme, de construire l'avenir plutôt que de corriger les erreurs du passé.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id="customisation-et-volution"&gt;Customisation et évolution&lt;/h2&gt;
+
+&lt;p&gt;Foundation offre ne nombreuses façon de personnaliser son style par défaut.&lt;/p&gt;
+
+&lt;h3 id="intgrateur-css"&gt;Intégrateur CSS&lt;/h3&gt;
+
+&lt;p&gt;Vous pouvez &lt;a href="http://foundation.zurb.com/develop/download.html"&gt;télécharger directement un fichier CSS&lt;/a&gt; personnalisé avec vos différentes couleurs et composants.
+Cette méthode permet d'écraser les styles et le comportement par défaut du JavaScript. Le principal problème est que vous perdez les nombreuses corrections mineures de bugs.&lt;/p&gt;
+
+&lt;h3 id="dveloppeur-front-end"&gt;Développeur front-end&lt;/h3&gt;
+
+&lt;p&gt;Si vous maîtrisez l'utilisation de &lt;a href="http://bower.io/"&gt;bower&lt;/a&gt; avec &lt;a href="http://nodejs.org/"&gt;nodeJS&lt;/a&gt;, et que vous utilisez un préprocesseur comme Sass vous pourrez utiliser toute la puissance de ce framework. En modifiant le fichier &lt;code&gt;_settings.scss&lt;/code&gt; il est facile et rapide de personnaliser le design. Cette méthode permet de mettre à jour facilement le framework et ses dépendances dans votre fichier &lt;code&gt;bower.json&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id="guru-de-foundation"&gt;Guru de Foundation&lt;/h3&gt;
+
+&lt;p&gt;Vous connaissez déjà par coeur le framework, vous pouvez cloner le projet &lt;a href="https://github.com/flexbox/foundation-boilerplate"&gt;foundation-boilerplate&lt;/a&gt; pour directement exploiter les bonnes mixins et contruire rapidement votre prototype.&lt;/p&gt;
+
+&lt;h2 id="open-source"&gt;Open Source&lt;/h2&gt;
+
+&lt;p&gt;Foundation est un projet open source, hébergé sur GitHub. Il est publié sous la licence MIT. C'est une des meilleures raisons pour lesquelles j'utilise quotidiennement Foundation. Vous êtes libres de l'utiliser comme bon vous semble en le changeant complètement ou simplement pour expérimenter une nouvelle technologie. De plus vous n'aurez pas à lire d'obscures conditions d'utilisations et n'avez aucun risque à l'utiliser sur les projets de vos clients.&lt;/p&gt;
+
+&lt;h2 id="vous-souhaitez-apprendre-foundation-"&gt;Vous souhaitez apprendre Foundation ?&lt;/h2&gt;
+
+&lt;p&gt;La première étape conciste &lt;a href="http://foundation.zurb.com/docs/"&gt;à lire la documentation&lt;/a&gt;. Ensuite pour tester rapidement une mise en page vous pouvez &lt;a href="https://github.com/flexbox/foundation-boilerplate/archive/gh-pages.zip"&gt;télécharger un boilerplate&lt;/a&gt;. Pour finir je construit presque &lt;a href="http://davidl.fr/projects.html"&gt;tous mes projets&lt;/a&gt; avec une base plus ou moins important de composants issus du framework. N'hésitez pas à aller hacker mon code source.&lt;/p&gt;
+
+&lt;p&gt;J'espère que vous avez trouvé cet article interessant et qu'il vous a convaincu d'essayer &lt;a href="http://foundation.zurb.com/"&gt;Foundation&lt;/a&gt; pour vos futurs projets.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Astuce raccourcis GitHub</title>
     <link rel="alternate" href="http://davidl.fr/blog/github-ninja.html"/>
     <id>http://davidl.fr/blog/github-ninja.html</id>
     <published>2014-08-06T00:00:00+02:00</published>
-    <updated>2014-08-15T17:36:42+02:00</updated>
+    <updated>2014-08-12T13:49:08+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -80,7 +152,7 @@ Créer / savoir les différents raccourcis vous fera gagner de précieuses secon
     <link rel="alternate" href="http://davidl.fr/blog/metier-integrateur-web.html"/>
     <id>http://davidl.fr/blog/metier-integrateur-web.html</id>
     <published>2014-08-03T00:00:00+02:00</published>
-    <updated>2014-08-15T17:36:42+02:00</updated>
+    <updated>2014-08-12T13:56:52+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -230,7 +302,7 @@ Dans le cas de ma profession j'ai encore quelques années de travail devant moi 
     <link rel="alternate" href="http://davidl.fr/blog/grille-semantique.html"/>
     <id>http://davidl.fr/blog/grille-semantique.html</id>
     <published>2014-07-30T00:00:00+02:00</published>
-    <updated>2014-08-15T17:36:42+02:00</updated>
+    <updated>2014-08-11T14:00:26+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -425,7 +497,7 @@ main {
     <link rel="alternate" href="http://davidl.fr/blog/ecoequitable.html"/>
     <id>http://davidl.fr/blog/ecoequitable.html</id>
     <published>2014-06-17T00:00:00+02:00</published>
-    <updated>2014-08-15T17:36:42+02:00</updated>
+    <updated>2014-07-21T17:00:31+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -454,7 +526,7 @@ main {
     <link rel="alternate" href="http://davidl.fr/blog/import-sass.html"/>
     <id>http://davidl.fr/blog/import-sass.html</id>
     <published>2014-05-27T00:00:00+02:00</published>
-    <updated>2014-08-15T17:36:42+02:00</updated>
+    <updated>2014-07-21T17:00:31+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -561,370 +633,6 @@ $blue-dark
   &lt;li&gt;Grunt : &lt;code&gt;grunt&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;Middleman : &lt;code&gt;middleman server&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Performance site internet : Astuces et bonnes pratiques</title>
-    <link rel="alternate" href="http://davidl.fr/blog/site-obese.html"/>
-    <id>http://davidl.fr/blog/site-obese.html</id>
-    <published>2014-05-21T00:00:00+02:00</published>
-    <updated>2014-08-15T17:36:42+02:00</updated>
-    <author>
-      <name>DavidL design + développement</name>
-    </author>
-    <content type="html">&lt;p&gt;Certains d'entre vous ont sûrement connu l'époque du 56k. En ce temps là, charger une seule image sur internet pouvait demander plusieures minutes. Puis est arrivé l'ADSL et le haut débit qui ont démultiplié la vitesse de chargement. Bizarrement j'ai l'impression que nous passons toujours autant de temps à attendre le chargement d'une page web.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Site internet obèse" src="https://farm6.staticflickr.com/5519/14256724243_9a829c4dd1_o.jpg" /&gt;&lt;/p&gt;
-
-&lt;p&gt;De nos jours les sites sont de plus en plus complexes, embarquent de plus en plus de contenu. Grâce à la fibre optique ces derniers se chargent de plus en plus vite… En théorie car paradoxalement le web évolue vite, mais les sites web sont toujours aussi long à charger.&lt;/p&gt;
-
-&lt;p&gt;Il existe beaucoup d'options pour améliorer la performance de votre site internet. Pour vous aider à décider comment mettre en place ces solutions j'ai découpé cet article en 3 parties :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Geek&lt;/li&gt;
-  &lt;li&gt;Guru&lt;/li&gt;
-  &lt;li&gt;Hacker&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Chaque technique peut être déployée partiellement, en partie ou pas du tout. Chaque palier peut vous aider lors du développement de votre site suivant son niveau de complexité.&lt;/p&gt;
-
-&lt;h2 id="geek-de-la-performance"&gt;Geek de la performance&lt;/h2&gt;
-
-&lt;p&gt;Les 2 choses les plus simples à mettre en place rapidement sont la compression des fichiers et les en-têtes de cache. Ces techniques indispensables vous aiderons à :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Réduire le poids des pages.&lt;/li&gt;
-  &lt;li&gt;Réduire le nombre de requêtes http, et donc la latence.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Puisque ces modifications ont lieu côté serveur, elles amélioreront immédiatement les performances de chaque page.&lt;/p&gt;
-
-&lt;h3 id="activer-moddeflate-pour-la-compression-gzip-de-vos-fichiers"&gt;Activer &lt;code&gt;mod_deflate&lt;/code&gt; pour la compression &lt;code&gt;Gzip&lt;/code&gt; de vos fichiers&lt;/h3&gt;
-
-&lt;p&gt;De la même manière que nous zippons nos pièces jointes envoyées par email, votre serveur peut compresser les fichiers avant de les envoyer au navigateur. Pour &lt;strong&gt;préserver la bande passante&lt;/strong&gt; de vos utilisateurs mobiles, il est capital de réduire le plus possible la taille de votre site.&lt;/p&gt;
-
-&lt;p&gt;La librairie de compression pour Apache &lt;code&gt;mod_deflate&lt;/code&gt; fonctionne uniquement sur des fichiers textes comme &lt;code&gt;HTML&lt;/code&gt;, &lt;code&gt;CSS&lt;/code&gt; et &lt;code&gt;JavaScript&lt;/code&gt;. Les images &lt;code&gt;.jpg&lt;/code&gt;, &lt;code&gt;.gif&lt;/code&gt; ou &lt;code&gt;.png&lt;/code&gt; sont compressées à différents niveaux, comme expliqué plus loin dans cet article, cette librairie n'ont donc aucun effet sur elles.&lt;/p&gt;
-
-&lt;p&gt;La mise en place demande 3 étapes :&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Aller sur le projet &lt;a href="https://github.com/h5bp/html5-boilerplate/blob/master/dist/.htaccess#L499"&gt;GitHub HTML5Boilerplate&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Copier le contenu &lt;code&gt;mod_deflate&lt;/code&gt; du fichier &lt;code&gt;.htaccess&lt;/code&gt;,&lt;/li&gt;
-  &lt;li&gt;et le coller sur votre serveur.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id="mettre-les-ressources-en-cache"&gt;Mettre les ressources en cache&lt;/h3&gt;
-
-&lt;p&gt;Si votre site est correctement architecturé, les mises à jours des ressources &lt;code&gt;CSS&lt;/code&gt;, &lt;code&gt;JavaScript&lt;/code&gt; et images sont moins fréquentes que le contenu. Dans un contexte mobile nous pouvons télécharger ces ressources statiques en une seule fois, et les mettre en cache sur l'appareil.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Moins de requêtes http seront effectuées.&lt;/li&gt;
-  &lt;li&gt;Le contenu total à télécharger est diminué.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;De cette façon, pour les futures visites, l'expérience de navigation sera incroyablement plus rapide et donc meilleure. L'astuce consiste à utiliser les entêtes d'expiration avec une date adaptée.&lt;/p&gt;
-
-&lt;p&gt;Il n’est pas conseillé de spécifier une durée inférieure à 1 mois et supérieure à un an. Si vous changez régulièrement une ressource vous pouvez :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Spécifier et identifier cette ressource dans votre fichier &lt;code&gt;.htaccess&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Modifier le nom du fichier, qui est une bien meilleure solution car cela donnera naissance à une nouvelle requête http.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;La mise en place demande 3 étapes :&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Aller sur le projet &lt;a href="https://github.com/h5bp/html5-boilerplate/blob/master/dist/.htaccess#L563"&gt;GitHub HTML5Boilerplate&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Copier le fichier &lt;code&gt;.htaccess&lt;/code&gt;, pour la partie &lt;code&gt;mod_expires&lt;/code&gt;,&lt;/li&gt;
-  &lt;li&gt;et le coller sur votre serveur.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;La plus grande limite de cette technique est la taille du cache des appareils mobiles. Un site web simple doit peser en moyenne 2Mo, le cache des appareils Android 2.x est limité à 6Mo, les appareils iOS sont plus avantagés avec un cache de 50Mo.&lt;/p&gt;
-
-&lt;p&gt;Pour contourner ce problème nous pouvons mettre en place une fonctionnalité en utilisant l'API HTML5 &lt;code&gt;localStorage&lt;/code&gt; mais pour cela il faut être guru de la performance.&lt;/p&gt;
-
-&lt;h2 id="hacker-de-la-performance"&gt;Hacker de la performance&lt;/h2&gt;
-
-&lt;p&gt;La compression et la mise en cache des fichiers sont de bonnes pratiques mais ce n'est que la base. Pour avoir un &lt;strong&gt;réel impact sur la performance&lt;/strong&gt; et offrir une expérience optimisée à vos utilisateurs vous allez devoir travailler plus. Les techniques de cette partie permettent de :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Réduire le poids de vos pages.&lt;/li&gt;
-  &lt;li&gt;Réduire le nombre de requêtes à votre serveur, et donc la latence.&lt;/li&gt;
-  &lt;li&gt;Afficher du contenu à la demande.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Les techniques de minification et de concaténation devraient êtres mises en places lors de déploiement dans des environnements de test / production. Elles ne sont pas vraiment utiles si vos mises à jours sont fréquentes et multiples.&lt;/p&gt;
-
-&lt;h3 id="mettre-vos-fichiers-au-rgime"&gt;Mettre vos fichiers au régime.&lt;/h3&gt;
-
-&lt;p&gt;Minifier votre code source signifie simplement supprimer les octets inutiles d'un fichier (espaces, indentation et saut de ligne). Cette syntaxe est indispensable pour qu'un humain comprenne, mais elle n'est pas nécessaire pour l'éxécution du code sur une machine.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Le code source est écrit pour les humain, pas pour les machines&lt;/p&gt;
-
-  &lt;p&gt;&lt;cite&gt;@drublic&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Avec la minification le navigateur télécharge moins de contenu, le rendu de votre page est donc plus rapide.&lt;/p&gt;
-
-&lt;p&gt;Si vous utilisez une librairie populaire comme jQuery vous utilisez certainement la version &lt;code&gt;.min&lt;/code&gt;. La minification n'est pas seulement disponible pour le JavaScript, mais peut être appliquée à n'importe quelle type de ressource texte. L'&lt;code&gt;asset&lt;/code&gt; principale qui doit être minifiée dans un code de production est le CSS. La plus vieille solution pour réaliser cette opération est &lt;a href="http://yui.github.io/yuicompressor/"&gt;YUI Compressor&lt;/a&gt; de yahoo! Si vous êtes un &lt;a href="http://davidl.fr/manifesto.html"&gt;développeur front-end éclairé&lt;/a&gt; essayez de chercher du côté des tâches grunt pour automatiser cette opération.&lt;/p&gt;
-
-&lt;h3 id="la-concatnation--un-fichier-pour-les-gouverner-tous"&gt;La concaténation : un fichier pour les gouverner tous&lt;/h3&gt;
-
-&lt;p&gt;Si le père de la performance est la minification, la concaténation des fichiers est sans doute la mère. Par exemple : au lieu de télécharger 10 fichiers JavaScripts qui demandent 10 requêtes http au serveur, les utilisateurs devraient télécharger seulement 4 fichiers qui représentent la combinaison de ces 10 fichiers.&lt;/p&gt;
-
-&lt;p&gt;Après les &lt;code&gt;mod_expires&lt;/code&gt;, la concaténation est la meilleure option à mettre en place pour fluidifier la navigation sur mobile. Malheureusement la pratique est plus complexe que la théorie.&lt;/p&gt;
-
-&lt;p&gt;En moyenne un navigateur peut télécharger 6 fichiers en parallèle. Comme la minification YUI est un bon outil pour concaténer vos fichiers. Dans un environement ruby c'est l'&lt;code&gt;asset pipeline&lt;/code&gt; qui se charge du boulot, en php c'est &lt;a href="https://github.com/filamentgroup/quickconcat"&gt;quickconcat&lt;/a&gt;. Vous pouvez aussi &lt;a href="http://blog.carbonfive.com/2014/05/05/roll-your-own-asset-pipeline-with-gulp/"&gt;construire votre propre asset pipeline avec gulp&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id="optimisation-des-images"&gt;Optimisation des images&lt;/h3&gt;
-
-&lt;p&gt;Les images sont les éléments qui prennent le plus de place. En moyenne, c'est plus de 60% dans le poids d'une page. C'est à chacun, développeur comme designer, d'optimiser le poids des images. Le processus se fait en plusieurs étapes :&lt;/p&gt;
-
-&lt;h4 id="choisir-le-format-adapt"&gt;1. Choisir le format adapté&lt;/h4&gt;
-
-&lt;p&gt;&lt;code&gt;.png&lt;/code&gt; pour les aplats de couleurs, &lt;code&gt;.jpg&lt;/code&gt; pour les photographies. N'enregistrez &lt;strong&gt;jamais&lt;/strong&gt; vos images dans la qualité la plus haute mais essayez de trouver le bon compromis entre qualité / poids.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Enregistrement .jpg progressif avec Photoshop" src="https://farm3.staticflickr.com/2901/14256724273_85583d2db6_o.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Avec Photoshop &lt;code&gt;fichier&lt;/code&gt; &amp;gt; &lt;code&gt;enregistrer pour le web&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;N'oubliez pas de cocher la case &lt;strong&gt;jpg progressif&lt;/strong&gt;, cette technique utilisée pour les débits lents à l'époque du 56k prends tout son sens aujourd'hui dans un &lt;a href="http://calendar.perfplanet.com/2012/progressive-jpegs-a-new-best-practice/"&gt;contexte de navigation mobile&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h4 id="supprimer-les-informations-inutiles"&gt;2. Supprimer les informations inutiles&lt;/h4&gt;
-
-&lt;p&gt;Pour gagner quelques octets supplémentaires il est possible de supprimer d'autres informations encapsulées dans les images (métadonnées, informations de claques, …) Cette opération peut se faire très facilement avec des logiciels comme :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="http://imageoptim.com/"&gt;imgOptim&lt;/a&gt; pour macOS&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://pnggauntlet.com/"&gt;pngGauntlet&lt;/a&gt; pour windows&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Si vous souhaitez en savoir plus sur l'optimisation des images, je vous invite chaudement à lire les articles de Serguey Chikuyonok's sur l'optimisation intelligente des images &lt;code&gt;.png&lt;/code&gt; et &lt;code&gt;.jpg&lt;/code&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="http://www.smashingmagazine.com/2009/07/15/clever-png-optimization-techniques/"&gt;Optimiser ses images png&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://www.smashingmagazine.com/2009/07/01/clever-jpeg-optimization-techniques/"&gt;Optimiser ses fichiers jpg&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id="automatiser-la-tche"&gt;3. Automatiser la tâche&lt;/h4&gt;
-
-&lt;p&gt;Avec la puissance de node et &lt;a href="https://github.com/JamieMason/ImageOptim-CLI"&gt;ImageOptim-CLI&lt;/a&gt; il est possible d’automatiser tout ce processus pour vous permettre de gagner un temps considérable.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;npm install -g imageoptim-cli
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id="lazy-loading-dimages"&gt;4. Lazy Loading d'images&lt;/h4&gt;
-
-&lt;p&gt;Comme me l'a fait remarqué &lt;a href="https://twitter.com/gaelmetais"&gt;@gaelmetais&lt;/a&gt;, expert en performance web, la solution qui donne les meilleurs résultats est le lazy loading d'images.
-Cette solution &lt;a href="https://github.com/vvo/lazyload"&gt;JavaScript disponible sur github&lt;/a&gt; permet de ne charger que les images visible du &lt;code&gt;viewport&lt;/code&gt;. Cela évite de télécharger inutilement des images qui ne sont probablement jamais vues par les visiteurs.&lt;/p&gt;
-
-&lt;h3 id="reporter-le-chargement-du-contenu"&gt;Reporter le chargement du contenu&lt;/h3&gt;
-
-&lt;p&gt;Toutes les techniques précédentes, ormis la concaténation, vous aiderons à réduire la taille de vos pages. Une autre approche est de prioriser le chargement de votre contenu.&lt;/p&gt;
-
-&lt;p&gt;La performance n'augmentera pas, c'est le sentiment de vitesse que ressentira l'utilisateur qui doit être perceptible. Le moyen le plus simple de retarder le chargement d'un fichier JavaScript en utilisant l'attribut HTML5 &lt;code&gt;defer&lt;/code&gt; ou &lt;code&gt;async&lt;/code&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;script defer src="application.js"&amp;gt;&amp;lt;/script&amp;gt;
-&amp;lt;script async src="application.js"&amp;gt;&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;D'un point de vue latence et performance ces attributs se comportent de façon similaire. Ils demandent au navigateur d'éxécuter les scripts seulement après avoir téléchargé l'intégralité du contenu de la page.&lt;/p&gt;
-
-&lt;p&gt;Vous devez vous poser la question : quel priorité dois-je utiliser ?&lt;/p&gt;
-
-&lt;h4 id="defer-charge-les-scripts-dans-lordre-dappel"&gt;&lt;code&gt;defer&lt;/code&gt; charge les scripts dans l'ordre d'appel&lt;/h4&gt;
-
-&lt;p&gt;Supposons que vous chargez la librairie jQuery ainsi qu'un autre fichier de plug-in. Ces 2 fichiers sont dépendant car le socond script doit être chargé &lt;em&gt;après&lt;/em&gt; le premier.&lt;/p&gt;
-
-&lt;h4 id="async-le-chargement-de-lordre-des-fichiers-na-aucune-importance"&gt;&lt;code&gt;async&lt;/code&gt; le chargement de l'ordre des fichiers n'a aucune importance&lt;/h4&gt;
-
-&lt;h2 id="guru-de-la-performance"&gt;Guru de la performance&lt;/h2&gt;
-
-&lt;p&gt;Les geeks et les hackers de la performance utilisent des techniques d'optimisation traditionnelles pour la construction de sites internet, bien avant l'apparition du responsive design.&lt;/p&gt;
-
-&lt;p&gt;Les techniques de guru peuvent êtres mises en place pour des applications web HTML5 avec un focus pour les navigateurs mobiles. Elles permettent de :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Réduire le poids de vos pages.&lt;/li&gt;
-  &lt;li&gt;Réduire le nombre de requêtes http, et donc la latence.&lt;/li&gt;
-  &lt;li&gt;Optimiser le chargement du contenu pour être utilisé plus rapidement.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class="alert-box alert"&gt;
-Le principal désavantage est le support des navigateurs
-&lt;/div&gt;
-
-&lt;p&gt;Dans certains cas il ne sera pas possible de garantir le résultat sur de vieux navigateurs. N'hésitez pas à vérifier les différentes fonctionnalités sur le site &lt;a href="http://caniuse.com"&gt;caniuse&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id="ordre-des-sources"&gt;Ordre des sources&lt;/h3&gt;
-
-&lt;p&gt;Curieusement organiser correctement votre CSS et vos fichiers JavaScript peut avoir un large impact sur le ressenti de la rapidité de chargement.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;JavaScript bloque le chargement de votre contenu&lt;/p&gt;
-
-  &lt;p&gt;&lt;cite&gt;&lt;a href="/manifesto.html"&gt;Manifeste d'un développeur front-end&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Voici un très mauvais exemple que je rencontre quotidiennement :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;head&amp;gt;
-  &amp;lt;script src="jquery.js"&amp;gt;&amp;lt;/script&amp;gt;
-  &amp;lt;link rel="stylesheet" href="small.css"&amp;gt;
-  &amp;lt;link rel="stylesheet" href="big.css"&amp;gt;
-&amp;lt;/head&amp;gt;
-...
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Vous ne devez &lt;strong&gt;JAMAIS&lt;/strong&gt; faire cela. Le JavaScript bloque téléchargement des autres ressources en parallèle comme les images. Sauf exception votre JavaScript doit toujours être appelé uniquement avant la fin du &lt;code&gt;&amp;lt;/body&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id="localstorage-comme-cache-navigateur"&gt;&lt;code&gt;localStorage&lt;/code&gt; comme cache navigateur&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;localStorage&lt;/code&gt; est une spécification du W3C. Cette technologie est comparable aux cookies utilisés par les développeurs pour stocker des informations de type clef / valeur. Elles sont sauvegardées même si le navigateur est fermé. Contrairement aux cookies les informations associées au &lt;code&gt;localStorage&lt;/code&gt; ne sont jamais renvoyées au serveur depuis le client.&lt;/p&gt;
-
-&lt;p&gt;Voici un exemple assez basique : utiliser &lt;code&gt;localStorage&lt;/code&gt; pour mettre en cache jQuery&lt;/p&gt;
-
-&lt;script src="https://gist.github.com/flexbox/1832f48d92f1bee693ce.js"&gt;&lt;/script&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Vérifier si le fichier existe&lt;/li&gt;
-  &lt;li&gt;Charger le contenu en AJAX&lt;/li&gt;
-  &lt;li&gt;Insérer le contenu dans la page avec &lt;code&gt;js-jquery&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Il faut noter que &lt;code&gt;localStorage&lt;/code&gt; ne fonctionne qu'avec des &lt;code&gt;string&lt;/code&gt;. Si vous souhaiter utiliser cette méthode pour stocker des images, vous devez les parser en base64 d'abord.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;localStorage&lt;/code&gt; est une solution assez facile à mettre en place pour des choses basiques. Si vous souhaitez aller plus loin je vous conseille d'essayer &lt;a href="https://github.com/addyosmani/basket.js"&gt;basket.js&lt;/a&gt; maintenu par Addy Osmani qui permet de prioriser le chargement du JavaScript en cache.&lt;/p&gt;
-
-&lt;h3 id="lazy-loading-javascript"&gt;Lazy loading JavaScript&lt;/h3&gt;
-
-&lt;p&gt;Si votre application web / site internet embarque beaucoups de JavaScript il peut être intéressant de d'utiliser des techniques de &lt;em&gt;lazy loading&lt;/em&gt; pour réduire le temps de démarrage.&lt;/p&gt;
-
-&lt;p&gt;Quand un navigateur télécharge du JavaScript, il le &lt;strong&gt;parcours et l'exécute&lt;/strong&gt;. Comme expliqué précédemment, cela bloque le rendu de la page jusqu'à ce que le processus soit terminé. Dans la plupart des cas, vous n'avez sûrement pas besoin que tout votre JavaScript soit parcouru et exécuté au chargement de la page. Cela porte préjudice à la performance sans raison valable.&lt;/p&gt;
-
-&lt;p&gt;Il existe 2 techniques pour corriger le problème :&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Modifier le script précédemment utilisé pour &lt;code&gt;localStorage&lt;/code&gt; en utilisant JavaScript pour insérer du JavaScript.&lt;/li&gt;
-  &lt;li&gt;Utiliser &lt;code&gt;XmlHttpRequest&lt;/code&gt; pour &lt;strong&gt;télécharger et évaluer&lt;/strong&gt; le code. Le principal problème est que si l'utilisateur essaye d'utiliser une fonctionnalité qui n'est pas encore téléchargé cela risque de "casser" la mise en page.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;L'équipe qui s'occupe de Gmail a trouvé une solution pour que le code ne soit pas exécuté : &lt;a href="http://googlecode.blogspot.de/2009/09/gmail-for-mobile-html5-series-reducing.html"&gt;commenter le code&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Le navigateur télécharge et évalue l'intégralité de votre JavaScript, mais comme ce dernier est commenté, il n'est pas exécuté. Cette méthode libère du CPU pour effectuer d'autres opérations. Quand l'utilisateur a besoin d'une fonctionnalité, une partie du code est décommentée et évaluée. Voici un exemple :&lt;/p&gt;
-
-&lt;script src="https://gist.github.com/flexbox/c244d7bebd646582fcfe.js"&gt;&lt;/script&gt;
-
-&lt;p&gt;Cette technique est complexe à mettre en place car votre architecture JavaScript doit être irréprochable.&lt;/p&gt;
-
-&lt;h3 id="le-cas-des-boutons-sociaux"&gt;Le cas des boutons sociaux&lt;/h3&gt;
-
-&lt;p&gt;Fin 2011, le magazine Allemand Heise a publié un nouvel ensemble d'&lt;a href="http://www.heise.de/extras/socialshareprivacy/"&gt;icônes pour les réseau sociaux&lt;/a&gt; très connu. La différence ? Il faut 2 clics pour "aimer", "tweeter" ou ajouter "+1".&lt;/p&gt;
-
-&lt;p&gt;De base les images des icones sont chargées. Si l'utilisateur souhaite partager, alors les widgets de partage sont téléchargés. Cette solution présente de nombreux avantages non négligeables.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Les utilisateurs ne sont pas constamment trackés. Les widgets ne sont activés que si l'utilisateur le demande et non par défaut.&lt;/li&gt;
-  &lt;li&gt;Extrèmement efficace avec du responsive design.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img alt="Image zurb webcitation" src="https://farm3.staticflickr.com/2898/14050189350_521f32f74f_o.png" /&gt;
-&lt;em&gt;&lt;a href="http://zurb.com/article/883/small-painful-buttons-why-social-media-bu"&gt;Pourquoi les boutons sociaux tuent votre site web ?&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;De plus vous ne téléchargez que ce qui est nécessaire. Si un utilisateur n'est actif que sur twitter, l'obliger à télécharger le widget facebook n'a pas de sens, et cela lui évite un temps de latence en supprimant les requêtes http inutiles.&lt;/p&gt;
-
-&lt;h3 id="utiliser-des-sprites-pour-concatner-vos-images"&gt;Utiliser des sprites pour concaténer vos images&lt;/h3&gt;
-
-&lt;p&gt;Les fichiers CSS et JavaScript ne sont pas les seuls à pouvoir êtres combinés pour réduire le nombre de requêtes. Utilisés généralement pour des icones ou de petites illustrations, la technique des sprites CSS est une bonne solution.&lt;/p&gt;
-
-&lt;p&gt;Essayez de regrouper des images partageant la même palette  de couleur. Si ce n'est pas le cas la taille de votre fichier sera anormalement élevée car il sera sauvegardé au format PNG &lt;code&gt;true color&lt;/code&gt; au lieu du classique PNG 256 couleurs. Pour éviter une requête avec des images de petite taille, vous pouvez aussi encoder le résultat obtenu en base64 pour optimiser encore plus la taille de votre fichier (à prendre avec précaution car cela peut augementer la taille jusqu'à 37%).&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="http://www.base64-image.de/"&gt;base64&lt;/a&gt; pour encoder vos images&lt;/li&gt;
-  &lt;li&gt;Un outil CSS : &lt;a href="http://spriteme.org/"&gt;SpriteMe&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="viter-le-calcul-navigateur-aka-browser-reflow"&gt;Éviter le calcul navigateur aka browser reflow&lt;/h3&gt;
-
-&lt;p&gt;Une fonctionnalité peu connue des développeurs en terme de performance est la construction d'une page web dans une fenêtre de navigateur. Des problèmes de performance apparaissent dès que l'on essaye de trop modifier dynamiquement la mise en page. Cela force le navigateur à recalculer la place des objets tout en chargeant la page, ce qui ralenti le rendu de la page.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="CSS image reflow" src="https://farm6.staticflickr.com/5524/14234276822_25ce57d1cd_o.gif" /&gt;&lt;/p&gt;
-
-&lt;p&gt;La chose la plus importante pour limiter le nombre de "reflow" est de limiter la taille du DOM et le nombre de sélecteurs CSS le plus possible. Moins le DOM contient d'éléments, moins d'objets doivent êtres calculés et positionnés pendant la construction de la page et plus elle se chargera vite. Je ne le répéterai jamais assez :&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;JavaScript est pour le comportement, CSS pour le style.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;C'est pourquoi vous ne devez &lt;strong&gt;JAMAIS&lt;/strong&gt; modifier vos éléments avec du JavaScript.&lt;/p&gt;
-
-&lt;div class="alert-box alert"&gt;
-&lt;i class="fa fa-thumbs-o-down"&gt;&lt;/i&gt; Mauvaise solution
-&lt;/div&gt;
-
-&lt;pre&gt;&lt;code&gt;var el = document.getElementById('js-box');
-el.style.color = "#fff";
-el.style.backgroundColor = "#000";
-el.style.borderColor = "#fc0";
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Chaque déclaration provoque un calcul. Dans notre cas il y a 3 reflow.&lt;/p&gt;
-
-&lt;div class="alert-box success"&gt;
-&lt;i class="fa fa-thumbs-o-up"&gt;&lt;/i&gt; Bonne solution
-&lt;/div&gt;
-
-&lt;pre&gt;&lt;code&gt;var el = document.getElementById('js-box');
-el.className = "m-box";
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;1 seul reflow. Le style est déclaré à sa place : dans une feuille de style et vous n'aurez pas besoin d'utiliser &lt;code&gt;!important&lt;/code&gt; si votre élément change.&lt;/p&gt;
-
-&lt;p&gt;Les calculs sont aussi impactés par l'ajout d'élements au DOM.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Border image reflow" src="https://farm3.staticflickr.com/2922/14234595522_c68157e017_o.jpg" /&gt;
-&lt;em&gt;Il y a le bon :hover et le mauvais :hover&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Pour aller plus loin et comprendre le fonctionnement d'un navigateur web je vous invite à regarder l'excellente présentation de &lt;a href="https://www.youtube.com/watch?v=enKJMUArlV4"&gt;Paul Rouget développeur chez Mozilla&lt;/a&gt;. Ou encore le projet &lt;a href="https://github.com/janjongboom/css-reflow-tracer"&gt;css-reflow-tracer&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id="sur-mobile-toucher-est-meilleur-que-cliquer"&gt;Sur mobile toucher est meilleur que cliquer&lt;/h3&gt;
-
-&lt;p&gt;L'impression de rapidité et la performance sont 2 choses différentes.&lt;/p&gt;
-
-&lt;p&gt;Connaissez-vous le célèbre délai des 300ms implémenté par tous les appareils mobiles ? Ce délai permet aux utilisateurs d'avoir le temps d'effectuer un double-tap. Dans certains cas il n'est pas nécessaire et pour retirer ce délai il existe des solutions :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://developers.google.com/mobile/articles/fast_buttons"&gt;Comment créer des boutons rapides&lt;/a&gt; ?&lt;/li&gt;
-  &lt;li&gt;Le polyfill &lt;a href="https://github.com/ftlabs/fastclick"&gt;Fastclic.js&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="aller--lessentiel-et-supprimer-les-normes-frameworks"&gt;Aller à l'essentiel et supprimer les énormes frameworks&lt;/h3&gt;
-
-&lt;p&gt;JavaScript n'est pas le seul responsable dans l'explosion du poids des pages web, notamment depuis que l'internet se &lt;a href="http://getbootstrap.com"&gt;bootstrapize&lt;/a&gt;. Le framework bootsrap de twitter est une excellente solution mais utilisez ses composants avec partimonie. Préférez lui une solution plus légère comme Foundation ou encore KNACSS. Vous pouvez aussi envisager de construire votre propre grille avec &lt;a href="http://susy.oddbird.net/"&gt;Suzy&lt;/a&gt; et créer vos propres composants.&lt;/p&gt;
-
-&lt;p&gt;Il est facile d'inclure dans votre projet des librairies comme jQuery ou mootools, et d'y ajouter une myriade de plugins. En tant que développeurs nous devons nous poser la question de ce qui est vraiment utile. Si vous utiliser jQuery seulement comme outil de sélection &lt;code&gt;$('element')&lt;/code&gt; regardez du coté de &lt;a href="https://github.com/chjj/zest"&gt;Zest&lt;/a&gt; ou &lt;a href="https://github.com/ded/qwery"&gt;qwery&lt;/a&gt;. Ces micro framework JavaScript sont spécialement crées pour ça et leur taille est d'environ 11ko comparé à plus de 90ko.&lt;/p&gt;
-
-&lt;p&gt;Comme expliqué précédemment, quand un navigateur télécharge jQuery, il doit parcourir le fichier. Cela demande du temps et bloque le rendu de la page. Soyez critique quand vous analysez vos besoins en JavaScript. 11ko c'est peut-être 11ko de trop si la seule chose dont vous avez besoin est &lt;code&gt;document.getElementByTagName('foo')&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id="la-performance-comme-budget"&gt;La performance comme budget&lt;/h2&gt;
-
-&lt;p&gt;Généralement la performance ne fait fait l'objet d'un budget pour un projet web. Mais tout comme les créateurs de jeux vidéos qui ont une limite dans le nombre de polygones affichés à l'écran, les développeurs devraient imposer une limite de taille pour alléger le poids des sites internets.&lt;/p&gt;
-
-&lt;p&gt;Si votre client est résistant à se soucier de la performance, voici une petite astuce qui fonctionne :&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Sélectionner deux sites (au hasard le site web du client ainsi qu’un concurrent)&lt;/li&gt;
-  &lt;li&gt;préchargez / precachez le site du concurrent en dur dans le cache (avec &lt;code&gt;localStorage&lt;/code&gt;)&lt;/li&gt;
-  &lt;li&gt;et l'exécuter en comparant le site internet du client non mise en cache.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Personne ne veut attendre et les gens sont impatient, à partir du moment où le client comprendra la différence, il voudra un site web rapide, et investira pour avoir une bonne performance.&lt;/p&gt;
-
-&lt;p&gt;C'est culotté, mais cette méthode permet de démontrer l'importance de la performance. Je ne pense pas que cette façon de faire soit différente des publicicités télévisées que l'on voit à longeur de journée.&lt;/p&gt;
-
-&lt;p&gt;Pour aller plus loin, vous pouver créez un graphique comparatif du temps de chargement contre le trafic en temps réel, le client verra la corrélation entre les deux. De nombreuses décisions devront être réexaminées dans le but d'une meilleure performance, je crois que c'est une très, très bonne chose !&lt;/p&gt;
-
 </content>
   </entry>
 </feed>
