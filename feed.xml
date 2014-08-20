@@ -522,11 +522,11 @@ main {
 </content>
   </entry>
   <entry>
-    <title>Résoudre le problème @import des fichiers Sass</title>
+    <title>Solutions aux problèmes @import des fichiers Sass</title>
     <link rel="alternate" href="http://davidl.fr/blog/import-sass.html"/>
     <id>http://davidl.fr/blog/import-sass.html</id>
     <published>2014-05-27T00:00:00+02:00</published>
-    <updated>2014-07-21T17:00:31+02:00</updated>
+    <updated>2014-08-20T12:15:22+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
