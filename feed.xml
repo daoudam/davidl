@@ -5,16 +5,151 @@
   <id>http://davidl.fr/blog/</id>
   <link href="http://davidl.fr/blog/"/>
   <link href="http://davidl.fr/blog/feed.xml" rel="self"/>
-  <updated>2014-08-18T00:00:00+02:00</updated>
+  <updated>2014-08-24T00:00:00+02:00</updated>
   <author>
     <name>David Leuliette</name>
   </author>
+  <entry>
+    <title>Coder plus efficacement avec Sublime Text</title>
+    <link rel="alternate" href="http://davidl.fr/blog/sublime-source-code.html"/>
+    <id>http://davidl.fr/blog/sublime-source-code.html</id>
+    <published>2014-08-24T00:00:00+02:00</published>
+    <updated>2014-08-25T18:43:11+02:00</updated>
+    <author>
+      <name>DavidL design + développement</name>
+    </author>
+    <content type="html">&lt;p&gt;Si je me souviens bien, le premier logiciel logiciel que j'ai utilisé, pour "développer" un site internet, c'était Frontpage. Tout ceux de la génération pré-ADSL ont sûrement commencé ou connu cet éditeur.&lt;/p&gt;
+
+&lt;p&gt;Depuis j'ai essayé énormément d'applications différentes pour coder, des éditeurs de texte ou des IDE, et la liste est longue :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Frontpage&lt;/li&gt;
+  &lt;li&gt;Dreamweaver&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://notepad-plus-plus.org/fr/"&gt;Notepad++&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Gedit&lt;/li&gt;
+  &lt;li&gt;Vi&lt;/li&gt;
+  &lt;li&gt;Eclipse&lt;/li&gt;
+  &lt;li&gt;Zend-Studio&lt;/li&gt;
+  &lt;li&gt;Aptana&lt;/li&gt;
+  &lt;li&gt;Komodo&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://atom.io/"&gt;Atom&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Et je pense que cette liste n'est pas complète. Cependant mon éditeur de prédilection reste &lt;a href="http://www.sublimetext.com/"&gt;Sublime Text&lt;/a&gt;. Ce programme peut sembler minimaliste, mais il est très efficace si il est configuré correctement. Et c'est là sa grande force : une communauté active avec énorméments d'extentions disponibles.&lt;/p&gt;
+
+&lt;p&gt;Dans cet article je vais vous expliquer comment ce logiciel m'aide chaque jour à coder plus rapidement.&lt;/p&gt;
+
+&lt;h2 id="installer-le-gestionnaire-de-packet"&gt;Installer le gestionnaire de packet&lt;/h2&gt;
+
+&lt;p&gt;La première chose à faire après une nouvelle installation est d'installer &lt;em&gt;le gestionnaire de packets&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Il suffit pour cela d'ouvrir la console &lt;code&gt;View&lt;/code&gt; &amp;gt; &lt;code&gt;Show Console&lt;/code&gt; et de copier le script disponible sur le &lt;a href="https://sublime.wbond.net/installation"&gt;site de gestion des packets pour Sublime Text&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;C'est tout&lt;/strong&gt;. Une fois cette étape terminée vous êtes prêt à travailler.&lt;/p&gt;
+
+&lt;p&gt;Cela vous amènera à personnaliser l'éditeur &lt;em&gt;en fonction de vos besoins&lt;/em&gt;. La courbe d'apprentissage et de maîtrise est donc meilleure, comparé à un énorme IDE qui fait tout mais qui vous demandera &lt;em&gt;plusieurs mois d'apprentissage&lt;/em&gt; pour maîtriser l'outil -pour vous rendre compte qu'il ne réponds pas toujours à vos besoins.&lt;/p&gt;
+
+&lt;h2 id="personnaliser-sublime-text"&gt;Personnaliser Sublime Text&lt;/h2&gt;
+
+&lt;p&gt;Pour installer une extention c'est très facile. Il vous manque la coloration syntaxique pour les fichier &lt;code&gt;.coffee&lt;/code&gt; ou &lt;code&gt;.sass&lt;/code&gt; ?
+Utilisez simplement le raccourci &lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;shift&lt;/code&gt; + &lt;code&gt;P&lt;/code&gt; et tapez &lt;code&gt;install&lt;/code&gt;. Il ne vous reste ensuite plus qu'à faire votre recherche.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Packets Sublime Text front-end dev" src="https://lh4.googleusercontent.com/31cDqfLhm9BWGYEI2H7el1BgXi5axo2vuR0rjRyLsh0=w423-h239-no" /&gt;
+&lt;em&gt;Voici la liste des packets que j'utilise&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Si je ne devais en choisir qu'une liste réduite cela serait sans hésiter :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://emmet.io/"&gt;emmet&lt;/a&gt; (anciennement zen-coding) pour coder plus rapidement.&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/jisaacks/GitGutter"&gt;GitGutter&lt;/a&gt; pour visualiser vos diff git en temps réel.&lt;/li&gt;
+  &lt;li&gt;Le theme &lt;a href="https://github.com/EleazarCrusader/nexus-theme"&gt;Nexus Dark UI&lt;/a&gt; pour une lecture confortable.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="configuration-de-ninja"&gt;Configuration de ninja&lt;/h2&gt;
+
+&lt;p&gt;Voici le fichier de préférence que j'utilise sur toutes mes machines. Sur Ubuntu j'ai du changer la police de base car le rendu n'est pas le même comparé à Mac OS X. Si vous souhaitez utiliser le même il suffit d'ouvrir les &lt;code&gt;Settings - user&lt;/code&gt; (&lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;,&lt;/code&gt;) et de modifier le fichier &lt;code&gt;Preferences.sublime-settings&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="highlight json"&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"color_scheme"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"Packages/Theme - Nexus/Nexus.tmTheme"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"default_encoding"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"UTF-8"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"detect_indentation"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"ensure_newline_at_eof_on_save"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"folder_exclude_patterns"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="s2"&gt;".svn"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="s2"&gt;".git"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="s2"&gt;".hg"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="s2"&gt;"CVS"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="s2"&gt;".idea"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="s2"&gt;"build"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="s2"&gt;".cache"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="s2"&gt;"tmp/cache/"&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"font_face"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"Menlo"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"font_size"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;10.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"hot_exit"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"highlight_line"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"ignored_packages"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="s2"&gt;"Vintage"&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"open_files_in_new_window"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"remember_open_files"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"rulers"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="mi"&gt;120&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"show_full_path"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"tab_size"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"theme"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"Nexus.sublime-theme"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"translate_tabs_to_spaces"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"trim_automatic_white_space"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="s2"&gt;"trim_trailing_white_space_on_save"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="dmarrer-sublime-text-depuis-un-terminal"&gt;Démarrer Sublime Text depuis un terminal&lt;/h2&gt;
+
+&lt;p&gt;C'est l'une des killer feature diponible sur les systèmes possédant un vrai système de fichier : utiliser un &lt;code&gt;alias&lt;/code&gt; pour lancer directement Sublime Text.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Raccourci pour &lt;a href="https://gist.github.com/artero/1236170"&gt;Mac OS X&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Lancer sublime text depuis &lt;a href="https://coderwall.com/p/iuxapa"&gt;un terminal avec linux&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img alt="Raccourci terminal Sublime Text" src="https://lh4.googleusercontent.com/U6kbOYceOAWw8Ptr9AtVLBt-h6j6mH4jm2s2DjducmM=w449-h300-no" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;En moins d'une minute vous pouvez corriger une erreur. On fait le même test avec un IDE ?&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id="productivit-accrue-au-clavier"&gt;Productivité accrue au clavier&lt;/h2&gt;
+
+&lt;p&gt;Voici une liste des raccourcis que j'utilise quotidienement :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;t&lt;/code&gt; : Trouver un fichier.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;n&lt;/code&gt; : Nouveau fichier (notez qu'il est sauvegardé directment au même emplacement que le dernier fichier ouvert).&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;shift&lt;/code&gt; + &lt;code&gt;t&lt;/code&gt; : Réouvrir un fichier fermé (comme dans un navigateur web).&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;shift&lt;/code&gt; + &lt;code&gt;p&lt;/code&gt; : Parcourir les commandes disponibles (indent file, reorder, git blame, install package …).&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;d&lt;/code&gt; : Sélectionner plusieurs mots.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;shift&lt;/code&gt; + &lt;code&gt;d&lt;/code&gt; : Duppliquer la ligne en cours.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;shift&lt;/code&gt; + ↑ : Écriture multiligne.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;ctrl&lt;/code&gt; + &lt;code&gt;shift&lt;/code&gt; + ↑ : Déplacer la ligne.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;ctrl&lt;/code&gt; + &lt;code&gt;W&lt;/code&gt; : Enrobage intelligent (sélectionner un texte, raccourci, saisir le markup, enter).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img alt="wrap HTML tag" src="https://lh4.googleusercontent.com/0H2MnLt8ZRY8Py1-G2ogMVRdGEhXW8Ky3ovqA0EmEKo=w588-h300-no" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Vous voila convaincu pour utiliser Sublime Text pour votre prochain projet, même si ces conseils sont plus accès intégration et développement front-end.&lt;/p&gt;
+
+&lt;p&gt;N'hésitez pas à me partager vos packets pour compléter cette liste.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>5 bonnes raisons pour commencer un projet avec Foundation</title>
     <link rel="alternate" href="http://davidl.fr/blog/foundation-love.html"/>
     <id>http://davidl.fr/blog/foundation-love.html</id>
     <published>2014-08-18T00:00:00+02:00</published>
-    <updated>2014-08-21T22:19:58+02:00</updated>
+    <updated>2014-08-18T18:54:03+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -86,7 +221,7 @@ Cette méthode permet d'écraser les styles et le comportement par défaut du Ja
     <link rel="alternate" href="http://davidl.fr/blog/github-ninja.html"/>
     <id>http://davidl.fr/blog/github-ninja.html</id>
     <published>2014-08-06T00:00:00+02:00</published>
-    <updated>2014-08-15T17:36:42+02:00</updated>
+    <updated>2014-08-12T13:49:08+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -152,7 +287,7 @@ Créer / savoir les différents raccourcis vous fera gagner de précieuses secon
     <link rel="alternate" href="http://davidl.fr/blog/metier-integrateur-web.html"/>
     <id>http://davidl.fr/blog/metier-integrateur-web.html</id>
     <published>2014-08-03T00:00:00+02:00</published>
-    <updated>2014-08-15T17:36:42+02:00</updated>
+    <updated>2014-08-12T13:56:52+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -302,7 +437,7 @@ Dans le cas de ma profession j'ai encore quelques années de travail devant moi 
     <link rel="alternate" href="http://davidl.fr/blog/grille-semantique.html"/>
     <id>http://davidl.fr/blog/grille-semantique.html</id>
     <published>2014-07-30T00:00:00+02:00</published>
-    <updated>2014-08-15T17:36:42+02:00</updated>
+    <updated>2014-08-11T14:00:26+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -497,7 +632,7 @@ main {
     <link rel="alternate" href="http://davidl.fr/blog/ecoequitable.html"/>
     <id>http://davidl.fr/blog/ecoequitable.html</id>
     <published>2014-06-17T00:00:00+02:00</published>
-    <updated>2014-08-15T17:36:42+02:00</updated>
+    <updated>2014-07-21T17:00:31+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -519,120 +654,6 @@ main {
 
 &lt;p&gt;&lt;a href="http://scrumtalpick.fr/decouverte.html"&gt;Découvrir ecoequitable →&lt;/a&gt;&lt;/p&gt;
 
-</content>
-  </entry>
-  <entry>
-    <title>Solutions aux problèmes @import des fichiers Sass</title>
-    <link rel="alternate" href="http://davidl.fr/blog/import-sass.html"/>
-    <id>http://davidl.fr/blog/import-sass.html</id>
-    <published>2014-05-27T00:00:00+02:00</published>
-    <updated>2014-08-21T22:19:58+02:00</updated>
-    <author>
-      <name>DavidL design + développement</name>
-    </author>
-    <content type="html">&lt;p&gt;Avec ses variables, fonctions et imports, Sass donne des supers pouvoirs au fichiers CSS. Plus précisément, il est possible d'importer et d'organiser ses fichiers SCSS de différentes manières. Mais tout ce pouvoir amène d'autres problèmes : la possibilité d'importer différents fichiers dans votre projet signifie que vous aller devoir gérer ses fichiers.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Super pouvoirs et Sass" src="https://farm6.staticflickr.com/5095/5449679657_46fed579c2_z.jpg" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Superman wallpaper par &lt;a href="https://www.flickr.com/photos/dangergraphics/"&gt;Jason Csizmadi&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;D'expérience cela peut provoquer de bonnes crises d'hystérie, mais avec l'habitude j'ai appris à contrecarrer ces différents problèmes et j'ai décidé de partager ces problèmes pour vous faire gagner du temps. &lt;strong&gt;Voici toutes les réponses aux question que vous vous posez pour organiser vos fichiers en Sass&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id="dfinition-dun-partial-en-sass"&gt;Définition d'un &lt;code&gt;partial&lt;/code&gt; en Sass&lt;/h2&gt;
-
-&lt;p&gt;Un &lt;strong&gt;partial&lt;/strong&gt; est un fichier qui contient votre Sass. J'utilise des &lt;code&gt;partial&lt;/code&gt;s pour organiser mes projets : les boutons dans un fichier, la typographie dans un autre… Cette architecture permet de rapidement trouver et faire des changements dans des projets complexes.&lt;/p&gt;
-
-&lt;p&gt;Les &lt;code&gt;partial&lt;/code&gt;s ne sont pas de &lt;em&gt;réels&lt;/em&gt; fichiers Sass car &lt;code&gt;sass watch&lt;/code&gt; ne les convertira pas en CSS. Ils doivent êtres importés dans un fichier &lt;code&gt;.scss&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Sublime text search shortcut" src="https://lh4.googleusercontent.com/-s1uPAH3rKvw/U4SDcBFVBGI/AAAAAAAAAIc/2U5QGQt_8lM/w480-h300-no/search.gif" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;(Avec sublime text &lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;t&lt;/code&gt; permet de faire une recherche rapide).&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id="sass-peut-importer-uniquement-les-fichiers-commenant-par-underscrore-"&gt;Sass peut importer uniquement les fichiers commençant par underscrore ?&lt;/h2&gt;
-
-&lt;p&gt;Dans certains cas, vos fichiers Sass seront ignorés si vous les importez sans les préfixer avec &lt;code&gt;_&lt;/code&gt;. Ceci dit, Sass n'est pas de la magie noire et ne convertira pas &lt;code&gt;_button.scss&lt;/code&gt; en &lt;code&gt;button.scss&lt;/code&gt; pour votre site. Vous pouvez seulement importer des fichiers commençant par &lt;code&gt;_&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Pour résumer, comprendre &lt;strong&gt;comment architecturer vos fichiers Sass&lt;/strong&gt; est aussi important que Sass lui-même. Voici la convention que je recommande :&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Renommer votre fichier CSS principal (application.css en application.scss par exemple)&lt;/li&gt;
-  &lt;li&gt;Ajouter votre code Sass dans ce fichier pour vous familiariser avec le langage&lt;/li&gt;
-  &lt;li&gt;Organiser vos fichiers en &lt;code&gt;partial&lt;/code&gt;s (comme _grid.scss) dès que votre fichier devient trop compliqué à maintenir / parcourir&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id="peut-on-crire-du-css-dans-des-partials-sass-"&gt;Peut-on écrire du CSS dans des &lt;code&gt;partial&lt;/code&gt;s Sass ?&lt;/h2&gt;
-
-&lt;p&gt;Absolument ! Cela ne dérange pas les fichiers Sass d'avoir du CSS à l'intérieur. La façon la plus rapide et la plus simple pour commencer à écrire du Sass est de prendre un fichier CSS existant, de changer son extension en &lt;code&gt;.scss&lt;/code&gt;, et de commencer à écrire du code Sass. Par exemple vous pouvez commencer par renommer &lt;code&gt;theme.css&lt;/code&gt; en &lt;code&gt;_theme.scss&lt;/code&gt; et ajouter progressivement des variables et des fonctions au style existant.&lt;/p&gt;
-
-&lt;p&gt;Un bon point de départ est d'utiliser une convention de nommage pour les couleurs.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class="highlight plaintext"&gt;$blue-steroid
-$blue-light
-$blue
-$blue-dark
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Donc on ne doit pas vraiment écrire de Sass dans application.scss —ce fichier est est seulement utilisé pour importer des partials ?&lt;/p&gt;
-
-  &lt;p&gt;&lt;cite&gt;Un noob du Sass&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Techniquement vous pouvez écrire n'importe quoi dans &lt;code&gt;application.scss&lt;/code&gt;, mais je recommande de séparer vos composants en &lt;code&gt;partial&lt;/code&gt;s, et de les importer ensuite dans &lt;code&gt;application.scss&lt;/code&gt; pour conserver une bonne organisation depuis le départ.&lt;/p&gt;
-
-&lt;p&gt;En réalité je commence à coder mes différents &lt;code&gt;partial&lt;/code&gt;s en début de projet. Je n'ai jamais besoin d'écrire de code Sass dans &lt;code&gt;application.scss&lt;/code&gt;, excepté les &lt;code&gt;@import&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id="et-si-jutilise-un-framework-comme-foundationhttpfoundationzurbcom-"&gt;Et si j'utilise un framework comme &lt;a href="http://foundation.zurb.com/"&gt;Foundation&lt;/a&gt; ?&lt;/h2&gt;
-
-&lt;p&gt;On peut se poser la question suivante : j'importe mes fichiers Sass avant ou après les &lt;code&gt;import&lt;/code&gt; pour Foundation ?&lt;/p&gt;
-
-&lt;p&gt;Sass est très sensible à l'ordre des sélecteurs. Ceci dit, les déclaration les plus tardives dans vos fichiers &lt;code&gt;.scss&lt;/code&gt; écrasent celles faites précédemment. C'est pour cette raison que vous devez toujours importer vos &lt;code&gt;partial&lt;/code&gt;s &lt;strong&gt;après&lt;/strong&gt; Foundation pour personnaliser votre site. Par exemple :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class="highlight plaintext"&gt;@import
-  "foundation/components/block-grid",
-  "foundation/components/buttons",
-  "foundation/components/forms",
-  "foundation/components/grid",
-  "modules/my-typography",
-  "modules/my-branding",
-  "modules/my-buttons";
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Dans ce cas &lt;code&gt;modules/my-buttons&lt;/code&gt; écrasera les boutons de Foundation. &lt;strong&gt;Importer vos fichiers après&lt;/strong&gt; ceux du framework signifie : "Oh grand magicien Sass, modifie moi les fichiers importés avant pour personnaliser mon site".&lt;/p&gt;
-
-&lt;h2 id="est-ce-que-je-peux-dire--sass-dimporter-tous-les-partials-contenus-dans-un-dossier-"&gt;Est-ce que je peux dire à Sass d'importer tous les &lt;code&gt;partial&lt;/code&gt;s contenus dans un dossier ?&lt;/h2&gt;
-
-&lt;p&gt;Non, pour les raisons exposées précédemment.&lt;/p&gt;
-
-&lt;p&gt;Il n'y a &lt;strong&gt;pas de moyen fiable de contrôler l'ordre&lt;/strong&gt; dans lequel un dossier entier sera importé, vous devez donc importer chaque &lt;code&gt;partial&lt;/code&gt; vous-même…&lt;/p&gt;
-
-&lt;p&gt;Et je vous voie venir à 100 km les apprentis hackers avec :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class="highlight plaintext"&gt;@import "stylesheets/*"
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Je vous souhaite bon courage dans la gestion de vos dépendances de variables, et dans l'optimisation de vos feuilles de style.&lt;/p&gt;
-
-&lt;p&gt;Comme vous l'avez vu dans la précédente question, vous pouvez importer une série de fichiers avec seulement une seule déclaration &lt;code&gt;@import&lt;/code&gt; en séparant chaque fichier par une virgule. Remarquez aussi que Sass ne nécessite pas d'écrire &lt;code&gt;.scss&lt;/code&gt; ou &lt;code&gt;_&lt;/code&gt; dans les noms de fichiers. Ce préprocesseur est assez intelligent pour reconnaitre ce que vous voulez faire.&lt;/p&gt;
-
-&lt;h2 id="peut--on-utiliser-import-pour-embarquer-des-fichier-css-"&gt;Peut- on utiliser &lt;code&gt;@import&lt;/code&gt; pour embarquer des fichier .css ?&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Mauvaise nouvelle&lt;/strong&gt; : Sass ne peut importer que des fichiers &lt;code&gt;.scss&lt;/code&gt; ou `.sass&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Bonne nouvelle&lt;/strong&gt; : &lt;code&gt;.scss&lt;/code&gt; est simplement du &lt;code&gt;.css&lt;/code&gt; avec une orthographe différente. Comme mentionné dans la première question, vous pouvez transformer vos fichiers &lt;code&gt;.css&lt;/code&gt; en &lt;code&gt;.scss&lt;/code&gt; simplement en changeant l'extension de fichier.&lt;/p&gt;
-
-&lt;h2 id="si-tous-mes-partials-sont-dans-un-dossier-quelles-sont-les-formules-de-magie-noire-pour-compiler-ces-fichiers-dans-une-seule-feuille-de-style-"&gt;Si tous mes &lt;code&gt;partial&lt;/code&gt;s sont dans un dossier, quelles sont les formules de magie noire pour compiler ces fichiers dans une seule feuille de style ?&lt;/h2&gt;
-
-&lt;p&gt;La syntaxe &lt;code&gt;@import&lt;/code&gt; utilisée en SCSS est complètement différente d'une ligne de commande. La &lt;em&gt;compilation&lt;/em&gt; s'éxécute avec une formule magique depuis un terminal, mais ces formules dépendent de votre environement d'éxécution.&lt;/p&gt;
-
-&lt;p&gt;Par exemple :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Sass : &lt;code&gt;sass watch&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Compass : &lt;code&gt;compass watch&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Grunt : &lt;code&gt;grunt&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Middleman : &lt;code&gt;middleman server&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </content>
   </entry>
 </feed>
