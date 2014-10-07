@@ -5,10 +5,178 @@
   <id>http://davidl.fr/blog/</id>
   <link href="http://davidl.fr/blog/"/>
   <link href="http://davidl.fr/blog/feed.xml" rel="self"/>
-  <updated>2014-08-24T00:00:00+02:00</updated>
+  <updated>2014-09-07T00:00:00+02:00</updated>
   <author>
     <name>David Leuliette</name>
   </author>
+  <entry>
+    <title>Coder du HTML plus rapidement grâce au templating</title>
+    <link rel="alternate" href="http://davidl.fr/blog/template-ruby.html"/>
+    <id>http://davidl.fr/blog/template-ruby.html</id>
+    <published>2014-09-07T00:00:00+02:00</published>
+    <updated>2014-10-07T13:56:26+02:00</updated>
+    <author>
+      <name>DavidL design + développement</name>
+    </author>
+    <content type="html">&lt;p&gt;Cela fait maintenant plus d'un an que j'ai abandonné l'univers php pour me consacrer à la galaxie ruby. En travaillant avec une architecture MVC, j'ai utilisé différents moteurs de templating comme smarty.
+Ruby possède aussi ses propres moteurs comme erb, haml, … Mais mon préféré -et de loin, reste &lt;a href="slim-lang.com/"&gt;slim&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Pourquoi ? La raison est simple : je suis 2 fois plus performant. Avec ce templating, il n'est plus nécessaire pour le balisage HTML d'utiliser &lt;code&gt;&amp;lt;&lt;/code&gt;, &lt;code&gt;&amp;gt;&lt;/code&gt; et &lt;code&gt;/&lt;/code&gt;. Résultat : le HTML est codé 2 fois plus rapidement (Même si des plugins comme emmet.io peuvent vous faciliter la vie). Votre code est 2 fois moins long et il est beaucoup plus rapide de scanner un fichier.&lt;/p&gt;
+
+&lt;p&gt;Dans cet article je vais expliquer les astuces que j'ai apprises en lisant la documentation, pour vous éviter de parcourir inutilement stackoverflow pendant des heures afin de trouver la bonne pratique de codage.&lt;/p&gt;
+
+&lt;h2 id="les-bases"&gt;Les bases&lt;/h2&gt;
+
+&lt;p&gt;La phylosophie de slim est de &lt;em&gt;supprimer tous les caractère inutiles&lt;/em&gt;. Si l'on prends cet exemple extrait de la documentation on peut remarquer plusieurs choses :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="highlight plaintext"&gt;doctype html
+html
+  head
+    title Slim Examples
+    meta name="keywords" content="template language"
+    meta name="author" content=author
+    javascript:
+      alert('Slim supports embedded javascript!')
+
+  body
+    h1 Markup examples
+
+    #content
+      p This example shows you how a basic Slim file looks like.
+
+      == yield
+
+      - unless items.empty?
+        table
+          - for item in items do
+            tr
+              td.name = item.name
+              td.price = item.price
+      - else
+        p
+         | No items found.  Please add some inventory.
+           Thank you!
+
+    #footer
+      Copyright © #{year} #{author}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Pas de fermeture de balises&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;#content&lt;/code&gt; donnera &lt;code&gt;&amp;lt;nav id="content"&amp;gt;&amp;lt;/nav&amp;gt;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;td.name&lt;/code&gt; qui se transformera en &lt;code&gt;&amp;lt;td class="name"&amp;gt;&amp;lt;/td&amp;gt;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;= link_to 'Mon site', 'http://davidl.fr'&lt;/code&gt; pour utiliser du ruby qui sera compilé en &lt;code&gt;&amp;lt;a href="http://davidl.fr"&amp;gt;Mon site&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;- if i.am == amazing&lt;/code&gt; permet de faire des tests ou des boucles&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="gestion-des-espaces"&gt;Gestion des espaces&lt;/h2&gt;
+
+&lt;p&gt;Si vous avez suivi mon &lt;a href="http://davidl.fr/blog/"&gt;tunning de sublime Text&lt;/a&gt; vous savez que je supprime les espaces inutiles en fin de ligne à chaque sauvegarde. Cet avantage peut se transformer en inconvénient et voici comment gérer les espaces avec slim et vous éviter d'utiliser &lt;code&gt;&amp;amp;nbsp;&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;‘&lt;/code&gt; Ajoute un espace en fin de ligne.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;|&lt;/code&gt; Permet d'ajouter du texte sans espace.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ce qui donne dans un cas concret :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="highlight plaintext"&gt;p
+  'Voici un paragraphe avec
+   = link_to 'un lien vers un site', 'http://guidecss.fr'
+
+p
+  |Un autre paragraphe
+  ', avec une virgule.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="optimiser-les-moteurs-de-recherche-avec-les-balises-schemaorg"&gt;Optimiser les moteurs de recherche avec les balises schema.org&lt;/h2&gt;
+
+&lt;p&gt;Schema.org est un format de micro données qui permet aux moteurs de recherches et aux différents appareils de comprendre la structure des informations. Voici un exemple simple pour le balisage d'un fil d'arianne&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="highlight plaintext"&gt;ul class="breadcrumbs"
+  li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"
+    = link_to '/index.html', itemprop: 'url' do
+      span itemprop="title"
+        |Accueil
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;itemprop=""&lt;/code&gt; sera interprété en &lt;code&gt;itemprop&lt;/code&gt;, c'est l'un des seuls cas où vous devez ajouter des caractères par rapport au HTML.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="les-attributs-personnaliss-data-"&gt;Les attributs personnalisés &lt;code&gt;data-*&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;Tout comme les balise de microdonnées, pour ajouter des attribut personnalisés il faut simplement utiliser la notation suivante :&lt;/p&gt;
+
+&lt;p&gt;slim&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="highlight plaintext"&gt;nav data-dropdown="js-sub-menu" Menu
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;HTML&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="highlight plaintext"&gt;&amp;lt;nav data-dropdown="js-sub-menu"&amp;gt; Menu &amp;lt;/nav&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Cela se complique un peu si vous devez ajouter plusieurs attributs, mais la encore la notation est simplifiée si l'on connait la bonne syntaxe :&lt;/p&gt;
+
+&lt;p&gt;slim&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="highlight plaintext"&gt;div data: {a: 1, b: 2} Foo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;HTML&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="highlight plaintext"&gt;&amp;lt;div data-a="1" data-b="2"&amp;gt;Foo&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="crire-du-markdown"&gt;Écrire du markdown&lt;/h2&gt;
+
+&lt;p&gt;Il est possible d'écrire directement du markdown en plein milieu de ses vues. C'est une technique que j'utilise souvent car ce format est pervasif et facilement convertissable.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="highlight plaintext"&gt;markdown:
+  ## Écrire du markdown
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id="coloration-syntaxique"&gt;Coloration syntaxique&lt;/h3&gt;
+
+&lt;p&gt;Il existe une multitude d'outils pour ajouter de la coloration syntaxique dans des pages web. Ma technique préférée conciste à utiliser du markdown et à préciser le langage souhaité :&lt;/p&gt;
+
+&lt;p&gt;avec redcarpet :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="highlight plaintext"&gt;markdown:
+``` ruby
+def my_cool_method(message)
+  puts message
+end
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;avec kramdown :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="highlight plaintext"&gt;markdown:
+~~~ ruby
+def my_cool_method(message)
+  puts message
+end
+~~~
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Le principal inconvénient d'utiliser ce moteur de templating est le coût de formation nécessaire à son apprentissage.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;C'est tout&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;La lecture des erreurs est simplifiée car si votre indentation n'est pas parfaite la page ne sera pas compilée. Fini le `&amp;lt;/div&amp;gt; fantôme qui casse toute votre mise page.&lt;/p&gt;
+
+&lt;p&gt;Slim est actuellement 10 fois plus rapide que haml.&lt;/p&gt;
+
+&lt;p&gt;En supprimant les balises inutiles votre code est plus concis et se lit plus rapidement.&lt;/p&gt;
+
+&lt;p&gt;Il est toujours possible d'utiliser du code HTML pour vous familiariser avec la syntaxe, que vous abandonerez très vite pour n'utiliser plus que du slim.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Coder plus efficacement avec Sublime Text</title>
     <link rel="alternate" href="http://davidl.fr/blog/sublime-source-code.html"/>
@@ -625,35 +793,6 @@ main {
 &lt;h2 id="construire-rapidement-un-prototype"&gt;Construire rapidement un prototype&lt;/h2&gt;
 
 &lt;p&gt;Suivre ces différentes étapes est un très bon exemple pour avoir un balisage HTML sémantique. Si vous souhaitez rapidement mettre ce système en place je vous invite à cloner un de mes &lt;a href="https://github.com/flexbox/foundation-boilerplate"&gt;projet open source Foundation boilerplate&lt;/a&gt;.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Le secret de ecoequitable</title>
-    <link rel="alternate" href="http://davidl.fr/blog/ecoequitable.html"/>
-    <id>http://davidl.fr/blog/ecoequitable.html</id>
-    <published>2014-06-17T00:00:00+02:00</published>
-    <updated>2014-07-21T17:00:31+02:00</updated>
-    <author>
-      <name>DavidL design + développement</name>
-    </author>
-    <content type="html">&lt;h2 id="what"&gt;What&lt;/h2&gt;
-
-&lt;p&gt;Right, gimme a Pepsi free. Holy shit. Uh listen, do you know where Riverside Drive is? Okay, alright, I'll prove it to you. Look at my driver's license, expires 1987. Look at my birthday, for crying out load I haven't even been born yet. And, look at this picture, my brother, my sister, and me. Look at the sweatshirt, &lt;a href="http://scrumtalpick.fr/"&gt;ecoequitable&lt;/a&gt;, class of 1984. Wait a minute. Wait a minute, ecoequitable. Are you telling me that it's 8:25?&lt;/p&gt;
-
-&lt;h2 id="why"&gt;Why&lt;/h2&gt;
-
-&lt;p&gt;Listen, woh. Hello, uh excuse me. Sorry about your barn. Thanks a lot, kid. Jennifer, oh are you a sight for sore eyes. Let me look at you. Right check, ecoequitable. Bet your ass it works.&lt;/p&gt;
-
-&lt;h2 id="when"&gt;When&lt;/h2&gt;
-
-&lt;p&gt;Um, yeah, I'm on my way. Flux capacitor. ecoequitable, I'm from the future. I came here in a time machine that you invented. Now, I need your help to get back to the year 1985. You do? Hello, Jennifer.&lt;/p&gt;
-
-&lt;h2 id="pour-ceux-qui-nauraient-rien-compris"&gt;Pour ceux qui n'auraient rien compris&lt;/h2&gt;
-
-&lt;p&gt;Le célèbre intégrateur &lt;a href="http://romainfauvet.fr"&gt;Romain Fauvet&lt;/a&gt; participe en ce moment à un concours SEO. Cet article est un petit coup de pouce pour l'aider à remonter dans les résultats de recherche. Prenez 5 minutes pour aller voir son site, il vaut le coup d'oeil.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="http://scrumtalpick.fr/decouverte.html"&gt;Découvrir ecoequitable →&lt;/a&gt;&lt;/p&gt;
-
 </content>
   </entry>
 </feed>
