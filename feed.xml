@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://davidl.fr/blog/template-ruby.html"/>
     <id>http://davidl.fr/blog/template-ruby.html</id>
     <published>2014-09-07T00:00:00+02:00</published>
-    <updated>2014-10-07T13:56:26+02:00</updated>
+    <updated>2014-10-14T18:36:24+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -27,38 +27,38 @@ Ruby possède aussi ses propres moteurs comme erb, haml, … Mais mon préféré
 
 &lt;h2 id="les-bases"&gt;Les bases&lt;/h2&gt;
 
-&lt;p&gt;La phylosophie de slim est de &lt;em&gt;supprimer tous les caractère inutiles&lt;/em&gt;. Si l'on prends cet exemple extrait de la documentation on peut remarquer plusieurs choses :&lt;/p&gt;
+&lt;p&gt;La phylosophie de slim est de &lt;em&gt;supprimer tous les caractère inutiles&lt;/em&gt;. Si l'on prends cet exemple &lt;a href="http://slim-lang.com/"&gt;extrait de la documentation&lt;/a&gt; on peut remarquer plusieurs choses :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class="highlight plaintext"&gt;doctype html
-html
-  head
-    title Slim Examples
-    meta name="keywords" content="template language"
-    meta name="author" content=author
-    javascript:
-      alert('Slim supports embedded javascript!')
+&lt;pre&gt;&lt;code class="highlight haml"&gt;    doctype html
+    html
+      head
+        title Slim Examples
+        meta name="keywords" content="template language"
+        meta name="author" content=author
+        javascript:
+          alert('Slim supports embedded javascript!')
 
-  body
-    h1 Markup examples
+      body
+        h1 Markup examples
 
-    #content
-      p This example shows you how a basic Slim file looks like.
+        &lt;span class="nf"&gt;#content&lt;/span&gt;
+          p This example shows you how a basic Slim file looks like.
 
-      == yield
+          &lt;span class="p"&gt;==&lt;/span&gt; yield
 
-      - unless items.empty?
-        table
-          - for item in items do
-            tr
-              td.name = item.name
-              td.price = item.price
-      - else
-        p
-         | No items found.  Please add some inventory.
-           Thank you!
+          &lt;span class="p"&gt;-&lt;/span&gt; &lt;span class="k"&gt;unless&lt;/span&gt; &lt;span class="n"&gt;items&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;empty?&lt;/span&gt;
+            table
+              &lt;span class="p"&gt;-&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;item&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="n"&gt;items&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+                tr
+                  td.name = item.name
+                  td.price = item.price
+          &lt;span class="p"&gt;-&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt;
+            p
+             | No items found.  Please add some inventory.
+               Thank you!
 
-    #footer
-      Copyright © #{year} #{author}
+        &lt;span class="nf"&gt;#footer&lt;/span&gt;
+          Copyright © &lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;year&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt; &lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;author&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
@@ -80,28 +80,28 @@ html
 
 &lt;p&gt;Ce qui donne dans un cas concret :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class="highlight plaintext"&gt;p
-  'Voici un paragraphe avec
-   = link_to 'un lien vers un site', 'http://guidecss.fr'
+&lt;pre&gt;&lt;code class="highlight haml"&gt;    p
+      'Voici un paragraphe avec
+       &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="n"&gt;link_to&lt;/span&gt; &lt;span class="s1"&gt;'un lien vers un site'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'http://guidecss.fr'&lt;/span&gt;
 
-p
-  |Un autre paragraphe
-  ', avec une virgule.
+    p
+      |Un autre paragraphe
+      ', avec une virgule.
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id="optimiser-les-moteurs-de-recherche-avec-les-balises-schemaorg"&gt;Optimiser les moteurs de recherche avec les balises schema.org&lt;/h2&gt;
 
 &lt;p&gt;Schema.org est un format de micro données qui permet aux moteurs de recherches et aux différents appareils de comprendre la structure des informations. Voici un exemple simple pour le balisage d'un fil d'arianne&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class="highlight plaintext"&gt;ul class="breadcrumbs"
-  li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"
-    = link_to '/index.html', itemprop: 'url' do
-      span itemprop="title"
-        |Accueil
+&lt;pre&gt;&lt;code class="highlight haml"&gt;    ul class="breadcrumbs"
+      li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"
+        &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="n"&gt;link_to&lt;/span&gt; &lt;span class="s1"&gt;'/index.html'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;itemprop: &lt;/span&gt;&lt;span class="s1"&gt;'url'&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+          span itemprop="title"
+            |Accueil
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;itemprop=""&lt;/code&gt; sera interprété en &lt;code&gt;itemprop&lt;/code&gt;, c'est l'un des seuls cas où vous devez ajouter des caractères par rapport au HTML.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;itemscope=""&lt;/code&gt; sera interprété en &lt;code&gt;itemscope&lt;/code&gt;, c'est l'un des seuls cas où vous devez ajouter des caractères par rapport au HTML.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id="les-attributs-personnaliss-data-"&gt;Les attributs personnalisés &lt;code&gt;data-*&lt;/code&gt;&lt;/h2&gt;
@@ -110,32 +110,32 @@ p
 
 &lt;p&gt;slim&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class="highlight plaintext"&gt;nav data-dropdown="js-sub-menu" Menu
+&lt;pre&gt;&lt;code class="highlight haml"&gt;    nav data-dropdown="js-sub-menu" Menu
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;HTML&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class="highlight plaintext"&gt;&amp;lt;nav data-dropdown="js-sub-menu"&amp;gt; Menu &amp;lt;/nav&amp;gt;
+&lt;pre&gt;&lt;code class="highlight html"&gt;    &lt;span class="nt"&gt;&amp;lt;nav&lt;/span&gt; &lt;span class="na"&gt;data-dropdown=&lt;/span&gt;&lt;span class="s"&gt;"js-sub-menu"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; Menu &lt;span class="nt"&gt;&amp;lt;/nav&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Cela se complique un peu si vous devez ajouter plusieurs attributs, mais la encore la notation est simplifiée si l'on connait la bonne syntaxe :&lt;/p&gt;
 
 &lt;p&gt;slim&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class="highlight plaintext"&gt;div data: {a: 1, b: 2} Foo
+&lt;pre&gt;&lt;code class="highlight haml"&gt;    div data: {a: 1, b: 2} Foo
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;HTML&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class="highlight plaintext"&gt;&amp;lt;div data-a="1" data-b="2"&amp;gt;Foo&amp;lt;/div&amp;gt;
+&lt;pre&gt;&lt;code class="highlight html"&gt;    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;data-a=&lt;/span&gt;&lt;span class="s"&gt;"1"&lt;/span&gt; &lt;span class="na"&gt;data-b=&lt;/span&gt;&lt;span class="s"&gt;"2"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;Foo&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id="crire-du-markdown"&gt;Écrire du markdown&lt;/h2&gt;
 
 &lt;p&gt;Il est possible d'écrire directement du markdown en plein milieu de ses vues. C'est une technique que j'utilise souvent car ce format est pervasif et facilement convertissable.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class="highlight plaintext"&gt;markdown:
-  ## Écrire du markdown
+&lt;pre&gt;&lt;code class="highlight markdown"&gt;    markdown:
+      ## Écrire du markdown
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id="coloration-syntaxique"&gt;Coloration syntaxique&lt;/h3&gt;
@@ -144,22 +144,22 @@ p
 
 &lt;p&gt;avec redcarpet :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class="highlight plaintext"&gt;markdown:
-``` ruby
-def my_cool_method(message)
-  puts message
-end
-```
+&lt;pre&gt;&lt;code class="highlight markdown"&gt;    markdown:
+    &lt;span class="p"&gt;```&lt;/span&gt;&lt;span class="nl"&gt; ruby&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;my_cool_method&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;message&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+      &lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="n"&gt;message&lt;/span&gt;
+    &lt;span class="k"&gt;end&lt;/span&gt;
+    &lt;span class="p"&gt;```&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;avec kramdown :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class="highlight plaintext"&gt;markdown:
-~~~ ruby
-def my_cool_method(message)
-  puts message
-end
-~~~
+&lt;pre&gt;&lt;code class="highlight markdown"&gt;    markdown:
+    &lt;span class="p"&gt;~~~&lt;/span&gt;&lt;span class="nl"&gt; ruby&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;my_cool_method&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;message&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+      &lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="n"&gt;message&lt;/span&gt;
+    &lt;span class="k"&gt;end&lt;/span&gt;
+    &lt;span class="p"&gt;~~~&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
@@ -168,7 +168,7 @@ end
 
 &lt;p&gt;&lt;strong&gt;C'est tout&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;La lecture des erreurs est simplifiée car si votre indentation n'est pas parfaite la page ne sera pas compilée. Fini le `&amp;lt;/div&amp;gt; fantôme qui casse toute votre mise page.&lt;/p&gt;
+&lt;p&gt;La lecture des erreurs est simplifiée car si votre indentation n'est pas parfaite la page ne sera pas compilée. Fini le &lt;code&gt;&amp;lt;/div&amp;gt;&lt;/code&gt; fantôme qui casse toute votre mise page.&lt;/p&gt;
 
 &lt;p&gt;Slim est actuellement 10 fois plus rapide que haml.&lt;/p&gt;
 
@@ -182,7 +182,7 @@ end
     <link rel="alternate" href="http://davidl.fr/blog/sublime-source-code.html"/>
     <id>http://davidl.fr/blog/sublime-source-code.html</id>
     <published>2014-08-24T00:00:00+02:00</published>
-    <updated>2014-08-25T18:43:11+02:00</updated>
+    <updated>2014-10-14T18:36:24+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -237,43 +237,43 @@ Utilisez simplement le raccourci &lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;shif
 
 &lt;p&gt;Voici le fichier de préférence que j'utilise sur toutes mes machines. Sur Ubuntu j'ai du changer la police de base car le rendu n'est pas le même comparé à Mac OS X. Si vous souhaitez utiliser le même il suffit d'ouvrir les &lt;code&gt;Settings - user&lt;/code&gt; (&lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;,&lt;/code&gt;) et de modifier le fichier &lt;code&gt;Preferences.sublime-settings&lt;/code&gt;.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class="highlight json"&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"color_scheme"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"Packages/Theme - Nexus/Nexus.tmTheme"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"default_encoding"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"UTF-8"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"detect_indentation"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"ensure_newline_at_eof_on_save"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"folder_exclude_patterns"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="s2"&gt;".svn"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="s2"&gt;".git"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="s2"&gt;".hg"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="s2"&gt;"CVS"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="s2"&gt;".idea"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="s2"&gt;"build"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="s2"&gt;".cache"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="s2"&gt;"tmp/cache/"&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"font_face"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"Menlo"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"font_size"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;10.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"hot_exit"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"highlight_line"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"ignored_packages"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="s2"&gt;"Vintage"&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"open_files_in_new_window"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"remember_open_files"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"rulers"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="mi"&gt;120&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"show_full_path"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"tab_size"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"theme"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"Nexus.sublime-theme"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"translate_tabs_to_spaces"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"trim_automatic_white_space"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"trim_trailing_white_space_on_save"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;pre&gt;&lt;code class="highlight json"&gt;&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="s2"&gt;"color_scheme"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"Packages/Theme - Nexus/Nexus.tmTheme"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="s2"&gt;"default_encoding"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"UTF-8"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="s2"&gt;"detect_indentation"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="s2"&gt;"ensure_newline_at_eof_on_save"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="s2"&gt;"folder_exclude_patterns"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="w"&gt;
+        &lt;/span&gt;&lt;span class="s2"&gt;".svn"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+        &lt;/span&gt;&lt;span class="s2"&gt;".git"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+        &lt;/span&gt;&lt;span class="s2"&gt;".hg"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+        &lt;/span&gt;&lt;span class="s2"&gt;"CVS"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+        &lt;/span&gt;&lt;span class="s2"&gt;".idea"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+        &lt;/span&gt;&lt;span class="s2"&gt;"build"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+        &lt;/span&gt;&lt;span class="s2"&gt;".cache"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+        &lt;/span&gt;&lt;span class="s2"&gt;"tmp/cache/"&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="s2"&gt;"font_face"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"Menlo"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="s2"&gt;"font_size"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;10.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="s2"&gt;"hot_exit"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="s2"&gt;"highlight_line"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="s2"&gt;"ignored_packages"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="w"&gt;
+        &lt;/span&gt;&lt;span class="s2"&gt;"Vintage"&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="s2"&gt;"open_files_in_new_window"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="s2"&gt;"remember_open_files"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="s2"&gt;"rulers"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="w"&gt;
+        &lt;/span&gt;&lt;span class="mi"&gt;120&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="s2"&gt;"show_full_path"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="s2"&gt;"tab_size"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="s2"&gt;"theme"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"Nexus.sublime-theme"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="s2"&gt;"translate_tabs_to_spaces"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="s2"&gt;"trim_automatic_white_space"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="s2"&gt;"trim_trailing_white_space_on_save"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id="dmarrer-sublime-text-depuis-un-terminal"&gt;Démarrer Sublime Text depuis un terminal&lt;/h2&gt;
@@ -317,7 +317,7 @@ Utilisez simplement le raccourci &lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;shif
     <link rel="alternate" href="http://davidl.fr/blog/foundation-love.html"/>
     <id>http://davidl.fr/blog/foundation-love.html</id>
     <published>2014-08-18T00:00:00+02:00</published>
-    <updated>2014-08-18T18:54:03+02:00</updated>
+    <updated>2014-10-14T18:36:24+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -337,9 +337,9 @@ Utilisez simplement le raccourci &lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;shif
 
 &lt;p&gt;Foundation possède le meilleur système de grille responsive disponible. Construit avec une priorité au mobile il est très facile de faire évoluer sa mise en page sur les tablettes, pour terminer sur des écrans. D'expérience je conseille de diviser son écran en 12 colonnes (Car 3 x 4 = 12). Ce système permet de mettre en place presque n'importe quel type de design.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class="highlight plaintext"&gt;&amp;lt;div class="row"&amp;gt;
-  &amp;lt;div class="small-6 medium-4 large-2"&amp;gt;&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
+&lt;pre&gt;&lt;code class="highlight html"&gt;    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"row"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-6 medium-4 large-2"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id="dveloppement-rapide"&gt;Développement rapide&lt;/h2&gt;
@@ -389,7 +389,7 @@ Cette méthode permet d'écraser les styles et le comportement par défaut du Ja
     <link rel="alternate" href="http://davidl.fr/blog/github-ninja.html"/>
     <id>http://davidl.fr/blog/github-ninja.html</id>
     <published>2014-08-06T00:00:00+02:00</published>
-    <updated>2014-08-12T13:49:08+02:00</updated>
+    <updated>2014-10-14T18:36:24+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -406,19 +406,19 @@ Créer / savoir les différents raccourcis vous fera gagner de précieuses secon
 
 &lt;p&gt;À mon avis la première chose à faire, sur vous utilisez git, est de pimper votre fichier &lt;code&gt;.gitconfig&lt;/code&gt;.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class="highlight plaintext"&gt;[user]
-  name = Bruce Wayne
-  email = bruce@wayne.com
-[push]
-  default = current
-[alias]
-  poule = pull --rebase
-  co = checkout
-  br = branch
-  today = log --since=midnight --author='Bruce Wayne' --oneline
-[color]
-  ui = auto
-&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class="highlight json"&gt;&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="err"&gt;user&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="err"&gt;name&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;Bruce&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;Wayne&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="err"&gt;email&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;bruce@wayne.com&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="err"&gt;push&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="err"&gt;default&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;current&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="err"&gt;alias&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="err"&gt;poule&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;pull&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;--rebase&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="err"&gt;co&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;checkout&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="err"&gt;br&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;branch&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="err"&gt;today&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;log&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;--since=midnight&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;--author='Bruce&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;Wayne'&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;--oneline&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="err"&gt;color&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="err"&gt;ui&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;auto&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;git poule&lt;/strong&gt; - Récupérer la dernière version du projet.&lt;/li&gt;
@@ -605,7 +605,7 @@ Dans le cas de ma profession j'ai encore quelques années de travail devant moi 
     <link rel="alternate" href="http://davidl.fr/blog/grille-semantique.html"/>
     <id>http://davidl.fr/blog/grille-semantique.html</id>
     <published>2014-07-30T00:00:00+02:00</published>
-    <updated>2014-08-11T14:00:26+02:00</updated>
+    <updated>2014-10-14T18:36:24+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -635,22 +635,22 @@ Dans le cas de ma profession j'ai encore quelques années de travail devant moi 
 &lt;i class="fa fa-thumbs-o-down"&gt;&lt;/i&gt; Mauvaise solution
 &lt;/div&gt;
 
-&lt;pre&gt;&lt;code class="highlight plaintext"&gt;&amp;lt;ul&amp;gt;
-  &amp;lt;li class="list-item"&amp;gt; ... &amp;lt;/li&amp;gt;
-  &amp;lt;li class="list-item"&amp;gt; ... &amp;lt;/li&amp;gt;
-  &amp;lt;li class="list-item"&amp;gt; ... &amp;lt;/li&amp;gt;
-&amp;lt;/ul&amp;gt;
+&lt;pre&gt;&lt;code class="highlight html"&gt;    &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"list-item"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"list-item"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"list-item"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;div class="alert-box success"&gt;
 &lt;i class="fa fa-thumbs-o-up"&gt;&lt;/i&gt; Bonne solution
 &lt;/div&gt;
 
-&lt;pre&gt;&lt;code class="highlight plaintext"&gt;&amp;lt;ul class="inline-list"&amp;gt;
-  &amp;lt;li&amp;gt; ... &amp;lt;/li&amp;gt;
-  &amp;lt;li&amp;gt; ... &amp;lt;/li&amp;gt;
-  &amp;lt;li&amp;gt; ... &amp;lt;/li&amp;gt;
-&amp;lt;/ul&amp;gt;
+&lt;pre&gt;&lt;code class="highlight html"&gt;    &lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"inline-list"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id="tat-des-lieux"&gt;État des lieux&lt;/h2&gt;
@@ -661,35 +661,35 @@ Dans le cas de ma profession j'ai encore quelques années de travail devant moi 
 
 &lt;p&gt;Je vais prendre un exemple avec la grille de Foundation. Notez que chaque &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; n'a pas forcément de but, mais elles sont obligatoires pour contruire une mise en page complexe. Un balisage typique Foundation est plein à craquer d'informations qui décrit sa grille :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class="highlight plaintext"&gt;&amp;lt;div class="row" id="m-header"&amp;gt;
-  &amp;lt;div class="small-12 columns"&amp;gt;
-    ...
-  &amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
+&lt;pre&gt;&lt;code class="highlight html"&gt;    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"row"&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"m-header"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-12 columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        ...
+      &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 
-&amp;lt;div class="row" id="m-nav"&amp;gt;
-  &amp;lt;div class="small-12 columns"&amp;gt;
-    ...
-  &amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
+    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"row"&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"m-nav"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-12 columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        ...
+      &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 
-&amp;lt;div class="row" id="m-content"&amp;gt;
-  &amp;lt;div class="small-6 medium-4 columns"&amp;gt;
-    &amp;lt;h1&amp;gt; ... &amp;lt;/h1&amp;gt;
-    &amp;lt;p&amp;gt; ... &amp;lt;/p&amp;gt;
-    &amp;lt;p&amp;gt; ... &amp;lt;/p&amp;gt;
-    &amp;lt;p&amp;gt; ... &amp;lt;/p&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div class="small-6 medium-8 columns"&amp;gt;
-    ...
-  &amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
+    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"row"&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"m-content"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-6 medium-4 columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;h1&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-6 medium-8 columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        ...
+      &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 
-&amp;lt;div class="row" id="m-footer"&amp;gt;
-  &amp;lt;div class="small-12 columns"&amp;gt;
-    ...
-  &amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
+    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"row"&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"m-footer"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-12 columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+        ...
+      &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Fonctionnel ? Oui… &lt;a href="http://fr.wikipedia.org/wiki/HTML_s%C3%A9mantique"&gt;Sémantique&lt;/a&gt; ? Pas vraiment… Sauf pour quelques attributs &lt;code&gt;id&lt;/code&gt;. Dans ce cas, chaque section est générique, et les attributs rendent le code difficile à lire. Les &lt;code&gt;div&lt;/code&gt;s sont des boites génériques utilisées pour organiser d'autres éléments. Quand je dis générique, j'entends par là dénué de sens, pas intelligent et sans saveur.&lt;/p&gt;
@@ -698,20 +698,20 @@ Dans le cas de ma profession j'ai encore quelques années de travail devant moi 
 
 &lt;p&gt;Voici le même HTML avec un marquage sémantique, avec de nouveaux éléments HTML5 :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class="highlight plaintext"&gt;&amp;lt;header&amp;gt;
-  &amp;lt;div role="banner" class="m-header--logo"&amp;gt; ... &amp;lt;/div&amp;gt;
-  &amp;lt;nav&amp;gt; ... &amp;lt;/nav&amp;gt;
-&amp;lt;/header&amp;gt;
-&amp;lt;main&amp;gt;
-  &amp;lt;article&amp;gt;
-    &amp;lt;h1&amp;gt; ... &amp;lt;/h1&amp;gt;
-    &amp;lt;p&amp;gt; ... &amp;lt;/p&amp;gt;
-    &amp;lt;p&amp;gt; ... &amp;lt;/p&amp;gt;
-    &amp;lt;p&amp;gt; ... &amp;lt;/p&amp;gt;
-  &amp;lt;/article&amp;gt;
-  &amp;lt;aside&amp;gt; ... &amp;lt;/aside&amp;gt;
-&amp;lt;/main&amp;gt;
-&amp;lt;footer&amp;gt; ... &amp;lt;/footer&amp;gt;
+&lt;pre&gt;&lt;code class="highlight html"&gt;    &lt;span class="nt"&gt;&amp;lt;header&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;role=&lt;/span&gt;&lt;span class="s"&gt;"banner"&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"m-header--logo"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;nav&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/nav&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/header&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;main&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;article&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;h1&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/article&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;aside&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/aside&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/main&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;footer&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/footer&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;C'est plus facile à lire, pour les humains et aussi pour les machines. Parfois, il n'existe pas d'élément HTML approprié pour le type d'informations que nous voulons - dans ce cas, un logo. Mais si possible, j'utilise des éléments qui décrivent leur contenu uniques :&lt;/p&gt;
@@ -736,56 +736,49 @@ Dans le cas de ma profession j'ai encore quelques années de travail devant moi 
   &lt;li&gt;&lt;code&gt;grid-column()&lt;/code&gt; : ajoute une colonne, exemple avec &lt;code&gt;small-12 columns&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Comme expliqué &lt;a href="http://foundation.zurb.com/docs/using-sass.html"&gt;dans la documentation&lt;/a&gt; vous devez importer les fichiers de foundation et le fichier &lt;code&gt;_settings.scss&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Comme expliqué &lt;a href="http://foundation.zurb.com/docs/using-sass.html"&gt;dans la documentation&lt;/a&gt; vous devez importer les fichiers de foundation et le fichier &lt;code&gt;_settings.scss&lt;/code&gt;.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class="highlight plaintext"&gt; @import "settings";
- @import "foundation";
+&lt;pre&gt;&lt;code class="highlight scss"&gt;    &lt;span class="k"&gt;@import&lt;/span&gt; &lt;span class="s2"&gt;"settings"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;@import&lt;/span&gt; &lt;span class="s2"&gt;"foundation"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Ensuite je choisi un sélecteur comme &lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class="highlight plaintext"&gt; header { }
-&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;J'ajoute &lt;code&gt;grid-row&lt;/code&gt; à ce sélecteur pour lui donner le comportement d'une &lt;code&gt;row&lt;/code&gt; de Foundation.&lt;/p&gt;
+&lt;p&gt;Ensuite je choisi un sélecteur comme &lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class="highlight plaintext"&gt; header { @include grid-row; }
+&lt;pre&gt;&lt;code class="highlight scss"&gt;    &lt;span class="nt"&gt;header&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;finalement je donne à un sélecteur à l'intérieur du header les propriétés d'une colonne.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class="highlight plaintext"&gt; header {
-   @include grid-row;
-   .m-header--logo {
-     @include grid-column($columns:12, $center:true);
-   }
- }
+&lt;p&gt;J'ajoute &lt;code&gt;grid-row&lt;/code&gt; à ce sélecteur pour lui donner le comportement d'une &lt;code&gt;row&lt;/code&gt; de Foundation.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="highlight scss"&gt;    &lt;span class="nt"&gt;header&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;grid-row&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+
+&lt;p&gt;Finalement je donne à un sélecteur à l'intérieur du header les propriétés d'une colonne.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="highlight scss"&gt;    &lt;span class="nt"&gt;header&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;grid-row&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+      &lt;span class="nc"&gt;.m-header--logo&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;grid-column&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$columns&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;12&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;$center&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="bp"&gt;true&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+      &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Voici un exemple complet d'un code sémantique en SCSS :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class="highlight plaintext"&gt;header {
-  @include grid-row;
-  .logo {
-    @include grid-column($columns:12, $center:true);
-  }
-}
-main {
-  @include grid-row;
-  article {
-    @include grid-column(8);
-  }
-  aside {
-    @include grid-column(4);
-  }
-}
+&lt;pre&gt;&lt;code class="highlight scss"&gt;    &lt;span class="nt"&gt;header&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;grid-row&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+      &lt;span class="nc"&gt;.logo&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;grid-column&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$columns&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;12&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;$center&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="bp"&gt;true&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+      &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="nt"&gt;main&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;grid-row&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+      &lt;span class="nt"&gt;article&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;grid-column&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;8&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+      &lt;span class="p"&gt;}&lt;/span&gt;
+      &lt;span class="nt"&gt;aside&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;grid-column&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;4&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+      &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Respecter la sémantique rend votre code HTML plus léger et plus compréhensible. Sass est un excellent outil pour la construction d'une grille responsive, et les mixins Sass de Foundation facilitent l'intégration. Le résultat est un code plus facile à lire et à maintenir, qui décrit avec plus de précision ce que vous souhaitez communiquer.&lt;/p&gt;

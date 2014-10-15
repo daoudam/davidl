@@ -1,0 +1,1 @@
+(function(){$(function(){var t,e;return t=document.querySelector("#js-header"),e=new Headroom(t,{offset:205,tolerance:5,classes:{initial:"animated",pinned:"slideDown",unpinned:"slideUp"}}),e.init(),$("#js-off-canvas-toggle").click(function(){return $("html,body").animate({scrollTop:0},500)})})}).call(this);

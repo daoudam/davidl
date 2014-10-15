@@ -19,11 +19,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://davidl.fr/video.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>http://davidl.fr/blog/framework-php.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -304,14 +299,9 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://davidl.fr/typography.html</loc>
+    <loc>http://davidl.fr/video.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>http://davidl.fr/clients.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>http://davidl.fr/codex.html</loc>
@@ -416,6 +406,16 @@
   <url>
     <loc>http://davidl.fr/toolkit.html</loc>
     <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://davidl.fr/typography.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://davidl.fr/clients.html</loc>
+    <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
 </urlset>
