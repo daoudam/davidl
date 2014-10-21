@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://davidl.fr/blog/template-ruby.html"/>
     <id>http://davidl.fr/blog/template-ruby.html</id>
     <published>2014-09-07T00:00:00+02:00</published>
-    <updated>2014-10-14T18:36:24+02:00</updated>
+    <updated>2014-10-21T10:33:09+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -63,7 +63,7 @@ Ruby possède aussi ses propres moteurs comme erb, haml, … Mais mon préféré
 
 &lt;ul&gt;
   &lt;li&gt;Pas de fermeture de balises&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;#content&lt;/code&gt; donnera &lt;code&gt;&amp;lt;nav id="content"&amp;gt;&amp;lt;/nav&amp;gt;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;#content&lt;/code&gt; donnera &lt;code&gt;&amp;lt;div id="content"&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;&lt;code&gt;td.name&lt;/code&gt; qui se transformera en &lt;code&gt;&amp;lt;td class="name"&amp;gt;&amp;lt;/td&amp;gt;&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;&lt;code&gt;= link_to 'Mon site', 'http://davidl.fr'&lt;/code&gt; pour utiliser du ruby qui sera compilé en &lt;code&gt;&amp;lt;a href="http://davidl.fr"&amp;gt;Mon site&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;&lt;code&gt;- if i.am == amazing&lt;/code&gt; permet de faire des tests ou des boucles&lt;/li&gt;
