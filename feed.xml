@@ -5,16 +5,122 @@
   <id>http://davidl.fr/blog/</id>
   <link href="http://davidl.fr/blog/"/>
   <link href="http://davidl.fr/blog/feed.xml" rel="self"/>
-  <updated>2014-09-07T00:00:00+02:00</updated>
+  <updated>2014-09-23T00:00:00+02:00</updated>
   <author>
     <name>David Leuliette</name>
   </author>
+  <entry>
+    <title>J'ai testé les ateliers de Paris Web 2014</title>
+    <link rel="alternate" href="http://davidl.fr/blog/paris-web-2014.html"/>
+    <id>http://davidl.fr/blog/paris-web-2014.html</id>
+    <published>2014-09-23T00:00:00+02:00</published>
+    <updated>2014-10-23T22:55:43+02:00</updated>
+    <author>
+      <name>DavidL design + développement</name>
+    </author>
+    <content type="html">&lt;p&gt;Samedi, réveil matin 5h direction la capitale. Au programme ? une journée d'ateliers organisés par l'&lt;a href="http://www.paris-web.fr/"&gt;association Paris Web&lt;/a&gt;. Les 3 thématiques de cette année : Qualité, Accessibilité &amp;amp; respect des standards ouverts.&lt;/p&gt;
+
+&lt;p&gt;Grâce à la magie d'internet un covoiturage est organisé, je retrouve d'autres Lillois passionnés de web &lt;a href="https://twitter.com/rbwebdev"&gt;@rbwebdev&lt;/a&gt;, &lt;a href="https://twitter.com/"&gt;@lellexindo&lt;/a&gt; et &lt;a href="https://twitter.com/kevinthenard"&gt;@kevinthenard&lt;/a&gt;.
+Pour l'année prochaine n'hésitez pas à nous mentionner sur twitter il restait une place dans la voiture.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Sac de goodies offertà Paris Web" src="https://farm6.staticflickr.com/5604/15398845649_d839082ec4.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Les chats envahissent le monde réel&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id="organisation"&gt;Organisation&lt;/h2&gt;
+
+&lt;p&gt;Pour la 9 année consécutive le staff de Paris web est bien rodé, et ça se voit. Dès votre arrivée c'est direction le check-in pour récupérer votre sac de goodies, le programme de la journée, et le plus important &lt;strong&gt;le mot de passe wifi&lt;/strong&gt; !&lt;/p&gt;
+
+&lt;p&gt;On prends un café, plus de 150 participants sont attendus. En attendant on choisi son programme de la journée. Que vous soyez designer, graphiste, développeur ou simplement curieux vous avez le choix, le spectre de thématiques est assez important. C'est très difficile de planifier sa journée car n'avez le temps que pour 4 ateliers dans la journée.&lt;/p&gt;
+
+&lt;h2 id="mon-programme-de-dveloppeur-front-end"&gt;Mon programme de développeur front-end&lt;/h2&gt;
+
+&lt;p&gt;La veille, j'avais préparé &lt;a href="http://www.paris-web.fr/2014/ateliers/"&gt;mon programme&lt;/a&gt; "clone de whatsapp" à base d'HTML5 et d'Angular.js. Problème : je voulais absolument assister à l'atelier de &lt;a href="https://twitter.com/nhoisez"&gt;@nhoisez&lt;/a&gt; sur la performance et le responsive web design. Quand je vous disais que c'est très compliqué de faire son programme de la journée. Au final j'ai choisi en temps réel mon programme en fonction de l'humeur du moment.&lt;/p&gt;
+
+&lt;h3 id="un-jeu-accessible-avec-html5-javascript-et-aria"&gt;Un jeu accessible avec HTML5, JavaScript et ARIA.&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Avec par Sylvie Duchateau et Victor Brito&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Trop souvent négligée, l'accessibilité est cependant quelque chose de &lt;a href="https://www.gov.uk/"&gt;nécessaire pour certains sites&lt;/a&gt;. Sylvie nous a expliqué comment elle utilise le web au quotidien avec sa liseuse braille et un lecteur d'écran.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Sketchnote paris web 2014 technologie Aria" src="https://farm6.staticflickr.com/5611/15399410379_d142c49c29.jpg" /&gt;
+&lt;img alt="croquis paris web 2014 accessibilité" src="https://farm6.staticflickr.com/5616/15400014087_db3b89418a.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;J'ai approfondi mes connaissances de la technologie ARIA -autre que &lt;code&gt;role="banner"&lt;/code&gt;, et j'ai 2 ou 3 idées pour rendre le &lt;a href="http://zurb.com/article/1337/foundation-now-helps-you-build-accessible"&gt;Framework Foundation encore plus accessible&lt;/a&gt;. Je suis convaincu que cette technologie peut apporter énormément de valeur aux utilisateurs et pas seulement aux déficients visuels.&lt;/p&gt;
+
+&lt;p&gt;Quand on voit ce qu'est capable de faire Google Now, Siri et Cortana, je pense que contrôler une application web intégralement à la voix n'est pas de la science fiction.&lt;/p&gt;
+
+&lt;h3 id="finissons-en-ensemble-avec-le-mythe-de-responsive-web-design-lent"&gt;Finissons-en ensemble avec le mythe de Responsive Web Design lent&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Avec Matthias Dugué et Nicolas Hoisey&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Pourquoi le voulais absolument assister à cet atelier ? Parce que &lt;a href="https://twitter.com/nhoisez"&gt;@nhoisez&lt;/a&gt; c'est le meilleur #privateJoke. Plus sérieusement, si vous souhaitez faire de vrai interfaces web préparés pour l'avenir vous devez gagner votre indépendance vis à vis de la résolution d'écran. Pour cela : &lt;a href="http://vimeo.com/79204119"&gt;les mesures c'est en em&lt;/a&gt; ou rien.&lt;/p&gt;
+
+&lt;p&gt;La participation est au coeur de cet atelier. En partant d'un &lt;a href="https://github.com/m4dz/prwd-workshop"&gt;thème responsive hébergé sur GitHub&lt;/a&gt;, le but est de proposer des solutions au travers de pull-request. En plus le projet est un site statique -comme le mien. Génial ! … Et puis j'ai suivi le workflow qui est à mon avis le gros point noir : le temps de &lt;code&gt;git clone&lt;/code&gt; le projet, &lt;code&gt;bundle install&lt;/code&gt; les gems ruby et &lt;code&gt;npm install le-reste-du-monde&lt;/code&gt;, vous avez déjà "perdu" pas mal de temps.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Ateliers paris web github et pull-request" src="https://farm4.staticflickr.com/3949/15399361878_585fb607e6.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution pour la prochaine fois&lt;/strong&gt; : Afficher une liste de pré-requis pour les ateliers. Toutes ces opérations peuvent être réalisées en amont, à la maison sur une bonne connexion. Un simple tableau blanc peut aussi faire l'affaire : positionné au check-in du matin, on affiche une petite liste des choses à télécharger en fonction des ateliers.&lt;/p&gt;
+
+&lt;p&gt;Malgrés ces petits désagréments, j'ai quand même appris quelque chose : je suis déjà compétent car je mets déjà en place quelques &lt;a href="/blog/site-obese.html"&gt;bonnes pratiques pour la performance&lt;/a&gt; et cet atelier m'a permis de conforter mes idées : utiliser du SVG et optimiser ses images pour avoir un impact significatif sur le chargement d'un site.&lt;/p&gt;
+
+&lt;p&gt;Actuellement je gère les images HD avec du JavaScript mais demain j'utiliserais la solution &lt;code&gt;srcset&lt;/code&gt; pour déléguer ce travail directement au navigateur. Pour en savoir plus je vous invite à visiter le site du &lt;a href="http://responsiveimages.org/"&gt;Responsive Image Community Group&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id="construire-ensemble-un-enseignement-front-end"&gt;Construire ensemble un enseignement Front-end&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Avec Delphine Malassingne et Rémi Parmentier&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Cet atelier essaye de répondre à la question suivante : Comment enseigner l'intégration pour que cela soit pertinent, pédagogique et pérenne. Nous sommes tous d'accord pour dire que dépiller la documentation HTML5 ou CSS3 en présentant toutes les balilse n'a &lt;em&gt;aucun intérêt&lt;/em&gt;. Alors comment peut-on faire ?&lt;/p&gt;
+
+&lt;p&gt;Chacun est mis à contribution pour trouver une formule de création de fiche d'enseignement qui s'articule autour de 3 points :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Définir un problème&lt;/li&gt;
+  &lt;li&gt;Trouver une solution&lt;/li&gt;
+  &lt;li&gt;Appliquer la solution&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img alt="Enseignement integration et developpement front-end" src="https://farm6.staticflickr.com/5607/15399354038_f2f5637a43.jpg" /&gt;
+&lt;img alt="fiche d'enseignement par l'exemple" src="https://farm6.staticflickr.com/5597/15561789456_28ddb1165a.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;J'ai souri en voyant la consigne car je pense exactement la même chose. Le but caché de ces fiches se résume à une chose : &lt;a href="http://davidl.fr/cv.html"&gt;Apprendre à apprendre&lt;/a&gt;, car c'est la seule chose qui sera utile aux étudiants.&lt;/p&gt;
+
+&lt;p&gt;Si cette initiative vous intéresse il existe un &lt;a href="https://github.com/hteumeuleu/enseigner"&gt;repo sur GitHub&lt;/a&gt;. Vous pouvez aussi vous renseignez sur le mouvement webmakers de Mozilla.&lt;/p&gt;
+
+&lt;h3 id="un-peu-de-musique-programmation-dascenseur"&gt;Un peu de musique programmation d'ascenseur&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Avec Thomas Parisot&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;J'avais fait mon choix dès le début de la journée. Si Thomas est présent, je vais le voir sans aucune hésitation. Arrivé en fin de journée, j'ai réalisé que &lt;a href="https://oncletom.io/talks/"&gt;suivre ses présentations&lt;/a&gt; est beaucoup plus simple que de faire un de ses exercices : du JavaScript pur, directement dans un navigateur sans utiliser Sublime… 1h30 plus tard nous sommes sortis bien #brainF$ck mais content d'avoir "programmé des ascenseurs".&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Programmation JavaScript ascenseurs" src="https://farm4.staticflickr.com/3934/15404565540_7b3fa7315b.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Un peu de pub pour le FOSDEM en passant&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Si vous souhaitez essayer, l'exercice disponible en ligne sur &lt;a href="http://elevato.rs"&gt;elevato.rs&lt;/a&gt;. L'objectif est de jouer avec JavaScript dans le but de faire bouger des ascenseurs. Mais attention à ne pas envoyer ces derniers au mauvais endroit :D&lt;/p&gt;
+
+&lt;h2 id="mes-conseils-pour-lanne-prochaine"&gt;Mes conseils pour l'année prochaine&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Prendre une rallonge / multi-prise. Avoir du jus et de l'internet c'est un peu le nerf de la guerre.&lt;/li&gt;
+  &lt;li&gt;Se renseigner sur le contenu et essayer de récupérer les fichiers / la configuration nécessaire &lt;em&gt;avant&lt;/em&gt; le début de l'atelier.&lt;/li&gt;
+  &lt;li&gt;Arriver tôt au ateliers qui vous intéressent. Avec @rbwebdev j'ai instauré la règle du "En avance et premier rang"… Surtout pour choisir une place en fonction des prises disponibles.&lt;/li&gt;
+  &lt;li&gt;Me contacter sur twitter pour organiser un covoiturage :D&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Une journée intense où j'en ai appris un peu plus sur l'accessibilité, comment parler de mon métier, pour terminer avec du Vanilla JavaScript (Compliqué dès qu'on est habitué à CoffeeScript).&lt;/p&gt;
+
+&lt;p&gt;Un grand merci à toute l'équipe &amp;amp; bravo aux orateurs, vous êtes formidables.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Coder du HTML plus rapidement grâce au templating</title>
     <link rel="alternate" href="http://davidl.fr/blog/template-ruby.html"/>
     <id>http://davidl.fr/blog/template-ruby.html</id>
     <published>2014-09-07T00:00:00+02:00</published>
-    <updated>2014-10-21T10:33:09+02:00</updated>
+    <updated>2014-10-21T21:54:33+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -182,7 +288,7 @@ Ruby possède aussi ses propres moteurs comme erb, haml, … Mais mon préféré
     <link rel="alternate" href="http://davidl.fr/blog/sublime-source-code.html"/>
     <id>http://davidl.fr/blog/sublime-source-code.html</id>
     <published>2014-08-24T00:00:00+02:00</published>
-    <updated>2014-10-14T18:36:24+02:00</updated>
+    <updated>2014-10-19T17:19:54+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -317,7 +423,7 @@ Utilisez simplement le raccourci &lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;shif
     <link rel="alternate" href="http://davidl.fr/blog/foundation-love.html"/>
     <id>http://davidl.fr/blog/foundation-love.html</id>
     <published>2014-08-18T00:00:00+02:00</published>
-    <updated>2014-10-14T18:36:24+02:00</updated>
+    <updated>2014-10-19T17:19:54+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -389,7 +495,7 @@ Cette méthode permet d'écraser les styles et le comportement par défaut du Ja
     <link rel="alternate" href="http://davidl.fr/blog/github-ninja.html"/>
     <id>http://davidl.fr/blog/github-ninja.html</id>
     <published>2014-08-06T00:00:00+02:00</published>
-    <updated>2014-10-14T18:36:24+02:00</updated>
+    <updated>2014-10-19T17:19:54+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -455,7 +561,7 @@ Créer / savoir les différents raccourcis vous fera gagner de précieuses secon
     <link rel="alternate" href="http://davidl.fr/blog/metier-integrateur-web.html"/>
     <id>http://davidl.fr/blog/metier-integrateur-web.html</id>
     <published>2014-08-03T00:00:00+02:00</published>
-    <updated>2014-08-12T13:56:52+02:00</updated>
+    <updated>2014-10-23T22:55:43+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -556,7 +662,7 @@ C'est très personnel mais je conseillerais d'avoir un &lt;a href="http://github
 
 &lt;p&gt;&lt;em&gt;Schéma d'une application web moderne : front-end, back-end, Base de données, outils &amp;amp; services&lt;/em&gt;.&lt;/p&gt;
 
-&lt;h3 id="quelless-sont-vos-responsabilits--vos-horaires-"&gt;Quelless sont vos responsabilités ? Vos horaires ?&lt;/h3&gt;
+&lt;h3 id="quelles-sont-vos-responsabilits--vos-horaires-"&gt;Quelles sont vos responsabilités ? Vos horaires ?&lt;/h3&gt;
 
 &lt;p&gt;Ma responsabilité ? Faire gagner de précieuses secondes au plusieurs centaines de milliers de personnes qui visitent les application web sur lesquelles je travaille.&lt;/p&gt;
 
@@ -598,194 +704,6 @@ C'est très personnel mais je conseillerais d'avoir un &lt;a href="http://github
 
 &lt;p&gt;Quand on voit ce que wikipédia a réussi à construire, j'aime penser qu'internet n'est pas simplement un vaste supermarché.
 Dans le cas de ma profession j'ai encore quelques années de travail devant moi car il faut refondre plus de la moitié des sites internet de la planète pour proposer une bonne expérience mobile aux utilisateurs.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Construire une grille CSS sémantique avec le framework Foundation</title>
-    <link rel="alternate" href="http://davidl.fr/blog/grille-semantique.html"/>
-    <id>http://davidl.fr/blog/grille-semantique.html</id>
-    <published>2014-07-30T00:00:00+02:00</published>
-    <updated>2014-10-14T18:36:24+02:00</updated>
-    <author>
-      <name>DavidL design + développement</name>
-    </author>
-    <content type="html">&lt;p&gt;Dans cet article je présente les meilleures techniques pour éviter une maladie bien connue lors de la construction de site web avec Foundation : la divitis.&lt;/p&gt;
-
-&lt;h2 id="un-peu-dhistoire"&gt;Un peu d’histoire&lt;/h2&gt;
-
-&lt;p&gt;C’est &lt;a href="http://www.zeldman.com/"&gt;Jeffrey Zeldman&lt;/a&gt; qui a trouvé le nom de &lt;a href="http://davidl.fr/blog/css-evolutif.html"&gt;2 maladies&lt;/a&gt; il y a plus de 10 ans : &lt;em&gt;divitis&lt;/em&gt; et &lt;em&gt;classitis&lt;/em&gt;.&lt;/p&gt;
-
-&lt;h3 id="divitis"&gt;Divitis&lt;/h3&gt;
-
-&lt;p&gt;À l’époque, avec l’arrivée des feuilles de styles, il n’était plus nécessaire d’utiliser un nombre incalculable de balises (comme &lt;code&gt;&amp;lt;font&amp;gt;&lt;/code&gt; ou &lt;code&gt;&amp;lt;center&amp;gt;&lt;/code&gt;) pour mettre en forme un élément. La &lt;strong&gt;divitis&lt;/strong&gt; est une façon de coder qui utilise beaucoups d'éléments &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;, qui ne sont pas toujours obligatoires. Pour se remmetre dans le contexte de l'époque :&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;C'est bon Gégé il n'y a plus de tableaux dans notre page HTML j'ai tout remplacé par des div.&lt;/p&gt;
-
-  &lt;p&gt;&lt;cite&gt;Le dieu de l'internet&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Utiliser rechercher et remplacer n'est pas solution au problème : il y a trop de balises HTML dans la page.&lt;/p&gt;
-
-&lt;h3 id="classitis"&gt;Classitis&lt;/h3&gt;
-
-&lt;p&gt;Cette révolution a amené un nouveau problème la &lt;strong&gt;classitis&lt;/strong&gt; ou l’art de surcharger son HTML avec plus de &lt;code&gt;class&lt;/code&gt; que nécessaire.&lt;/p&gt;
-
-&lt;div class="alert-box alert"&gt;
-&lt;i class="fa fa-thumbs-o-down"&gt;&lt;/i&gt; Mauvaise solution
-&lt;/div&gt;
-
-&lt;pre&gt;&lt;code class="highlight html"&gt;    &lt;span class="nt"&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
-      &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"list-item"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-      &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"list-item"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-      &lt;span class="nt"&gt;&amp;lt;li&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"list-item"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div class="alert-box success"&gt;
-&lt;i class="fa fa-thumbs-o-up"&gt;&lt;/i&gt; Bonne solution
-&lt;/div&gt;
-
-&lt;pre&gt;&lt;code class="highlight html"&gt;    &lt;span class="nt"&gt;&amp;lt;ul&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"inline-list"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-      &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-      &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-      &lt;span class="nt"&gt;&amp;lt;li&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id="tat-des-lieux"&gt;État des lieux&lt;/h2&gt;
-
-&lt;p&gt;&lt;em&gt;Classitis&lt;/em&gt; et son cousin, &lt;em&gt;Divitis&lt;/em&gt;, sont des gros mots que nous utilisons pour maudire le code surchargé. Au siècle dernier, nous avons utilisé les tableaux HTML pour la mise en page. Chaque tableau avait au moins trois niveaux : &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;tr&amp;gt;&lt;/code&gt; et &lt;code&gt;&amp;lt;td&amp;gt;&lt;/code&gt;. La promesse de &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;, lié à un peu de CSS, était de supprimer les balises inutiles.&lt;/p&gt;
-
-&lt;p&gt;De nos jours, avec le responsive, les mises en pages sont de plus en plus complexes, nous nous sommes retrouvés avec énorméments d'éléments &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;. Une sorte de retour en arrière, qui glisse doucement vers la mise en page avec des tableaux.&lt;/p&gt;
-
-&lt;p&gt;Je vais prendre un exemple avec la grille de Foundation. Notez que chaque &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; n'a pas forcément de but, mais elles sont obligatoires pour contruire une mise en page complexe. Un balisage typique Foundation est plein à craquer d'informations qui décrit sa grille :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class="highlight html"&gt;    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"row"&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"m-header"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-      &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-12 columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-        ...
-      &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-
-    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"row"&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"m-nav"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-      &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-12 columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-        ...
-      &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-
-    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"row"&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"m-content"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-      &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-6 medium-4 columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class="nt"&gt;&amp;lt;h1&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
-        &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-        &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-        &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-      &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-      &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-6 medium-8 columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-        ...
-      &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-
-    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"row"&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;"m-footer"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-      &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-12 columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-        ...
-      &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Fonctionnel ? Oui… &lt;a href="http://fr.wikipedia.org/wiki/HTML_s%C3%A9mantique"&gt;Sémantique&lt;/a&gt; ? Pas vraiment… Sauf pour quelques attributs &lt;code&gt;id&lt;/code&gt;. Dans ce cas, chaque section est générique, et les attributs rendent le code difficile à lire. Les &lt;code&gt;div&lt;/code&gt;s sont des boites génériques utilisées pour organiser d'autres éléments. Quand je dis générique, j'entends par là dénué de sens, pas intelligent et sans saveur.&lt;/p&gt;
-
-&lt;h2 id="et-maintenant-un-peu-de-smantique"&gt;Et maintenant un peu de sémantique&lt;/h2&gt;
-
-&lt;p&gt;Voici le même HTML avec un marquage sémantique, avec de nouveaux éléments HTML5 :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class="highlight html"&gt;    &lt;span class="nt"&gt;&amp;lt;header&amp;gt;&lt;/span&gt;
-      &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;role=&lt;/span&gt;&lt;span class="s"&gt;"banner"&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"m-header--logo"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-      &lt;span class="nt"&gt;&amp;lt;nav&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/nav&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;/header&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;main&amp;gt;&lt;/span&gt;
-      &lt;span class="nt"&gt;&amp;lt;article&amp;gt;&lt;/span&gt;
-        &lt;span class="nt"&gt;&amp;lt;h1&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
-        &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-        &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-        &lt;span class="nt"&gt;&amp;lt;p&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-      &lt;span class="nt"&gt;&amp;lt;/article&amp;gt;&lt;/span&gt;
-      &lt;span class="nt"&gt;&amp;lt;aside&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/aside&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;/main&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;footer&amp;gt;&lt;/span&gt; ... &lt;span class="nt"&gt;&amp;lt;/footer&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;C'est plus facile à lire, pour les humains et aussi pour les machines. Parfois, il n'existe pas d'élément HTML approprié pour le type d'informations que nous voulons - dans ce cas, un logo. Mais si possible, j'utilise des éléments qui décrivent leur contenu uniques :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;header&lt;/code&gt; : Une introduction ou une aide à la navigation.&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;nav&lt;/code&gt; : une collection de liens.&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;main&lt;/code&gt; : Contenu principal de la page.&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;article&lt;/code&gt; : morceau de contenu d'un document, d'une page, d'une application, qui est prévu pour être réutilisé de façon indépendante (Message sur un forum, article de blog …).&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;aside&lt;/code&gt; : Contenu d'une page indirectement lié à ce qui l'entoure et qui pourrait être séparé de celui-ci. (Glossaire, publicités, biographie de l'auteur, liens vers des articles similaires).&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;footer&lt;/code&gt; : Conclusion de la section.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Notez que je n'utilise plus de &lt;code&gt;class&lt;/code&gt; pour avoir un bon exemple, même si &lt;a href="http://guidecss.fr/convention.html"&gt;dans la pratique c'est plus évolutif&lt;/a&gt; d'en avoir.&lt;/p&gt;
-
-&lt;h2 id="faire-fonctionner-le-tout-avec-sass"&gt;Faire fonctionner le tout avec Sass&lt;/h2&gt;
-
-&lt;p&gt;Transformer la grille de Foundation en code sémantique est possible en utilisant 2 fonctions :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;grid-row()&lt;/code&gt; : donne à un élément le comportement des &lt;code&gt;row&lt;/code&gt; de Foundation.&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;grid-column()&lt;/code&gt; : ajoute une colonne, exemple avec &lt;code&gt;small-12 columns&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Comme expliqué &lt;a href="http://foundation.zurb.com/docs/using-sass.html"&gt;dans la documentation&lt;/a&gt; vous devez importer les fichiers de foundation et le fichier &lt;code&gt;_settings.scss&lt;/code&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class="highlight scss"&gt;    &lt;span class="k"&gt;@import&lt;/span&gt; &lt;span class="s2"&gt;"settings"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="k"&gt;@import&lt;/span&gt; &lt;span class="s2"&gt;"foundation"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Ensuite je choisi un sélecteur comme &lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class="highlight scss"&gt;    &lt;span class="nt"&gt;header&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;J'ajoute &lt;code&gt;grid-row&lt;/code&gt; à ce sélecteur pour lui donner le comportement d'une &lt;code&gt;row&lt;/code&gt; de Foundation.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class="highlight scss"&gt;    &lt;span class="nt"&gt;header&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;grid-row&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Finalement je donne à un sélecteur à l'intérieur du header les propriétés d'une colonne.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class="highlight scss"&gt;    &lt;span class="nt"&gt;header&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-      &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;grid-row&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-      &lt;span class="nc"&gt;.m-header--logo&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-        &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;grid-column&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$columns&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;12&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;$center&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="bp"&gt;true&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-      &lt;span class="p"&gt;}&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Voici un exemple complet d'un code sémantique en SCSS :&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class="highlight scss"&gt;    &lt;span class="nt"&gt;header&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-      &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;grid-row&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-      &lt;span class="nc"&gt;.logo&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-        &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;grid-column&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;$columns&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;12&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;$center&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="bp"&gt;true&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-      &lt;span class="p"&gt;}&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt;
-    &lt;span class="nt"&gt;main&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-      &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;grid-row&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-      &lt;span class="nt"&gt;article&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-        &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;grid-column&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;8&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-      &lt;span class="p"&gt;}&lt;/span&gt;
-      &lt;span class="nt"&gt;aside&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-        &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;grid-column&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;4&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-      &lt;span class="p"&gt;}&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Respecter la sémantique rend votre code HTML plus léger et plus compréhensible. Sass est un excellent outil pour la construction d'une grille responsive, et les mixins Sass de Foundation facilitent l'intégration. Le résultat est un code plus facile à lire et à maintenir, qui décrit avec plus de précision ce que vous souhaitez communiquer.&lt;/p&gt;
-
-&lt;h2 id="construire-rapidement-un-prototype"&gt;Construire rapidement un prototype&lt;/h2&gt;
-
-&lt;p&gt;Suivre ces différentes étapes est un très bon exemple pour avoir un balisage HTML sémantique. Si vous souhaitez rapidement mettre ce système en place je vous invite à cloner un de mes &lt;a href="https://github.com/flexbox/foundation-boilerplate"&gt;projet open source Foundation boilerplate&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
 </feed>
