@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://davidl.fr/blog/paris-web-2014.html"/>
     <id>http://davidl.fr/blog/paris-web-2014.html</id>
     <published>2014-09-23T00:00:00+02:00</published>
-    <updated>2014-10-23T22:55:43+02:00</updated>
+    <updated>2014-11-20T17:02:31+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -54,7 +54,7 @@ Pour l'année prochaine n'hésitez pas à nous mentionner sur twitter il restait
 
 &lt;p&gt;&lt;em&gt;Avec Matthias Dugué et Nicolas Hoisey&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Pourquoi le voulais absolument assister à cet atelier ? Parce que &lt;a href="https://twitter.com/nhoisez"&gt;@nhoisez&lt;/a&gt; c'est le meilleur #privateJoke. Plus sérieusement, si vous souhaitez faire de vrai interfaces web préparés pour l'avenir vous devez gagner votre indépendance vis à vis de la résolution d'écran. Pour cela : &lt;a href="http://vimeo.com/79204119"&gt;les mesures c'est en em&lt;/a&gt; ou rien.&lt;/p&gt;
+&lt;p&gt;Pourquoi je voulais participer à cet atelier ? Parce que &lt;a href="https://twitter.com/nhoisez"&gt;@nhoisez&lt;/a&gt; c'est le meilleur #privateJoke. Plus sérieusement, si vous souhaitez faire de vrai interfaces web préparés pour l'avenir vous devez gagner votre indépendance vis à vis de la résolution d'écran. Pour cela : &lt;a href="http://vimeo.com/79204119"&gt;les mesures c'est en em&lt;/a&gt; ou rien.&lt;/p&gt;
 
 &lt;p&gt;La participation est au coeur de cet atelier. En partant d'un &lt;a href="https://github.com/m4dz/prwd-workshop"&gt;thème responsive hébergé sur GitHub&lt;/a&gt;, le but est de proposer des solutions au travers de pull-request. En plus le projet est un site statique -comme le mien. Génial ! … Et puis j'ai suivi le workflow qui est à mon avis le gros point noir : le temps de &lt;code&gt;git clone&lt;/code&gt; le projet, &lt;code&gt;bundle install&lt;/code&gt; les gems ruby et &lt;code&gt;npm install le-reste-du-monde&lt;/code&gt;, vous avez déjà "perdu" pas mal de temps.&lt;/p&gt;
 
