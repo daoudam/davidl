@@ -120,12 +120,12 @@ Pour l'année prochaine n'hésitez pas à nous mentionner sur twitter il restait
     <link rel="alternate" href="http://davidl.fr/blog/template-ruby.html"/>
     <id>http://davidl.fr/blog/template-ruby.html</id>
     <published>2014-09-07T00:00:00+02:00</published>
-    <updated>2014-10-21T10:33:09+02:00</updated>
+    <updated>2014-11-28T13:22:31+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
     <content type="html">&lt;p&gt;Cela fait maintenant plus d'un an que j'ai abandonné l'univers php pour me consacrer à la galaxie ruby. En travaillant avec une architecture MVC, j'ai utilisé différents moteurs de templating comme smarty.
-Ruby possède aussi ses propres moteurs comme erb, haml, … Mais mon préféré -et de loin, reste &lt;a href="slim-lang.com/"&gt;slim&lt;/a&gt;.&lt;/p&gt;
+Ruby possède aussi ses propres moteurs comme erb, haml, … Mais mon préféré -et de loin, reste &lt;a href="http://slim-lang.com/"&gt;slim&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Pourquoi ? La raison est simple : je suis 2 fois plus performant. Avec ce templating, il n'est plus nécessaire pour le balisage HTML d'utiliser &lt;code&gt;&amp;lt;&lt;/code&gt;, &lt;code&gt;&amp;gt;&lt;/code&gt; et &lt;code&gt;/&lt;/code&gt;. Résultat : le HTML est codé 2 fois plus rapidement (Même si des plugins comme emmet.io peuvent vous faciliter la vie). Votre code est 2 fois moins long et il est beaucoup plus rapide de scanner un fichier.&lt;/p&gt;
 
@@ -135,36 +135,31 @@ Ruby possède aussi ses propres moteurs comme erb, haml, … Mais mon préféré
 
 &lt;p&gt;La phylosophie de slim est de &lt;em&gt;supprimer tous les caractère inutiles&lt;/em&gt;. Si l'on prends cet exemple &lt;a href="http://slim-lang.com/"&gt;extrait de la documentation&lt;/a&gt; on peut remarquer plusieurs choses :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class="highlight haml"&gt;    doctype html
-    html
-      head
-        title Slim Examples
-        meta name="keywords" content="template language"
-        meta name="author" content=author
-        javascript:
-          alert('Slim supports embedded javascript!')
-
-      body
-        h1 Markup examples
-
-        &lt;span class="nf"&gt;#content&lt;/span&gt;
-          p This example shows you how a basic Slim file looks like.
-
-          &lt;span class="p"&gt;==&lt;/span&gt; yield
-
-          &lt;span class="p"&gt;-&lt;/span&gt; &lt;span class="k"&gt;unless&lt;/span&gt; &lt;span class="n"&gt;items&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;empty?&lt;/span&gt;
-            table
-              &lt;span class="p"&gt;-&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;item&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="n"&gt;items&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
-                tr
-                  td.name = item.name
-                  td.price = item.price
-          &lt;span class="p"&gt;-&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt;
-            p
-             | No items found.  Please add some inventory.
-               Thank you!
-
-        &lt;span class="nf"&gt;#footer&lt;/span&gt;
-          Copyright © &lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;year&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt; &lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;author&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;
+&lt;pre&gt;&lt;code class="highlight haml"&gt;  doctype html
+  html
+    head
+      title Slim Examples
+      meta name="keywords" content="template language"
+      meta name="author" content=author
+      javascript:
+        alert('Slim supports embedded javascript!')
+    body
+      h1 Markup examples
+      &lt;span class="nf"&gt;#content&lt;/span&gt;
+        p This example shows you how a basic Slim file looks like.
+        &lt;span class="p"&gt;==&lt;/span&gt; yield
+        &lt;span class="p"&gt;-&lt;/span&gt; &lt;span class="k"&gt;unless&lt;/span&gt; &lt;span class="n"&gt;items&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;empty?&lt;/span&gt;
+          table
+            &lt;span class="p"&gt;-&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;item&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="n"&gt;items&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+              tr
+                td.name = item.name
+                td.price = item.price
+        &lt;span class="p"&gt;-&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt;
+          p
+           | No items found.  Please add some inventory.
+             Thank you!
+      &lt;span class="nf"&gt;#footer&lt;/span&gt;
+        Copyright © &lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;year&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt; &lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;author&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
@@ -281,6 +276,17 @@ Ruby possède aussi ses propres moteurs comme erb, haml, … Mais mon préféré
 &lt;p&gt;En supprimant les balises inutiles votre code est plus concis et se lit plus rapidement.&lt;/p&gt;
 
 &lt;p&gt;Il est toujours possible d'utiliser du code HTML pour vous familiariser avec la syntaxe, que vous abandonerez très vite pour n'utiliser plus que du slim.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;EDIT :&lt;/p&gt;
+
+&lt;p&gt;Si vous n'utilisez pas ruby il existe des plugins en JavaScript pour vous aider à trouver la lumière :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://github.com/cognitom/gulp-slim"&gt;gulp-slim&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/matsumos/grunt-slim"&gt;grunt-slim&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
   </entry>
   <entry>
