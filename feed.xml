@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://davidl.fr/blog/paris-web-2014.html"/>
     <id>http://davidl.fr/blog/paris-web-2014.html</id>
     <published>2014-09-23T00:00:00+02:00</published>
-    <updated>2014-11-20T17:02:31+01:00</updated>
+    <updated>2014-12-19T14:15:48+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -35,7 +35,7 @@ Pour l'année prochaine n'hésitez pas à nous mentionner sur twitter il restait
 
 &lt;h2 id="mon-programme-de-dveloppeur-front-end"&gt;Mon programme de développeur front-end&lt;/h2&gt;
 
-&lt;p&gt;La veille, j'avais préparé &lt;a href="http://www.paris-web.fr/2014/ateliers/"&gt;mon programme&lt;/a&gt; "clone de whatsapp" à base d'HTML5 et d'Angular.js. Problème : je voulais absolument assister à l'atelier de &lt;a href="https://twitter.com/nhoisez"&gt;@nhoisez&lt;/a&gt; sur la performance et le responsive web design. Quand je vous disais que c'est très compliqué de faire son programme de la journée. Au final j'ai choisi en temps réel mon programme en fonction de l'humeur du moment.&lt;/p&gt;
+&lt;p&gt;La veille, j'avais préparé &lt;a href="http://www.paris-web.fr/2014/ateliers/"&gt;mon programme&lt;/a&gt; "clone de whatsapp" à base d'HTML5 et d'Angular.js. Problème : je voulais absolument assister à l'atelier de &lt;a href="https://twitter.com/nhoizey"&gt;@nhoizey&lt;/a&gt; sur la performance et le responsive web design. Quand je vous disais que c'est très compliqué de faire son programme de la journée. Au final j'ai choisi en temps réel mon programme en fonction de l'humeur du moment.&lt;/p&gt;
 
 &lt;h3 id="un-jeu-accessible-avec-html5-javascript-et-aria"&gt;Un jeu accessible avec HTML5, JavaScript et ARIA.&lt;/h3&gt;
 
@@ -52,9 +52,9 @@ Pour l'année prochaine n'hésitez pas à nous mentionner sur twitter il restait
 
 &lt;h3 id="finissons-en-ensemble-avec-le-mythe-de-responsive-web-design-lent"&gt;Finissons-en ensemble avec le mythe de Responsive Web Design lent&lt;/h3&gt;
 
-&lt;p&gt;&lt;em&gt;Avec Matthias Dugué et Nicolas Hoisey&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Avec Matthias Dugué et Nicolas Hoizey&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Pourquoi je voulais participer à cet atelier ? Parce que &lt;a href="https://twitter.com/nhoisez"&gt;@nhoisez&lt;/a&gt; c'est le meilleur #privateJoke. Plus sérieusement, si vous souhaitez faire de vrai interfaces web préparés pour l'avenir vous devez gagner votre indépendance vis à vis de la résolution d'écran. Pour cela : &lt;a href="http://vimeo.com/79204119"&gt;les mesures c'est en em&lt;/a&gt; ou rien.&lt;/p&gt;
+&lt;p&gt;Pourquoi je voulais participer à cet atelier ? Parce que &lt;a href="https://twitter.com/nhoizey"&gt;@nhoizey&lt;/a&gt; c'est le meilleur #privateJoke. Plus sérieusement, si vous souhaitez faire de vrai interfaces web préparés pour l'avenir vous devez gagner votre indépendance vis à vis de la résolution d'écran. Pour cela : &lt;a href="http://vimeo.com/79204119"&gt;les mesures c'est en em&lt;/a&gt; ou rien.&lt;/p&gt;
 
 &lt;p&gt;La participation est au coeur de cet atelier. En partant d'un &lt;a href="https://github.com/m4dz/prwd-workshop"&gt;thème responsive hébergé sur GitHub&lt;/a&gt;, le but est de proposer des solutions au travers de pull-request. En plus le projet est un site statique -comme le mien. Génial ! … Et puis j'ai suivi le workflow qui est à mon avis le gros point noir : le temps de &lt;code&gt;git clone&lt;/code&gt; le projet, &lt;code&gt;bundle install&lt;/code&gt; les gems ruby et &lt;code&gt;npm install le-reste-du-monde&lt;/code&gt;, vous avez déjà "perdu" pas mal de temps.&lt;/p&gt;
 
@@ -120,7 +120,7 @@ Pour l'année prochaine n'hésitez pas à nous mentionner sur twitter il restait
     <link rel="alternate" href="http://davidl.fr/blog/template-ruby.html"/>
     <id>http://davidl.fr/blog/template-ruby.html</id>
     <published>2014-09-07T00:00:00+02:00</published>
-    <updated>2014-12-11T20:06:43+01:00</updated>
+    <updated>2014-12-10T13:34:54+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -294,7 +294,7 @@ Ruby possède aussi ses propres moteurs comme erb, haml, … Mais mon préféré
     <link rel="alternate" href="http://davidl.fr/blog/sublime-source-code.html"/>
     <id>http://davidl.fr/blog/sublime-source-code.html</id>
     <published>2014-08-24T00:00:00+02:00</published>
-    <updated>2014-12-09T19:43:25+01:00</updated>
+    <updated>2014-12-08T15:48:20+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -439,7 +439,7 @@ Utilisez simplement le raccourci &lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;shif
     <link rel="alternate" href="http://davidl.fr/blog/foundation-love.html"/>
     <id>http://davidl.fr/blog/foundation-love.html</id>
     <published>2014-08-18T00:00:00+02:00</published>
-    <updated>2014-10-19T17:19:54+02:00</updated>
+    <updated>2014-10-14T18:36:24+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -511,7 +511,7 @@ Cette méthode permet d'écraser les styles et le comportement par défaut du Ja
     <link rel="alternate" href="http://davidl.fr/blog/github-ninja.html"/>
     <id>http://davidl.fr/blog/github-ninja.html</id>
     <published>2014-08-06T00:00:00+02:00</published>
-    <updated>2014-10-19T17:19:54+02:00</updated>
+    <updated>2014-10-14T18:36:24+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -577,7 +577,7 @@ Créer / savoir les différents raccourcis vous fera gagner de précieuses secon
     <link rel="alternate" href="http://davidl.fr/blog/metier-integrateur-web.html"/>
     <id>http://davidl.fr/blog/metier-integrateur-web.html</id>
     <published>2014-08-03T00:00:00+02:00</published>
-    <updated>2014-10-23T22:55:43+02:00</updated>
+    <updated>2014-10-24T13:44:12+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
