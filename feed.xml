@@ -5,16 +5,118 @@
   <id>http://davidl.fr/blog/</id>
   <link href="http://davidl.fr/blog/"/>
   <link href="http://davidl.fr/blog/feed.xml" rel="self"/>
-  <updated>2014-09-23T00:00:00+02:00</updated>
+  <updated>2014-12-21T00:00:00+01:00</updated>
   <author>
     <name>David Leuliette</name>
   </author>
+  <entry>
+    <title>Guide pour la prise de notes visuelles</title>
+    <link rel="alternate" href="http://davidl.fr/blog/conseils-sketchnoting.html"/>
+    <id>http://davidl.fr/blog/conseils-sketchnoting.html</id>
+    <published>2014-12-21T00:00:00+01:00</published>
+    <updated>2015-01-07T21:38:07+01:00</updated>
+    <author>
+      <name>DavidL design + développement</name>
+    </author>
+    <content type="html">&lt;p&gt;Dans une autre vie j‘ai suivi l‘école des beaux arts pendant plusieurs années. J‘aimais particulièrement le dessin sur papier. Ensuite est arrivé ma passion pour les ordinateurs et mon &lt;a href="http://fc03.deviantart.net/fs22/f/2008/007/7/1/Necron_Warrior_by_DbyD.jpg"&gt;dernier dessin&lt;/a&gt; date de plus de 10 ans !&lt;/p&gt;
+
+&lt;p&gt;J‘ai remarqué que je passe beaucoup de temps devant un écran et j‘ai cherché un moyen de prendre efficacement des notes pour les partager avec le plus grand nombre. Comme j‘aime le dessin pourquoi ne pas le faire sur papier ? Pendant les conférences informatiques c‘est très efficace. Au lieu de vous ajouter des problèmes de batterie &amp;amp; de wifi équipez vous simplement avec :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Un carnet de notes&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.amazon.fr/gp/product/B0012387YK/ref=as_li_tl?ie=UTF8&amp;amp;camp=1642&amp;amp;creative=19458&amp;amp;creativeASIN=B0012387YK&amp;amp;linkCode=as2&amp;amp;tag=davidl-21&amp;amp;linkId=DGB7ERNU5ZRLK6P5"&gt;Un crayon à pointe fine&lt;/a&gt;&lt;img src="http://ir-fr.amazon-adsystem.com/e/ir?t=davidl-21&amp;amp;l=as2&amp;amp;o=8&amp;amp;a=B0012387YK" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /&gt;&lt;/li&gt;
+  &lt;li&gt;Des stabilos de couleurs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;C‘est grâce à &lt;a href="https://twitter.com/gwailo59"&gt;Gwaï Lo&lt;/a&gt; que j‘ai eu l‘occasion de recevoir le livre de Mike Rohde : &lt;a href="http://www.amazon.fr/gp/product/0321857895/ref=as_li_tl?ie=UTF8&amp;amp;camp=1642&amp;amp;creative=19458&amp;amp;creativeASIN=0321857895&amp;amp;linkCode=as2&amp;amp;tag=davidl-21&amp;amp;linkId=ZAOUQ7GTODAZIXU2"&gt;The Sketchnote Handbook&lt;/a&gt;&lt;img src="http://ir-fr.amazon-adsystem.com/e/ir?t=davidl-21&amp;amp;l=as2&amp;amp;o=8&amp;amp;a=0321857895" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /&gt;. J'ai profité de l'année 2014 pour développer mes compétences de sketchnoting en respectant une règle : publier mes notes à chaud directement après chaque conférence. Cette contrainte m'oblige à capter l'essentiel, mais pour cela il faut respecter un certain processus.&lt;/p&gt;
+
+&lt;h2 id="sublimer-vos-notes-par-le-dessin"&gt;Sublimer vos notes par le dessin&lt;/h2&gt;
+
+&lt;h3 id="processus-de-conception"&gt;Processus de conception&lt;/h3&gt;
+
+&lt;p&gt;&lt;img alt="Sketchnote workflow" src="https://farm8.staticflickr.com/7510/15449105844_542d29f45b.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Les différentes étapes d‘un croquis&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id="par-o-commencer-"&gt; Par où commencer ?&lt;/h3&gt;
+
+&lt;p&gt;Mon meilleur conseil est de rester simple en utilisant 5 éléments de base pour réaliser des illustrations :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Cercle&lt;/li&gt;
+  &lt;li&gt;Carré&lt;/li&gt;
+  &lt;li&gt;Triangle&lt;/li&gt;
+  &lt;li&gt;Ligne&lt;/li&gt;
+  &lt;li&gt;Point&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img alt="Les 5 éléments pour les schémas et dessins" src="https://farm8.staticflickr.com/7469/15885643447_1e3d03ca8f.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Schémas et dessins&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id="an-de-sketchnoting"&gt;1 an de sketchnoting&lt;/h2&gt;
+
+&lt;p&gt;Voici (plus ou moins dans l‘ordre) les différents évènements que j‘ai suivi dans le but d‘améliorer mes compétences de prise de notes.&lt;/p&gt;
+
+&lt;h3 id="take-off-conf-2"&gt;Take off conf #2&lt;/h3&gt;
+
+&lt;p&gt;&lt;img alt="Take off conf sketch" src="https://farm4.staticflickr.com/3816/12342105995_062d650f8e_b.jpg" /&gt;&lt;/p&gt;
+
+&lt;h3 id="chtijs-7"&gt;ChtiJS #7&lt;/h3&gt;
+
+&lt;p&gt;&lt;img alt="JavaScript sketch" src="https://farm4.staticflickr.com/3839/14383268602_54e7ec03c3.jpg" /&gt;&lt;/p&gt;
+
+&lt;h3 id="smashing-conf--le-design-adaptatif-dans-la-vraie-vie"&gt;Smashing conf : Le design adaptatif dans la vraie vie&lt;/h3&gt;
+
+&lt;p&gt;&lt;img alt="Smashing conf sketchnote" src="https://farm3.staticflickr.com/2908/14383112812_82918aff0f.jpg" /&gt;&lt;/p&gt;
+
+&lt;h3 id="take-off-talk-3"&gt;Take off talk #3&lt;/h3&gt;
+
+&lt;p&gt;Réunions &amp;amp; présentations entre &lt;a href="http://www.meetup.com/takeoff/"&gt;développeurs web sur Lille&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Take off talk sketchnoting" src="https://farm3.staticflickr.com/2901/14198240427_560b9486f2.jpg" /&gt;&lt;/p&gt;
+
+&lt;h3 id="take-off-talk-4"&gt;Take off talk #4&lt;/h3&gt;
+
+&lt;p&gt;&lt;img alt="Take off talk sketchnoting web performance" src="https://farm8.staticflickr.com/7574/16071401605_6b610534d4.jpg" /&gt;
+&lt;img alt="Take off talk sketchnoting android wear" src="https://farm8.staticflickr.com/7558/16069469891_6772a4f1fc.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Performance web &amp;amp; Android wear&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id="lart-dduquer-ses-clients"&gt;L‘art d‘éduquer ses clients&lt;/h3&gt;
+
+&lt;p&gt;&lt;img alt="The art of educating clients" src="https://farm3.staticflickr.com/2917/14381170881_49e992f05c.jpg" /&gt;&lt;/p&gt;
+
+&lt;h3 id="paris-web-2014"&gt;Paris web 2014&lt;/h3&gt;
+
+&lt;p&gt;&lt;img alt="Accessibility sketch" src="https://farm6.staticflickr.com/5611/15399410379_d142c49c29.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;N'hésitez pas à lire mon &lt;a href="/blog/paris-web-2014.html"&gt;compte rendu des ateliers Paris web&lt;/a&gt; pour voir les autres notes.&lt;/p&gt;
+
+&lt;h3 id="welshdesign-4"&gt;WelshDesign #4&lt;/h3&gt;
+
+&lt;p&gt;Rencontres front-end et webdesign à Lille, n'hésitez pas à vous &lt;a href="http://www.meetup.com/WelshDesign/"&gt;inscrire sur meetup&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="WelshDesign Sketch Crime typographique" src="https://farm8.staticflickr.com/7520/15883948868_a9c9a9d013.jpg" /&gt;
+&lt;img alt="WelshDesign Sketch typography" src="https://farm8.staticflickr.com/7525/16069468981_ae911faa86.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Typographie, sémiologie et création&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="WelshDesign Sketch Flat Design" src="https://farm8.staticflickr.com/7539/15451709583_3bf59a1293_z.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Le flat design, de la Grèce antique à nos jours&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;J'aimerai avoir plus d'occasions de prendre des notes car c'est un exercice très interessant. Dans le cas d'une conférence, vous êtes obligés de &lt;strong&gt;vraiment écouter l'orateur&lt;/strong&gt; pour pouvoir faire un résumé sous forme d'illustrations. Vous devenez acteur de votre contenu et ne restez pas simplement passif. Si vous souhaiter télécharger tous mes dessins ils sont disponibles sur flickR : &lt;a href="https://www.flickr.com/photos/geekgrunge/sets/72157644681767590/"&gt;Album 1 an sketchnoting&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>J’ai testé les ateliers de Paris Web 2014</title>
     <link rel="alternate" href="http://davidl.fr/blog/paris-web-2014.html"/>
     <id>http://davidl.fr/blog/paris-web-2014.html</id>
     <published>2014-09-23T00:00:00+02:00</published>
-    <updated>2014-12-22T10:22:51+01:00</updated>
+    <updated>2014-12-21T14:17:56+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -120,7 +222,7 @@ Pour l’année prochaine n’hésitez pas à nous mentionner sur twitter il res
     <link rel="alternate" href="http://davidl.fr/blog/template-ruby.html"/>
     <id>http://davidl.fr/blog/template-ruby.html</id>
     <published>2014-09-07T00:00:00+02:00</published>
-    <updated>2014-12-10T13:34:54+01:00</updated>
+    <updated>2014-12-11T20:06:43+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -294,7 +396,7 @@ Ruby possède aussi ses propres moteurs comme erb, haml, … Mais mon préféré
     <link rel="alternate" href="http://davidl.fr/blog/sublime-source-code.html"/>
     <id>http://davidl.fr/blog/sublime-source-code.html</id>
     <published>2014-08-24T00:00:00+02:00</published>
-    <updated>2014-12-08T15:48:20+01:00</updated>
+    <updated>2014-12-09T19:43:25+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -439,7 +541,7 @@ Utilisez simplement le raccourci &lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;shif
     <link rel="alternate" href="http://davidl.fr/blog/foundation-love.html"/>
     <id>http://davidl.fr/blog/foundation-love.html</id>
     <published>2014-08-18T00:00:00+02:00</published>
-    <updated>2014-10-14T18:36:24+02:00</updated>
+    <updated>2014-10-19T17:19:54+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -511,7 +613,7 @@ Cette méthode permet d'écraser les styles et le comportement par défaut du Ja
     <link rel="alternate" href="http://davidl.fr/blog/github-ninja.html"/>
     <id>http://davidl.fr/blog/github-ninja.html</id>
     <published>2014-08-06T00:00:00+02:00</published>
-    <updated>2014-10-14T18:36:24+02:00</updated>
+    <updated>2014-10-19T17:19:54+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -570,156 +672,6 @@ Créer / savoir les différents raccourcis vous fera gagner de précieuses secon
 &lt;/ul&gt;
 
 &lt;p&gt;Si vous avez d'autres idées / astuces n'hésitez pas à me les envoyer !&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Enquête métier développeur / intégrateur web</title>
-    <link rel="alternate" href="http://davidl.fr/blog/metier-integrateur-web.html"/>
-    <id>http://davidl.fr/blog/metier-integrateur-web.html</id>
-    <published>2014-08-03T00:00:00+02:00</published>
-    <updated>2014-10-24T13:44:12+02:00</updated>
-    <author>
-      <name>DavidL design + développement</name>
-    </author>
-    <content type="html">&lt;p&gt;J'ai récemment été contacté par un futur étudiant dans le domaine du web. Il doit compléter un dossier de financement pour sa formation de futur développeur / intégrateur web. Il m'a envoyé des questions pour en savoir plus sur ce métier. Je partage cette interview dans cet article en espérant que cela sera utile à d'autres.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Espace de travail développeur web" src="https://farm6.staticflickr.com/5154/14185447737_0aba637f46.jpg" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Hipster desktop office par &lt;a href="https://www.flickr.com/photos/125167502@N02/14185447737/in/set-72157644655809428/"&gt;Markus Spiske&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id="interview"&gt;Interview&lt;/h2&gt;
-
-&lt;h3 id="quelle-est-votre-fonction-au-sein-de-lentreprise-de-lorganisme-de-la-structure-"&gt;Quelle est votre fonction au sein de l'entreprise, de l'organisme, de la structure ?&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Développeur front-end&lt;/strong&gt;. Il peut être aussi associé à celui d'intégrateur web. Tout cela dépends de la structure : plus une équipe est importante, plus elle aura de spécialistes travaillant dans leur domaine de prédilection. Au contraire d'une équipe réduite où il faut être généraliste. Il est possible que dans une organisation ma fonction soit "développeur web" alors que je ne programme pas du tout les interactions avec le back-end.&lt;/p&gt;
-
-&lt;p&gt;De plus, je suis certain que dans certains organismes il existe encore des webmasters. Mais &lt;a href="http://davidl.fr/manifesto.html"&gt;ceci est une autre histoire&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id="en-quoi-consiste-votre-mtier--pouvez-vous-dcrire-vos-tches-"&gt;En quoi consiste votre métier ? Pouvez-vous décrire vos tâches ?&lt;/h3&gt;
-
-&lt;p&gt;Pour faire l'analogie avec la construction d'une maison, je suis le décorateur d'intérieur : la personne chargée de faire la peinture (Codage CSS), celle qui pose portes et fenêtres, vérifie qu'elles s'ouvrent et se ferment (Codage Javascript) et choisit l'emplacement des meubles pour que cela soit ergonomique (Programmation HTML).&lt;/p&gt;
-
-&lt;p&gt;Par contre je ne peux pas travailler tout seul. Il faut d'abord que les maçons (Développeurs web back-end) aient coulé la dalle de béton et posé la structure générale.&lt;/p&gt;
-
-&lt;p&gt;Dans les vie réelle c'est un peu plus compliqué car quotidiennement je dois :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Faire de la veille technologique&lt;/li&gt;
-  &lt;li&gt;Programmer&lt;/li&gt;
-  &lt;li&gt;Concevoir des interfaces s'adaptant à tous types d'écrans.&lt;/li&gt;
-  &lt;li&gt;Programmation HTML / CSS (Généralement avec un préprocesseur comme Sass) correctement architecturé et évolutif.&lt;/li&gt;
-  &lt;li&gt;Tests d'utilisabilité avec de vrai appareils (tablette, smartphone, …).&lt;/li&gt;
-  &lt;li&gt;Tout cela en étroite collaboration avec les ingénieurs et les graphistes.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="trouvez-vous-ce-mtier-passionnant--pourquoi-"&gt;Trouvez-vous ce métier passionnant ? Pourquoi ?&lt;/h3&gt;
-
-&lt;p&gt;Pour faire ce métier correctement, il est obligatoire d'être passionné. Tout d'abord parce que le web évolue très vite. Il est indispensable de se remettre en question, &lt;strong&gt;tous les jours&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Ensuite, dans mon cas, j'ai toujours aimé le contact avec les ordinateurs car c'est "simplement de la logique". Quand j'ai commencé il n'y avait pas internet et il fallait chercher comment faire fonctionner un programme. Le plus souvent on trouvait la réponse en lisant le manuel. Simple non ? De nos jours c'est un peu plus complexe mais aussi beaucoup plus rapide de &lt;a href="http://google.com"&gt;trouver la réponse à ses questions&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Pourquoi mon métier est passionnant ? Il suffit de regarder autour de vous : le monde a déjà changé, le web est partout. Ce qui me motive c'est que des personnes comme vous et moi &lt;a href="https://www.mozilla.org/fr/contribute/"&gt;peuvent changer le monde&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id="quelle-est-votre-formation-et-quels-sont-vos-diplmes-"&gt;Quelle est votre formation et quels sont vos diplômes ?&lt;/h3&gt;
-
-&lt;p&gt;J'ai suivi le cursus suivant :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="http://iic0e.univ-littoral.fr/"&gt;DUT informatique&lt;/a&gt; option imagerie numérique (diplôme bac + 2)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;A l'origine le constat simple : si je veux travailler avec des ordinateurs, autant savoir comment cela fonctionne dans la boite grise. (A l'époque TOUS les ordinateurs étaient gris / blanc avec des gros écrans cathodiques).
-En sortant de cette formation, qui n'était pas orientée web, je savais que je ne voulais absolument pas faire de l'informatique classique (Probablement à cause des &lt;code&gt;segmentation fault&lt;/code&gt; en &lt;code&gt;C&lt;/code&gt;).&lt;/p&gt;
-
-&lt;p&gt;Le point positif c'est que j'ai énormément appris de mes camarades de promotion en découvrant une galaxie qui fait maintenant parti de mon ADN : le mouvement open source.&lt;/p&gt;
-
-&lt;p&gt;C'est à cette époque que j'ai commencé à lire sérieusement des &lt;a href="http://davidl.fr/books.html"&gt;livres en anglais sur la construction de site internet&lt;/a&gt;.
-J'ai aussi appris que pour &lt;strong&gt;travailler efficacement&lt;/strong&gt; vous devez utiliser un système à base d'unix (Autrement dit mac OS ou Linux).&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Je vais vous désactiver l'interface graphique et vous serez obligés d'utiliser un terminal.&lt;/p&gt;
-
-  &lt;p&gt;&lt;cite&gt;Dominique Dussart professeur de système&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Licence Pro concepteur intégrateur web (diplôme bac + 3)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;J'ai décidé de suivre une formation en alternance car je souhaitais mettre en pratique toutes les connaissances que j'avais acquises en auto-formation. Et là je mets en garde toutes les personnes souhaitant suivre des formations en alternance dans le but d'obtenir un pseudo diplôme.&lt;/p&gt;
-
-&lt;p&gt;BE CAREFUL : Je ne dénigre pas la qualité de l'école, qui m'a permis de faire cette formation en entreprise. Mais c'est d'abord une &lt;strong&gt;entreprise privée&lt;/strong&gt; et non un organisme de formation avant tout. Après je suis certain qu'il existe de bonnes écoles privées mais renseignez vous bien avant de faire votre choix.&lt;/p&gt;
-
-&lt;p&gt;Pendant ce cursus j'ai quand même énormément appris, mais pas forcément les choses que je voulais, autrement dit la technique et les processus de création de site internet.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Autoformation&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Au travers des années j'ai contruit ma propre formation à base de mailing list, flux RSS, twitter, … Mais ma meilleure source d'information reste de &lt;a href="http://davidl.fr/books.html"&gt;lire des livres sur le développement web&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id="quel-est-votre-parcours-personnel-"&gt;Quel est votre parcours personnel ?&lt;/h3&gt;
-
-&lt;p&gt;Un peu de tout, énorme structure, entreprise classique, freelance, startup …
-Pour ceux qui veulent approfondir vous pouvez télécharger mon &lt;a href="http://davidl.fr/cv.html"&gt;CV de développeur intégrateur web&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id="quelle-qualification-et-quels-diplmes-faut-il-avoir-pour-le-poste-que-vous-occupez-"&gt;Quelle qualification et quel(s) diplôme(s) faut-il avoir pour le poste que vous occupez ?&lt;/h3&gt;
-
-&lt;p&gt;Très bonne question, pour y répondre il faut demander à des &lt;a href="http://www.pole-emploi.fr/accueil/"&gt;spécialistes de l'emploi&lt;/a&gt; #bonCourage.&lt;/p&gt;
-
-&lt;p&gt;Selon moi, je pense que l'on peut plus juger quelqu'un à ses réalisation plutôt qu'à sa plaquette de présentation (autrement appelé le CV).
-C'est très personnel mais je conseillerais d'avoir un &lt;a href="http://github.com/flexbox"&gt;profil GitHub&lt;/a&gt; et contribuer à des projets open source.&lt;/p&gt;
-
-&lt;h3 id="quelles-sont-les-comptences-requises-"&gt;Quelles sont les compétences requises ?&lt;/h3&gt;
-
-&lt;p&gt;Des compétences techniques de programmation. HTML, CSS et JavaScript sont une bonne base, mais vous devez quand même sortir de votre zone de confort pour savoir comment tout cela fonctionne.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="La complexité du web" src="https://farm3.staticflickr.com/2929/14404853893_1836f2b781_z.jpg" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Schéma d'une application web moderne : front-end, back-end, Base de données, outils &amp;amp; services&lt;/em&gt;.&lt;/p&gt;
-
-&lt;h3 id="quelles-sont-vos-responsabilits--vos-horaires-"&gt;Quelles sont vos responsabilités ? Vos horaires ?&lt;/h3&gt;
-
-&lt;p&gt;Ma responsabilité ? Faire gagner de précieuses secondes au plusieurs centaines de milliers de personnes qui visitent les application web sur lesquelles je travaille.&lt;/p&gt;
-
-&lt;p&gt;Les horaires dans mon contrat de travail sont de 39 heures par semaine. A cela peut s'ajouter 2 à 20 heures de veille, lectures et autres projets personnels.&lt;/p&gt;
-
-&lt;h3 id="travaillez-vous-seul-ou-en-quipe--quelle-est-votre-autonomie-"&gt;Travaillez-vous seul ou en équipe ? Quelle est votre autonomie ?&lt;/h3&gt;
-
-&lt;p&gt;Je travaille en équipe, mais aussi de façon autonome tout dépend des projets.&lt;/p&gt;
-
-&lt;p&gt;Il est possible de travailler seul mais essayez d'imaginer ma métaphore sur la personne qui construit sa maison.&lt;/p&gt;
-
-&lt;h3 id="quels-sont-les-risques-et-contraintes-de-votre-profession-"&gt;Quels sont les risques et contraintes de votre profession ?&lt;/h3&gt;
-
-&lt;p&gt;Pas de risque mais les contraintes sont principalement de faire comprendre que travailler dans le web n'est pas simple.&lt;/p&gt;
-
-&lt;h3 id="est-ce-un-mtier-fatiguant-physiquement-intellectuellement-ou-moralement-"&gt;Est-ce un métier fatiguant physiquement, intellectuellement ou moralement ?&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Physiquement&lt;/strong&gt; être assis 8 heures par jour n'a encore tué personne, &lt;a href="http://www.slate.fr/life/75650/assis-fumer-tue-exercice"&gt;quoique&lt;/a&gt;. Dans mon cas j'essaye quand même de faire 10 000 pas par jour pour garder la forme.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Intellectuellement&lt;/strong&gt; c'est assez épuisant. Vous devez sans cesse jongler avec les délais, la qualité de ce que vous produisez, vérifier que cela fonctionne sur tous les navigateurs, tous les appareils. Que vos solutions soient évolutives… Et expliquer &lt;em&gt;gentiment&lt;/em&gt; au client que non, sa proposition pour construire "une piscine au milieu de son salon" ne sert à rien même si il n'y a "juste qu'a pousser les meubles".&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Moralement&lt;/strong&gt; il faut être préparé au fait qu'il y a toujours quelqu'un qui aura une meilleure solution que la vôtre. Vous pouvez passer des mois ou des années à développer quelque chose, le succès n'est pas toujours au rendez-vous. Mais je pense que c'est valable dans beaucoup de professions.&lt;/p&gt;
-
-&lt;h3 id="y-a-t-il-des-contre-indications-physiques-"&gt;Y-a-t-il des contre-indications (physiques) ?&lt;/h3&gt;
-
-&lt;p&gt;Aucune à ma connaissance.&lt;/p&gt;
-
-&lt;h3 id="avez-vous-des-possibilits-dvolution-dans-lentreprise-dans-dautres-entreprises-dans-la-branche-professionnelle-"&gt;Avez vous des possibilités d'évolution dans l'entreprise, dans d'autres entreprises, dans la branche professionnelle ?&lt;/h3&gt;
-
-&lt;p&gt;Le web en général évolue tous les jours, il faut sans cesse apprendre de nouvelles choses. Qui sait demain je serais peut-être animateur HTML.&lt;/p&gt;
-
-&lt;h3 id="quel-est-le-salaire-moyen-de-votre-profession-"&gt;Quel est le salaire moyen de votre profession ?&lt;/h3&gt;
-
-&lt;p&gt;Cela dépend de l'expérience, de la situation géographique et de l'ancienneté. Pour vous donner des chiffres l'association de designer interactif publie chaque année &lt;a href="http://www.designersinteractifs.org/publications/guides/les-salaires-du-design-interactif-edition-2013"&gt;des statistiques sur les salaires&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id="que-pensez-vous-de-lavenir-du-mtier-"&gt;Que pensez-vous de l'avenir du métier ?&lt;/h3&gt;
-
-&lt;p&gt;Je crois encore à la vision de &lt;em&gt;Tim Berness-Lee.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Quand on voit ce que wikipédia a réussi à construire, j'aime penser qu'internet n'est pas simplement un vaste supermarché.
-Dans le cas de ma profession j'ai encore quelques années de travail devant moi car il faut refondre plus de la moitié des sites internet de la planète pour proposer une bonne expérience mobile aux utilisateurs.&lt;/p&gt;
 </content>
   </entry>
 </feed>
