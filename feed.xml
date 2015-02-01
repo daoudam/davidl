@@ -5,16 +5,125 @@
   <id>http://davidl.fr/blog/</id>
   <link href="http://davidl.fr/blog/"/>
   <link href="http://davidl.fr/blog/feed.xml" rel="self"/>
-  <updated>2014-12-21T00:00:00+01:00</updated>
+  <updated>2015-02-01T00:00:00+01:00</updated>
   <author>
     <name>David Leuliette</name>
   </author>
+  <entry>
+    <title>J’ai testé l’édition 2015 du plus grand festival européen de développeurs open source</title>
+    <link rel="alternate" href="http://davidl.fr/blog/fosdem-2015.html"/>
+    <id>http://davidl.fr/blog/fosdem-2015.html</id>
+    <published>2015-02-01T00:00:00+01:00</published>
+    <updated>2015-02-02T00:29:30+01:00</updated>
+    <author>
+      <name>DavidL design + développement</name>
+    </author>
+    <content type="html">&lt;p&gt;Ce week-end j’étais à Bruxelles pour assister au &lt;a href="https://fosdem.org/"&gt;FOSDEM&lt;/a&gt; (Free and Open source Software Developer’s Meeting). Pendant 2 jours, l’Université Libre de Bruxelles est littéralement envahie par des hordes de barbus venus pour assister à des conférences, en anglais, avec comme thème le logiciel libre.&lt;/p&gt;
+
+&lt;p&gt;Depuis ma première édition il y a 6 ans, le festival n’ai pas changé de formule : devrooms, open source, 5000+ hackers, talks &amp;amp; lectures. Ce qui a changé c’est la dimension : il y a de plus en plus de monde et il faut arriver bien avant le début des conférences pour être sur de pouvoir rentrer dans la salle. J’ai aussi remarqué qu’il y a beaucoup plus de développeurs sous MacOS. Cela s’explique peut être car en tant que développeur front-end je n’assiste pas au conférences pour "pimper" le kernel de Linux.&lt;/p&gt;
+
+&lt;p&gt;Dans cet article je partage mon expérience sur cette édition 2015 avec une surprise de taille en conclusion.&lt;/p&gt;
+
+&lt;h2 id="samedi--licence-et-mthode-de-travail"&gt;Samedi : licence et méthode de travail&lt;/h2&gt;
+
+&lt;h3 id="open-source-by-design"&gt;Open source by design&lt;/h3&gt;
+
+&lt;p&gt;En ce début d’année GitHub explique ses objectifs pour 2015 :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Plus d’open source&lt;/li&gt;
+  &lt;li&gt;Une meilleure expérience pour l’open source&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;GitHub est la plus grande plate forme pour le développement de la planète. Leur mission est de proposer une meilleure intégration pour le choix des licences proposées au développeurs lors de la création de projets.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Sketch Open source by design" src="https://farm8.staticflickr.com/7331/16222647059_41c30ff63c_c.jpg" /&gt;&lt;/p&gt;
+
+&lt;h3 id="a-new-version-of-firefox-is-available"&gt;A new version of Firefox is available&lt;/h3&gt;
+
+&lt;p&gt;Cette conférence essaye de répondre à la question : Comment publier rapidement des produits de qualité ? Cela passe par un processus de déploiement automatisé. Le navigateur Firefox possède 4 versions différentes que n’importe qui peut télécharger. Chaque version embarque son système automatique de collecte d’informations / bugs afin d’améliorer le produit.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://nightly.mozilla.org/"&gt;Nightly&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.mozilla.org/fr/firefox/developer/"&gt;Developper Edition / Aurora&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.mozilla.org/en-US/firefox/channel/#beta"&gt;Beta&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.mozilla.org/fr/firefox/new/"&gt;Firefox&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img alt="Sketch release process of Firefox" src="https://farm9.staticflickr.com/8600/16383683366_c5fb0e1ba5_c.jpg" /&gt;&lt;/p&gt;
+
+&lt;h4 id="aboutios"&gt;about:iOS&lt;/h4&gt;
+
+&lt;blockquote class="twitter-tweet" lang="fr"&gt;&lt;p&gt;We need to be where our users are so we&amp;#39;re going to get Firefox on iOS &lt;a href="https://twitter.com/hashtag/mozlandia?src=hash"&gt;#mozlandia&lt;/a&gt;&lt;/p&gt;&amp;mdash; Lukas Blakk (@lsblakk) &lt;a href="https://twitter.com/lsblakk/status/539843892300898304"&gt;2 Décembre 2014&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;h3 id="jason-room"&gt;Jason room&lt;/h3&gt;
+
+&lt;p&gt;Ce qui est génial au FOSDEM c’est que vu le nombre de conférences il y a 1 chance sur 2 de se retrouver à une présentation sans avoir entendu parler du sujet dont il et question. Cela se passe généralement dans l’amphithéatre Jason ou la moitié des personnes profite du wifi en écoutant les orateurs.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Photo de la Jason Room université libre de Bruxelles" src="https://farm8.staticflickr.com/7286/16234891138_d92b4b766f_b.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Pour ma part j’ai essayé de faire le barbu en suivant :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://fosdem.org/2015/schedule/event/igprof_the_ignominous_profiler/"&gt;igProf&lt;/a&gt; : Memory and performance profiling tool&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://fosdem.org/2015/schedule/event/superoptimization/"&gt;Superoptimisation&lt;/a&gt; : Modern compiler optimization can take almost any code and produce a reasonably efficient binary at the end.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Résultat je n’ai absolument rien compris à ces 2 présentation. Le talk du Dimanche sur &lt;a href="http://en.wikipedia.org/wiki/Rust_%28programming_language%29"&gt;Rust&lt;/a&gt; était beaucoup plus simple à appréhender pour moi.&lt;/p&gt;
+
+&lt;h3 id="homebrew--the-good-the-bad--the-evil"&gt;Homebrew : the good, the bad &amp;amp; the evil&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/mikemcquaid"&gt;Mike McQuaid&lt;/a&gt; nous explique ce qui est difficile dans la maintenance d’un gestionnaire de paquet pour OSX.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="sketch homebrew good bad and evil" src="https://farm8.staticflickr.com/7297/16223418760_de1a6af0f8_c.jpg" /&gt;&lt;/p&gt;
+
+&lt;h2 id="dimanche--design-open-source-et-mozilla-devroom"&gt;Dimanche : Design open source et Mozilla devroom&lt;/h2&gt;
+
+&lt;h3 id="accessible-design-in-open-source"&gt;Accessible design in open source&lt;/h3&gt;
+
+&lt;p&gt;Construire un framework d’accessibilité en 6 étapes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="sketch accessible design" src="https://farm8.staticflickr.com/7417/16416721192_ac1e48bf0a_c.jpg" /&gt;&lt;/p&gt;
+
+&lt;h3 id="ui-design-for-open-data"&gt;UI design for open data&lt;/h3&gt;
+
+&lt;p&gt;Comment le design peut nous aider à &lt;a href="http://www.slideshare.net/HollieLubbock/ui-design-for-open-data-v2-nov-2014"&gt;communiquer facilement des données&lt;/a&gt; pour les utilisateurs ?&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="sketch accessible design" src="https://farm8.staticflickr.com/7301/16232045397_bb8b4945b3_c.jpg" /&gt;&lt;/p&gt;
+
+&lt;h3 id="the-future-of-javascript"&gt;The future of JavaScript&lt;/h3&gt;
+
+&lt;p&gt;Présentation d’EcmaScript 6, prévu pour Juin 2015.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="sketch future of JavaScript ES6" src="https://farm9.staticflickr.com/8569/16232766187_0ec5187c70_c.jpg" /&gt;&lt;/p&gt;
+
+&lt;h3 id="servo--you"&gt;Servo &amp;amp; you&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Le langage Rust vous intéresse ?&lt;/li&gt;
+  &lt;li&gt;Vous souhaitez contribuer à la construction d’un moteur de rendu pour navigateur ?
+Heureusement Servo est là pour vous.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img alt="sketch web browser engine in rust" src="https://farm8.staticflickr.com/7293/16232809899_7e43ee46c8_c.jpg" /&gt;&lt;/p&gt;
+
+&lt;h2 id="surprise-de-fin"&gt;Surprise de fin&lt;/h2&gt;
+
+&lt;p&gt;Pour en apprendre plus à propos des licences open source, j’ai récemment lu la biographie de &lt;a href="http://www.amazon.fr/gp/product/2212136358/ref=as_li_tl?ie=UTF8&amp;amp;camp=1642&amp;amp;creative=19458&amp;amp;creativeASIN=2212136358&amp;amp;linkCode=as2&amp;amp;tag=davidl-21&amp;amp;linkId=KTTKKNA65LESMI3G"&gt;Richard Stallman&lt;/a&gt;&lt;img src="http://ir-fr.amazon-adsystem.com/e/ir?t=davidl-21&amp;amp;l=as2&amp;amp;o=8&amp;amp;a=2212136358" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /&gt; sur la révolution du logiciel libre. Grâce au FOSDEM j’ai pu le remercier personnellement pour son travail qui nous permet à tous d’utiliser chaque jour des technologies web open source.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Photo de David Leuliette développeur open source avec Richard Stallman" src="https://farm8.staticflickr.com/7415/16419176601_e244bf4c83.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;"Happy new year Richard"&lt;br /&gt;
+"Happy hacking to you"&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Guide pour la prise de notes visuelles</title>
     <link rel="alternate" href="http://davidl.fr/blog/conseils-sketchnoting.html"/>
     <id>http://davidl.fr/blog/conseils-sketchnoting.html</id>
     <published>2014-12-21T00:00:00+01:00</published>
-    <updated>2015-01-26T18:42:37+01:00</updated>
+    <updated>2015-02-01T21:45:16+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -116,7 +225,7 @@
     <link rel="alternate" href="http://davidl.fr/blog/paris-web-2014.html"/>
     <id>http://davidl.fr/blog/paris-web-2014.html</id>
     <published>2014-09-23T00:00:00+02:00</published>
-    <updated>2014-12-22T10:22:51+01:00</updated>
+    <updated>2014-12-21T14:17:56+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -222,7 +331,7 @@ Pour l’année prochaine n’hésitez pas à nous mentionner sur twitter il res
     <link rel="alternate" href="http://davidl.fr/blog/template-ruby.html"/>
     <id>http://davidl.fr/blog/template-ruby.html</id>
     <published>2014-09-07T00:00:00+02:00</published>
-    <updated>2015-01-26T18:42:44+01:00</updated>
+    <updated>2015-02-01T21:45:16+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -396,7 +505,7 @@ Ruby possède aussi ses propres moteurs comme erb, haml, … Mais mon préféré
     <link rel="alternate" href="http://davidl.fr/blog/sublime-source-code.html"/>
     <id>http://davidl.fr/blog/sublime-source-code.html</id>
     <published>2014-08-24T00:00:00+02:00</published>
-    <updated>2014-12-08T15:48:20+01:00</updated>
+    <updated>2014-12-09T19:43:25+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -541,7 +650,7 @@ Utilisez simplement le raccourci &lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;shif
     <link rel="alternate" href="http://davidl.fr/blog/foundation-love.html"/>
     <id>http://davidl.fr/blog/foundation-love.html</id>
     <published>2014-08-18T00:00:00+02:00</published>
-    <updated>2014-10-14T18:36:24+02:00</updated>
+    <updated>2014-10-19T17:19:54+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -606,72 +715,6 @@ Cette méthode permet d'écraser les styles et le comportement par défaut du Ja
 &lt;p&gt;La première étape conciste &lt;a href="http://foundation.zurb.com/docs/"&gt;à lire la documentation&lt;/a&gt;. Ensuite pour tester rapidement une mise en page vous pouvez &lt;a href="https://github.com/flexbox/foundation-boilerplate/archive/gh-pages.zip"&gt;télécharger un boilerplate&lt;/a&gt;. Pour finir je construit presque &lt;a href="http://davidl.fr/projects.html"&gt;tous mes projets&lt;/a&gt; avec une base plus ou moins important de composants issus du framework. N'hésitez pas à aller hacker mon code source.&lt;/p&gt;
 
 &lt;p&gt;J'espère que vous avez trouvé cet article interessant et qu'il vous a convaincu d'essayer &lt;a href="http://foundation.zurb.com/"&gt;Foundation&lt;/a&gt; pour vos futurs projets.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Astuce raccourcis GitHub</title>
-    <link rel="alternate" href="http://davidl.fr/blog/github-ninja.html"/>
-    <id>http://davidl.fr/blog/github-ninja.html</id>
-    <published>2014-08-06T00:00:00+02:00</published>
-    <updated>2014-10-14T18:36:24+02:00</updated>
-    <author>
-      <name>DavidL design + développement</name>
-    </author>
-    <content type="html">&lt;p&gt;Si je ne devais choisir qu'un seul outil &lt;a href="http://davidl.fr/toolkit.html"&gt;dans tous ceux que j'utilise&lt;/a&gt;, je choisirais sans hésiter le terminal. Concernant le site web se serait &lt;a href="http://github.com"&gt;GitHub&lt;/a&gt;. Vu que je passe beaucoups de temps à utiliser ces solutions, autant essayer d'être efficace.
-Créer / savoir les différents raccourcis vous fera gagner de précieuses secondes. Vous êtes plus productif, votre travail est plus efficace et vous libère du temps pour régler de vrais problèmes.&lt;/p&gt;
-
-&lt;div&gt;
-&lt;div class="medium-6 medium-centered columns"&gt;
-&lt;img src="https://octodex.github.com/images/dojocat.jpg" alt="Github ninja octocat" /&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id="des-alias-git"&gt;Des alias git&lt;/h2&gt;
-
-&lt;p&gt;À mon avis la première chose à faire, sur vous utilisez git, est de pimper votre fichier &lt;code&gt;.gitconfig&lt;/code&gt;.&lt;/p&gt;
-
-&lt;pre class="highlight json"&gt;&lt;code&gt;&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="err"&gt;user&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt;
-      &lt;/span&gt;&lt;span class="err"&gt;name&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;Bruce&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;Wayne&lt;/span&gt;&lt;span class="w"&gt;
-      &lt;/span&gt;&lt;span class="err"&gt;email&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;bruce@wayne.com&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="err"&gt;push&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt;
-      &lt;/span&gt;&lt;span class="err"&gt;default&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;current&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="err"&gt;alias&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt;
-      &lt;/span&gt;&lt;span class="err"&gt;poule&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;pull&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;--rebase&lt;/span&gt;&lt;span class="w"&gt;
-      &lt;/span&gt;&lt;span class="err"&gt;co&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;checkout&lt;/span&gt;&lt;span class="w"&gt;
-      &lt;/span&gt;&lt;span class="err"&gt;br&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;branch&lt;/span&gt;&lt;span class="w"&gt;
-      &lt;/span&gt;&lt;span class="err"&gt;today&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;log&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;--since=midnight&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;--author='Bruce&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;Wayne'&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;--oneline&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="err"&gt;color&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt;
-      &lt;/span&gt;&lt;span class="err"&gt;ui&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;auto&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;git poule&lt;/strong&gt; - Récupérer la dernière version du projet.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;git br&lt;/strong&gt; - Afficher la liste de vos branches.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;git co&lt;/strong&gt; - Changer de branche.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;git push&lt;/strong&gt; - Pousser vos modifications "dans le cloud" (dans mon cas la branche courrante)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;git today&lt;/strong&gt; - Qu'est ce que j'ai fait aujourd'hui ?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Cette liste est simple et peut être grandement améliorée mais c'est ce que j'utilise 80% du temps.&lt;/p&gt;
-
-&lt;h2 id="raccourcis-claviers"&gt;Raccourcis claviers&lt;/h2&gt;
-
-&lt;p&gt;Les logiciels traditionnels et les application web ne sont pas si différentes. Gardez cela à l'esprit et essayez d'utiliser les raccourcis aussi souvent que possible sur &lt;a href="http://github.com"&gt;GitHub&lt;/a&gt; pour aider à réduire le temps passé sur le site.&lt;/p&gt;
-
-&lt;iframe width="560" height="315" src="//www.youtube.com/embed/3PsVvjWy21Q?rel=0" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Liste des raccourcis claviers:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;g c&lt;/strong&gt; – Afficher le code du projet.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;g i&lt;/strong&gt; – Voir les issues.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;t&lt;/strong&gt; – Lors de l'affichage du code source, avoir le comportement d'un explorateur de fichier.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;c&lt;/strong&gt; – Ouvrir une nouvelle issue.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;r&lt;/strong&gt; – Répondre à une issue + &lt;em&gt;bonus&lt;/em&gt; Sélectionne le texte pour faire une citation.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;?&lt;/strong&gt; – Voir le menu d'aide avec les raccourcis.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Si vous avez d'autres idées / astuces n'hésitez pas à me les envoyer !&lt;/p&gt;
 </content>
   </entry>
 </feed>
