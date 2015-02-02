@@ -14,13 +14,13 @@
     <link rel="alternate" href="http://davidl.fr/blog/fosdem-2015.html"/>
     <id>http://davidl.fr/blog/fosdem-2015.html</id>
     <published>2015-02-01T00:00:00+01:00</published>
-    <updated>2015-02-02T00:29:30+01:00</updated>
+    <updated>2015-02-02T13:54:59+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
     <content type="html">&lt;p&gt;Ce week-end j’étais à Bruxelles pour assister au &lt;a href="https://fosdem.org/"&gt;FOSDEM&lt;/a&gt; (Free and Open source Software Developer’s Meeting). Pendant 2 jours, l’Université Libre de Bruxelles est littéralement envahie par des hordes de barbus venus pour assister à des conférences, en anglais, avec comme thème le logiciel libre.&lt;/p&gt;
 
-&lt;p&gt;Depuis ma première édition il y a 6 ans, le festival n’ai pas changé de formule : devrooms, open source, 5000+ hackers, talks &amp;amp; lectures. Ce qui a changé c’est la dimension : il y a de plus en plus de monde et il faut arriver bien avant le début des conférences pour être sur de pouvoir rentrer dans la salle. J’ai aussi remarqué qu’il y a beaucoup plus de développeurs sous MacOS. Cela s’explique peut être car en tant que développeur front-end je n’assiste pas au conférences pour "pimper" le kernel de Linux.&lt;/p&gt;
+&lt;p&gt;Depuis ma première édition il y a 6 ans, le festival n’a pas changé de formule : devrooms, open source, 5000+ hackers, talks &amp;amp; lectures. Ce qui a changé c’est la dimension : il y a de plus en plus de monde et il faut arriver bien avant le début des conférences pour être sur de pouvoir rentrer dans la salle. J’ai aussi remarqué qu’il y a beaucoup plus de développeurs sous MacOS. Cela s’explique peut être car en tant que développeur front-end je n’assiste pas au conférences pour "pimper" le kernel de Linux.&lt;/p&gt;
 
 &lt;p&gt;Dans cet article je partage mon expérience sur cette édition 2015 avec une surprise de taille en conclusion.&lt;/p&gt;
 
@@ -110,12 +110,12 @@ Heureusement Servo est là pour vous.&lt;/li&gt;
 
 &lt;h2 id="surprise-de-fin"&gt;Surprise de fin&lt;/h2&gt;
 
-&lt;p&gt;Pour en apprendre plus à propos des licences open source, j’ai récemment lu la biographie de &lt;a href="http://www.amazon.fr/gp/product/2212136358/ref=as_li_tl?ie=UTF8&amp;amp;camp=1642&amp;amp;creative=19458&amp;amp;creativeASIN=2212136358&amp;amp;linkCode=as2&amp;amp;tag=davidl-21&amp;amp;linkId=KTTKKNA65LESMI3G"&gt;Richard Stallman&lt;/a&gt;&lt;img src="http://ir-fr.amazon-adsystem.com/e/ir?t=davidl-21&amp;amp;l=as2&amp;amp;o=8&amp;amp;a=2212136358" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /&gt; sur la révolution du logiciel libre. Grâce au FOSDEM j’ai pu le remercier personnellement pour son travail qui nous permet à tous d’utiliser chaque jour des technologies web open source.&lt;/p&gt;
+&lt;p&gt;Pour en apprendre plus à propos des licences, j’ai récemment lu la biographie de &lt;a href="http://www.amazon.fr/gp/product/2212136358/ref=as_li_tl?ie=UTF8&amp;amp;camp=1642&amp;amp;creative=19458&amp;amp;creativeASIN=2212136358&amp;amp;linkCode=as2&amp;amp;tag=davidl-21&amp;amp;linkId=KTTKKNA65LESMI3G"&gt;Richard Stallman&lt;/a&gt;&lt;img src="http://ir-fr.amazon-adsystem.com/e/ir?t=davidl-21&amp;amp;l=as2&amp;amp;o=8&amp;amp;a=2212136358" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /&gt; sur la révolution du logiciel libre. Grâce au FOSDEM j’ai pu le remercier personnellement pour son travail qui nous permet à tous d’utiliser chaque jour des &lt;a href="http://www.fsf.org"&gt;technologies web ouvertes&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img alt="Photo de David Leuliette développeur open source avec Richard Stallman" src="https://farm8.staticflickr.com/7415/16419176601_e244bf4c83.jpg" /&gt;&lt;/p&gt;
 
-&lt;p&gt;"Happy new year Richard"&lt;br /&gt;
-"Happy hacking to you"&lt;/p&gt;
+&lt;p&gt;“— I wish you a happy new year Richard”&lt;br /&gt;
+“— Happy hacking”&lt;/p&gt;
 </content>
   </entry>
   <entry>
@@ -123,7 +123,7 @@ Heureusement Servo est là pour vous.&lt;/li&gt;
     <link rel="alternate" href="http://davidl.fr/blog/conseils-sketchnoting.html"/>
     <id>http://davidl.fr/blog/conseils-sketchnoting.html</id>
     <published>2014-12-21T00:00:00+01:00</published>
-    <updated>2015-02-01T21:45:16+01:00</updated>
+    <updated>2015-01-26T18:42:37+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -225,7 +225,7 @@ Heureusement Servo est là pour vous.&lt;/li&gt;
     <link rel="alternate" href="http://davidl.fr/blog/paris-web-2014.html"/>
     <id>http://davidl.fr/blog/paris-web-2014.html</id>
     <published>2014-09-23T00:00:00+02:00</published>
-    <updated>2014-12-21T14:17:56+01:00</updated>
+    <updated>2014-12-22T10:22:51+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -331,7 +331,7 @@ Pour l’année prochaine n’hésitez pas à nous mentionner sur twitter il res
     <link rel="alternate" href="http://davidl.fr/blog/template-ruby.html"/>
     <id>http://davidl.fr/blog/template-ruby.html</id>
     <published>2014-09-07T00:00:00+02:00</published>
-    <updated>2015-02-01T21:45:16+01:00</updated>
+    <updated>2015-01-26T18:42:44+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -505,7 +505,7 @@ Ruby possède aussi ses propres moteurs comme erb, haml, … Mais mon préféré
     <link rel="alternate" href="http://davidl.fr/blog/sublime-source-code.html"/>
     <id>http://davidl.fr/blog/sublime-source-code.html</id>
     <published>2014-08-24T00:00:00+02:00</published>
-    <updated>2014-12-09T19:43:25+01:00</updated>
+    <updated>2014-12-08T15:48:20+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -650,7 +650,7 @@ Utilisez simplement le raccourci &lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;shif
     <link rel="alternate" href="http://davidl.fr/blog/foundation-love.html"/>
     <id>http://davidl.fr/blog/foundation-love.html</id>
     <published>2014-08-18T00:00:00+02:00</published>
-    <updated>2014-10-19T17:19:54+02:00</updated>
+    <updated>2014-10-14T18:36:24+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
