@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://davidl.fr/blog/fosdem-2015.html"/>
     <id>http://davidl.fr/blog/fosdem-2015.html</id>
     <published>2015-02-01T00:00:00+01:00</published>
-    <updated>2015-02-02T13:54:59+01:00</updated>
+    <updated>2015-02-03T21:55:46+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -86,6 +86,8 @@
 
 &lt;p&gt;&lt;img alt="sketch accessible design" src="https://farm8.staticflickr.com/7417/16416721192_ac1e48bf0a_c.jpg" /&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;strong&gt;Edit&lt;/strong&gt; : C'est &lt;a href="https://twitter.com/RabelaisA11y"&gt;@RabelaisA11y&lt;/a&gt; qui travaille sur l'accessibilité et non @CStrobbe.&lt;/p&gt;
+
 &lt;h3 id="ui-design-for-open-data"&gt;UI design for open data&lt;/h3&gt;
 
 &lt;p&gt;Comment le design peut nous aider à &lt;a href="http://www.slideshare.net/HollieLubbock/ui-design-for-open-data-v2-nov-2014"&gt;communiquer facilement des données&lt;/a&gt; pour les utilisateurs ?&lt;/p&gt;
@@ -123,7 +125,7 @@ Heureusement Servo est là pour vous.&lt;/li&gt;
     <link rel="alternate" href="http://davidl.fr/blog/conseils-sketchnoting.html"/>
     <id>http://davidl.fr/blog/conseils-sketchnoting.html</id>
     <published>2014-12-21T00:00:00+01:00</published>
-    <updated>2015-01-26T18:42:37+01:00</updated>
+    <updated>2015-02-01T21:45:16+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -225,7 +227,7 @@ Heureusement Servo est là pour vous.&lt;/li&gt;
     <link rel="alternate" href="http://davidl.fr/blog/paris-web-2014.html"/>
     <id>http://davidl.fr/blog/paris-web-2014.html</id>
     <published>2014-09-23T00:00:00+02:00</published>
-    <updated>2014-12-22T10:22:51+01:00</updated>
+    <updated>2014-12-21T14:17:56+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -331,7 +333,7 @@ Pour l’année prochaine n’hésitez pas à nous mentionner sur twitter il res
     <link rel="alternate" href="http://davidl.fr/blog/template-ruby.html"/>
     <id>http://davidl.fr/blog/template-ruby.html</id>
     <published>2014-09-07T00:00:00+02:00</published>
-    <updated>2015-01-26T18:42:44+01:00</updated>
+    <updated>2015-02-01T21:45:16+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -505,7 +507,7 @@ Ruby possède aussi ses propres moteurs comme erb, haml, … Mais mon préféré
     <link rel="alternate" href="http://davidl.fr/blog/sublime-source-code.html"/>
     <id>http://davidl.fr/blog/sublime-source-code.html</id>
     <published>2014-08-24T00:00:00+02:00</published>
-    <updated>2014-12-08T15:48:20+01:00</updated>
+    <updated>2014-12-09T19:43:25+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -650,7 +652,7 @@ Utilisez simplement le raccourci &lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;shif
     <link rel="alternate" href="http://davidl.fr/blog/foundation-love.html"/>
     <id>http://davidl.fr/blog/foundation-love.html</id>
     <published>2014-08-18T00:00:00+02:00</published>
-    <updated>2014-10-14T18:36:24+02:00</updated>
+    <updated>2014-10-19T17:19:54+02:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
