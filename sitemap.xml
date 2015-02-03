@@ -334,9 +334,9 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://davidl.fr/forge</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <loc>http://davidl.fr/gpl-licence-faq.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0</priority>
   </url>
   <url>
     <loc>http://davidl.fr/blog/github-ninja.html</loc>
@@ -436,6 +436,11 @@
   <url>
     <loc>http://davidl.fr/forge/2-1-manifeste-refonte.html</loc>
     <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://davidl.fr/forge</loc>
+    <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
