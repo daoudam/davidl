@@ -6,6 +6,11 @@
     <priority>1</priority>
   </url>
   <url>
+    <loc>http://davidl.fr/ask-me.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://davidl.fr/work.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -32,6 +37,11 @@
     <loc>http://davidl.fr/toolkit.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://davidl.fr/thankyou.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0</priority>
   </url>
   <url>
     <loc>http://davidl.fr/sos.html</loc>
@@ -334,11 +344,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://davidl.fr/gnu.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0</priority>
-  </url>
-  <url>
     <loc>http://davidl.fr/blog/github-ninja.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -442,6 +447,11 @@
     <loc>http://davidl.fr/forge</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://davidl.fr/gnu.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0</priority>
   </url>
   <url>
     <loc>http://davidl.fr/blog/metier-integrateur-web.html</loc>
