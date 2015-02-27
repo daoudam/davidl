@@ -5,16 +5,91 @@
   <id>http://davidl.fr/blog/</id>
   <link href="http://davidl.fr/blog/"/>
   <link href="http://davidl.fr/blog/feed.xml" rel="self"/>
-  <updated>2015-02-01T00:00:00+01:00</updated>
+  <updated>2015-02-27T00:00:00+01:00</updated>
   <author>
     <name>David Leuliette</name>
   </author>
+  <entry>
+    <title>Centrer des éléments impairs avec une grille CSS</title>
+    <link rel="alternate" href="http://davidl.fr/blog/grille-impair-centre.html"/>
+    <id>http://davidl.fr/blog/grille-impair-centre.html</id>
+    <published>2015-02-27T00:00:00+01:00</published>
+    <updated>2015-02-27T16:54:48+01:00</updated>
+    <author>
+      <name>DavidL design + développement</name>
+    </author>
+    <content type="html">&lt;p&gt;Pour créer des mises en page je travaille quotidienement avec les mathématiques en respectant une certaine symétrie. Lorsqu’elle est bien faite, elle contribue à avoir des conceptions armonieuses. Je vais prendre par exemple une page de présentation d’équipe. Si vous avez huit personnes dans une grille de 3 colonnes, vous allez rencontrer un problème. Heureusement, il y a un moyen de contourner cela. Voici comment faire pour centrer un nombre impair d’éléments dans votre mise en page avec la grille CSS du &lt;a href="http://foundation.zurb.com/docs/"&gt;framework Foundation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Centrer des éléments impairs avec une grille CSS" src="https://farm9.staticflickr.com/8613/16474630238_d41100070b_b.jpg" /&gt;&lt;/p&gt;
+
+&lt;h2 id="centrer-la-grille-de-base"&gt;Centrer la grille de base&lt;/h2&gt;
+
+&lt;p&gt;L’organisation de la mise en page est de 3 photos. Nous pourrions utiliser une grille personnalisé de 3 colonnes. Mais pour des raisons qui deviendront plus claires par la suite, nous allons utiliser une grille standard de 12 colonnes.&lt;/p&gt;
+
+&lt;p&gt;Nous devons d’abord créer une ligne, avec une mise en page de colonne &lt;code&gt;small-6&lt;/code&gt;, centrée, pour que cela soit agréable et compact.&lt;/p&gt;
+
+&lt;pre class="highlight html"&gt;&lt;code&gt;  &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"row"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-6 small-centered columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;…&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="ajouter-la-grille"&gt;Ajouter la grille&lt;/h2&gt;
+
+&lt;p&gt;Ensuite, nous ajoutons 2 lignes contenant chacune 3 images.&lt;/p&gt;
+
+&lt;pre class="highlight html"&gt;&lt;code&gt;  &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"row"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-6 small-centered columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-4 columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;…&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-4 columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;…&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-4 columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;…&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-4 columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;…&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-4 columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;…&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-4 columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;…&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="ajouter-la-dernire-ligne"&gt;Ajouter la dernière ligne&lt;/h2&gt;
+
+&lt;p&gt;La ligne finale – à laquelle il “manque” une image – est pousée au milieu à l’aide des classes &lt;code&gt;push&lt;/code&gt; et &lt;code&gt;pull&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre class="highlight html"&gt;&lt;code&gt;  &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"row"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-6 small-centered columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-4 columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;…&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-4 columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;…&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-4 columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;…&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-4 columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;…&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-4 columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;…&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-4 columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;…&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-4 push-2 columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;…&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-4 pull-2 columns"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;…&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Nous avons besoin d’une grille de 12 colonne pour utiliser les 2 classes &lt;code&gt;push&lt;/code&gt; et &lt;code&gt;pull&lt;/code&gt; : la mise en page semble avoir 3 colonnes, mais elle est pousée par les 2 derniers blocs. Le résultat est une mise en page symétrique avec une bonne chorégraphie du contenu.&lt;/p&gt;
+
+&lt;p&gt;Maintenant ce qu’il reste à faire est de choisir quel sera le bon ordre des photos.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://flexbox.github.io/foundation-boilerplate/grid-uneven.html"&gt;Voir la demo&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>J’ai testé l’édition 2015 du plus grand festival européen de développeurs open source</title>
     <link rel="alternate" href="http://davidl.fr/blog/fosdem-2015.html"/>
     <id>http://davidl.fr/blog/fosdem-2015.html</id>
     <published>2015-02-01T00:00:00+01:00</published>
-    <updated>2015-02-03T21:55:46+01:00</updated>
+    <updated>2015-02-09T13:50:09+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -125,7 +200,7 @@ Heureusement Servo est là pour vous.&lt;/li&gt;
     <link rel="alternate" href="http://davidl.fr/blog/conseils-sketchnoting.html"/>
     <id>http://davidl.fr/blog/conseils-sketchnoting.html</id>
     <published>2014-12-21T00:00:00+01:00</published>
-    <updated>2015-02-01T21:45:16+01:00</updated>
+    <updated>2015-01-26T18:42:37+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -227,7 +302,7 @@ Heureusement Servo est là pour vous.&lt;/li&gt;
     <link rel="alternate" href="http://davidl.fr/blog/paris-web-2014.html"/>
     <id>http://davidl.fr/blog/paris-web-2014.html</id>
     <published>2014-09-23T00:00:00+02:00</published>
-    <updated>2014-12-21T14:17:56+01:00</updated>
+    <updated>2014-12-22T10:22:51+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -333,7 +408,7 @@ Pour l’année prochaine n’hésitez pas à nous mentionner sur twitter il res
     <link rel="alternate" href="http://davidl.fr/blog/template-ruby.html"/>
     <id>http://davidl.fr/blog/template-ruby.html</id>
     <published>2014-09-07T00:00:00+02:00</published>
-    <updated>2015-02-01T21:45:16+01:00</updated>
+    <updated>2015-01-26T18:42:44+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -507,7 +582,7 @@ Ruby possède aussi ses propres moteurs comme erb, haml, … Mais mon préféré
     <link rel="alternate" href="http://davidl.fr/blog/sublime-source-code.html"/>
     <id>http://davidl.fr/blog/sublime-source-code.html</id>
     <published>2014-08-24T00:00:00+02:00</published>
-    <updated>2014-12-09T19:43:25+01:00</updated>
+    <updated>2014-12-08T15:48:20+01:00</updated>
     <author>
       <name>DavidL design + développement</name>
     </author>
@@ -645,78 +720,6 @@ Utilisez simplement le raccourci &lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;shif
 &lt;p&gt;Vous voila convaincu pour utiliser Sublime Text pour votre prochain projet, même si ces conseils sont plus accès intégration et développement front-end.&lt;/p&gt;
 
 &lt;p&gt;N'hésitez pas à me partager vos packets pour compléter cette liste.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>5 bonnes raisons pour commencer un projet avec Foundation</title>
-    <link rel="alternate" href="http://davidl.fr/blog/foundation-love.html"/>
-    <id>http://davidl.fr/blog/foundation-love.html</id>
-    <published>2014-08-18T00:00:00+02:00</published>
-    <updated>2014-10-19T17:19:54+02:00</updated>
-    <author>
-      <name>DavidL design + développement</name>
-    </author>
-    <content type="html">&lt;p&gt;Foundation est dans &lt;a href="https://github.com/trending?l=css&amp;amp;since=monthly"&gt;le top 10 des repos&lt;/a&gt; les plus étoilés sur GitHub. Depuis la sortie publique de la &lt;a href="http://foundation.zurb.com/learn/about.html"&gt;version 3 en 2011&lt;/a&gt;, il y a connu de petits changements. Mais depuis la version 4 c'est un des Framework responsive les plus stable que vous pouvez choisir pour votre prochaine application. Grâce à son système de grille simple, il est apprécié par les développeurs webs de tout horizons - back-end comme front-end, car vous pouvez facilement et rapidement contruire un site internet fonctionnel et responsive. N'importe quel développeur avec des connaissances de base en HTML et CSS peut commencer à utiliser Foundation.&lt;/p&gt;
-
-&lt;h2 id="pourquoi-jaime-foundation-et-pourquoi-vous-devez-laimer-aussi"&gt;Pourquoi j'aime Foundation et pourquoi vous devez l'aimer aussi&lt;/h2&gt;
-
-&lt;p&gt;Foundation offre des bases solides pour n'importe quel site, quelque soit la taille du projet. Il embarque &lt;a href="https://github.com/necolas/normalize.css"&gt;normalize.css&lt;/a&gt;, qui est indispensable pour avoir un contenu cohérent entre les différents navigateurs. Foundation est basé sur la priorité au mobile (aka mobile-first) ce qui permet une bonne mise en page, notamment au niveau de la typographie. Le &lt;code&gt;font-size&lt;/code&gt; des textes est calculé en fonction de la taille d'écran. Chaque élément contient un style de base, comme les formulaires qu'il est facile de styler rapidement si vous connaissez les bonnes variables du fichier &lt;code&gt;_settings.scss&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Foundation est incroyable" src="http://foundation.zurb.com/assets/img/support/goodies/wallpaper-3%281024x768%29.jpg" /&gt;&lt;/p&gt;
-
-&lt;p&gt;J'utilise Foundation car je gagne énormément de temps en corrigeant des problèmes historiques au web. Ce temps gagné me permet d'investir plus de valeur dans la construction de solutions évolutives et personnalisées.&lt;/p&gt;
-
-&lt;p&gt;Aujourd'hui les sites internet doivent être modernes, soignés, responsive, et optimisé pour le mobile. Foundation nous aide à atteindre ce but avec un minimum d'effort. Voici 5 raisons pour lesquelles je pense qu'actuellement c'est le meilleur framework disponible.&lt;/p&gt;
-
-&lt;h2 id="une-grille-css-simple"&gt;Une grille CSS simple&lt;/h2&gt;
-
-&lt;p&gt;Foundation possède le meilleur système de grille responsive disponible. Construit avec une priorité au mobile il est très facile de faire évoluer sa mise en page sur les tablettes, pour terminer sur des écrans. D'expérience je conseille de diviser son écran en 12 colonnes (Car 3 x 4 = 12). Ce système permet de mettre en place presque n'importe quel type de design.&lt;/p&gt;
-
-&lt;pre class="highlight html"&gt;&lt;code&gt;    &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"row"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
-      &lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"small-6 medium-4 large-2"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id="dveloppement-rapide"&gt;Développement rapide&lt;/h2&gt;
-
-&lt;p&gt;Foundation embarque un nombre impressionnant de composants CSS et JavaScripts, réutilisables et commun à n'importe quel projet web. Pour commencer vous pouvez simplement utiliser le même HTML que celui présent dans la documentation. Si vous souhaitez plus de contrôle au niveau du style il est aussi très facile de personnaliser le framework et d'étendre ses capacités en faisant &lt;a href="/blog/grille-semantique.html"&gt;appel aux mixin Sass&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id="compatibilit-des-navigateurs"&gt;Compatibilité des navigateurs&lt;/h2&gt;
-
-&lt;p&gt;Foudadation est compatible avec tous les navigateurs web modernes. Bien sûr si vous devez mettre en place un site qui ne respecte pas les standards HTML5, il est toujours possible de surcharger -inutilement de plugins votre page avec &lt;a href="https://github.com/aFarkas/html5shiv"&gt;HTML5Shiv&lt;/a&gt; et &lt;a href="https://github.com/scottjehl/Respond"&gt;Respond.js&lt;/a&gt;. Cela vous aidera à supporter un moment les anciens navigateurs.&lt;/p&gt;
-
-&lt;p&gt;Si votre employeur / client souhaite un site internet compatible avec internet explorer 7, il est toujours possible de lui expliquer que :&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Il est plus productif, à long terme, de construire l'avenir plutôt que de corriger les erreurs du passé.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id="customisation-et-volution"&gt;Customisation et évolution&lt;/h2&gt;
-
-&lt;p&gt;Foundation offre ne nombreuses façon de personnaliser son style par défaut.&lt;/p&gt;
-
-&lt;h3 id="intgrateur-css"&gt;Intégrateur CSS&lt;/h3&gt;
-
-&lt;p&gt;Vous pouvez &lt;a href="http://foundation.zurb.com/develop/download.html"&gt;télécharger directement un fichier CSS&lt;/a&gt; personnalisé avec vos différentes couleurs et composants.
-Cette méthode permet d'écraser les styles et le comportement par défaut du JavaScript. Le principal problème est que vous perdez les nombreuses corrections mineures de bugs.&lt;/p&gt;
-
-&lt;h3 id="dveloppeur-front-end"&gt;Développeur front-end&lt;/h3&gt;
-
-&lt;p&gt;Si vous maîtrisez l'utilisation de &lt;a href="http://bower.io/"&gt;bower&lt;/a&gt; avec &lt;a href="http://nodejs.org/"&gt;nodeJS&lt;/a&gt;, et que vous utilisez un préprocesseur comme Sass vous pourrez utiliser toute la puissance de ce framework. En modifiant le fichier &lt;code&gt;_settings.scss&lt;/code&gt; il est facile et rapide de personnaliser le design. Cette méthode permet de mettre à jour facilement le framework et ses dépendances dans votre fichier &lt;code&gt;bower.json&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h3 id="guru-de-foundation"&gt;Guru de Foundation&lt;/h3&gt;
-
-&lt;p&gt;Vous connaissez déjà par coeur le framework, vous pouvez cloner le projet &lt;a href="https://github.com/flexbox/foundation-boilerplate"&gt;foundation-boilerplate&lt;/a&gt; pour directement exploiter les bonnes mixins et contruire rapidement votre prototype.&lt;/p&gt;
-
-&lt;h2 id="open-source"&gt;Open Source&lt;/h2&gt;
-
-&lt;p&gt;Foundation est un projet open source, hébergé sur GitHub. Il est publié sous la licence MIT. C'est une des meilleures raisons pour lesquelles j'utilise quotidiennement Foundation. Vous êtes libres de l'utiliser comme bon vous semble en le changeant complètement ou simplement pour expérimenter une nouvelle technologie. De plus vous n'aurez pas à lire d'obscures conditions d'utilisations et n'avez aucun risque à l'utiliser sur les projets de vos clients.&lt;/p&gt;
-
-&lt;h2 id="vous-souhaitez-apprendre-foundation-"&gt;Vous souhaitez apprendre Foundation ?&lt;/h2&gt;
-
-&lt;p&gt;La première étape conciste &lt;a href="http://foundation.zurb.com/docs/"&gt;à lire la documentation&lt;/a&gt;. Ensuite pour tester rapidement une mise en page vous pouvez &lt;a href="https://github.com/flexbox/foundation-boilerplate/archive/gh-pages.zip"&gt;télécharger un boilerplate&lt;/a&gt;. Pour finir je construit presque &lt;a href="http://davidl.fr/projects.html"&gt;tous mes projets&lt;/a&gt; avec une base plus ou moins important de composants issus du framework. N'hésitez pas à aller hacker mon code source.&lt;/p&gt;
-
-&lt;p&gt;J'espère que vous avez trouvé cet article interessant et qu'il vous a convaincu d'essayer &lt;a href="http://foundation.zurb.com/"&gt;Foundation&lt;/a&gt; pour vos futurs projets.&lt;/p&gt;
 </content>
   </entry>
 </feed>
