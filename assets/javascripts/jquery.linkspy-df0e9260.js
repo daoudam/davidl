@@ -1,0 +1,1 @@
+(function(){$(function(){return $(".js-linkspy-start").click(function(t){var n;return n=$(t.currentTarget).find(".js-linkspy-target").attr("href"),window.location=n})})}).call(this);
