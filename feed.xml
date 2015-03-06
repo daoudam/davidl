@@ -85,6 +85,164 @@
 </content>
   </entry>
   <entry>
+    <title>Mixin Foundation 5.5</title>
+    <link rel="alternate" href="http://davidl.fr/blog/foundation-mixin.html"/>
+    <id>http://davidl.fr/blog/foundation-mixin.html</id>
+    <published>2015-02-27T00:00:00+01:00</published>
+    <updated>2015-03-06T13:44:20+01:00</updated>
+    <author>
+      <name>DavidL design + développement</name>
+    </author>
+    <content type="html">&lt;p&gt;Cette liste présente les composants de &lt;a href="http://foundation.zurb.com/docs/"&gt;Fondation 5&lt;/a&gt; avec toutes leurs mixins. Pour plus d'informations, cliquez sur chaque lien pour visiter la documentation.&lt;/p&gt;
+
+&lt;h2 id="accordionshttpfoundationzurbcomdocscomponentsaccordionhtmlsemantic-markup-with-sass-mixins"&gt;&lt;a href="http://foundation.zurb.com/docs/components/accordion.html#semantic-markup-with-sass-mixins"&gt;Accordions&lt;/a&gt;&lt;/h2&gt;
+
+&lt;pre class="highlight sass"&gt;&lt;code&gt;  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;accordion-container&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;accordion-navigation&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;accordion-content&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="alertshttpfoundationzurbcomdocscomponentsalertboxeshtmlcustomize-with-sass"&gt;&lt;a href="http://foundation.zurb.com/docs/components/alert_boxes.html#customize-with-sass"&gt;Alerts&lt;/a&gt;&lt;/h2&gt;
+
+&lt;pre class="highlight sass"&gt;&lt;code&gt;  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;alert&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="block-gridhttpfoundationzurbcomdocscomponentsblockgridhtmlsemantic-markup-with-sass-mixins"&gt;&lt;a href="http://foundation.zurb.com/docs/components/block_grid.html#semantic-markup-with-sass-mixins"&gt;Block grid&lt;/a&gt;&lt;/h2&gt;
+
+&lt;pre class="highlight sass"&gt;&lt;code&gt;  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;block-grid&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="breadcrumbshttpfoundationzurbcomdocscomponentsbreadcrumbshtmlsemantic-markup-with-sass"&gt;&lt;a href="http://foundation.zurb.com/docs/components/breadcrumbs.html#semantic-markup-with-sass"&gt;Breadcrumbs&lt;/a&gt;&lt;/h2&gt;
+
+&lt;pre class="highlight sass"&gt;&lt;code&gt;  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;crumb-container&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;crumbs&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="buttonshttpfoundationzurbcomdocscomponentsbuttonshtmlsemantic-markup-with-sass"&gt;&lt;a href="http://foundation.zurb.com/docs/components/buttons.html#semantic-markup-with-sass"&gt;Buttons&lt;/a&gt;&lt;/h2&gt;
+
+&lt;pre class="highlight sass"&gt;&lt;code&gt;  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;button&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="buttons-dropdownhttpfoundationzurbcomdocscomponentsdropdownbuttonshtmlsemantic-markup-with-sass"&gt;&lt;a href="http://foundation.zurb.com/docs/components/dropdown_buttons.html#semantic-markup-with-sass"&gt;Buttons, dropdown&lt;/a&gt;&lt;/h2&gt;
+
+&lt;pre class="highlight sass"&gt;&lt;code&gt;  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;button&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;dropdown-button&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;radius&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;single-transition&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;inset-shadow&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="button-groupshttpfoundationzurbcomdocscomponentsbuttongroupshtmlsemantic-markup-with-sass"&gt;&lt;a href="http://foundation.zurb.com/docs/components/button_groups.html#semantic-markup-with-sass"&gt;Button groups&lt;/a&gt;&lt;/h2&gt;
+
+&lt;pre class="highlight sass"&gt;&lt;code&gt;  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;button-group-container&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;button-group-style&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="buttons-splithttpfoundationzurbcomdocscomponentssplitbuttonshtmlsemantic-markup-with-sass"&gt;&lt;a href="http://foundation.zurb.com/docs/components/split_buttons.html#semantic-markup-with-sass"&gt;Buttons, split&lt;/a&gt;&lt;/h2&gt;
+
+&lt;pre class="highlight sass"&gt;&lt;code&gt;  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;split-button&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="dropdownshttpfoundationzurbcomdocscomponentsdropdownbuttonshtmlsemantic-markup-with-sass"&gt;&lt;a href="http://foundation.zurb.com/docs/components/dropdown_buttons.html#semantic-markup-with-sass"&gt;Dropdowns&lt;/a&gt;&lt;/h2&gt;
+
+&lt;pre class="highlight sass"&gt;&lt;code&gt;  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;dropdown-container&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="flex-videohttpfoundationzurbcomdocscomponentsflexvideohtmlcustomize-with-sass"&gt;&lt;a href="http://foundation.zurb.com/docs/components/flex_video.html#customize-with-sass"&gt;Flex video&lt;/a&gt;&lt;/h2&gt;
+
+&lt;pre class="highlight sass"&gt;&lt;code&gt;  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;flex-video-container&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="gridhttpfoundationzurbcomdocscomponentsgridhtmlcustomize-with-sass"&gt;&lt;a href="http://foundation.zurb.com/docs/components/grid.html#customize-with-sass"&gt;Grid&lt;/a&gt;&lt;/h2&gt;
+
+&lt;pre class="highlight sass"&gt;&lt;code&gt;  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;grid-row&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;grid-column&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="icon-barhttpfoundationzurbcomdocscomponentsicon-barhtmlsemantic-markup-with-sass"&gt;&lt;a href="http://foundation.zurb.com/docs/components/icon-bar.html#semantic-markup-with-sass"&gt;Icon bar&lt;/a&gt;&lt;/h2&gt;
+
+&lt;pre class="highlight sass"&gt;&lt;code&gt;  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;icon-bar&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="inline-listhttpfoundationzurbcomdocscomponentsinlinelistshtmlsemantic-markup-with-sass"&gt;&lt;a href="http://foundation.zurb.com/docs/components/inline_lists.html#semantic-markup-with-sass"&gt;Inline list&lt;/a&gt;&lt;/h2&gt;
+
+&lt;pre class="highlight sass"&gt;&lt;code&gt;  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;inline-list&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="keystrokeshttpfoundationzurbcomdocscomponentskeystrokeshtmlsemantic-markup-with-sass"&gt;&lt;a href="http://foundation.zurb.com/docs/components/keystrokes.html#semantic-markup-with-sass"&gt;Keystrokes&lt;/a&gt;&lt;/h2&gt;
+
+&lt;pre class="highlight sass"&gt;&lt;code&gt;  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;keystroke&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="labelshttpfoundationzurbcomdocscomponentslabelshtmlsemantic-markup-with-sass"&gt;&lt;a href="http://foundation.zurb.com/docs/components/labels.html#semantic-markup-with-sass"&gt;Labels&lt;/a&gt;&lt;/h2&gt;
+
+&lt;pre class="highlight sass"&gt;&lt;code&gt;  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;label&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="paginationhttpfoundationzurbcomdocscomponentspaginationhtmlsemantic-markup-with-sass"&gt;&lt;a href="http://foundation.zurb.com/docs/components/pagination.html#semantic-markup-with-sass"&gt;Pagination&lt;/a&gt;&lt;/h2&gt;
+
+&lt;pre class="highlight sass"&gt;&lt;code&gt;  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;pagination&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;pagination-container&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="panelshttpfoundationzurbcomdocscomponentspanelshtmlsemantic-markup-with-sass"&gt;&lt;a href="http://foundation.zurb.com/docs/components/panels.html#semantic-markup-with-sass"&gt;Panels&lt;/a&gt;&lt;/h2&gt;
+
+&lt;pre class="highlight sass"&gt;&lt;code&gt;  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;panel&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="prefixpostfixhttpfoundationzurbcomdocscomponentsformshtmlsemantic-markup-with-sass"&gt;&lt;a href="http://foundation.zurb.com/docs/components/forms.html#semantic-markup-with-sass"&gt;Prefix/postfix&lt;/a&gt;&lt;/h2&gt;
+
+&lt;pre class="highlight sass"&gt;&lt;code&gt;  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;prefix-postfix-base&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="pricing-tableshttpfoundationzurbcomdocscomponentspricingtableshtmlsemantic-markup-with-sass-mixins"&gt;&lt;a href="http://foundation.zurb.com/docs/components/pricing_tables.html#semantic-markup-with-sass-mixins"&gt;Pricing tables&lt;/a&gt;&lt;/h2&gt;
+
+&lt;pre class="highlight sass"&gt;&lt;code&gt;  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;pricing-table-container&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;pricing-table-title&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;pricing-table-price&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;pricing-table-description&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;pricing-table-bullet&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;pricing-table-cta&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="progress-barshttpfoundationzurbcomdocscomponentsprogressbarshtmlsemantic-markup-with-sass"&gt;&lt;a href="http://foundation.zurb.com/docs/components/progress_bars.html#semantic-markup-with-sass"&gt;Progress bars&lt;/a&gt;&lt;/h2&gt;
+
+&lt;pre class="highlight sass"&gt;&lt;code&gt;  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;progress-container&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="revealhttpfoundationzurbcomdocscomponentsrevealhtmlaccessibility"&gt;&lt;a href="http://foundation.zurb.com/docs/components/reveal.html#accessibility"&gt;Reveal&lt;/a&gt;&lt;/h2&gt;
+
+&lt;pre class="highlight sass"&gt;&lt;code&gt;  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;reveal-bg&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;reveal-modal-base&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;reveal-modal-style&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;reveal-close&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="side-navhttpfoundationzurbcomdocscomponentssidenavhtmlsemantic-markup-with-sass"&gt;&lt;a href="http://foundation.zurb.com/docs/components/sidenav.html#semantic-markup-with-sass"&gt;Side-nav&lt;/a&gt;&lt;/h2&gt;
+
+&lt;pre class="highlight sass"&gt;&lt;code&gt;  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;side-nav&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="sub-navhttpfoundationzurbcomdocscomponentssubnavhtmlsemantic-markup-with-sass"&gt;&lt;a href="http://foundation.zurb.com/docs/components/subnav.html#semantic-markup-with-sass"&gt;Sub-nav&lt;/a&gt;&lt;/h2&gt;
+
+&lt;pre class="highlight sass"&gt;&lt;code&gt;  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;sub-nav&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="switcheshttpfoundationzurbcomdocscomponentsswitchhtmlsemantic-markup-with-sass"&gt;&lt;a href="http://foundation.zurb.com/docs/components/switch.html#semantic-markup-with-sass"&gt;Switches&lt;/a&gt;&lt;/h2&gt;
+
+&lt;pre class="highlight sass"&gt;&lt;code&gt;  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;switch&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;switch-base&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;switch-size&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;switch-style&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="thumbnailshttpfoundationzurbcomdocscomponentsthumbnailshtmlsemantic-markup-with-sass"&gt;&lt;a href="http://foundation.zurb.com/docs/components/thumbnails.html#semantic-markup-with-sass"&gt;Thumbnails&lt;/a&gt;&lt;/h2&gt;
+
+&lt;pre class="highlight sass"&gt;&lt;code&gt;  &lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;thumb&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+  </entry>
+  <entry>
     <title>J’ai testé l’édition 2015 du plus grand festival européen de développeurs open source</title>
     <link rel="alternate" href="http://davidl.fr/blog/fosdem-2015.html"/>
     <id>http://davidl.fr/blog/fosdem-2015.html</id>
@@ -575,151 +733,6 @@ Ruby possède aussi ses propres moteurs comme erb, haml, … Mais mon préféré
   &lt;li&gt;&lt;a href="https://github.com/cognitom/gulp-slim"&gt;gulp-slim&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://github.com/matsumos/grunt-slim"&gt;grunt-slim&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Coder plus efficacement avec Sublime Text</title>
-    <link rel="alternate" href="http://davidl.fr/blog/sublime-source-code.html"/>
-    <id>http://davidl.fr/blog/sublime-source-code.html</id>
-    <published>2014-08-24T00:00:00+02:00</published>
-    <updated>2014-12-08T15:48:20+01:00</updated>
-    <author>
-      <name>DavidL design + développement</name>
-    </author>
-    <content type="html">&lt;p&gt;Si je me souviens bien, le premier logiciel logiciel que j'ai utilisé, pour "développer" un site internet, c'était Frontpage. Tout ceux de la génération pré-ADSL ont sûrement commencé ou connu cet éditeur.&lt;/p&gt;
-
-&lt;p&gt;Depuis j'ai essayé énormément d'applications différentes pour coder, des éditeurs de texte ou des IDE, et la liste est longue :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Frontpage&lt;/li&gt;
-  &lt;li&gt;Dreamweaver&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://notepad-plus-plus.org/fr/"&gt;Notepad++&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Gedit&lt;/li&gt;
-  &lt;li&gt;Vi&lt;/li&gt;
-  &lt;li&gt;Eclipse&lt;/li&gt;
-  &lt;li&gt;Zend-Studio&lt;/li&gt;
-  &lt;li&gt;Aptana&lt;/li&gt;
-  &lt;li&gt;Komodo&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://atom.io/"&gt;Atom&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Et je pense que cette liste n'est pas complète. Cependant mon éditeur de prédilection reste &lt;a href="http://www.sublimetext.com/"&gt;Sublime Text&lt;/a&gt;. Ce programme peut sembler minimaliste, mais il est très efficace si il est configuré correctement. Et c'est là sa grande force : une communauté active avec énorméments d'extentions disponibles.&lt;/p&gt;
-
-&lt;p&gt;Dans cet article je vais vous expliquer comment ce logiciel m'aide chaque jour à coder plus rapidement.&lt;/p&gt;
-
-&lt;h2 id="installer-le-gestionnaire-de-packet"&gt;Installer le gestionnaire de packet&lt;/h2&gt;
-
-&lt;p&gt;La première chose à faire après une nouvelle installation est d'installer &lt;em&gt;le gestionnaire de packets&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Il suffit pour cela d'ouvrir la console &lt;code&gt;View&lt;/code&gt; &amp;gt; &lt;code&gt;Show Console&lt;/code&gt; et de copier le script disponible sur le &lt;a href="https://sublime.wbond.net/installation"&gt;site de gestion des packets pour Sublime Text&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;C'est tout&lt;/strong&gt;. Une fois cette étape terminée vous êtes prêt à travailler.&lt;/p&gt;
-
-&lt;p&gt;Cela vous amènera à personnaliser l'éditeur &lt;em&gt;en fonction de vos besoins&lt;/em&gt;. La courbe d'apprentissage et de maîtrise est donc meilleure, comparé à un énorme IDE qui fait tout mais qui vous demandera &lt;em&gt;plusieurs mois d'apprentissage&lt;/em&gt; pour maîtriser l'outil -pour vous rendre compte qu'il ne réponds pas toujours à vos besoins.&lt;/p&gt;
-
-&lt;h2 id="personnaliser-sublime-text"&gt;Personnaliser Sublime Text&lt;/h2&gt;
-
-&lt;p&gt;Pour installer une extention c'est très facile. Il vous manque la coloration syntaxique pour les fichier &lt;code&gt;.coffee&lt;/code&gt; ou &lt;code&gt;.sass&lt;/code&gt; ?
-Utilisez simplement le raccourci &lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;shift&lt;/code&gt; + &lt;code&gt;P&lt;/code&gt; et tapez &lt;code&gt;install&lt;/code&gt;. Il ne vous reste ensuite plus qu'à faire votre recherche.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Packets Sublime Text front-end dev" src="https://lh4.googleusercontent.com/31cDqfLhm9BWGYEI2H7el1BgXi5axo2vuR0rjRyLsh0=w423-h239-no" /&gt;
-&lt;em&gt;Voici la liste des packets que j'utilise&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Si je ne devais en choisir qu'une liste réduite cela serait sans hésiter :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="http://emmet.io/"&gt;emmet&lt;/a&gt; (anciennement zen-coding) pour coder plus rapidement.&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://github.com/jisaacks/GitGutter"&gt;GitGutter&lt;/a&gt; pour visualiser vos diff git en temps réel.&lt;/li&gt;
-  &lt;li&gt;Le theme &lt;a href="https://github.com/EleazarCrusader/nexus-theme"&gt;Nexus Dark UI&lt;/a&gt; pour une lecture confortable.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id="configuration-de-ninja"&gt;Configuration de ninja&lt;/h2&gt;
-
-&lt;p&gt;Voici le fichier de préférence que j'utilise sur toutes mes machines. Sur Ubuntu j'ai du changer la police de base car le rendu n'est pas le même comparé à Mac OS X. Si vous souhaitez utiliser le même il suffit d'ouvrir les &lt;code&gt;Settings - user&lt;/code&gt; (&lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;,&lt;/code&gt;) et de modifier le fichier &lt;code&gt;Preferences.sublime-settings&lt;/code&gt;.&lt;/p&gt;
-
-&lt;pre class="highlight json"&gt;&lt;code&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="err"&gt;//&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;Theme&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;and&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;scheme&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"color_scheme"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"Packages/Theme - Nexus/Nexus.tmTheme"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"theme"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"Nexus.sublime-theme"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"show_full_path"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"font_face"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"Menlo"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"font_size"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;10.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"highlight_line"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"hot_exit"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-
-  &lt;/span&gt;&lt;span class="err"&gt;//&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;Custom&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;UI&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;and&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;Zen&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;search&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"folder_exclude_patterns"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="s2"&gt;".sql"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="s2"&gt;"*/sql/*"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="s2"&gt;".svn"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="s2"&gt;".git"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="s2"&gt;".hg"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="s2"&gt;"CVS"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="s2"&gt;".idea"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="s2"&gt;"build"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="s2"&gt;".cache"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="s2"&gt;"tmp/cache/"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="s2"&gt;"features"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="s2"&gt;"spec/"&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"ignored_packages"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="s2"&gt;"Vintage"&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="w"&gt;
-
-  &lt;/span&gt;&lt;span class="s2"&gt;"open_files_in_new_window"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"remember_open_files"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"rulers"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="w"&gt;
-    &lt;/span&gt;&lt;span class="mi"&gt;120&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="w"&gt;
-
-  &lt;/span&gt;&lt;span class="err"&gt;//&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;Coding&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;convention&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"tab_size"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"translate_tabs_to_spaces"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"trim_automatic_white_space"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"trim_trailing_white_space_on_save"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"default_encoding"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"UTF-8"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"detect_indentation"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="s2"&gt;"ensure_newline_at_eof_on_save"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id="dmarrer-sublime-text-depuis-un-terminal"&gt;Démarrer Sublime Text depuis un terminal&lt;/h2&gt;
-
-&lt;p&gt;C'est l'une des killer feature diponible sur les systèmes possédant un vrai système de fichier : utiliser un &lt;code&gt;alias&lt;/code&gt; pour lancer directement Sublime Text.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Raccourci pour &lt;a href="https://gist.github.com/artero/1236170"&gt;Mac OS X&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Lancer sublime text depuis &lt;a href="https://coderwall.com/p/iuxapa"&gt;un terminal avec linux&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img alt="Raccourci terminal Sublime Text" src="https://lh4.googleusercontent.com/U6kbOYceOAWw8Ptr9AtVLBt-h6j6mH4jm2s2DjducmM=w449-h300-no" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;En moins d'une minute vous pouvez corriger une erreur. On fait le même test avec un IDE ?&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id="productivit-accrue-au-clavier"&gt;Productivité accrue au clavier&lt;/h2&gt;
-
-&lt;p&gt;Voici une liste des raccourcis que j'utilise quotidienement :&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;t&lt;/code&gt; : Trouver un fichier.&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;n&lt;/code&gt; : Nouveau fichier (notez qu'il est sauvegardé directment au même emplacement que le dernier fichier ouvert).&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;shift&lt;/code&gt; + &lt;code&gt;t&lt;/code&gt; : Réouvrir un fichier fermé (comme dans un navigateur web).&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;shift&lt;/code&gt; + &lt;code&gt;p&lt;/code&gt; : Parcourir les commandes disponibles (indent file, reorder, git blame, install package …).&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;d&lt;/code&gt; : Sélectionner plusieurs mots.&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;shift&lt;/code&gt; + &lt;code&gt;d&lt;/code&gt; : Duppliquer la ligne en cours.&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;cmd&lt;/code&gt; + &lt;code&gt;shift&lt;/code&gt; + ↑ : Écriture multiligne.&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;ctrl&lt;/code&gt; + &lt;code&gt;shift&lt;/code&gt; + ↑ : Déplacer la ligne.&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;ctrl&lt;/code&gt; + &lt;code&gt;W&lt;/code&gt; : Enrobage intelligent (sélectionner un texte, raccourci, saisir le markup, enter).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img alt="wrap HTML tag" src="https://lh4.googleusercontent.com/0H2MnLt8ZRY8Py1-G2ogMVRdGEhXW8Ky3ovqA0EmEKo=w588-h300-no" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Vous voila convaincu pour utiliser Sublime Text pour votre prochain projet, même si ces conseils sont plus accès intégration et développement front-end.&lt;/p&gt;
-
-&lt;p&gt;N'hésitez pas à me partager vos packets pour compléter cette liste.&lt;/p&gt;
 </content>
   </entry>
 </feed>
