@@ -81,25 +81,15 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>http://davidl.fr/assets/font/icons-reference.html</loc>
+  </url>
+  <url>
     <loc>http://davidl.fr/blog/template-ruby.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://davidl.fr/blog/foundation5-interchange.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://davidl.fr/assets/font/icons-reference.html</loc>
-  </url>
-  <url>
-    <loc>http://davidl.fr/blog/css-evolutif.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://davidl.fr/blog/louvrelens.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -349,12 +339,12 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://davidl.fr/blog/framework-php.html</loc>
+    <loc>http://davidl.fr/blog/igoogle-xml-opml.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://davidl.fr/blog/takeoff-conf-2013.html</loc>
+    <loc>http://davidl.fr/blog/css-evolutif.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -469,7 +459,17 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://davidl.fr/blog/igoogle-xml-opml.html</loc>
+    <loc>http://davidl.fr/blog/framework-php.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://davidl.fr/blog/louvrelens.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://davidl.fr/blog/takeoff-conf-2013.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
